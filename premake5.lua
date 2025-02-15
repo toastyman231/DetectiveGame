@@ -61,10 +61,10 @@ group "Projects"
             "FatalWarnings"
         }
 
-	defines
-	{
-		"_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING"
-	}
+        defines
+        {
+            "_SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING"
+        }
 
         postbuildcommands
         {
@@ -110,7 +110,7 @@ group "Projects"
                 "BASED_PLATFORM_LINUX"
             }
 
-        filter "configurations:Debug"
+        filter {"configurations:Debug"}
             defines
             {
                 "BASED_CONFIG_DEBUG"

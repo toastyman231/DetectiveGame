@@ -7,8 +7,6 @@ TOOLS_DIR = "tools"
 sys.path.append(ENGINE_LOCATION + "\\" + TOOLS_DIR)
 import globals
 
-print("VERSION: {}.{}".format(globals.V_MAJOR, globals.V_MINOR))
-
 WIN_SOURCE_PATHS = ["PostBuildCopy", "PostBuildCopy_windows", "Assets"]
 NIX_SOURCE_PATHS = ["PostBuildCopy", "Assets"]
 PLUGIN_SOURCE_PATHS = ["Plugins"]
