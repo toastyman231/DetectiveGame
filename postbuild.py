@@ -1,0 +1,62 @@
+from genericpath import isfile
+import sys, os, subprocess
+
+ENGINE_LOCATION = os.environ["BASED_ENGINE_HOME"]
+
+TOOLS_DIR = "tools"
+sys.path.append(ENGINE_LOCATION + "\\" + TOOLS_DIR)
+import globals
+
+print("VERSION: {}.{}".format(globals.V_MAJOR, globals.V_MINOR))
+
+WIN_SOURCE_PATHS = ["PostBuildCopy", "PostBuildCopy_windows", "Assets"]
+NIX_SOURCE_PATHS = ["PostBuildCopy", "Assets"]
+PLUGIN_SOURCE_PATHS = ["Plugins"]
+
+args = globals.ProcessArguments(sys.argv)
+CONFIG = globals.GetArgumentValue(args, "config", "Debug")
+PROJECT = globals.GetArgumentValue(args, "prj", globals.PROJECT_NAME)
+
+dest = "{}/bin/{}/{}".format(os.getcwd(), CONFIG, PROJECT)
+
+if (globals.IsWindows()):
+    for source in WIN_SOURCE_PATHS:
+        print(source)
+        if source == "Assets":
+            newDest = "{}/Assets".format(dest)
+            if not os.path.exists(newDest):
+                os.mkdir(newDest)
+            subprocess.call(["cmd.exe", "/c", "robocopy", source, newDest, "/E"])
+            continue
+        subprocess.call(["cmd.exe", "/c", "robocopy", source, dest, "/E"])
+    for source in PLUGIN_SOURCE_PATHS:
+        if not os.path.isdir(source): continue
+        dirs = os.listdir(source)
+        for dir in dirs:
+            subprocess.call(["cmd.exe", "/c", "robocopy", "{}/{}/{}/Binaries".format(os.getcwd(), source, dir), dest, "/E"])
+else:
+    import os, shutil
+
+    # by pevik on Stack Overflow
+    def rm_r(path):
+        if not os.path.exists(path):
+            return
+        if os.path.isfile(path) or os.path.islink(path):
+            os.unlink(path)
+        else:
+            shutil.rmtree(path)
+
+    # by atzz on Stack Overflow
+    def copytree(src, dst, symlinks=False, ignore=None):
+        for item in os.listdir(src):
+            s = os.path.join(src, item)
+            d = os.path.join(dst, item)
+            if os.path.exists(d):
+                rm_r(d)
+            if os.path.isdir(s):
+                shutil.copytree(s, d, symlinks, ignore)
+            else:
+                shutil.copy2(s, d)
+
+    for source in NIX_SOURCE_PATHS:
+        copytree(source, dest)
