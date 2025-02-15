@@ -1,0 +1,11 @@
+# Folders to ignore
+/[Bb]in/
+/[Bb]in-[Oo]bj/
+/[Pp]roject[Ff]iles/
+
+# Visual Studio cache directory
+.vs/
+
+# Files to ignore
+*.vcxproj
+*.sln
