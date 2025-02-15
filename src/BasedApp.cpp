@@ -39,7 +39,7 @@ public:
 		input::Mouse::SetCursorMode(Engine::Instance().GetWindow().GetShouldRenderToScreen() ?
 			input::CursorMode::Confined : input::CursorMode::Free);
 
-		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
+		//scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
 	}
 
 	void Shutdown() override
