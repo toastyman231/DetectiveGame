@@ -38,8 +38,33 @@ public:
 		input::Mouse::SetCursorVisible(!Engine::Instance().GetWindow().GetShouldRenderToScreen());
 		input::Mouse::SetCursorMode(Engine::Instance().GetWindow().GetShouldRenderToScreen() ?
 			input::CursorMode::Confined : input::CursorMode::Free);
+		Engine::Instance().GetPhysicsManager().SetRenderDebug(true);
 
-		//scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
+		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
+
+		auto floor = scene::Entity::CreateEntity("Floor");
+		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
+		floor->AddComponent<scene::MeshRenderer>(graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
+			GetCurrentScene()->GetMeshStorage()));
+		floor->AddComponent<scene::BoxShapeComponent>(floor->GetTransform().Scale);
+		auto floorShape = floor->GetComponent<scene::BoxShapeComponent>();
+		floor->AddComponent<scene::RigidbodyComponent>(floorShape, JPH::EMotionType::Static, physics::Layers::STATIC);
+
+		GetCurrentScene()->GetEntityStorage().Load("Floor", floor);
+
+		scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
+
+		GetCurrentScene()->GetEntityStorage().Get("Main Camera")->SetPosition(glm::vec3{ 0, 2, 4 });
+
+		auto player = scene::Entity::CreateEntity("Player");
+		player->AddComponent<scene::CapsuleShapeComponent>(1.35f * 0.5f, 0.3f);
+		auto capsule = player->GetComponent<scene::CapsuleShapeComponent>();
+		player->AddComponent<scene::CharacterController>(
+			scene::Transform(glm::vec3(0)),
+			capsule.shape);
+		player->SetPosition(glm::vec3{ 0, 1.35f * 0.5f + 0.3f, 0 });
+
+		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 	}
 
 	void Shutdown() override
@@ -50,6 +75,25 @@ public:
 	void Update(float deltaTime) override
 	{
 		App::Update(deltaTime);
+
+		auto view = GetCurrentScene()->GetRegistry().view<scene::Enabled, scene::CharacterController>();
+
+		JPH::CharacterVirtual::ExtendedUpdateSettings update_settings;
+
+		for (auto& e : view)
+		{
+			scene::CharacterController& character = view.get<scene::CharacterController>(e);
+			auto& physSystem = Engine::Instance().GetPhysicsManager().GetPhysicsSystem();
+
+			character.Character->ExtendedUpdate(deltaTime,
+				-character.Character->GetUp() * physSystem.GetGravity().Length(),
+				update_settings,
+				physSystem.GetDefaultBroadPhaseLayerFilter(physics::Layers::MOVING),
+				physSystem.GetDefaultLayerFilter(physics::Layers::MOVING),
+				{ },
+				{ },
+				*Engine::Instance().GetPhysicsManager().GetTempAllocator());
+		}
 	}
 
 	void Render() override
