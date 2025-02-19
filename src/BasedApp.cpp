@@ -2,11 +2,9 @@
 #include "based/log.h"
 #include "based/main.h"
 #include "based/graphics/mesh.h"
-#include "based/input/keyboard.h"
 #include "based/scene/components.h"
 #include "based/input/mouse.h"
 #include "based/scene/entity.h"
-#include "Jolt/Physics/StateRecorderImpl.h"
 #include "Player/PlayerControllerSystem.h"
 
 using namespace based;
@@ -71,8 +69,8 @@ public:
 		player->AddComponent<scene::CharacterController>(
 			scene::Transform(glm::vec3(0)),
 			capsule.shape);
-		cam->SetParent(player);
-		cam->SetLocalTransform({ 0, 1.35f * 0.5f, 0 }, { 0, 0, 0 }, { 1, 1, 1 });
+		cam->SetParent(player, false);
+		cam->SetLocalPosition({ 0, 1.35f * 0.5f, 0 });
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 	}
