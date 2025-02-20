@@ -1,0 +1,26 @@
+.body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.note-parent {
+    font-family: Arimo;
+	font-size: 18px;
+	color: #02475e;
+	background: #fefecc;
+	text-align: center;
+	padding: 2em 1em;
+	//position: absolute;
+	top: 50%;
+	right: 50%;
+	bottom: 50%;
+	left: 50%;
+	border: 2px #ccc;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
