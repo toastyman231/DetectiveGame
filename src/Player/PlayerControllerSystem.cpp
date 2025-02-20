@@ -24,7 +24,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 		auto& physSystem = Engine::Instance().GetPhysicsManager().GetPhysicsSystem();
 		auto entity = view.get<scene::EntityReference>(e).entity.lock();
 
-		if (!entity) continue; // Don't update if the backing entity is invalid (should never happen)
+		if (!entity || !character.ControlEnabled) continue; // Don't update if the backing entity is invalid (should never happen)
 
 		// Align physics simulation with entity position (in case it was moved manually somewhere else)
 		character.Character->SetPosition(
@@ -32,7 +32,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 
 		// Allow horizontal movement control if the character is supported by solid ground
 		// or if explicitly allowed by the user
-		bool controlHorizontal = AllowAirControl || character.Character->IsSupported();
+		bool controlHorizontal = character.AllowAirControl || character.Character->IsSupported();
 
 		JPH::Vec3 moveDir = JPH::Vec3::sZero();
 
@@ -43,15 +43,6 @@ void PlayerControllerSystem::Update(float deltaTime)
 		if (input::Keyboard::Key(BASED_INPUT_KEY_S)) moveDir.SetX(-1);
 		if (moveDir != JPH::Vec3::sZero()) moveDir = moveDir.Normalized();
 
-		// Rotate camera view
-		mPitch += static_cast<float>(input::Mouse::DX()) * Sensitivity;
-		mYaw += static_cast<float>(input::Mouse::DY()) * Sensitivity;
-
-		mYaw = math::Clamp(mYaw, -89.f, 89.f);
-
-		auto camera = scene->GetEntityStorage().Get("Main Camera");
-		camera->SetLocalRotation({ mYaw, mPitch, camera->GetTransform().LocalRotation.z });
-
 		// Align desired move direction with the camera's facing direction
 		JPH::Vec3 camForward = convert(scene->GetActiveCamera()->GetForward());
 		camForward.SetY(0);
@@ -61,7 +52,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 
 		// If the player has control (not in the air), adjust their movement to account for inertia
 		if (controlHorizontal)
-			mDesiredDirection = 0.25f * moveDir * Speed + 0.75f * mDesiredDirection;
+			mDesiredDirection = 0.25f * moveDir * character.Speed + 0.75f * mDesiredDirection;
 
 		// Only really necessary if the up direction is going to change.
 		// Otherwise I think this can be set once on initialization
@@ -86,7 +77,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 			new_velocity = ground_velocity;
 
 			if (input::Keyboard::KeyDown(BASED_INPUT_KEY_SPACE))
-				new_velocity += JumpForce * character.Character->GetUp();
+				new_velocity += character.JumpForce * character.Character->GetUp();
 		}
 		else
 		{

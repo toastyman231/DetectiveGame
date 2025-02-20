@@ -12,9 +12,6 @@ struct Tool
 	float GetInteractionRange() const { return mInteractRange; }
 	void SetInteractionRange(float range) { mInteractRange = range; }
 
-	IInteractable* GetCurrentInteractable() const { return mCurrentInteractable; }
-	void SetCurrentInteractable(IInteractable* interactable) { mCurrentInteractable = interactable; }
-
 	InteractionTrigger* GetCurrentTrigger() const { return mTrigger; }
 	void SetCurrentTrigger(InteractionTrigger* trigger) { mTrigger = trigger; }
 
@@ -22,7 +19,6 @@ private:
 	float mInteractRange = 500.f;
 
 	ToolType mToolType = ToolType::Default;
-	IInteractable* mCurrentInteractable = nullptr;
 	InteractionTrigger* mTrigger = nullptr;
 };
 

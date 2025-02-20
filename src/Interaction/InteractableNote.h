@@ -8,6 +8,7 @@ struct InteractableNote
 
 	std::string mNoteText = "This is the default note text!";
 	Rml::ElementDocument* mDocument = nullptr;
+	bool mIsOpen = false;
 };
 
 class InteractableNoteSystem : public IInteractable
@@ -22,5 +23,5 @@ public:
 	void Update(float deltaTime);
 
 private:
-	InteractableNote mCurrentNote;
+	InteractableNote* mCurrentNote = nullptr;
 };
