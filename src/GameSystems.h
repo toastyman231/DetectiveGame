@@ -20,6 +20,8 @@ namespace GameSystems
 	{
 		using namespace based;
 
+		// Get the player entity, check if they have a MouseLook component,
+		// and set whether mouse look is enabled if they do
 		auto scene = Engine::Instance().GetApp().GetCurrentScene();
 		if (auto player = scene->GetEntityStorage().Get("Player"))
 		{
@@ -37,6 +39,8 @@ namespace GameSystems
 	{
 		using namespace based;
 
+		// Get the player entity, check if they have a CharacterController component,
+		// and set whether movement is enabled if they do
 		auto scene = Engine::Instance().GetApp().GetCurrentScene();
 		if (auto player = scene->GetEntityStorage().Get("Player"))
 		{

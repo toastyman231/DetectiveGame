@@ -6,6 +6,9 @@ class IInteractable;
 
 struct Tool
 {
+	Tool() = default;
+	Tool(float range) : mInteractRange(range) {}
+
 	ToolType GetToolType() const { return mToolType; }
 	void SetToolType(const ToolType& type) { mToolType = type; }
 
