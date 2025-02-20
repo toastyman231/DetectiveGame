@@ -1,0 +1,14 @@
+<rml>
+    <head>
+        <title>Note</title>
+        <link type="text/rcss" href="rml.rcss"/>
+        <link type="text/rcss" href="Note.rcss"/>
+    </head>
+    <body data-model="Note">
+        <div class="body">
+            <div class="note-parent">
+                <label>{{NoteText}}</label>
+            </div>
+        </div>
+    </body>
+</rml>

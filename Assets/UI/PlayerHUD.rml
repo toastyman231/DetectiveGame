@@ -1,0 +1,12 @@
+<rml>
+    <head>
+        <title>Note</title>
+        <link type="text/rcss" href="PlayerHUD.rcss"/>
+        <link type="text/rcss" href="rml.rcss"/>
+    </head>
+    <body>
+        <div class="body">
+            <div class="crosshair"></div>
+        </div>
+    </body>
+</rml>

@@ -5,6 +5,8 @@
 #include "based/scene/components.h"
 #include "based/input/mouse.h"
 #include "based/scene/entity.h"
+#include "Interaction/InteractableNote.h"
+#include "Interaction/Tool.h"
 #include "Player/PlayerControllerSystem.h"
 
 using namespace based;
@@ -13,6 +15,8 @@ class BasedApp : public based::App
 {
 private:
 	PlayerControllerSystem mPlayerController;
+	ToolSystem mToolSystem;
+	InteractableNoteSystem mNoteSystem;
 
 public:
 	core::WindowProperties GetWindowProperties() override
@@ -50,7 +54,10 @@ public:
 			GetCurrentScene()->GetMeshStorage()));
 		floor->AddComponent<scene::BoxShapeComponent>(floor->GetTransform().Scale);
 		auto floorShape = floor->GetComponent<scene::BoxShapeComponent>();
-		floor->AddComponent<scene::RigidbodyComponent>(floorShape, JPH::EMotionType::Static, physics::Layers::STATIC);
+		floor->AddComponent<scene::RigidbodyComponent>(floorShape, JPH::EMotionType::Static, 
+			physics::Layers::STATIC);
+		auto floorBody = floor->GetComponent<scene::RigidbodyComponent>();
+		floorBody.RegisterBody(floor->GetEntityHandle());
 
 		GetCurrentScene()->GetEntityStorage().Load("Floor", floor);
 
@@ -60,6 +67,9 @@ public:
 			cube->GetTransform().Position, glm::vec3{0, 0, 0});
 		auto shape = cube->GetComponent<scene::BoxShapeComponent>();
 		cube->AddComponent<scene::RigidbodyComponent>(shape, JPH::EMotionType::Static, physics::Layers::STATIC);
+		auto cubeBody = cube->GetComponent<scene::RigidbodyComponent>();
+		cubeBody.RegisterBody(cube->GetEntityHandle());
+		cube->AddComponent<InteractableNote>();
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
@@ -71,8 +81,16 @@ public:
 			capsule.shape);
 		cam->SetParent(player, false);
 		cam->SetLocalPosition({ 0, 1.35f * 0.5f, 0 });
+		player->AddComponent<Tool>();
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
+
+		auto context = Engine::Instance().GetUiManager().GetContext("main");
+
+		//Rml::Debugger::Initialise(context);
+
+		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
+		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context);
 	}
 
 	void Shutdown() override
@@ -85,6 +103,10 @@ public:
 		App::Update(deltaTime);
 
 		mPlayerController.Update(deltaTime);
+
+		mToolSystem.Update(deltaTime);
+
+		mNoteSystem.Update(deltaTime);
 	}
 
 	void Render() override
