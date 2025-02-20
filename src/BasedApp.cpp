@@ -5,23 +5,17 @@
 #include "based/scene/components.h"
 #include "based/input/mouse.h"
 #include "based/scene/entity.h"
-#include "Interaction/InteractableNote.h"
-#include "Interaction/Tool.h"
-#include "Player/PlayerControllerSystem.h"
+
+#include "GameSystems.h"
 
 using namespace based;
 
 class BasedApp : public based::App
 {
-private:
-	PlayerControllerSystem mPlayerController;
-	ToolSystem mToolSystem;
-	InteractableNoteSystem mNoteSystem;
-
 public:
-	core::WindowProperties GetWindowProperties() override
+	based::core::WindowProperties GetWindowProperties() override
 	{
-		core::WindowProperties props;
+		based::core::WindowProperties props;
 		props.w = 1280;
 		props.h = 720;
 		props.imguiProps.IsDockingEnabled = true;
@@ -54,7 +48,7 @@ public:
 			GetCurrentScene()->GetMeshStorage()));
 		floor->AddComponent<scene::BoxShapeComponent>(floor->GetTransform().Scale);
 		auto floorShape = floor->GetComponent<scene::BoxShapeComponent>();
-		floor->AddComponent<scene::RigidbodyComponent>(floorShape, JPH::EMotionType::Static, 
+		floor->AddComponent<scene::RigidbodyComponent>(floorShape, JPH::EMotionType::Static,
 			physics::Layers::STATIC);
 		auto floorBody = floor->GetComponent<scene::RigidbodyComponent>();
 		floorBody.RegisterBody(floor->GetEntityHandle());
@@ -63,8 +57,8 @@ public:
 
 		auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
 		cube->SetPosition({ 5, 0.8f, 5 });
-		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 }, 
-			cube->GetTransform().Position, glm::vec3{0, 0, 0});
+		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 },
+			cube->GetTransform().Position, glm::vec3{ 0, 0, 0 });
 		auto shape = cube->GetComponent<scene::BoxShapeComponent>();
 		cube->AddComponent<scene::RigidbodyComponent>(shape, JPH::EMotionType::Static, physics::Layers::STATIC);
 		auto cubeBody = cube->GetComponent<scene::RigidbodyComponent>();
@@ -79,6 +73,7 @@ public:
 		player->AddComponent<scene::CharacterController>(
 			scene::Transform(glm::vec3(0)),
 			capsule.shape);
+		player->AddComponent<MouseLook>(200.f);
 		cam->SetParent(player, false);
 		cam->SetLocalPosition({ 0, 1.35f * 0.5f, 0 });
 		player->AddComponent<Tool>();
@@ -102,11 +97,13 @@ public:
 	{
 		App::Update(deltaTime);
 
-		mPlayerController.Update(deltaTime);
+		GameSystems::mMouseLookSystem.Update(deltaTime);
 
-		mToolSystem.Update(deltaTime);
+		GameSystems::mPlayerController.Update(deltaTime);
 
-		mNoteSystem.Update(deltaTime);
+		GameSystems::mToolSystem.Update(deltaTime);
+
+		GameSystems::mNoteSystem.Update(deltaTime);
 	}
 
 	void Render() override
