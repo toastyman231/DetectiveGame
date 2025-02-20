@@ -5,6 +5,9 @@
 #include "InteractionTrigger.h"
 #include "based/app.h"
 #include "based/engine.h"
+#include "based/graphics/linerenderer.h"
+#include "based/input/joystick.h"
+#include "based/input/mouse.h"
 #include "Jolt/Physics/Collision/CastResult.h"
 
 #include "Jolt/Physics/Collision/RayCast.h"
@@ -23,6 +26,7 @@ void ToolSystem::Update(float deltaTime)
 	{
 		auto& tool = view.get<Tool>(e);
 
+		// Set up a ray to cast from the camera position out where the player is looking
 		JPH::RRayCast ray{
 			convert(camera->GetTransform().Position),
 			convert(glm::normalize(camera->GetForward())) * tool.GetInteractionRange()
@@ -32,9 +36,11 @@ void ToolSystem::Update(float deltaTime)
 
 		if (physSystem.GetNarrowPhaseQuery().CastRay(ray, hit))
 		{
+			// Associated entity is stored on the body as User Data
 			auto hitId = hit.mBodyID;
 			entt::entity hitEnt = static_cast<entt::entity>(physSystem.GetBodyInterface().GetUserData(hitId));
 
+			// Need to make sure it's not null, in case I forgot to register the User Data value
 			if (hitEnt == entt::null)
 			{
 				BASED_WARN("Invalid entity hit!");
@@ -46,25 +52,29 @@ void ToolSystem::Update(float deltaTime)
 				continue;
 			}
 
-			//BASED_TRACE("Entity hit: {}", static_cast<uint32_t>(hitEnt));
-
+			// InteractionTrigger is used to let any Interactable systems know
+			// that their entity is being looked at/interacted with.
 			if (registry.all_of<InteractionTrigger>(hitEnt))
 			{
 				continue;
 			}
 
+			// Set up the trigger for the newly hovered object
 			auto& newTrigger = registry.emplace<InteractionTrigger>(hitEnt);
 			newTrigger.mTool = &tool;
 			tool.SetCurrentTrigger(&newTrigger);
 
 		} else
 		{
+			// Clear current trigger if we aren't looking at an interactable.
+			// That means this gets called once per interactable, as expected.
+			// The interactables' system is responsible for removing any
+			// InteractionTriggers from the affected entity.
 			if (auto trigger = tool.GetCurrentTrigger())
 			{
 				trigger->mShouldExit = true;
 				tool.SetCurrentTrigger(nullptr);
 			}
-			//BASED_TRACE("Did not hit anything!");
 		}
 	}
 }

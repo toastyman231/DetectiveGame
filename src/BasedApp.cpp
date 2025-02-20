@@ -63,7 +63,7 @@ public:
 		cube->AddComponent<scene::RigidbodyComponent>(shape, JPH::EMotionType::Static, physics::Layers::STATIC);
 		auto cubeBody = cube->GetComponent<scene::RigidbodyComponent>();
 		cubeBody.RegisterBody(cube->GetEntityHandle());
-		cube->AddComponent<InteractableNote>();
+		cube->AddComponent<InteractableNote>("This is a note with custom text!");
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
@@ -76,14 +76,11 @@ public:
 		player->AddComponent<MouseLook>(200.f);
 		cam->SetParent(player, false);
 		cam->SetLocalPosition({ 0, 1.35f * 0.5f, 0 });
-		player->AddComponent<Tool>();
+		player->AddComponent<Tool>(6.f);
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
-
-		//Rml::Debugger::Initialise(context);
-
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
 		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context);
 	}
