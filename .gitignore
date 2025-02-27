@@ -8,5 +8,6 @@
 
 # Files to ignore
 *.vcxproj.user
+*.vcxproj.filters
 *.vcxproj
 *.sln

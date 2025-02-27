@@ -1,0 +1,14 @@
+<rml>
+    <head>
+        <title>Note</title>
+        <link type="text/rcss" href="DialogueBox.rcss"/>
+        <link type="text/rcss" href="rml.rcss"/>
+    </head>
+    <body>
+        <div class="body">
+            <div class="dialogue-box">
+                <label class="text">The text will go here!</label>
+            </div>
+        </div>
+    </body>
+</rml>

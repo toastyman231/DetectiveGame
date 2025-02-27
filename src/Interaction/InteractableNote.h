@@ -1,10 +1,18 @@
 #pragma once
 #include "IInteractable.h"
+#include "based/engine.h"
 
 struct InteractableNote
 {
 	InteractableNote() = default;
 	InteractableNote(const std::string& text) : mNoteText(text) {}
+
+	~InteractableNote()
+	{
+		auto uiManager = based::Engine::Instance().GetUiManager();
+
+		BASED_TRACE("Num docs on destroy: {}", uiManager.GetDocuments().size());
+	}
 
 	std::string mNoteText = "This is the default note text!";
 	Rml::ElementDocument* mDocument = nullptr;
