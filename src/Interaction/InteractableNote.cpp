@@ -28,14 +28,16 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 	auto uiManager = Engine::Instance().GetUiManager();
 	auto context = uiManager.GetContext("main");
 
-	if (Rml::DataModelConstructor constructor = context->CreateDataModel("Note"))
+	/*if (Rml::DataModelConstructor constructor = context->CreateDataModel("Note"))
 	{
 		constructor.Bind("NoteText", &mCurrentNote->mNoteText);
-	}
+	}*/
 
 	uiManager.SetPathPrefix("Assets/UI/");
 
-	mCurrentNote->mDocument = uiManager.LoadWindow("DefaultNote", context)->document;
+	mCurrentNote->mDocument = uiManager.LoadWindow("DialogueBox", context)->document;
+
+	BASED_TRACE("Num docs at creation: {}", uiManager.GetDocuments().size());
 }
 
 void InteractableNoteSystem::Update(float deltaTime)
@@ -50,6 +52,10 @@ void InteractableNoteSystem::Update(float deltaTime)
 	{
 		auto& note = registry.get<InteractableNote>(e);
 		auto& trigger = registry.get<InteractionTrigger>(e);
+
+		/*auto uiManager = Engine::Instance().GetUiManager();
+
+		BASED_TRACE("Num docs at start of loop: {}", uiManager.GetDocuments().size());*/
 
 		// System callbacks don't know what Note is currently being looked at
 		// so we store a pointer to it here
@@ -92,6 +98,8 @@ void InteractableNoteSystem::Update(float deltaTime)
 			trigger.mTool->SetCurrentTrigger(nullptr);
 			registry.remove<InteractionTrigger>(e);
 		}
+
+		//BASED_TRACE("Num docs at end of loop: {}", uiManager.GetDocuments().size());
 	}
 
 	// Clear the current note since we are no longer looking at any notes
