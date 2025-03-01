@@ -124,6 +124,19 @@ void DialogueSystem::ShowNextLine()
 	elem->SetInnerRML("");
 	std::string typedLine;
 
+	auto speakerBox = mDocument->document->GetElementById("speaker-box");
+	if (auto it = line.find(":"); it != std::string::npos)
+	{
+		auto speaker = line.substr(0, it);
+		line = line.substr(it + 1);
+		auto spkElem = mDocument->document->GetElementById("speaker");
+		spkElem->SetInnerRML(speaker);
+		speakerBox->SetClass("hide", false);
+	} else
+	{
+		speakerBox->SetClass("hide", true);
+	}
+
 	if (!mDocument->document->IsVisible())
 		mDocument->document->Show();
 
