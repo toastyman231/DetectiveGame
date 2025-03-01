@@ -15,7 +15,7 @@ struct InteractableNote
 	}
 
 	std::string mNoteText = "This is the default note text!";
-	Rml::ElementDocument* mDocument = nullptr;
+	based::managers::DocumentInfo* mDocument = nullptr;
 	bool mIsOpen = false;
 };
 
