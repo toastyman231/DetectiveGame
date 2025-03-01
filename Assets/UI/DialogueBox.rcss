@@ -24,3 +24,28 @@
     color: #ffffff;
     font-size: 3em;
 }
+
+.name-box {
+    background: #454343;
+    width: auto;
+    height: 1em;
+    border: 5px;
+    border-radius: 10px;
+    border-color: #1b1b1b;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    bottom: 13em;
+    left: 17%;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.name {
+    font-family: Arimo;
+    color: #ffffff;
+    font-size: 24px;
+    transform: translateY(-25%);
+}

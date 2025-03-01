@@ -9,6 +9,9 @@
             <div class="dialogue-box">
                 <label class="text" id="dialogue-body">The text will go here!</label>
             </div>
+            <div class="name-box" id="speaker-box">
+                <label class="name" id="speaker">Speaker</label>
+            </div>
         </div>
     </body>
 </rml>
