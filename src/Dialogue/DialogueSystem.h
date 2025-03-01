@@ -25,9 +25,17 @@ public:
 	void SetCurrentDialogue(const std::string& path);
 	void CloseCurrentDialogue();
 
+	void SetTextSpeed(float speed) { mTextSpeed = speed; }
+
 private:
 	void ShowNextLine();
+	void CopyText(const std::string& source, std::string& destination, Rml::Element* elem);
 
 	based::managers::DocumentInfo* mDocument = nullptr;
 	DialogueSet mCurrentDialogue;
+	std::string mCurrentLine;
+	size_t mProgress;
+	float mLastUpdate;
+	float mTextSpeed = 0.04f;
+	bool mIsTyping = false;
 };
