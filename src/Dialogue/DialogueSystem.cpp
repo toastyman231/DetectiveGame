@@ -35,16 +35,6 @@ std::string DialogueSet::PopNextLine()
 	return line;
 }
 
-/*DialogueSystem::DialogueSystem()
-{
-	auto& uiManager = based::Engine::Instance().GetUiManager();
-	auto context = uiManager.GetContext("main");
-
-	uiManager.SetPathPrefix("Assets/UI/");
-	mDocument = uiManager.LoadWindow("DialogueBox", context);
-	mDocument->document->Hide();
-}*/
-
 void DialogueSystem::Initialize()
 {
 	auto& uiManager = based::Engine::Instance().GetUiManager();
@@ -61,6 +51,8 @@ void DialogueSystem::Update(float deltaTime)
 
 	if (!mDocument) return;
 
+	// Typewriter animation, reveal another letter once enough
+	// time has passed since the last letter
 	if (mDocument->document->IsVisible() && mIsTyping)
 	{
 		if (core::Time::GetUnscaledTime() - mLastUpdate >= mTextSpeed)
@@ -79,6 +71,7 @@ void DialogueSystem::Update(float deltaTime)
 	}
 	else mIsTyping = false;
 
+	// Skip text to end, or show next line if already at end
 	if (input::Mouse::ButtonDown(BASED_INPUT_MOUSE_LEFT))
 	{
 		if (mIsTyping)
@@ -93,7 +86,7 @@ void DialogueSystem::Update(float deltaTime)
 
 void DialogueSystem::SetCurrentDialogue(const std::string& path)
 {
-	mCurrentDialogue = DialogueSet(path);
+	mCurrentDialogue = DialogueSet(path); // Loads a given dialogue file
 	ShowNextLine();
 
 	GameSystems::SetPlayerMouseLookEnabled(false);
@@ -117,13 +110,16 @@ void DialogueSystem::ShowNextLine()
 	if (line.empty())
 	{
 		CloseCurrentDialogue();
+		mOnDialogueFinished();
 		return;
 	}
 
+	// Clear text to prepare for next line
 	auto elem = mDocument->document->GetElementById("dialogue-body");
 	elem->SetInnerRML("");
-	std::string typedLine;
 
+	// If the line contains a : then the text preceding that is a speaker tag,
+	// so that gets shown, otherwise the speaker box is hidden
 	auto speakerBox = mDocument->document->GetElementById("speaker-box");
 	if (auto it = line.find(":"); it != std::string::npos)
 	{
@@ -140,32 +136,9 @@ void DialogueSystem::ShowNextLine()
 	if (!mDocument->document->IsVisible())
 		mDocument->document->Show();
 
+	// Reset typewriter variables
 	mCurrentLine = line;
 	mProgress = 0;
 	mLastUpdate = based::core::Time::GetUnscaledTime();
 	mIsTyping = true;
-
-	/*auto future = std::async(std::launch::async, [line, &typedLine, elem]
-	{
-			for (size_t i = 0; i < line.size(); ++i)
-			{
-				typedLine.push_back(line[i]);
-
-				std::this_thread::sleep_for(std::chrono::milliseconds(100));
-			}
-	});
-
-	while (future.wait_for(std::chrono::milliseconds(50)) != std::future_status::ready)
-	{
-		elem->SetInnerRML(typedLine);
-	}
-
-	future.get();*/
-
-	//mDocument->document->GetElementById("dialogue-body")->SetInnerRML(line);
-}
-
-void DialogueSystem::CopyText(const std::string& source, std::string& destination, Rml::Element* elem)
-{
-	
 }

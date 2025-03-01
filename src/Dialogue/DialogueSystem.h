@@ -13,6 +13,7 @@ private:
 	std::queue<std::string> mLines;
 };
 
+// TODO: Add a callback for when the dialogue finishes
 class DialogueSystem
 {
 public:
@@ -27,9 +28,9 @@ public:
 
 	void SetTextSpeed(float speed) { mTextSpeed = speed; }
 
+	entt::delegate<void()> mOnDialogueFinished;
 private:
 	void ShowNextLine();
-	void CopyText(const std::string& source, std::string& destination, Rml::Element* elem);
 
 	based::managers::DocumentInfo* mDocument = nullptr;
 	DialogueSet mCurrentDialogue;
