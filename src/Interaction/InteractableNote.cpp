@@ -25,7 +25,7 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 {
 	using namespace based;
 
-	auto uiManager = Engine::Instance().GetUiManager();
+	auto& uiManager = Engine::Instance().GetUiManager();
 	auto context = uiManager.GetContext("main");
 
 	/*if (Rml::DataModelConstructor constructor = context->CreateDataModel("Note"))
@@ -35,7 +35,7 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 
 	uiManager.SetPathPrefix("Assets/UI/");
 
-	mCurrentNote->mDocument = uiManager.LoadWindow("DialogueBox", context)->document;
+	mCurrentNote->mDocument = uiManager.LoadWindow("DialogueBox", context);
 
 	BASED_TRACE("Num docs at creation: {}", uiManager.GetDocuments().size());
 }
@@ -53,9 +53,9 @@ void InteractableNoteSystem::Update(float deltaTime)
 		auto& note = registry.get<InteractableNote>(e);
 		auto& trigger = registry.get<InteractionTrigger>(e);
 
-		/*auto uiManager = Engine::Instance().GetUiManager();
+		auto& uiManager = Engine::Instance().GetUiManager();
 
-		BASED_TRACE("Num docs at start of loop: {}", uiManager.GetDocuments().size());*/
+		//BASED_TRACE("Num docs at start of loop: {}", uiManager.GetDocuments().size());
 
 		// System callbacks don't know what Note is currently being looked at
 		// so we store a pointer to it here
@@ -81,7 +81,8 @@ void InteractableNoteSystem::Update(float deltaTime)
 			} else
 			{
 				note.mIsOpen = false;
-				note.mDocument->Close();
+				uiManager.CloseWindow(*note.mDocument);
+				note.mDocument = nullptr;
 
 				GameSystems::SetPlayerMouseLookEnabled(true);
 				GameSystems::SetPlayerMovementEnabled(true);

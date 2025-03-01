@@ -1,2 +1,3 @@
 @echo off
-%BASED_ENGINE_HOME%/basededitor/bin/Debug/BasedEditor/BasedEditor.exe %~dp0
+cd %BASED_ENGINE_HOME%/basededitor/bin/Debug/BasedEditor/
+.\BasedEditor.exe %~dp0
