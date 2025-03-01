@@ -9,6 +9,11 @@
 #include "based/input/keyboard.h"
 #include "based/scene/entity.h"
 
+void InteractableNoteSystem::Initialize()
+{
+	
+}
+
 // Listeners for interactable hover events
 void InteractableNoteSystem::OnInteractionHoverEnter(Tool* tool)
 {
@@ -28,14 +33,28 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 	auto& uiManager = Engine::Instance().GetUiManager();
 	auto context = uiManager.GetContext("main");
 
-	/*if (Rml::DataModelConstructor constructor = context->CreateDataModel("Note"))
-	{
-		constructor.Bind("NoteText", &mCurrentNote->mNoteText);
-	}*/
-
 	uiManager.SetPathPrefix("Assets/UI/");
 
-	mCurrentNote->mDocument = uiManager.LoadWindow("DialogueBox", context);
+	if (!mDocument)
+		mDocument = uiManager.LoadWindow("DefaultNote", context);
+	else
+		mDocument->document->Show();
+
+	mDocument->document->GetElementById("note-body")->SetInnerRML(mCurrentNote->mNoteText);
+
+	/*if (!context->GetDataModel("Note"))
+	{
+		if (Rml::DataModelConstructor constructor = context->CreateDataModel("Note"))
+		{
+			mDataModel = constructor.GetModelHandle();
+			constructor.Bind("NoteText", &mCurrentNote->mNoteText);
+			mDataModel.DirtyVariable("NoteText");
+		}
+	}
+	else
+	{
+		mDataModel.DirtyVariable("NoteText");
+	}*/
 
 	BASED_TRACE("Num docs at creation: {}", uiManager.GetDocuments().size());
 }
@@ -52,10 +71,6 @@ void InteractableNoteSystem::Update(float deltaTime)
 	{
 		auto& note = registry.get<InteractableNote>(e);
 		auto& trigger = registry.get<InteractionTrigger>(e);
-
-		auto& uiManager = Engine::Instance().GetUiManager();
-
-		//BASED_TRACE("Num docs at start of loop: {}", uiManager.GetDocuments().size());
 
 		// System callbacks don't know what Note is currently being looked at
 		// so we store a pointer to it here
@@ -81,8 +96,9 @@ void InteractableNoteSystem::Update(float deltaTime)
 			} else
 			{
 				note.mIsOpen = false;
-				uiManager.CloseWindow(*note.mDocument);
-				note.mDocument = nullptr;
+				//uiManager.CloseWindow(*note.mDocument);
+				mDocument->document->Hide();
+				//note.mDocument = nullptr;
 
 				GameSystems::SetPlayerMouseLookEnabled(true);
 				GameSystems::SetPlayerMovementEnabled(true);
@@ -96,11 +112,8 @@ void InteractableNoteSystem::Update(float deltaTime)
 
 			// Removing the trigger means this note will no longer be
 			// considered when evaluating notes
-			trigger.mTool->SetCurrentTrigger(nullptr);
 			registry.remove<InteractionTrigger>(e);
 		}
-
-		//BASED_TRACE("Num docs at end of loop: {}", uiManager.GetDocuments().size());
 	}
 
 	// Clear the current note since we are no longer looking at any notes

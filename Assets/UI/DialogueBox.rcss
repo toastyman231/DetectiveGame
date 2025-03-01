@@ -15,10 +15,12 @@
     border-radius: 10px;
     border-color: #1b1b1b;
     padding: 10px;
+    margin: 10px;
 }
 
 .text {
     font-family: Arimo;
     text-align: center;
     color: #ffffff;
+    font-size: 3em;
 }

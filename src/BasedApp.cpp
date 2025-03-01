@@ -42,6 +42,8 @@ public:
 
 		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
 
+		GameSystems::mNoteSystem.Initialize();
+
 		auto floor = scene::Entity::CreateEntity("Floor");
 		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
 		floor->AddComponent<scene::MeshRenderer>(graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
@@ -52,6 +54,7 @@ public:
 			physics::Layers::STATIC);
 		auto floorBody = floor->GetComponent<scene::RigidbodyComponent>();
 		floorBody.RegisterBody(floor->GetEntityHandle());
+		floor->AddComponent<InteractableNote>("This is the floor!");
 
 		GetCurrentScene()->GetEntityStorage().Load("Floor", floor);
 

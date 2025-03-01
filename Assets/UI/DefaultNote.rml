@@ -7,7 +7,7 @@
     <body data-model="Note">
         <div class="body">
             <div class="note-parent">
-                <label>{{NoteText}}</label>
+                <label id="note-body">{{NoteText}}</label>
             </div>
         </div>
     </body>
