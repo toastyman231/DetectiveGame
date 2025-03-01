@@ -1,9 +1,12 @@
 #include "based/pch.h"
 #include "DialogueSystem.h"
 
+#include <future>
+
 #include "../GameSystems.h"
 #include "based/app.h"
 #include "based/engine.h"
+#include "based/core/basedtime.h"
 #include "based/input/mouse.h"
 #include "based/scene/components.h"
 
@@ -58,9 +61,33 @@ void DialogueSystem::Update(float deltaTime)
 
 	if (!mDocument) return;
 
+	if (mDocument->document->IsVisible() && mIsTyping)
+	{
+		if (core::Time::GetUnscaledTime() - mLastUpdate >= mTextSpeed)
+		{
+			if (mProgress < mCurrentLine.size())
+			{
+				auto elem = mDocument->document->GetElementById("dialogue-body");
+				mLastUpdate = core::Time::GetUnscaledTime();
+
+				auto current = elem->GetInnerRML();
+				elem->SetInnerRML(current + mCurrentLine[mProgress]);
+				++mProgress;
+			}
+			else mIsTyping = false;
+		}
+	}
+	else mIsTyping = false;
+
 	if (input::Mouse::ButtonDown(BASED_INPUT_MOUSE_LEFT))
 	{
-		ShowNextLine();
+		if (mIsTyping)
+		{
+			mIsTyping = false;
+			auto elem = mDocument->document->GetElementById("dialogue-body");
+			elem->SetInnerRML(mCurrentLine);
+		}
+		else ShowNextLine();
 	}
 }
 
@@ -71,6 +98,7 @@ void DialogueSystem::SetCurrentDialogue(const std::string& path)
 
 	GameSystems::SetPlayerMouseLookEnabled(false);
 	GameSystems::SetPlayerMovementEnabled(false);
+	based::input::Mouse::SetCursorVisible(true);
 }
 
 void DialogueSystem::CloseCurrentDialogue()
@@ -79,6 +107,7 @@ void DialogueSystem::CloseCurrentDialogue()
 
 	GameSystems::SetPlayerMouseLookEnabled(true);
 	GameSystems::SetPlayerMovementEnabled(true);
+	based::input::Mouse::SetCursorVisible(false);
 }
 
 void DialogueSystem::ShowNextLine()
@@ -91,8 +120,39 @@ void DialogueSystem::ShowNextLine()
 		return;
 	}
 
-	mDocument->document->GetElementById("dialogue-body")->SetInnerRML(line);
+	auto elem = mDocument->document->GetElementById("dialogue-body");
+	elem->SetInnerRML("");
+	std::string typedLine;
 
 	if (!mDocument->document->IsVisible())
 		mDocument->document->Show();
+
+	mCurrentLine = line;
+	mProgress = 0;
+	mLastUpdate = based::core::Time::GetUnscaledTime();
+	mIsTyping = true;
+
+	/*auto future = std::async(std::launch::async, [line, &typedLine, elem]
+	{
+			for (size_t i = 0; i < line.size(); ++i)
+			{
+				typedLine.push_back(line[i]);
+
+				std::this_thread::sleep_for(std::chrono::milliseconds(100));
+			}
+	});
+
+	while (future.wait_for(std::chrono::milliseconds(50)) != std::future_status::ready)
+	{
+		elem->SetInnerRML(typedLine);
+	}
+
+	future.get();*/
+
+	//mDocument->document->GetElementById("dialogue-body")->SetInnerRML(line);
+}
+
+void DialogueSystem::CopyText(const std::string& source, std::string& destination, Rml::Element* elem)
+{
+	
 }
