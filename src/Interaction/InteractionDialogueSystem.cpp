@@ -10,14 +10,17 @@
 
 void InteractionDialogueSystem::OnInteractionHoverEnter(Tool* tool)
 {
+	BASED_TRACE("Hovered dialogue");
 }
 
 void InteractionDialogueSystem::OnInteractionHoverExit(Tool* tool)
 {
+	BASED_TRACE("Unhovered dialogue");
 }
 
 void InteractionDialogueSystem::OnInteract(Tool* tool)
 {
+	// Unused
 }
 
 void InteractionDialogueSystem::Update(float deltaTime)
@@ -38,10 +41,14 @@ void InteractionDialogueSystem::Update(float deltaTime)
 			OnInteractionHoverEnter(trigger.mTool);
 		}
 
-		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_E))
+		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_E) && dialogue.mCanInteract)
 		{
 			GameSystems::mDialogueSystem.SetCurrentDialogue(dialogue.mPath);
-			trigger.mShouldExit = true;
+			dialogue.mCanInteract = false;
+			mCurrentDialogueEntity = e;
+			GameSystems::mDialogueSystem
+				.mOnDialogueFinished
+				.connect<&InteractionDialogueSystem::OnDialogueFinished>(this);
 		}
 
 		// Again, only called once when the item stops being hovered
@@ -49,9 +56,24 @@ void InteractionDialogueSystem::Update(float deltaTime)
 		{
 			OnInteractionHoverExit(trigger.mTool);
 
-			// Removing the trigger means this note will no longer be
-			// considered when evaluating notes
+			// Removing the trigger means this interactable will no longer be
+			// considered when evaluating interactables
 			registry.remove<InteractionTrigger>(e);
 		}
 	}
+}
+
+void InteractionDialogueSystem::OnDialogueFinished()
+{
+	auto& registry = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry();
+	auto& trigger = registry.get<InteractionTrigger>(mCurrentDialogueEntity);
+	auto& dialogue = registry.get<InteractionDialogueTrigger>(mCurrentDialogueEntity);
+
+	OnInteractionHoverExit(trigger.mTool);
+
+	// Reset interaction when dialogue finishes
+	registry.remove<InteractionTrigger>(mCurrentDialogueEntity);
+	dialogue.mCanInteract = true;
+
+	mCurrentDialogueEntity = entt::null;
 }

@@ -30,14 +30,13 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 
 	uiManager.SetPathPrefix("Assets/UI/");
 
+	// Create UI document if it does not exist, otherwise just show it
 	if (!mDocument)
 		mDocument = uiManager.LoadWindow("DefaultNote", context);
 	else
 		mDocument->document->Show();
 
 	mDocument->document->GetElementById("note-body")->SetInnerRML(mCurrentNote->mNoteText);
-
-	BASED_TRACE("Num docs at creation: {}", uiManager.GetDocuments().size());
 }
 
 void InteractableNoteSystem::Update(float deltaTime)
@@ -77,9 +76,7 @@ void InteractableNoteSystem::Update(float deltaTime)
 			} else
 			{
 				note.mIsOpen = false;
-				//uiManager.CloseWindow(*note.mDocument);
 				mDocument->document->Hide();
-				//note.mDocument = nullptr;
 
 				GameSystems::SetPlayerMouseLookEnabled(true);
 				GameSystems::SetPlayerMovementEnabled(true);
