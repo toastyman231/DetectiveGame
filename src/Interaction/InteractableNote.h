@@ -23,7 +23,6 @@ class InteractableNoteSystem : public IInteractable
 public:
 	~InteractableNoteSystem() override {}
 
-	void Initialize();
 	void OnInteractionHoverEnter(Tool* tool) override;
 	void OnInteractionHoverExit(Tool* tool) override;
 	void OnInteract(Tool* tool) override;

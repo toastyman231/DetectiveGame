@@ -1,13 +1,13 @@
 <rml>
     <head>
-        <title>Note</title>
+        <title>Dialogue</title>
         <link type="text/rcss" href="DialogueBox.rcss"/>
         <link type="text/rcss" href="rml.rcss"/>
     </head>
     <body>
         <div class="body">
             <div class="dialogue-box">
-                <label class="text">The text will go here!</label>
+                <label class="text" id="dialogue-body">The text will go here!</label>
             </div>
         </div>
     </body>

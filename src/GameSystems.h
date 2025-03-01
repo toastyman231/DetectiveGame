@@ -3,18 +3,23 @@
 #include "based/engine.h"
 #include "based/app.h"
 #include "based/scene/entity.h"
+#include "Dialogue/DialogueSystem.h"
 
 #include "Interaction/InteractableNote.h"
+#include "Interaction/InteractionDialogueSystem.h"
 #include "Interaction/Tool.h"
 #include "Player/MouseLook.h"
 #include "Player/PlayerControllerSystem.h"
 
-namespace GameSystems
+class GameSystems
 {
-	static MouseLookSystem mMouseLookSystem;
-	static PlayerControllerSystem mPlayerController;
-	static ToolSystem mToolSystem;
-	static InteractableNoteSystem mNoteSystem;
+public:
+	inline static MouseLookSystem mMouseLookSystem;
+	inline static PlayerControllerSystem mPlayerController;
+	inline static ToolSystem mToolSystem;
+	inline static InteractableNoteSystem mNoteSystem;
+	inline static DialogueSystem mDialogueSystem;
+	inline static InteractionDialogueSystem mDialogueTrigger;
 
 	static void SetPlayerMouseLookEnabled(bool enabled)
 	{
@@ -53,4 +58,4 @@ namespace GameSystems
 			}
 		}
 	}
-}
+};
