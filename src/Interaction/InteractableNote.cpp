@@ -9,11 +9,6 @@
 #include "based/input/keyboard.h"
 #include "based/scene/entity.h"
 
-void InteractableNoteSystem::Initialize()
-{
-	
-}
-
 // Listeners for interactable hover events
 void InteractableNoteSystem::OnInteractionHoverEnter(Tool* tool)
 {
@@ -41,20 +36,6 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 		mDocument->document->Show();
 
 	mDocument->document->GetElementById("note-body")->SetInnerRML(mCurrentNote->mNoteText);
-
-	/*if (!context->GetDataModel("Note"))
-	{
-		if (Rml::DataModelConstructor constructor = context->CreateDataModel("Note"))
-		{
-			mDataModel = constructor.GetModelHandle();
-			constructor.Bind("NoteText", &mCurrentNote->mNoteText);
-			mDataModel.DirtyVariable("NoteText");
-		}
-	}
-	else
-	{
-		mDataModel.DirtyVariable("NoteText");
-	}*/
 
 	BASED_TRACE("Num docs at creation: {}", uiManager.GetDocuments().size());
 }

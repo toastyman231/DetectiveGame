@@ -1,6 +1,6 @@
 <rml>
     <head>
-        <title>Note</title>
+        <title>HUD</title>
         <link type="text/rcss" href="PlayerHUD.rcss"/>
         <link type="text/rcss" href="rml.rcss"/>
     </head>

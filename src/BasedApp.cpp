@@ -42,7 +42,7 @@ public:
 
 		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
 
-		GameSystems::mNoteSystem.Initialize();
+		//GameSystems::mDialogueSystem.Initialize();
 
 		auto floor = scene::Entity::CreateEntity("Floor");
 		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
@@ -66,7 +66,8 @@ public:
 		cube->AddComponent<scene::RigidbodyComponent>(shape, JPH::EMotionType::Static, physics::Layers::STATIC);
 		auto cubeBody = cube->GetComponent<scene::RigidbodyComponent>();
 		cubeBody.RegisterBody(cube->GetEntityHandle());
-		cube->AddComponent<InteractableNote>("This is a note with custom text!");
+		//cube->AddComponent<InteractableNote>("This is a note with custom text!");
+		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
@@ -86,6 +87,8 @@ public:
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
 		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context);
+
+		GameSystems::mDialogueSystem.Initialize();
 	}
 
 	void Shutdown() override
@@ -104,6 +107,10 @@ public:
 		GameSystems::mToolSystem.Update(deltaTime);
 
 		GameSystems::mNoteSystem.Update(deltaTime);
+
+		GameSystems::mDialogueTrigger.Update(deltaTime);
+
+		GameSystems::mDialogueSystem.Update(deltaTime);
 	}
 
 	void Render() override
