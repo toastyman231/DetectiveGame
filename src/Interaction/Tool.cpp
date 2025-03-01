@@ -56,12 +56,22 @@ void ToolSystem::Update(float deltaTime)
 			// that their entity is being looked at/interacted with.
 			if (registry.all_of<InteractionTrigger>(hitEnt))
 			{
+				tool.SetCurrentTrigger(&registry.get<InteractionTrigger>(hitEnt));
 				continue;
+			}
+
+			// This only runs if the hit entity does NOT have a trigger,
+			// so if the tool has one set, we must have looked at another
+			// interactable.
+			if (auto trigger = tool.GetCurrentTrigger(); trigger != nullptr)
+			{
+				trigger->mShouldExit = true;
 			}
 
 			// Set up the trigger for the newly hovered object
 			auto& newTrigger = registry.emplace<InteractionTrigger>(hitEnt);
 			newTrigger.mTool = &tool;
+			newTrigger.mId = (uint32_t) hitEnt;
 			tool.SetCurrentTrigger(&newTrigger);
 
 		} else

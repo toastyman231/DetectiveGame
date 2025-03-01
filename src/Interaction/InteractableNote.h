@@ -15,7 +15,6 @@ struct InteractableNote
 	}
 
 	std::string mNoteText = "This is the default note text!";
-	based::managers::DocumentInfo* mDocument = nullptr;
 	bool mIsOpen = false;
 };
 
@@ -24,6 +23,7 @@ class InteractableNoteSystem : public IInteractable
 public:
 	~InteractableNoteSystem() override {}
 
+	void Initialize();
 	void OnInteractionHoverEnter(Tool* tool) override;
 	void OnInteractionHoverExit(Tool* tool) override;
 	void OnInteract(Tool* tool) override;
@@ -32,4 +32,6 @@ public:
 
 private:
 	InteractableNote* mCurrentNote = nullptr;
+	based::managers::DocumentInfo* mDocument = nullptr;
+	Rml::DataModelHandle mDataModel;
 };
