@@ -1,0 +1,26 @@
+Material: Decal
+ID: 8776326652448249882
+VertexSource: Assets/Shaders/decal.vert
+VertexIsEngineAsset: false
+FragmentSource: Assets/Shaders/decal.frag
+FragmentIsEngineAsset: false
+UniformInts:
+  castShadows: 0
+UniformFloats:
+  {}
+UniformFloat2s:
+  {}
+UniformFloat3s:
+  {}
+UniformFloat4s:
+  {}
+UniformMat3s:
+  {}
+UniformMat4s:
+  {}
+Textures:
+  Albedo:
+    Location: material.diffuseMat.tex
+    ID: 6851313460382520058
+    Path: Assets/Textures/bullet_hole.png
+    IsEngineAsset: false
