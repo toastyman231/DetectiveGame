@@ -42,7 +42,7 @@ public:
 
 		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
 
-		//GameSystems::mDialogueSystem.Initialize();
+		GetCurrentScene()->GetEntityStorage().Get("Skybox")->GetComponent<scene::MeshRenderer>().excludedPasses.emplace_back("DecalPass");
 
 		auto floor = scene::Entity::CreateEntity("Floor");
 		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
@@ -55,11 +55,12 @@ public:
 		auto floorBody = floor->GetComponent<scene::RigidbodyComponent>();
 		floorBody.RegisterBody(floor->GetEntityHandle());
 		floor->AddComponent<InteractableNote>("This is the floor!");
+		floor->GetComponent<scene::MeshRenderer>().excludedPasses.emplace_back("DecalPass");
 
 		GetCurrentScene()->GetEntityStorage().Load("Floor", floor);
 
 		auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
-		cube->SetPosition({ 5, 0.8f, 5 });
+		cube->SetPosition({ 5, 0.f, 5 });
 		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 },
 			cube->GetTransform().Position, glm::vec3{ 0, 0, 0 });
 		auto shape = cube->GetComponent<scene::BoxShapeComponent>();
@@ -68,6 +69,10 @@ public:
 		cubeBody.RegisterBody(cube->GetEntityHandle());
 		//cube->AddComponent<InteractableNote>("This is a note with custom text!");
 		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");
+		auto decalMat = graphics::Material::LoadMaterialFromFile("Assets/Materials/Decal.bmat",
+			GetCurrentScene()->GetMaterialStorage());
+		cube->GetComponent<scene::MeshRenderer>().material = decalMat;
+		cube->GetComponent<scene::MeshRenderer>().excludedPasses.emplace_back("MainColorPass");
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
@@ -89,6 +94,13 @@ public:
 		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context);
 
 		GameSystems::mDialogueSystem.Initialize();
+
+		auto framebuffer = std::make_shared<graphics::Framebuffer>();
+
+		auto decalPass = new graphics::CustomRenderPass("DecalPass", framebuffer);
+		decalPass->mShouldClear = false;
+		decalPass->AddOutputName("SceneColor");
+		Engine::Instance().GetRenderManager().InjectPass(decalPass, (int)graphics::PassInjectionPoint::BeforeUserInterface);
 	}
 
 	void Shutdown() override

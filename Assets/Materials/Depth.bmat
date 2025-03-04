@@ -1,0 +1,22 @@
+Material: Decal
+ID: 7796326652448249882
+VertexSource: Assets/Shaders/depth.vert
+VertexIsEngineAsset: false
+FragmentSource: Assets/Shaders/depth.frag
+FragmentIsEngineAsset: false
+UniformInts:
+  {}
+UniformFloats:
+  {}
+UniformFloat2s:
+  {}
+UniformFloat3s:
+  {}
+UniformFloat4s:
+  {}
+UniformMat3s:
+  {}
+UniformMat4s:
+  {}
+Textures:
+  {}
