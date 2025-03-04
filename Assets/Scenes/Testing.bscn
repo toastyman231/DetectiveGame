@@ -1,18 +1,42 @@
-Scene: Default 3D Scene
+Scene: Testing
 Entities:
-  - Entity: 17318832736367330816
-    Name: Directional Light
+  - Entity: 10225888076360808852
+    Name: Main Camera
     Transform:
-      Position: [0, 0, 0]
-      Rotation: [60, -60, 0]
+      Position: [0, 0, 10]
+      Rotation: [0, 0, 0]
       Scale: [1, 1, 1]
       LocalPosition: [0, 0, 0]
       LocalRotation: [0, 0, 0]
       LocalScale: [1, 1, 1]
-    DirectionalLight:
-      Color: [1, 1, 1]
-      Direction: [60, 60, 0]
-      Intensity: 2
+    CameraComponent:
+      Camera:
+        ProjectionType: 1
+        PerspectiveFOV: 60
+        PerspectiveNear: 0.00999999978
+        PerspectiveFar: 1000
+        OrthographicSize: 1080
+        AspectRatio: 1.77777779
+      Main: true
+    Enabled: true
+  - Entity: 10729926632577167004
+    Name: Cube
+    Transform:
+      Position: [0, 0, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+      LocalPosition: [0, 0, 0]
+      LocalRotation: [0, 0, 0]
+      LocalScale: [1, 1, 1]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 3560342728017973358
+        Path: Materials/Lit.bmat
+        IsEngineAsset: true
     Enabled: true
   - Entity: 7779597734032396087
     Name: Skybox
@@ -33,29 +57,24 @@ Entities:
         Path: Materials/Skybox.bmat
         IsEngineAsset: true
     Enabled: true
-  - Entity: 10729926632577167004
-    Name: Cube
+  - Entity: 17318832736367330816
+    Name: Directional Light
     Transform:
       Position: [0, 0, 0]
-      Rotation: [0, 0, 0]
+      Rotation: [60, -60, 0]
       Scale: [1, 1, 1]
       LocalPosition: [0, 0, 0]
       LocalRotation: [0, 0, 0]
       LocalScale: [1, 1, 1]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 3560332728017973357
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
+    DirectionalLight:
+      Color: [1, 1, 1]
+      Direction: [60, -60, 0]
+      Intensity: 2
     Enabled: true
-  - Entity: 10225888076360808852
-    Name: Main Camera
+  - Entity: 604828253484379008
+    Name: EditorPlayer
     Transform:
-      Position: [0, 0, 10]
+      Position: [0, 0, 0]
       Rotation: [0, 0, 0]
       Scale: [1, 1, 1]
       LocalPosition: [0, 0, 0]
@@ -67,7 +86,7 @@ Entities:
         PerspectiveFOV: 60
         PerspectiveNear: 0.00999999978
         PerspectiveFar: 1000
-        OrthographicSize: 2
+        OrthographicSize: 1080
         AspectRatio: 1.77777779
-      Main: true
+      Main: false
     Enabled: true
