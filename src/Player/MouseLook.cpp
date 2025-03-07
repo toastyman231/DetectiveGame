@@ -27,6 +27,7 @@ void MouseLookSystem::Update(float deltaTime)
 		mouseLookComp.mYaw = math::Clamp(mouseLookComp.mYaw, -89.f, 89.f);
 
 		auto camera = scene->GetEntityStorage().Get("Main Camera");
-		camera->SetLocalRotation({ mouseLookComp.mYaw, mouseLookComp.mPitch, camera->GetTransform().LocalRotation.z });
+		
+		camera->SetLocalRotation({ mouseLookComp.mYaw, mouseLookComp.mPitch, camera->GetTransform().LocalRotation().z});
 	}
 }

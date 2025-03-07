@@ -48,7 +48,7 @@ public:
 		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
 		floor->AddComponent<scene::MeshRenderer>(graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
 			GetCurrentScene()->GetMeshStorage()));
-		floor->AddComponent<scene::BoxShapeComponent>(floor->GetTransform().Scale);
+		floor->AddComponent<scene::BoxShapeComponent>(floor->GetTransform().Scale());
 		auto floorShape = floor->GetComponent<scene::BoxShapeComponent>();
 		floor->AddComponent<scene::RigidbodyComponent>(floorShape, JPH::EMotionType::Static,
 			physics::Layers::STATIC);
@@ -62,7 +62,7 @@ public:
 		auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
 		cube->SetPosition({ 5, 0.f, 5 });
 		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 },
-			cube->GetTransform().Position, glm::vec3{ 0, 0, 0 });
+			cube->GetTransform().Position(), glm::vec3{0, 0, 0});
 		auto shape = cube->GetComponent<scene::BoxShapeComponent>();
 		cube->AddComponent<scene::RigidbodyComponent>(shape, JPH::EMotionType::Static, physics::Layers::STATIC);
 		auto cubeBody = cube->GetComponent<scene::RigidbodyComponent>();

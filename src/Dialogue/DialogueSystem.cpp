@@ -96,7 +96,8 @@ void DialogueSystem::SetCurrentDialogue(const std::string& path)
 
 void DialogueSystem::CloseCurrentDialogue()
 {
-	mDocument->document->Hide();
+	if (mDocument)
+		mDocument->document->Hide();
 
 	GameSystems::SetPlayerMouseLookEnabled(true);
 	GameSystems::SetPlayerMovementEnabled(true);
@@ -110,7 +111,8 @@ void DialogueSystem::ShowNextLine()
 	if (line.empty())
 	{
 		CloseCurrentDialogue();
-		mOnDialogueFinished();
+		if (mOnDialogueFinished.data())
+			mOnDialogueFinished();
 		return;
 	}
 

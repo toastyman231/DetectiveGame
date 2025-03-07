@@ -28,7 +28,7 @@ void ToolSystem::Update(float deltaTime)
 
 		// Set up a ray to cast from the camera position out where the player is looking
 		JPH::RRayCast ray{
-			convert(camera->GetTransform().Position),
+			convert(camera->GetTransform().Position()),
 			convert(glm::normalize(camera->GetForward())) * tool.GetInteractionRange()
 		};
 
