@@ -28,7 +28,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 
 		// Align physics simulation with entity position (in case it was moved manually somewhere else)
 		character.Character->SetPosition(
-			convert(scene->GetEntityStorage().Get("Player")->GetTransform().Position));
+			convert(scene->GetEntityStorage().Get("Player")->GetTransform().Position()));
 
 		// Allow horizontal movement control if the character is supported by solid ground
 		// or if explicitly allowed by the user
