@@ -49,11 +49,11 @@ void DialogueSystem::Update(float deltaTime)
 {
 	using namespace based;
 
-	if (!mDocument) return;
+	if (!mDocument || !mInDialogue) return;
 
 	// Typewriter animation, reveal another letter once enough
 	// time has passed since the last letter
-	if (mDocument->document->IsVisible() && mIsTyping)
+	if (mDocument->document && mDocument->document->IsVisible() && mIsTyping)
 	{
 		if (core::Time::GetUnscaledTime() - mLastUpdate >= mTextSpeed)
 		{
@@ -86,6 +86,7 @@ void DialogueSystem::Update(float deltaTime)
 
 void DialogueSystem::SetCurrentDialogue(const std::string& path)
 {
+	mInDialogue = true;
 	mCurrentDialogue = DialogueSet(path); // Loads a given dialogue file
 	ShowNextLine();
 
@@ -96,6 +97,7 @@ void DialogueSystem::SetCurrentDialogue(const std::string& path)
 
 void DialogueSystem::CloseCurrentDialogue()
 {
+	mInDialogue = false;
 	if (mDocument)
 		mDocument->document->Hide();
 
@@ -106,6 +108,8 @@ void DialogueSystem::CloseCurrentDialogue()
 
 void DialogueSystem::ShowNextLine()
 {
+	if (!mInDialogue) return;
+
 	auto line = mCurrentDialogue.PopNextLine();
 
 	if (line.empty())
