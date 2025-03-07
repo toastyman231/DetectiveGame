@@ -29,6 +29,8 @@ public:
 	void SetTextSpeed(float speed) { mTextSpeed = speed; }
 
 	entt::delegate<void()> mOnDialogueFinished;
+
+	bool mInDialogue = false;
 private:
 	void ShowNextLine();
 

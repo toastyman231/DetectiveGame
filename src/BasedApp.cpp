@@ -40,11 +40,10 @@ public:
 			input::CursorMode::Confined : input::CursorMode::Free);
 		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
 
-		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
+		scene::Scene::LoadScene("Assets/Scenes/ApartmentLevel.bscn");
+		//scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
 
-		GetCurrentScene()->GetEntityStorage().Get("Skybox")->GetComponent<scene::MeshRenderer>().excludedPasses.emplace_back("DecalPass");
-
-		auto floor = scene::Entity::CreateEntity("Floor");
+		auto floor = scene::Entity::CreateEntity("F");
 		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
 		floor->AddComponent<scene::MeshRenderer>(graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
 			GetCurrentScene()->GetMeshStorage()));
@@ -55,11 +54,10 @@ public:
 		auto floorBody = floor->GetComponent<scene::RigidbodyComponent>();
 		floorBody.RegisterBody(floor->GetEntityHandle());
 		floor->AddComponent<InteractableNote>("This is the floor!");
-		floor->GetComponent<scene::MeshRenderer>().excludedPasses.emplace_back("DecalPass");
 
-		GetCurrentScene()->GetEntityStorage().Load("Floor", floor);
+		GetCurrentScene()->GetEntityStorage().Load("F", floor);
 
-		auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
+		/*auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
 		cube->SetPosition({ 5, 0.f, 5 });
 		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 },
 			cube->GetTransform().Position(), glm::vec3{0, 0, 0});
@@ -71,21 +69,23 @@ public:
 		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");
 		auto decalMat = graphics::Material::LoadMaterialFromFile("Assets/Materials/Decal.bmat",
 			GetCurrentScene()->GetMaterialStorage());
-		cube->GetComponent<scene::MeshRenderer>().material = decalMat;
-		cube->GetComponent<scene::MeshRenderer>().excludedPasses.emplace_back("MainColorPass");
+		cube->GetComponent<scene::MeshRenderer>().material = decalMat;*/
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
 		auto player = scene::Entity::CreateEntity("Player");
-		player->AddComponent<scene::CapsuleShapeComponent>(1.35f * 0.5f, 0.3f);
+		player->AddComponent<scene::CapsuleShapeComponent>(1.8f, 0.3f);
 		auto capsule = player->GetComponent<scene::CapsuleShapeComponent>();
 		player->AddComponent<scene::CharacterController>(
 			scene::Transform(glm::vec3(0)),
 			capsule.shape);
 		player->AddComponent<MouseLook>(200.f);
 		cam->SetParent(player, false);
-		cam->SetLocalPosition({ 0, 1.35f * 0.5f, 0 });
+		cam->SetLocalPosition({ 0, 1.8f, 0 });
 		player->AddComponent<Tool>(6.f);
+
+		auto spawn = GetCurrentScene()->GetEntityStorage().Get("PlayerSpawn");
+		player->SetPosition(spawn->GetTransform().Position());
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 
@@ -95,12 +95,12 @@ public:
 
 		GameSystems::mDialogueSystem.Initialize();
 
-		auto framebuffer = std::make_shared<graphics::Framebuffer>();
+		/*auto framebuffer = std::make_shared<graphics::Framebuffer>();
 
 		auto decalPass = new graphics::CustomRenderPass("DecalPass", framebuffer);
 		decalPass->mShouldClear = false;
 		decalPass->AddOutputName("SceneColor");
-		Engine::Instance().GetRenderManager().InjectPass(decalPass, (int)graphics::PassInjectionPoint::BeforeUserInterface);
+		Engine::Instance().GetRenderManager().InjectPass(decalPass, (int)graphics::PassInjectionPoint::BeforeUserInterface);*/
 	}
 
 	void Shutdown() override
