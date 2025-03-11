@@ -24,11 +24,14 @@ void PlayerControllerSystem::Update(float deltaTime)
 		auto& physSystem = Engine::Instance().GetPhysicsManager().GetPhysicsSystem();
 		auto entity = view.get<scene::EntityReference>(e).entity.lock();
 
-		if (!entity || !character.ControlEnabled) continue; // Don't update if the backing entity is invalid (should never happen)
+		if (!entity || !character.ControlEnabled)
+		{
+			continue; // Don't update if the backing entity is invalid (should never happen)
+		}
 
 		// Align physics simulation with entity position (in case it was moved manually somewhere else)
 		character.Character->SetPosition(
-			convert(scene->GetEntityStorage().Get("Player")->GetTransform().Position()));
+			convert(entity->GetTransform().Position()));
 
 		// Allow horizontal movement control if the character is supported by solid ground
 		// or if explicitly allowed by the user
