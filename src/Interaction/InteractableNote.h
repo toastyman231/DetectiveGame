@@ -18,7 +18,7 @@ struct InteractableNote
 	bool mIsOpen = false;
 };
 
-class InteractableNoteSystem : public IInteractable
+class InteractableNoteSystem : public IInteractable, Rml::EventListener
 {
 public:
 	~InteractableNoteSystem() override {}
@@ -28,6 +28,7 @@ public:
 	void OnInteract(Tool* tool) override;
 
 	void Update(float deltaTime);
+	void ProcessEvent(Rml::Event& event) override;
 
 private:
 	InteractableNote* mCurrentNote = nullptr;

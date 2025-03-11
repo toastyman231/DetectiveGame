@@ -7,6 +7,7 @@
 #include "based/app.h"
 #include "based/engine.h"
 #include "based/input/keyboard.h"
+#include "based/input/mouse.h"
 #include "based/scene/entity.h"
 
 // Listeners for interactable hover events
@@ -34,7 +35,10 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 
 	// Create UI document if it does not exist, otherwise just show it
 	if (!mDocument)
+	{
 		mDocument = uiManager.LoadWindow("DefaultNote", context);
+		mDocument->document->GetElementById("back")->AddEventListener("click", this);
+	}
 	else
 		mDocument->document->Show();
 
@@ -56,6 +60,10 @@ void InteractableNoteSystem::Update(float deltaTime)
 
 		// System callbacks don't know what Note is currently being looked at
 		// so we store a pointer to it here
+		// But once the loop is done, we want the current note to be the one that's
+		// open (if there is one), so we store a pointer to whatever note was
+		// previously the current note so we can set it back when we're done
+		auto lastNote = mCurrentNote;
 		mCurrentNote = &note;
 
 		// Should only trigger this once, the first time the object is hovered
@@ -75,7 +83,14 @@ void InteractableNoteSystem::Update(float deltaTime)
 
 				GameSystems::SetPlayerMouseLookEnabled(false);
 				GameSystems::SetPlayerMovementEnabled(false);
-			} else
+				based::input::Mouse::SetCursorVisible(true);
+			}
+		}
+
+		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_ESCAPE)
+			|| input::Keyboard::KeyDown(BASED_INPUT_KEY_TAB))
+		{
+			if (note.mIsOpen)
 			{
 				GameSystems::mToolSystem.CallOnInteract(true);
 				note.mIsOpen = false;
@@ -83,6 +98,7 @@ void InteractableNoteSystem::Update(float deltaTime)
 
 				GameSystems::SetPlayerMouseLookEnabled(true);
 				GameSystems::SetPlayerMovementEnabled(true);
+				based::input::Mouse::SetCursorVisible(false);
 			}
 		}
 
@@ -95,8 +111,24 @@ void InteractableNoteSystem::Update(float deltaTime)
 			// considered when evaluating notes
 			registry.remove<InteractionTrigger>(e);
 		}
-	}
 
-	// Clear the current note since we are no longer looking at any notes
-	mCurrentNote = nullptr;
+		if (note.mIsOpen) mCurrentNote = &note;
+		else mCurrentNote = lastNote;
+	}
+}
+
+void InteractableNoteSystem::ProcessEvent(Rml::Event& event)
+{
+	if (event.GetType() == "click")
+	{
+		if (mCurrentNote->mIsOpen)
+		{
+			ToolSystem::CallOnInteract(true);
+			mCurrentNote->mIsOpen = false;
+			mDocument->document->Hide();
+
+			GameSystems::SetPlayerMouseLookEnabled(true);
+			GameSystems::SetPlayerMovementEnabled(true);
+		}
+	} 
 }
