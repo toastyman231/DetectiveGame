@@ -7,7 +7,15 @@
     <body data-model="Note">
         <div class="body">
             <div class="note-parent">
-                <label id="note-body">{{NoteText}}</label>
+                <label class="note-body" id="note-body">{{NoteText}}</label>
+                <div id="back">
+                    <div class="interact-position">
+                        <div class="interact-parent" id="interact-parent">
+                            <img class="interact-image" src="../Textures/Esc_Key_Dark.png"/>
+                            <label class="text">Back</label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
