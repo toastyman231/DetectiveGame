@@ -23,6 +23,8 @@ void InteractableNoteSystem::OnInteractionHoverExit(Tool* tool)
 // Called when E is pressed in range of a note
 void InteractableNoteSystem::OnInteract(Tool* tool)
 {
+	IInteractable::OnInteract(tool);
+
 	using namespace based;
 
 	auto& uiManager = Engine::Instance().GetUiManager();
@@ -75,6 +77,7 @@ void InteractableNoteSystem::Update(float deltaTime)
 				GameSystems::SetPlayerMovementEnabled(false);
 			} else
 			{
+				GameSystems::mToolSystem.CallOnInteract(true);
 				note.mIsOpen = false;
 				mDocument->document->Hide();
 

@@ -20,7 +20,7 @@ void InteractionDialogueSystem::OnInteractionHoverExit(Tool* tool)
 
 void InteractionDialogueSystem::OnInteract(Tool* tool)
 {
-	// Unused
+	IInteractable::OnInteract(tool);
 }
 
 void InteractionDialogueSystem::Update(float deltaTime)
@@ -43,6 +43,7 @@ void InteractionDialogueSystem::Update(float deltaTime)
 
 		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_E) && dialogue.mCanInteract)
 		{
+			OnInteract(trigger.mTool);
 			GameSystems::mDialogueSystem.SetCurrentDialogue(dialogue.mPath);
 			dialogue.mCanInteract = false;
 			mCurrentDialogueEntity = e;
@@ -69,6 +70,7 @@ void InteractionDialogueSystem::OnDialogueFinished()
 	auto& trigger = registry.get<InteractionTrigger>(mCurrentDialogueEntity);
 	auto& dialogue = registry.get<InteractionDialogueTrigger>(mCurrentDialogueEntity);
 
+	GameSystems::mToolSystem.CallOnInteract(true);
 	OnInteractionHoverExit(trigger.mTool);
 
 	// Reset interaction when dialogue finishes

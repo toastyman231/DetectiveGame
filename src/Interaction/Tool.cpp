@@ -3,6 +3,7 @@
 
 #include "IInteractable.h"
 #include "InteractionTrigger.h"
+#include "../GameSystems.h"
 #include "based/app.h"
 #include "based/engine.h"
 #include "based/graphics/linerenderer.h"
@@ -11,6 +12,57 @@
 #include "Jolt/Physics/Collision/CastResult.h"
 
 #include "Jolt/Physics/Collision/RayCast.h"
+
+void Tool::SetCurrentTrigger(InteractionTrigger* trigger)
+{
+	using namespace based;
+
+	auto context = Engine::Instance().GetUiManager().GetContext("main");
+	auto element = context->GetRootElement()->GetElementById("interact-parent");
+
+	if (trigger != mTrigger)
+	{
+		if (trigger)
+		{
+			element->SetProperty("display", "flex");
+			element->SetProperty("visibility", "visible");
+		}
+		else
+		{
+			element->SetProperty("display", "none");
+			element->SetProperty("visibility", "hidden");
+		}
+	}
+
+	mTrigger = trigger;
+}
+
+void ToolSystem::Initialize()
+{
+	mOnInteract.connect<&ToolSystem::OnInteract>();
+}
+
+void ToolSystem::CallOnInteract(bool show)
+{
+	if (GameSystems::mToolSystem.mOnInteract) GameSystems::mToolSystem.mOnInteract(show);
+}
+
+void ToolSystem::OnInteract(bool show)
+{
+	auto context = based::Engine::Instance().GetUiManager().GetContext("main");
+	auto element = context->GetRootElement()->GetElementById("interact-parent");
+
+	if (show)
+	{
+		element->SetProperty("display", "flex");
+		element->SetProperty("visibility", "visible");
+	}
+	else
+	{
+		element->SetProperty("display", "none");
+		element->SetProperty("visibility", "hidden");
+	}
+}
 
 void ToolSystem::Update(float deltaTime)
 {

@@ -1,17 +1,47 @@
 .body {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .crosshair {
     background: #ffffff;
+    transform: translateY(-50%);
+    position: absolute;
     width: 10px;
     height: 10px;
     top: 50%;
     left: 50%;
     border-radius: 5px;
+}
+
+.interact-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.interact-parent {
+    width: 300px;
+    height: 100px;
+    display: none;
+    visibility: hidden;
+    transform-origin: center;
+    transform: translateX(-50%);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: Arimo;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3em;
+    margin: 5px;
+}
+
+.interact-image {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
 }
