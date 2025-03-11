@@ -16,7 +16,7 @@ struct Tool
 	void SetInteractionRange(float range) { mInteractRange = range; }
 
 	InteractionTrigger* GetCurrentTrigger() const { return mTrigger; }
-	void SetCurrentTrigger(InteractionTrigger* trigger) { mTrigger = trigger; }
+	void SetCurrentTrigger(InteractionTrigger* trigger);
 
 private:
 	float mInteractRange = 500.f;
@@ -28,5 +28,12 @@ private:
 class ToolSystem
 {
 public:
+	void Initialize();
 	void Update(float deltaTime);
+
+	static void CallOnInteract(bool show = false);
+private:
+	entt::delegate<void(bool)> mOnInteract;
+
+	static void OnInteract(bool show);
 };

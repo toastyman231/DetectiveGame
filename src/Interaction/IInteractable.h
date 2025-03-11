@@ -1,4 +1,5 @@
 #pragma once
+#include "Tool.h"
 
 struct Tool;
 
@@ -9,7 +10,10 @@ public:
 
 	virtual void OnInteractionHoverEnter(Tool* tool) = 0;
 	virtual void OnInteractionHoverExit(Tool* tool) = 0;
-	virtual void OnInteract(Tool* tool) = 0;
+	virtual void OnInteract(Tool* tool)
+	{
+		ToolSystem::CallOnInteract();
+	}
 
 	bool IsInteractable() const { return mInteractable; }
 

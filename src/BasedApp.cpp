@@ -38,7 +38,7 @@ public:
 		input::Mouse::SetCursorVisible(!Engine::Instance().GetWindow().GetShouldRenderToScreen());
 		input::Mouse::SetCursorMode(Engine::Instance().GetWindow().GetShouldRenderToScreen() ?
 			input::CursorMode::Confined : input::CursorMode::Free);
-		Engine::Instance().GetPhysicsManager().SetRenderDebug(true);
+		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
 
 		//scene::Scene::LoadScene("Assets/Scenes/ApartmentLevel.bscn");
 		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
@@ -86,10 +86,13 @@ public:
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 
+		Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
+
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
 		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context);
 
+		GameSystems::mToolSystem.Initialize();
 		GameSystems::mDialogueSystem.Initialize();
 	}
 
