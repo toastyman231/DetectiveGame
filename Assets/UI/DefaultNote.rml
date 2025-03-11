@@ -2,13 +2,20 @@
     <head>
         <title>Note</title>
         <link type="text/rcss" href="rml.rcss"/>
+        <link type="text/rcss" href="ComponentStyles.rcss"/>
         <link type="text/rcss" href="Note.rcss"/>
     </head>
-    <body data-model="Note">
+    <body>
         <div class="body">
-            <div class="note-parent">
-                <label class="note-body" id="note-body">{{NoteText}}</label>
-                <div id="back">
+            <div class="panel note-parent">
+                <div>
+                    <div class="gradient1"></div>
+                    <div class="note-body">
+                        <p class="note-text BASED_REFRESH" id="note-body">The note text will go here!</p>
+                    </div>
+                    <div class="gradient2"></div>
+                </div>
+                <div id="back-button" class="button-default">
                     <div class="interact-position">
                         <div class="interact-parent" id="interact-parent">
                             <img class="interact-image" src="../Textures/Esc_Key_Dark.png"/>
