@@ -38,10 +38,10 @@ public:
 		input::Mouse::SetCursorVisible(!Engine::Instance().GetWindow().GetShouldRenderToScreen());
 		input::Mouse::SetCursorMode(Engine::Instance().GetWindow().GetShouldRenderToScreen() ?
 			input::CursorMode::Confined : input::CursorMode::Free);
-		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
+		Engine::Instance().GetPhysicsManager().SetRenderDebug(true);
 
-		scene::Scene::LoadScene("Assets/Scenes/ApartmentLevel.bscn");
-		//scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
+		//scene::Scene::LoadScene("Assets/Scenes/ApartmentLevel.bscn");
+		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
 
 		auto floor = scene::Entity::CreateEntity("F");
 		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
@@ -57,7 +57,7 @@ public:
 
 		GetCurrentScene()->GetEntityStorage().Load("F", floor);
 
-		/*auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
+		auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
 		cube->SetPosition({ 5, 0.f, 5 });
 		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 },
 			cube->GetTransform().Position(), glm::vec3{0, 0, 0});
@@ -67,25 +67,22 @@ public:
 		cubeBody.RegisterBody(cube->GetEntityHandle());
 		//cube->AddComponent<InteractableNote>("This is a note with custom text!");
 		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");
-		auto decalMat = graphics::Material::LoadMaterialFromFile("Assets/Materials/Decal.bmat",
-			GetCurrentScene()->GetMaterialStorage());
-		cube->GetComponent<scene::MeshRenderer>().material = decalMat;*/
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
 		auto player = scene::Entity::CreateEntity("Player");
-		player->AddComponent<scene::CapsuleShapeComponent>(1.8f, 0.3f);
+		player->AddComponent<scene::CapsuleShapeComponent>(1.8f, 0.4f);
 		auto capsule = player->GetComponent<scene::CapsuleShapeComponent>();
 		player->AddComponent<scene::CharacterController>(
 			scene::Transform(glm::vec3(0)),
 			capsule.shape);
 		player->AddComponent<MouseLook>(200.f);
 		cam->SetParent(player, false);
-		cam->SetLocalPosition({ 0, 1.8f, 0 });
+		cam->SetLocalPosition({ 0, 1.8f - 0.4f, 0 });
 		player->AddComponent<Tool>(6.f);
 
-		auto spawn = GetCurrentScene()->GetEntityStorage().Get("PlayerSpawn");
-		player->SetPosition(spawn->GetTransform().Position());
+		/*auto spawn = GetCurrentScene()->GetEntityStorage().Get("PlayerSpawn");
+		player->SetPosition(spawn->GetTransform().Position());*/
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 
@@ -94,13 +91,6 @@ public:
 		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context);
 
 		GameSystems::mDialogueSystem.Initialize();
-
-		/*auto framebuffer = std::make_shared<graphics::Framebuffer>();
-
-		auto decalPass = new graphics::CustomRenderPass("DecalPass", framebuffer);
-		decalPass->mShouldClear = false;
-		decalPass->AddOutputName("SceneColor");
-		Engine::Instance().GetRenderManager().InjectPass(decalPass, (int)graphics::PassInjectionPoint::BeforeUserInterface);*/
 	}
 
 	void Shutdown() override
