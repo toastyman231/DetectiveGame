@@ -53,7 +53,13 @@ public:
 			physics::Layers::STATIC);
 		auto floorBody = floor->GetComponent<scene::RigidbodyComponent>();
 		floorBody.RegisterBody(floor->GetEntityHandle());
-		floor->AddComponent<InteractableNote>("This is the floor!");
+
+		std::ifstream ifs("Assets/Notes/TestNote.txt");
+		std::stringstream sstream;
+		sstream << ifs.rdbuf();
+		ifs.close();
+
+		floor->AddComponent<InteractableNote>(sstream.str());
 
 		GetCurrentScene()->GetEntityStorage().Load("F", floor);
 

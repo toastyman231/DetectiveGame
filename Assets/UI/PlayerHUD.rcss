@@ -38,6 +38,7 @@
     color: #ffffff;
     font-size: 3em;
     margin: 5px;
+    font-effect: outline(1px black);
 }
 
 .interact-image {

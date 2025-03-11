@@ -37,7 +37,7 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 	if (!mDocument)
 	{
 		mDocument = uiManager.LoadWindow("DefaultNote", context);
-		mDocument->document->GetElementById("back")->AddEventListener("click", this);
+		mDocument->document->GetElementById("back-button")->AddEventListener("click", this);
 	}
 	else
 		mDocument->document->Show();
@@ -83,7 +83,8 @@ void InteractableNoteSystem::Update(float deltaTime)
 
 				GameSystems::SetPlayerMouseLookEnabled(false);
 				GameSystems::SetPlayerMovementEnabled(false);
-				based::input::Mouse::SetCursorVisible(true);
+				input::Mouse::SetCursorVisible(true);
+				input::Mouse::SetCursorMode(input::CursorMode::Free);
 			}
 		}
 
@@ -98,7 +99,8 @@ void InteractableNoteSystem::Update(float deltaTime)
 
 				GameSystems::SetPlayerMouseLookEnabled(true);
 				GameSystems::SetPlayerMovementEnabled(true);
-				based::input::Mouse::SetCursorVisible(false);
+				input::Mouse::SetCursorVisible(false);
+				input::Mouse::SetCursorMode(input::CursorMode::Confined);
 			}
 		}
 
@@ -129,6 +131,8 @@ void InteractableNoteSystem::ProcessEvent(Rml::Event& event)
 
 			GameSystems::SetPlayerMouseLookEnabled(true);
 			GameSystems::SetPlayerMovementEnabled(true);
+			based::input::Mouse::SetCursorVisible(false);
+			based::input::Mouse::SetCursorMode(based::input::CursorMode::Confined);
 		}
 	} 
 }
