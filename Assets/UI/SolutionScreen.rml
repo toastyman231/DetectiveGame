@@ -9,16 +9,18 @@
         <div class="body vertical-group">
             <div class="">
                 <div class="body horizontal-group">
-                    <div class="box flex-grow max-width scroll justify-text">
-                        The <word class="word person placeholder" /> <word class="word verb placeholder" /> through the <word class="word place placeholder" /> after
-                        having <word class="word verb placeholder" /> the <word class="word placeholder" />. They found the <word class="word placeholder" /> and 
+                    <div class="box flex-grow max-width scroll justify-text" id="word-panel">
+                        The <word class="word person placeholder" /> <word class="word verb placeholder" /> through the <word class="word place placeholder" /> 
+                        after
+                        having <word class="word verb placeholder" /> the <word class="word thing placeholder" />. They found the <word class="word thing placeholder" /> and 
                         <word class="word verb placeholder" /> 
                         it towards the <word class="word place placeholder" />. Just then, the <word class="word person placeholder" /> returned, catching the 
                         <word class="word person placeholder" />, 
-                        causing him to activate the <word class="word placeholder" />. After being <word class="word verb placeholder" />, the <word class="word person placeholder" /> 
+                        causing him to activate the <word class="word thing placeholder" />. After being <word class="word verb placeholder" />, the 
+                        <word class="word person placeholder" /> 
                         <word class="word verb placeholder" /> the <word class="word person placeholder" />. The <word class="word person placeholder" /> tried to use the 
                         <word class="word person placeholder" />’s 
-                        <word class="word placeholder" /> on the <word class="word person placeholder" />, but the <word class="word placeholder" /> 
+                        <word class="word placeholder" /> on the <word class="word person placeholder" />, but the <word class="word thing placeholder" /> 
                         <word class="word verb placeholder" /> them, causing the 
                         <word class="word person placeholder" /> to be killed instead. The <word class="word person placeholder" /> took all the inventions and ran.
                     </div>
