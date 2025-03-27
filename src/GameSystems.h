@@ -10,6 +10,7 @@
 #include "Interaction/Tool.h"
 #include "Player/MouseLook.h"
 #include "Player/PlayerControllerSystem.h"
+#include "UISystems/SolutionPanelSystem.h"
 
 class GameSystems
 {
@@ -20,6 +21,7 @@ public:
 	inline static InteractableNoteSystem mNoteSystem;
 	inline static DialogueSystem mDialogueSystem;
 	inline static InteractionDialogueSystem mDialogueTrigger;
+	inline static SolutionPanelSystem mSolutionPanelSystem;
 
 	static void SetPlayerMouseLookEnabled(bool enabled)
 	{

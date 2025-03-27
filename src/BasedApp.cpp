@@ -7,6 +7,7 @@
 #include "based/scene/entity.h"
 
 #include "GameSystems.h"
+#include "based/input/keyboard.h"
 
 using namespace based;
 
@@ -100,6 +101,7 @@ public:
 
 		GameSystems::mToolSystem.Initialize();
 		GameSystems::mDialogueSystem.Initialize();
+		GameSystems::mSolutionPanelSystem.Initialize();
 	}
 
 	void Shutdown() override
@@ -122,6 +124,8 @@ public:
 		GameSystems::mDialogueTrigger.Update(deltaTime);
 
 		GameSystems::mDialogueSystem.Update(deltaTime);
+
+		GameSystems::mSolutionPanelSystem.Update(deltaTime);
 	}
 
 	void Render() override
