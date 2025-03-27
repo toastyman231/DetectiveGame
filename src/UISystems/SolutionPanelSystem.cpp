@@ -11,7 +11,7 @@
 
 void ISolutionPanel::OnPanelSolved()
 {
-	BASED_TRACE("PANEL SOLVED");
+	// Set panel border to green when solved
 	auto element = Rml::GetContext("main")->GetDocument("panels")->GetElementById(PanelID);
 	if (!element) return;
 
@@ -20,6 +20,7 @@ void ISolutionPanel::OnPanelSolved()
 
 void ISolutionPanel::OnPanelIncorrect()
 {
+	// Set panel border to red when incorrect
 	auto element = Rml::GetContext("main")->GetDocument("panels")->GetElementById(PanelID);
 	if (!element) return;
 
@@ -29,6 +30,8 @@ void ISolutionPanel::OnPanelIncorrect()
 WordSolutionPanel::WordSolutionPanel(const std::string& id, const std::string& solutionPath)
 	: ISolutionPanel(id)
 {
+	// Load panel solution
+
 	std::ifstream file(solutionPath);
 
 	if (!file.is_open())
@@ -51,6 +54,7 @@ WordSolutionPanel::WordSolutionPanel(const std::string& id, const std::string& s
 			words.push_back(word);
 		}
 
+		// Allow multiple possible words for a given slot
 		if (words.size() == 1)
 		{
 			WorkingSolution[std::to_string(lineNumber)] = 
@@ -81,6 +85,7 @@ WordSolutionPanel::WordSolutionPanel(const std::string& id, const std::string& s
 
 bool WordSolutionPanel::CheckSolution()
 {
+	// Check if current solution matches any of the valid words for each slot
 	for (auto& [id, solution] : WorkingSolution)
 	{
 		if (solution.SolutionWords != solution.CurrentWord)
@@ -96,6 +101,7 @@ bool WordSolutionPanel::CheckSolution()
 	return true;
 }
 
+// Track solution in panel struct (for saving and solution verification)
 void WordSolutionPanel::OnSolutionElementDropped(std::string slotID, void* element)
 {
 	if (!element) return;
@@ -105,6 +111,7 @@ void WordSolutionPanel::OnSolutionElementDropped(std::string slotID, void* eleme
 	WorkingSolution[slotID].CurrentWord = elementAsWord;
 }
 
+// Set up panel based on current WIP solution (useful for loading saved progress)
 void WordSolutionPanel::SetupPanel(Rml::ElementDocument* document)
 {
 	for (auto& [id, word] : WorkingSolution)
@@ -118,6 +125,7 @@ void WordSolutionPanel::SetupPanel(Rml::ElementDocument* document)
 	}
 }
 
+// TODO: Optimize this
 bool WordSolutionPanel::CanDropElement(Rml::Element* target, Rml::Element* drag_element)
 {
 	if (IsLocked) return false;
@@ -194,17 +202,20 @@ void SolutionPanelSystem::Update(float deltaTime)
 			uint32_t index = 0;
 			for (auto element : placeholders)
 			{
+				// Set solution slot IDs for ALL panels
+				// this way they're globally unique
 				element->SetId(std::to_string(index++));
 			}
 
+			// Set up panel based on cached progress, and register event callbacks
 			for (auto& [id, panel] : mSolutionPanels)
 			{
 				if (!panel) continue;
 				panel->SetupPanel(mPanelGroup->document);
+				RegisterDraggableContainer(mPanelGroup->document->GetElementById(id));
 			}
 
-			RegisterDraggableContainer(mPanelGroup->document->GetElementById("word-panel"));
-
+			// Populate word list
 			for (auto& word : mWords)
 			{
 				AddWordInternal(word);
@@ -301,6 +312,7 @@ void SolutionPanelSystem::RegisterDraggableContainer(Rml::Element* element)
 	element->AddEventListener("dragout", this);
 }
 
+// Create draggable word element
 void SolutionPanelSystem::AddWordInternal(SolutionWord word)
 {
 	if (!mPanelGroup || !mPanelGroup->document) return;
@@ -338,6 +350,7 @@ void SolutionPanelSystem::AddWordInternal(SolutionWord word)
 	content->AppendChild(std::move(wordElement));
 }
 
+// Read class names until one of the valid types is found (or not)
 std::string SolutionPanelSystem::GetWordTypeFromClass(const std::string& classNames)
 {
 	static const std::array<std::string, 5> word_types = { "person", "place", "thing", "verb", "number" };
@@ -356,6 +369,8 @@ std::string SolutionPanelSystem::GetWordTypeFromClass(const std::string& classNa
 	return "NONE";
 }
 
+// Does not escape early, since OnSolved events are dispatched from here.
+// So all panels need to be checked each time.
 bool SolutionPanelSystem::CheckSolution()
 {
 	bool didAnyFail = false;
