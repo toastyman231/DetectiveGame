@@ -89,6 +89,7 @@ public:
 	void ProcessEvent(Rml::Event& event) override;
 
 	void RegisterDraggableContainer(Rml::Element* element);
+	void SetClassByType(Rml::ElementPtr& wordElement, SolutionWord word);
 
 	static std::string GetWordTypeFromClass(const std::string& classNames);
 private:
