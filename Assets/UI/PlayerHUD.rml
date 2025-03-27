@@ -2,6 +2,8 @@
     <head>
         <title>HUD</title>
         <link type="text/rcss" href="PlayerHUD.rcss"/>
+        <link type="text/rcss" href="SolutionScreen.rcss"/>
+        <link type="text/rcss" href="ComponentStyles.rcss"/>
         <link type="text/rcss" href="rml.rcss"/>
     </head>
     <body>
@@ -12,6 +14,8 @@
                     <img class="interact-image" src="../Textures/E_Key_Dark.png"/>
                     <label class="text">Interact</label>
                 </div>
+            </div>
+            <div class="vertical-group" id="words-group">
             </div>
         </div>
     </body>

@@ -233,8 +233,33 @@ void SolutionPanelSystem::Update(float deltaTime)
 
 void SolutionPanelSystem::AddWord(SolutionWord word)
 {
-	if (std::find(mWords.begin(), mWords.end(), word) == mWords.end()) 
+	if (std::find(mWords.begin(), mWords.end(), word) == mWords.end())
+	{
 		mWords.emplace_back(word);
+
+		auto context = Rml::GetContext("main");
+		auto doc = context->GetDocument("PlayerHUD");
+		auto body = doc->GetElementById("words-group");
+
+		auto element = Rml::Factory::InstanceElement(body, "word", "word", Rml::XMLAttributes());
+		element->SetClass("word", true);
+		SetClassByType(element, word);
+		element->SetInnerRML(word.Word);
+		element->AddEventListener("animationend", this);
+
+		auto p1 = Rml::Transform::MakeProperty({ Rml::Transforms::TranslateY{-1000.f } });
+		auto p2 = Rml::Transform::MakeProperty({ Rml::Transforms::TranslateY{0.f} });
+		element->Animate("transform", p2, 0.6f, 
+			Rml::Tween(Rml::Tween::Cubic, Rml::Tween::InOut), 
+			1, false, 0.0f, &p1);
+
+		auto k1 = Rml::Property(0, Rml::Property::Unit::NUMBER);
+		element->Animate("opacity", k1, 0.6f,
+			Rml::Tween(Rml::Tween::Cubic, Rml::Tween::InOut),
+			1, false, 1.f);
+
+		body->AppendChild(std::move(element));
+	}
 }
 
 void SolutionPanelSystem::AddSolutionPanel(std::string panelID, ISolutionPanel* panel)
@@ -244,12 +269,12 @@ void SolutionPanelSystem::AddSolutionPanel(std::string panelID, ISolutionPanel* 
 
 void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 {
-	if (event == "dragstart")
+	if (event == Rml::EventId::Dragstart)
 	{
 		based::Engine::Instance().GetWindow().SetCursor("pointer");
 	}
 
-	if (event == "dragdrop")
+	if (event == Rml::EventId::Dragdrop)
 	{
 		Rml::Element* dest = event.GetTargetElement();
 		Rml::Element* drag_element = static_cast<Rml::Element*>(event.GetParameter<void*>("drag_element", nullptr));
@@ -277,7 +302,7 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 		}
 	}
 
-	if (event == "dragover")
+	if (event == Rml::EventId::Dragover)
 	{
 		Rml::Element* dest = event.GetTargetElement();
 		Rml::Element* drag_element = static_cast<Rml::Element*>(event.GetParameter<void*>("drag_element", nullptr));
@@ -294,14 +319,27 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 		}
 	}
 
-	if (event == "dragout")
+	if (event == Rml::EventId::Dragout)
 	{
 		based::Engine::Instance().GetWindow().SetCursor("pointer");
 	}
 
-	if (event == "dragend")
+	if (event == Rml::EventId::Dragend)
 	{
 		based::Engine::Instance().GetWindow().SetCursor("arrow");
+	}
+
+	if (event == Rml::EventId::Animationend)
+	{
+		auto element = event.GetTargetElement();
+		auto prop = event.GetParameter<std::string>("property", "");
+
+		if (!element || prop.empty()) return;
+
+		if (prop == "opacity")
+		{
+			element->GetParentNode()->RemoveChild(element);
+		}
 	}
 }
 
@@ -312,19 +350,8 @@ void SolutionPanelSystem::RegisterDraggableContainer(Rml::Element* element)
 	element->AddEventListener("dragout", this);
 }
 
-// Create draggable word element
-void SolutionPanelSystem::AddWordInternal(SolutionWord word)
+void SolutionPanelSystem::SetClassByType(Rml::ElementPtr& wordElement, SolutionWord word)
 {
-	if (!mPanelGroup || !mPanelGroup->document) return;
-
-	Rml::Element* content = mPanelGroup->document->GetElementById("words-box");
-	if (!content) return;
-
-	Rml::ElementPtr wordElement = Rml::Factory::InstanceElement(content, 
-		"word", "word", Rml::XMLAttributes());
-	wordElement->SetClass("word", true);
-	wordElement->SetClass("draggable", true);
-
 	switch (word.Type)
 	{
 	case WordType::Person:
@@ -343,6 +370,22 @@ void SolutionPanelSystem::AddWordInternal(SolutionWord word)
 		wordElement->SetClass("number", true);
 		break;
 	}
+}
+
+// Create draggable word element
+void SolutionPanelSystem::AddWordInternal(SolutionWord word)
+{
+	if (!mPanelGroup || !mPanelGroup->document) return;
+
+	Rml::Element* content = mPanelGroup->document->GetElementById("words-box");
+	if (!content) return;
+
+	Rml::ElementPtr wordElement = Rml::Factory::InstanceElement(content, 
+		"word", "word", Rml::XMLAttributes());
+	wordElement->SetClass("word", true);
+	wordElement->SetClass("draggable", true);
+
+	SetClassByType(wordElement, word);
 
 	wordElement->SetInnerRML(word.Word);
 	wordElement->AddEventListener("dragstart", this);

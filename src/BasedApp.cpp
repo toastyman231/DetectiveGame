@@ -98,7 +98,7 @@ public:
 
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
-		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context);
+		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context, "PlayerHUD");
 
 		GameSystems::mToolSystem.Initialize();
 		GameSystems::mDialogueSystem.Initialize();
