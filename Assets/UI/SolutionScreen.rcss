@@ -1,0 +1,106 @@
+.box {
+    background-color: #6A8D73;
+    font-family: Arimo;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+	padding: 15px;
+	border: 5px #E4FFE1;
+    border-radius: 10px;
+    margin: 0.5em;
+}
+
+.bg-red {
+    background-color: #8d6a6a;
+}
+
+.box.words-box {
+    height: 30vh;
+    overflow: scroll;
+}
+
+.box.solutions-box {
+    flex-grow: 1;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.small-margin {
+    margin: 0.5em;
+}
+
+.max-width {
+    max-width: 48vw;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.justify-text {
+    text-align: left;
+}
+
+.words-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.word {
+    font-family: Arimo;
+    text-align: center;
+	color: #000000;
+
+    background-color: #727272;
+    border: 2px #E4FFE1;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+    min-width: 1em;
+    max-width: 6em;
+    height: 1em;
+}
+
+.word:drag {
+    min-width: 6em;
+}
+
+.person {
+    background-color: #b82d2d;
+}
+
+.place {
+    background-color: #b8812d;
+}
+
+.verb {
+    background-color: #2d98b8;
+}
+
+.number {
+    background-color: #2db839;
+}
+
+.draggable {
+    drag: clone;
+}
+
+.placeholder {
+    width: 4em;
+}
+
+word 
+{
+    display: inline-block;
+}
