@@ -27,11 +27,15 @@ struct SolutionWord
 
 struct AnyOfWords
 {
-	std::vector<SolutionWord> PossibleWords;
+	std::vector<std::string> PossibleWords;
 
-	bool operator== (const SolutionWord& other)
+	bool operator== (const std::string& other)
 	{
 		return std::find(PossibleWords.begin(), PossibleWords.end(), other) != PossibleWords.end();
+	}
+	bool operator!= (const std::string& other)
+	{
+		return !(*this == other);
 	}
 };
 
@@ -42,26 +46,33 @@ struct ISolutionPanel
 
 	virtual bool CheckSolution() = 0;
 	virtual bool CanDropElement(Rml::Element* target, Rml::Element* drag_element) = 0;
+	virtual bool IsAnySlotUnfilled() = 0;
 	virtual void SetupPanel(Rml::ElementDocument* document) = 0;
 	virtual void OnSolutionElementDropped(std::string slotID, void* element) = 0;
 	virtual void OnPanelSolved();
+	virtual void OnPanelIncorrect();
 
 	bool IsLocked = false;
 	std::string PanelID;
 };
 
+struct WordSolution
+{
+	std::string CurrentWord;
+	AnyOfWords SolutionWords;
+};
+
 struct WordSolutionPanel : public ISolutionPanel
 {
-	explicit WordSolutionPanel(const std::string& id)
-		: ISolutionPanel(id)
-	{}
+	explicit WordSolutionPanel(const std::string& id, const std::string& solutionPath);
 
 	bool CheckSolution() override;
 	void OnSolutionElementDropped(std::string slotID, void* element) override;
 	void SetupPanel(Rml::ElementDocument* document) override;
 	bool CanDropElement(Rml::Element* target, Rml::Element* drag_element) override;
+	bool IsAnySlotUnfilled() override;
 
-	std::unordered_map<std::string, std::string> WorkingSolution;
+	std::unordered_map<std::string, WordSolution> WorkingSolution;
 };
 
 class SolutionPanelSystem : public Rml::EventListener

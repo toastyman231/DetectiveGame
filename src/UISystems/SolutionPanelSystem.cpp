@@ -18,9 +18,81 @@ void ISolutionPanel::OnPanelSolved()
 	element->SetProperty("border-color", "#00FF00");
 }
 
+void ISolutionPanel::OnPanelIncorrect()
+{
+	auto element = Rml::GetContext("main")->GetDocument("panels")->GetElementById(PanelID);
+	if (!element) return;
+
+	element->SetProperty("border-color", "#FF0000");
+}
+
+WordSolutionPanel::WordSolutionPanel(const std::string& id, const std::string& solutionPath)
+	: ISolutionPanel(id)
+{
+	std::ifstream file(solutionPath);
+
+	if (!file.is_open())
+	{
+		BASED_ERROR("Failed to open Word Solution file at {}", solutionPath);
+		return;
+	}
+
+	std::string line;
+	int lineNumber = 0;
+
+	while (std::getline(file, line))
+	{
+		std::istringstream iss(line);
+		std::vector<std::string> words;
+		std::string word;
+
+		while (iss >> word)
+		{
+			words.push_back(word);
+		}
+
+		if (words.size() == 1)
+		{
+			WorkingSolution[std::to_string(lineNumber)] = 
+				WordSolution{
+					"",
+				{{{word}}}
+				};
+		}
+		else if (words.size() > 1)
+		{
+			std::vector<std::string> solutionWords;
+			for (const auto& w : words)
+			{
+				solutionWords.emplace_back(w);
+			}
+			WorkingSolution[std::to_string(lineNumber)] = 
+				WordSolution{
+					"",
+				{solutionWords}
+				};
+		}
+
+		lineNumber++;
+	}
+
+	file.close();
+}
+
 bool WordSolutionPanel::CheckSolution()
 {
-	// TODO
+	for (auto& [id, solution] : WorkingSolution)
+	{
+		if (solution.SolutionWords != solution.CurrentWord)
+		{
+			BASED_WARN("Word {} does not match {}!", solution.CurrentWord, solution.SolutionWords.PossibleWords[0]);
+
+			if (!IsAnySlotUnfilled()) OnPanelIncorrect();
+
+			return false;
+		}
+	}
+
 	return true;
 }
 
@@ -30,8 +102,7 @@ void WordSolutionPanel::OnSolutionElementDropped(std::string slotID, void* eleme
 
 	auto elementAsWord = *static_cast<std::string*>(element);
 
-	BASED_TRACE("DROPPING {}", elementAsWord);
-	WorkingSolution[slotID] = elementAsWord;
+	WorkingSolution[slotID].CurrentWord = elementAsWord;
 }
 
 void WordSolutionPanel::SetupPanel(Rml::ElementDocument* document)
@@ -41,8 +112,9 @@ void WordSolutionPanel::SetupPanel(Rml::ElementDocument* document)
 		auto element = document->GetElementById(id);
 		if (!element) continue;
 
-		element->SetClass("placeholder", false);
-		element->SetInnerRML(word);
+		if (!word.CurrentWord.empty()) 
+			element->SetClass("placeholder", false);
+		element->SetInnerRML(word.CurrentWord);
 	}
 }
 
@@ -60,6 +132,16 @@ bool WordSolutionPanel::CanDropElement(Rml::Element* target, Rml::Element* drag_
 
 	drag_element->SetInnerRML(drag_element->GetInnerRML()); // Required to prevent a crash for some reason
 	return wordType == destType;
+}
+
+bool WordSolutionPanel::IsAnySlotUnfilled()
+{
+	for (auto& [id, solution] : WorkingSolution)
+	{
+		if (solution.CurrentWord.empty()) return true;
+	}
+
+	return false;
 }
 
 void SolutionPanelSystem::Initialize()
@@ -84,7 +166,8 @@ void SolutionPanelSystem::Initialize()
 	AddWord({ "Tools", WordType::Thing });
 	AddWord({ "2", WordType::Number });
 
-	AddSolutionPanel("word-panel", new WordSolutionPanel("word-panel"));
+	AddSolutionPanel("word-panel", 
+		new WordSolutionPanel("word-panel", "Assets/Solutions/MainPanel.txt"));
 }
 
 void SolutionPanelSystem::Update(float deltaTime)
@@ -173,6 +256,8 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 			dest->SetInnerRML(dragWord);
 
 			panel->OnSolutionElementDropped(dest->GetId(), &dragWord);
+
+			dest->ScrollIntoView();
 
 			if (CheckSolution())
 			{
