@@ -20,6 +20,7 @@ public:
 		props.w = 1280;
 		props.h = 720;
 		props.imguiProps.IsDockingEnabled = true;
+		props.title = "Detective Game";
 
 		return props;
 	}
