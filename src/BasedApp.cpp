@@ -8,6 +8,7 @@
 
 #include "GameSystems.h"
 #include "based/input/keyboard.h"
+#include "Systems/FMODSystem.h"
 
 using namespace based;
 
@@ -100,6 +101,7 @@ public:
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
 		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context, "PlayerHUD");
 
+		FMODSystem::InitializeFMOD();
 		GameSystems::mToolSystem.Initialize();
 		GameSystems::mDialogueSystem.Initialize();
 		GameSystems::mSolutionPanelSystem.Initialize();
