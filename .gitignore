@@ -11,3 +11,6 @@
 *.vcxproj.filters
 *.vcxproj
 *.sln
+
+/DetectiveGameFMOD/.cache/*
+/Assets/FMOD/Banks/**/*.bank
