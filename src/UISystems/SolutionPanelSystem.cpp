@@ -7,6 +7,7 @@
 #include "based/input/keyboard.h"
 
 #include "../GameSystems.h"
+#include "../Systems/FMODSystem.h"
 #include "based/input/mouse.h"
 
 void ISolutionPanel::OnPanelSolved()
@@ -235,6 +236,8 @@ void SolutionPanelSystem::AddWord(SolutionWord word)
 {
 	if (std::find(mWords.begin(), mWords.end(), word) == mWords.end())
 	{
+		FMODSystem::PlaySound("Assets/Sounds/TestSound.wav");
+
 		mWords.emplace_back(word);
 
 		auto context = Rml::GetContext("main");

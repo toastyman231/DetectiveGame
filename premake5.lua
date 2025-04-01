@@ -56,6 +56,8 @@ group "Projects"
             engineLocation .. "\\%{externals.jolt}"
         }
 
+        include "Plugins/FMOD"
+
         flags
         {
             "FatalWarnings"
