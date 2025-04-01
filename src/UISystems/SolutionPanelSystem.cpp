@@ -236,7 +236,7 @@ void SolutionPanelSystem::AddWord(SolutionWord word)
 {
 	if (std::find(mWords.begin(), mWords.end(), word) == mWords.end())
 	{
-		FMODSystem::PlaySound("Assets/Sounds/TestSound.wav");
+		FMODSystem::PlaySound("../DetectiveGameFMOD/Assets/TestSound.wav");
 
 		mWords.emplace_back(word);
 

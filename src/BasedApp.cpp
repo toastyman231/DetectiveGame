@@ -116,6 +116,8 @@ public:
 	{
 		App::Update(deltaTime);
 
+		FMODSystem::Update(deltaTime);
+
 		GameSystems::mMouseLookSystem.Update(deltaTime);
 
 		GameSystems::mPlayerController.Update(deltaTime);
