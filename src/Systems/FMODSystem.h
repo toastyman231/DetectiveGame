@@ -35,6 +35,43 @@ public:
 		return result;
 	}
 
+	static FMOD_RESULT LoadBanks(const std::string& rootPath)
+	{
+		auto dirs = std::queue<std::string>();
+		dirs.push(rootPath);
+		FMOD_RESULT result = FMOD_OK;
+
+		while (!dirs.empty())
+		{
+			auto currentDir = dirs.front();
+			dirs.pop();
+
+			for (const auto& dir : std::filesystem::directory_iterator(currentDir))
+			{
+				if (dir.is_directory())
+				{
+					dirs.push(dir.path().string());
+					continue;
+				}
+
+				FMOD::Studio::Bank* bank;
+				result = mFMODSystem->loadBankFile(dir.path().string().c_str(), 
+					FMOD_STUDIO_LOAD_BANK_NONBLOCKING, &bank);
+				if (result != FMOD_OK)
+				{
+					BASED_ERROR("Error loading bank at {}", dir.path().string());
+					continue;
+				}
+
+				FMOD_GUID id;
+				bank->getID(&id);
+				mBanks[id] = bank;
+			}
+		}
+
+		return result;
+	}
+
 	static FMOD_RESULT Update(float deltaTime)
 	{
 		return mFMODSystem->update();
@@ -42,4 +79,6 @@ public:
 private:
 	inline static FMOD::Studio::System* mFMODSystem;
 	inline static FMOD::System* mCoreSystem;
+
+	inline static std::unordered_map<FMOD_GUID, FMOD::Studio::Bank*> mBanks;
 };
