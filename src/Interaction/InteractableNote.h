@@ -35,6 +35,7 @@ public:
 
 private:
 	InteractableNote* mCurrentNote = nullptr;
+	InteractionTrigger* mCurrentTrigger = nullptr;
 	based::managers::DocumentInfo* mDocument = nullptr;
 	Rml::DataModelHandle mDataModel;
 

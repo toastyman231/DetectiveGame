@@ -22,6 +22,23 @@ void InteractableNoteSystem::OnInteractionHoverExit(Tool* tool)
 	BASED_TRACE("Note hover exited!");
 }
 
+void OnExitNote(InteractableNote& note, InteractionTrigger& trigger,
+	based::managers::DocumentInfo* doc, FMOD::Studio::EventInstance* event)
+{
+	GameSystems::mToolSystem.CallOnInteract(true);
+	note.mIsOpen = false;
+	doc->document->Hide();
+
+	GameSystems::SetPlayerMouseLookEnabled(true);
+	GameSystems::SetPlayerMovementEnabled(true);
+	based::input::Mouse::SetCursorVisible(false);
+	based::input::Mouse::SetCursorMode(based::input::CursorMode::Confined);
+
+	if (event) event->stop(FMOD_STUDIO_STOP_ALLOWFADEOUT);
+
+	GameSystems::mToolSystem.SetLocked(false);
+}
+
 // Called when E is pressed in range of a note
 void InteractableNoteSystem::OnInteract(Tool* tool)
 {
@@ -44,6 +61,8 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 		mDocument->document->Show();
 
 	mDocument->document->GetElementById("note-body")->SetInnerRML(mCurrentNote->mNoteText);
+
+	GameSystems::mToolSystem.SetLocked(true);
 
 	if (mPageTurnEvent) mPageTurnEvent->start();
 }
@@ -74,6 +93,8 @@ void InteractableNoteSystem::Update(float deltaTime)
 		auto lastNote = mCurrentNote;
 		mCurrentNote = &note;
 
+		mCurrentTrigger = &trigger;
+
 		// Should only trigger this once, the first time the object is hovered
 		if (!trigger.mHoverEntered)
 		{
@@ -81,9 +102,10 @@ void InteractableNoteSystem::Update(float deltaTime)
 			OnInteractionHoverEnter(trigger.mTool);
 		}
 
-		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_E))
+		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_E)
+			&& !GameSystems::mToolSystem.IsLocked())
 		{
-			// Show note if it's closed, otherwise hide it
+			// Show note if it's closed
 			if (!note.mIsOpen)
 			{
 				OnInteract(trigger.mTool);
@@ -99,18 +121,10 @@ void InteractableNoteSystem::Update(float deltaTime)
 		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_ESCAPE)
 			|| input::Keyboard::KeyDown(BASED_INPUT_KEY_TAB))
 		{
+			// Hide note if it's open
 			if (note.mIsOpen)
 			{
-				GameSystems::mToolSystem.CallOnInteract(true);
-				note.mIsOpen = false;
-				mDocument->document->Hide();
-
-				GameSystems::SetPlayerMouseLookEnabled(true);
-				GameSystems::SetPlayerMovementEnabled(true);
-				input::Mouse::SetCursorVisible(false);
-				input::Mouse::SetCursorMode(input::CursorMode::Confined);
-
-				if (mPageTurnEvent) mPageTurnEvent->stop(FMOD_STUDIO_STOP_ALLOWFADEOUT);
+				OnExitNote(note, trigger, mDocument, mPageTurnEvent);
 			}
 		}
 
@@ -135,14 +149,8 @@ void InteractableNoteSystem::ProcessEvent(Rml::Event& event)
 	{
 		if (mCurrentNote->mIsOpen)
 		{
-			ToolSystem::CallOnInteract(true);
-			mCurrentNote->mIsOpen = false;
-			mDocument->document->Hide();
-
-			GameSystems::SetPlayerMouseLookEnabled(true);
-			GameSystems::SetPlayerMovementEnabled(true);
-			based::input::Mouse::SetCursorVisible(false);
-			based::input::Mouse::SetCursorMode(based::input::CursorMode::Confined);
+			if (!mCurrentNote || !mCurrentTrigger) return;
+			OnExitNote(*mCurrentNote, *mCurrentTrigger, mDocument, mPageTurnEvent);
 		}
 	} 
 }
