@@ -102,8 +102,10 @@ public:
 		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context, "PlayerHUD");
 
 		FMODSystem::InitializeFMOD();
+		FMODSystem::LoadBanks("Assets/FMOD/Banks");
 		GameSystems::mToolSystem.Initialize();
 		GameSystems::mDialogueSystem.Initialize();
+		GameSystems::mNoteSystem.Initialize();
 		GameSystems::mSolutionPanelSystem.Initialize();
 	}
 

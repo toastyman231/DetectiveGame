@@ -236,8 +236,6 @@ void SolutionPanelSystem::AddWord(SolutionWord word)
 {
 	if (std::find(mWords.begin(), mWords.end(), word) == mWords.end())
 	{
-		FMODSystem::PlaySound("../DetectiveGameFMOD/Assets/TestSound.wav");
-
 		mWords.emplace_back(word);
 
 		auto context = Rml::GetContext("main");
@@ -341,7 +339,7 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 
 		if (prop == "opacity")
 		{
-			element->GetParentNode()->RemoveChild(element);
+			//element->GetParentNode()->RemoveChild(element);
 		}
 	}
 }

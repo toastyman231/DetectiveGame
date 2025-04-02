@@ -41,6 +41,7 @@ public:
 		dirs.push(rootPath);
 		FMOD_RESULT result = FMOD_OK;
 
+		uint32_t eventCount = 0;
 		while (!dirs.empty())
 		{
 			auto currentDir = dirs.front();
@@ -56,20 +57,56 @@ public:
 
 				FMOD::Studio::Bank* bank;
 				result = mFMODSystem->loadBankFile(dir.path().string().c_str(), 
-					FMOD_STUDIO_LOAD_BANK_NONBLOCKING, &bank);
+					FMOD_STUDIO_LOAD_BANK_NORMAL, &bank);
 				if (result != FMOD_OK)
 				{
 					BASED_ERROR("Error loading bank at {}", dir.path().string());
 					continue;
 				}
 
+				int count;
+				bank->getEventCount(&count);
+				BASED_TRACE("Loaded FMOD bank {} with {} events", dir.path().string(), count);
+
 				FMOD_GUID id;
 				bank->getID(&id);
-				mBanks[id] = bank;
+				mBanks[eventCount++] = bank;
 			}
 		}
 
 		return result;
+	}
+
+	static FMOD::Studio::EventInstance* PlayEvent(const std::string& path)
+	{
+		FMOD::Studio::EventInstance* event;
+		FMOD::Studio::EventDescription* eventDescription;
+		auto result = mFMODSystem->getEvent(path.c_str(), &eventDescription);
+		BASED_ASSERT(result == FMOD_OK, "Error loading event description!");
+
+		result = eventDescription->createInstance(&event);
+		BASED_ASSERT(result == FMOD_OK, "Error creating event instance!");
+
+		result = event->start();
+		if (result != FMOD_OK)
+		{
+			BASED_WARN("Could not play event {}!", path);
+		}
+
+		return event;
+	}
+
+	static FMOD::Studio::EventInstance* CreateEvent(const std::string& path)
+	{
+		FMOD::Studio::EventInstance* event;
+		FMOD::Studio::EventDescription* eventDescription;
+		auto result = mFMODSystem->getEvent(path.c_str(), &eventDescription);
+		BASED_ASSERT(result == FMOD_OK, "Error loading event description!");
+
+		result = eventDescription->createInstance(&event);
+		BASED_ASSERT(result == FMOD_OK, "Error creating event instance!");
+
+		return event;
 	}
 
 	static FMOD_RESULT Update(float deltaTime)
@@ -80,5 +117,5 @@ private:
 	inline static FMOD::Studio::System* mFMODSystem;
 	inline static FMOD::System* mCoreSystem;
 
-	inline static std::unordered_map<FMOD_GUID, FMOD::Studio::Bank*> mBanks;
+	inline static std::unordered_map<uint32_t, FMOD::Studio::Bank*> mBanks;
 };

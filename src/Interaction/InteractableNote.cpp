@@ -4,6 +4,7 @@
 #include "InteractionTrigger.h"
 #include "Tool.h"
 #include "../GameSystems.h"
+#include "../Systems/FMODSystem.h"
 #include "based/app.h"
 #include "based/engine.h"
 #include "based/input/keyboard.h"
@@ -43,6 +44,13 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 		mDocument->document->Show();
 
 	mDocument->document->GetElementById("note-body")->SetInnerRML(mCurrentNote->mNoteText);
+
+	if (mPageTurnEvent) mPageTurnEvent->start();
+}
+
+void InteractableNoteSystem::Initialize()
+{
+	mPageTurnEvent = FMODSystem::CreateEventW("event:/PageTurning");
 }
 
 void InteractableNoteSystem::Update(float deltaTime)
@@ -101,6 +109,8 @@ void InteractableNoteSystem::Update(float deltaTime)
 				GameSystems::SetPlayerMovementEnabled(true);
 				input::Mouse::SetCursorVisible(false);
 				input::Mouse::SetCursorMode(input::CursorMode::Confined);
+
+				if (mPageTurnEvent) mPageTurnEvent->stop(FMOD_STUDIO_STOP_ALLOWFADEOUT);
 			}
 		}
 

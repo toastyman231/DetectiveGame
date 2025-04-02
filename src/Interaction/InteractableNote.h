@@ -1,4 +1,6 @@
 #pragma once
+#include <fmod_studio.hpp>
+
 #include "IInteractable.h"
 #include "based/engine.h"
 
@@ -27,6 +29,7 @@ public:
 	void OnInteractionHoverExit(Tool* tool) override;
 	void OnInteract(Tool* tool) override;
 
+	void Initialize();
 	void Update(float deltaTime);
 	void ProcessEvent(Rml::Event& event) override;
 
@@ -34,4 +37,6 @@ private:
 	InteractableNote* mCurrentNote = nullptr;
 	based::managers::DocumentInfo* mDocument = nullptr;
 	Rml::DataModelHandle mDataModel;
+
+	FMOD::Studio::EventInstance* mPageTurnEvent;
 };
