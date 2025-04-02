@@ -14,7 +14,11 @@ public:
 		auto result = FMOD::Studio::System::create(&mFMODSystem);
 		BASED_ASSERT(result == FMOD_OK, "Error creating FMOD system!");
 
-		result = mFMODSystem->initialize(32, FMOD_STUDIO_INIT_NORMAL, FMOD_DEFAULT, nullptr);
+		auto flags = FMOD_STUDIO_INIT_NORMAL;
+#ifdef BASED_CONFIG_DEBUG
+		flags = FMOD_STUDIO_INIT_LIVEUPDATE;
+#endif
+		result = mFMODSystem->initialize(32, flags, FMOD_DEFAULT, nullptr);
 		BASED_ASSERT(result == FMOD_OK, "Error initializing FMOD system!");
 
 		result = mFMODSystem->getCoreSystem(&mCoreSystem);
