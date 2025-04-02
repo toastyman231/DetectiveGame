@@ -31,9 +31,14 @@ public:
 	void Initialize();
 	void Update(float deltaTime);
 
+	void SetLocked(bool locked) { mIsLocked = locked; }
+	bool IsLocked() const { return mIsLocked; }
+
 	static void CallOnInteract(bool show = false);
 private:
 	entt::delegate<void(bool)> mOnInteract;
 
 	static void OnInteract(bool show);
+
+	bool mIsLocked = false;
 };

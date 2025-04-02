@@ -191,6 +191,7 @@ void SolutionPanelSystem::Update(float deltaTime)
 			GameSystems::SetPlayerMovementEnabled(true);
 			based::input::Mouse::SetCursorVisible(false);
 			based::input::Mouse::SetCursorMode(based::input::CursorMode::Confined);
+			GameSystems::mToolSystem.SetLocked(false);
 
 			mIsPanelGroupShown = false;
 		} else
@@ -226,6 +227,7 @@ void SolutionPanelSystem::Update(float deltaTime)
 			GameSystems::SetPlayerMovementEnabled(false);
 			based::input::Mouse::SetCursorVisible(true);
 			based::input::Mouse::SetCursorMode(based::input::CursorMode::Free);
+			GameSystems::mToolSystem.SetLocked(true);
 
 			mIsPanelGroupShown = true;
 		}
