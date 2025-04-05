@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{c9c27c06-892e-4be0-843a-9bdf400af5a5}">
 		<property name="assetPath">
-			<value>LabAmbience/LongComputerNoise.wav</value>
+			<value>LabAmbience/ComputerNoise/LongComputerNoise.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

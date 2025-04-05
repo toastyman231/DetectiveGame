@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{59da0746-588d-4963-a6ec-bac0cda00243}">
+		<property name="assetPath">
+			<value>LabAmbience/ComputerNoise/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
+		</relationship>
+	</object>
+</objects>
