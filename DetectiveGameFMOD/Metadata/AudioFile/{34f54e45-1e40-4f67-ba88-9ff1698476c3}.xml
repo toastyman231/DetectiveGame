@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{34f54e45-1e40-4f67-ba88-9ff1698476c3}">
 		<property name="assetPath">
-			<value>LongerBlipSequence2.wav</value>
+			<value>LabAmbience/LongerBlipSequence2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
