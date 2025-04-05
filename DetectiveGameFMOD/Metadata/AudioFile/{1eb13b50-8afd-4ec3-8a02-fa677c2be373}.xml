@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{1eb13b50-8afd-4ec3-8a02-fa677c2be373}">
 		<property name="assetPath">
-			<value>LowerBlip.wav</value>
+			<value>LabAmbience/ComputerNoise/LowerBlip.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{d0825065-60d6-4955-8795-c4fe87cf3fdf}">
 		<property name="assetPath">
-			<value>LabAmbience/2LilBeeps.wav</value>
+			<value>LabAmbience/ComputerNoise/2LilBeeps.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
