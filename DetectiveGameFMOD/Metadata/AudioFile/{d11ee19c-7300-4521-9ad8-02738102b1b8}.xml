@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{e56c3193-a603-4111-9863-2232102a2c55}">
+	<object class="AudioFile" id="{d11ee19c-7300-4521-9ad8-02738102b1b8}">
 		<property name="assetPath">
 			<value>Dialogue/Vowels/Vowel3.wav</value>
 		</property>

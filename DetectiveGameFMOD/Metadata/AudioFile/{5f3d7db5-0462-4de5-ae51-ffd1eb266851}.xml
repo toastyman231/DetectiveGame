@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{d370034c-04b6-46b2-ac51-28469867ac63}">
+	<object class="AudioFile" id="{5f3d7db5-0462-4de5-ae51-ffd1eb266851}">
 		<property name="assetPath">
-			<value>Dialogue/Vowels/Vowel2.wav</value>
+			<value>Dialogue/Consonants/Consonants5.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.29999999999999999</value>
+			<value>0.23000000000000001</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
