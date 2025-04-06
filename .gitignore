@@ -13,6 +13,6 @@
 *.sln
 
 /DetectiveGameFMOD/.cache/*
-/DetectiveGameFMOD/.usesr/*
+/DetectiveGameFMOD/.user/*
 /DetectiveGameFMOD/.unsaved/*
 /Assets/FMOD/Banks/**/*.bank
