@@ -10,6 +10,7 @@
 #include "Interaction/Tool.h"
 #include "Player/MouseLook.h"
 #include "Player/PlayerControllerSystem.h"
+#include "Systems/SoundTestSystem.h"
 #include "UISystems/SolutionPanelSystem.h"
 
 class GameSystems
@@ -22,6 +23,10 @@ public:
 	inline static DialogueSystem mDialogueSystem;
 	inline static InteractionDialogueSystem mDialogueTrigger;
 	inline static SolutionPanelSystem mSolutionPanelSystem;
+
+#ifdef BASED_CONFIG_DEBUG
+	inline static SoundTestSystem mSoundTest;
+#endif
 
 	static void SetPlayerMouseLookEnabled(bool enabled)
 	{

@@ -1,0 +1,27 @@
+<rml>
+    <head>
+        <title>HUD</title>
+        <link type="text/rcss" href="ComponentStyles.rcss"/>
+        <link type="text/rcss" href="SoundTesting.rcss"/>
+        <link type="text/rcss" href="rml.rcss"/>
+    </head>
+    <body>
+        <div class="sound-test">
+            <div class="body panel vertical-group">
+                <div>
+                    <form id="event-form" class="horizontal-group text-center" onsubmit="sound_test_submit">
+                        <input id="event-text" type="text" name="event-name" class="input-field"/>
+                        <input type="submit" id="play-button" class="button-sound">Play Event</input>
+                        <label>Enter event name as it appears in FMOD, without the event:/ prefix.</label>
+                    </form>
+                    <form id="param-form" class="horizontal-group text-center spacing" onsubmit="param_submit">
+                        <input id="param-text" type="text" name="param-name" class="input-field"/>
+                        <input id="param-value" type="text" name="param-value" class="input-field"/>
+                        <input type="submit" id="param-button" class="button-sound">Set Parameter</input>
+                        <label>Enter parameter name exactly as it appears in FMOD. Value must be a float.</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</rml>
