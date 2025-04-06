@@ -81,6 +81,15 @@ public:
 		return result;
 	}
 
+	static bool DoesEventExist(const std::string& path)
+	{
+		FMOD::Studio::EventDescription* eventDescription;
+		auto result = mFMODSystem->getEvent(path.c_str(), &eventDescription);
+		if (result == FMOD_OK) return true;
+
+		return false;
+	}
+
 	static FMOD::Studio::EventInstance* PlayEvent(const std::string& path)
 	{
 		FMOD::Studio::EventInstance* event;
@@ -111,6 +120,34 @@ public:
 		BASED_ASSERT(result == FMOD_OK, "Error creating event instance!");
 
 		return event;
+	}
+
+	static FMOD_RESULT SetEventParameter(FMOD::Studio::EventInstance* event, const std::string& name, float value)
+	{
+		if (!event)
+		{
+			BASED_WARN("Invalid event passed!");
+			return FMOD_ERR_EVENT_NOTFOUND;
+		}
+
+		auto result = event->setParameterByName(name.c_str(), value);
+		if (result != FMOD_OK)
+		{
+			BASED_WARN("Could not set parameter {} to {}! Did you check it exists?", name, value);
+		}
+
+		return result;
+	}
+
+	static FMOD_RESULT SetParameter(const std::string& name, float value)
+	{
+		auto result = mFMODSystem->setParameterByName(name.c_str(), value);
+		if (result != FMOD_OK)
+		{
+			BASED_WARN("Could not set parameter {} to {}! Did you check it exists?", name, value);
+		}
+
+		return result;
 	}
 
 	static FMOD_RESULT Update(float deltaTime)
