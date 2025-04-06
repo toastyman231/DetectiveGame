@@ -1,0 +1,29 @@
+.sound-test {
+    width: 800px;
+    height: 230px;
+    left: 25px;
+    top: 25px;
+    position: absolute;
+}
+
+.spacing {
+    margin-top: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button-sound {
+	width: 100%;
+	height: 2em;
+    margin: 5px;
+    border: 2px #81AE9D;
+    border-radius: 5px;
+    background-color: #21A179;
+    text-align: center;
+}
+.button-sound:hover {
+    background-color: #156149;
+    border-radius: 5px;
+}

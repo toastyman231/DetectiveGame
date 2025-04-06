@@ -107,6 +107,10 @@ public:
 		GameSystems::mDialogueSystem.Initialize();
 		GameSystems::mNoteSystem.Initialize();
 		GameSystems::mSolutionPanelSystem.Initialize();
+
+#ifdef BASED_CONFIG_DEBUG
+		GameSystems::mSoundTest.Initialize();
+#endif
 	}
 
 	void Shutdown() override
@@ -133,6 +137,10 @@ public:
 		GameSystems::mDialogueSystem.Update(deltaTime);
 
 		GameSystems::mSolutionPanelSystem.Update(deltaTime);
+
+#ifdef BASED_CONFIG_DEBUG
+		GameSystems::mSoundTest.Update(deltaTime);
+#endif
 	}
 
 	void Render() override
