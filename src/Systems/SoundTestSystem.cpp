@@ -78,7 +78,7 @@ void SoundTestSystem::ResetPlayingEvent(const std::string& event)
 {
 	if (mEventInstance) mEventInstance->stop(FMOD_STUDIO_STOP_IMMEDIATE);
 
-	mEventInstance = FMODSystem::CreateEvent(event);
+	mEventInstance = FMODSystem::CreateFMODEvent(event);
 	mEventInstance->start();
 }
 

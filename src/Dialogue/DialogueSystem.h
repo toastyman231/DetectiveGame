@@ -1,4 +1,6 @@
 #pragma once
+#include <fmod_studio.hpp>
+
 #include "based/managers/uimanager.h"
 
 struct DialogueSet
@@ -41,4 +43,7 @@ private:
 	float mLastUpdate;
 	float mTextSpeed = 0.04f;
 	bool mIsTyping = false;
+
+	FMOD::Studio::EventInstance* mDialogueSounds;
+	int mFrequencyLevel = 2;
 };

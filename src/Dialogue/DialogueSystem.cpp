@@ -4,10 +4,12 @@
 #include <future>
 
 #include "../GameSystems.h"
+#include "../Systems/FMODSystem.h"
 #include "based/app.h"
 #include "based/engine.h"
 #include "based/core/basedtime.h"
 #include "based/input/mouse.h"
+#include "based/math/random.h"
 #include "based/scene/components.h"
 
 DialogueSet::DialogueSet(const std::string& path)
@@ -43,6 +45,8 @@ void DialogueSystem::Initialize()
 	uiManager.SetPathPrefix("Assets/UI/");
 	mDocument = uiManager.LoadWindow("DialogueBox", context);
 	mDocument->document->Hide();
+
+	mDialogueSounds = FMODSystem::CreateFMODEvent("event:/Dialogue/Dialogue");
 }
 
 void DialogueSystem::Update(float deltaTime)
@@ -63,7 +67,29 @@ void DialogueSystem::Update(float deltaTime)
 				mLastUpdate = core::Time::GetUnscaledTime();
 
 				auto current = elem->GetInnerRML();
-				elem->SetInnerRML(current + mCurrentLine[mProgress]);
+				char currentChar = mCurrentLine[mProgress];
+				elem->SetInnerRML(current + currentChar);
+
+				if (mProgress % 1 == 0)
+				{
+					auto dialogueEvent = FMODSystem::CreateFMODEvent("event:/Dialogue/Dialogue");
+					dialogueEvent->setPitch(1.2f);
+					if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o'
+						|| currentChar == 'u')
+					{
+						FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 1);
+					} else if (currentChar == '.' || currentChar == '?' || currentChar == '!')
+					{
+						FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 2);
+					}
+					else
+					{
+						FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 0);
+					}
+
+					dialogueEvent->start();
+				}
+
 				++mProgress;
 			}
 			else mIsTyping = false;
