@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{07a186c8-1470-41c3-bf93-ef9ab5dd72e7}">
+		<property name="assetPath">
+			<value>Dialogue/Consonants/ConsonantG2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.17774999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
+		</relationship>
+	</object>
+</objects>
