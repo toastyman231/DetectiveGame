@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{a162b4f2-0fc9-4219-986c-a3f9805988ae}">
+	<object class="AudioFile" id="{4bacc915-dbc6-400e-8629-1d6d6ebc0224}">
 		<property name="assetPath">
-			<value>Dialogue/Consonants/Consonants.wav</value>
+			<value>UI start Drag.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.24077083333333332</value>
+			<value>1.5</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
