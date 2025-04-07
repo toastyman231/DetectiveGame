@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{73b9a388-9286-42f5-b5b6-73f57806530b}">
+		<property name="assetPath">
+			<value>Dialogue/Punctuation/Punctuation2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.19077083333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
+		</relationship>
+	</object>
+</objects>

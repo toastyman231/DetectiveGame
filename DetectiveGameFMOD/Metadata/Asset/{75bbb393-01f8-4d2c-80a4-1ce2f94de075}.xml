@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{75bbb393-01f8-4d2c-80a4-1ce2f94de075}">
+		<property name="assetPath">
+			<value>Dialogue/Punctuation/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{ccd5667c-4f79-40fa-9fb5-8b9bda5d6593}">
+	<object class="AudioFile" id="{6755ac44-100f-478a-90f9-4d2a12c1b182}">
 		<property name="assetPath">
-			<value>Dialogue/Vowels/VowelY.wav</value>
+			<value>Dialogue/Punctuation/Punctuation1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>0.1511875</value>
+			<value>0.055</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
