@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{51cdb687-3610-41e1-b741-8dc98052847d}">
+		<property name="name">
+			<value>Consonants</value>
+		</property>
+		<relationship name="folder">
+			<destination>{55dde715-256e-4e34-9257-2378c4f930b8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{6128299c-7098-4447-93f9-3b308e728144}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{6128299c-7098-4447-93f9-3b308e728144}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>B</value>
+			<value>K</value>
+			<value>D</value>
+			<value>P</value>
+			<value>J</value>
+			<value>L</value>
+			<value>M</value>
+			<value>N</value>
+			<value>T</value>
+			<value>G</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
