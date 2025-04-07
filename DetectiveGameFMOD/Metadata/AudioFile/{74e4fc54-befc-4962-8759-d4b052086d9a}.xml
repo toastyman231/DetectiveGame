@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{34d8182c-90e5-43ed-8f7c-317f89d26559}">
+	<object class="AudioFile" id="{74e4fc54-befc-4962-8759-d4b052086d9a}">
 		<property name="assetPath">
-			<value>Dialogue/Vowels/Vowel4.wav</value>
+			<value>Dialogue/Vowels/VowelA.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<property name="length">
-			<value>0.29999999999999999</value>
+			<value>0.15422916666666667</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
