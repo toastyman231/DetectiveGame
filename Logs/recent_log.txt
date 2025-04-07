@@ -1,0 +1,2321 @@
+[2025-04-06 19:49:49.024] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 19:49:49.025] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 19:49:49.025] [basedlogger] [warning] Platform: Windows
+[2025-04-06 19:49:49.211] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 19:49:49.212] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 19:49:49.212] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 19:49:49.451] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 19:49:49.470] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 19:49:49.497] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 19:49:49.531] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 19:49:49.536] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 19:49:49.624] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 19:49:49.630] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 19:49:49.723] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 19:49:49.762] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 19:49:50.845] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:49:50.892] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 19:49:51.180] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:49:52.762] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:49:52.770] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 19:49:52.773] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:49:52.784] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 19:49:52.826] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:49:57.649] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Deleting UI
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:49:57.654] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 19:49:57.655] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 19:49:57.655] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 19:49:57.655] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 19:50:34.827] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 19:50:34.828] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 19:50:34.828] [basedlogger] [warning] Platform: Windows
+[2025-04-06 19:50:34.978] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 19:50:34.979] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 19:50:34.979] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 19:50:35.215] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 19:50:35.238] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 19:50:35.265] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 19:50:35.302] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 19:50:35.306] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 19:50:35.397] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 19:50:35.404] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 19:50:35.491] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 19:50:35.531] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 19:50:35.579] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:50:35.585] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 19:50:35.954] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:50:36.922] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:50:38.145] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:50:38.145] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:50:50.695] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 19:50:50.699] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 19:50:50.699] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 19:50:50.699] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Deleting UI
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 19:50:50.700] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 19:55:31.475] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 19:55:31.476] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 19:55:31.476] [basedlogger] [warning] Platform: Windows
+[2025-04-06 19:55:31.630] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 19:55:31.630] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 19:55:31.630] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 19:55:31.864] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 19:55:31.886] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 19:55:31.915] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 19:55:31.953] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 19:55:31.957] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 19:55:32.046] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 19:55:32.053] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 19:55:32.147] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 19:55:32.187] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 19:55:32.228] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:55:32.233] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 19:55:32.937] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:55:33.518] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:55:33.673] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:55:35.573] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:55:39.649] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 19:55:39.653] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:55:41.222] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 19:55:41.226] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 19:55:41.226] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 19:55:41.226] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 19:55:41.226] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 19:55:41.227] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 19:55:41.227] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:55:41.227] [basedlogger] [trace] Deleting UI
+[2025-04-06 19:55:41.227] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:55:41.227] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 19:55:41.227] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 19:55:41.227] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 19:55:41.228] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 19:56:03.876] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 19:56:03.876] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 19:56:03.877] [basedlogger] [warning] Platform: Windows
+[2025-04-06 19:56:04.057] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 19:56:04.058] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 19:56:04.058] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 19:56:04.319] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 19:56:04.342] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 19:56:04.369] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 19:56:04.404] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 19:56:04.409] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 19:56:04.500] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 19:56:04.506] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 19:56:04.597] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 19:56:04.637] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 19:56:04.697] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:56:04.702] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 19:56:05.808] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:56:05.809] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:56:05.829] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 19:56:06.108] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:56:06.947] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:56:06.947] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:56:07.465] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.467] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.468] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.471] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.472] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.474] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.476] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.478] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.480] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.482] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.484] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.485] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.487] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.489] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.491] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.493] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.495] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.497] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.499] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.501] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.503] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.505] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:07.507] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.333] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.334] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.336] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.338] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.339] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.341] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.343] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.345] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.347] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.348] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.350] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.352] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.353] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.355] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.356] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.358] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.360] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.361] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.363] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.364] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.366] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.368] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.370] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:08.371] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:11.491] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 19:56:11.496] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 19:56:11.496] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 19:56:11.496] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 19:56:11.496] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 19:56:11.497] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 19:56:11.497] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:56:11.497] [basedlogger] [trace] Deleting UI
+[2025-04-06 19:56:11.497] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:56:11.497] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 19:56:11.497] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 19:56:11.497] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 19:56:11.497] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 19:56:23.417] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 19:56:23.418] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 19:56:23.418] [basedlogger] [warning] Platform: Windows
+[2025-04-06 19:56:23.577] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 19:56:23.577] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 19:56:23.578] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 19:56:23.836] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 19:56:23.859] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 19:56:23.890] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 19:56:23.927] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 19:56:23.932] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 19:56:24.024] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 19:56:24.030] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 19:56:24.126] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 19:56:24.167] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 19:56:24.209] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:56:24.213] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 19:56:25.021] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:56:25.975] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:56:26.349] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.351] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.353] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.354] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.356] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.358] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.360] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.361] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.363] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.365] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.367] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.368] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.370] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.373] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.374] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.376] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.378] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.380] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.381] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.383] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.385] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.387] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:26.389] [basedlogger] [trace] Length is 0
+[2025-04-06 19:56:29.737] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 19:56:29.742] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 19:56:29.742] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 19:56:29.742] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 19:56:29.742] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 19:56:29.742] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 19:56:29.742] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:56:29.743] [basedlogger] [trace] Deleting UI
+[2025-04-06 19:56:29.743] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:56:29.743] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 19:56:29.743] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 19:56:29.743] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 19:56:29.743] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 19:57:22.932] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 19:57:22.933] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 19:57:22.933] [basedlogger] [warning] Platform: Windows
+[2025-04-06 19:57:23.094] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 19:57:23.094] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 19:57:23.094] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 19:57:23.313] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 19:57:23.335] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 19:57:23.364] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 19:57:23.401] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 19:57:23.406] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 19:57:23.495] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 19:57:23.502] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 19:57:23.585] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 19:57:23.626] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 19:57:23.667] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:57:23.672] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 19:57:24.235] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:57:24.869] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:57:25.182] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:57:26.921] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:57:26.930] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 19:57:26.935] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:57:26.945] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 19:57:26.953] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:57:27.259] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:57:27.259] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:57:37.585] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 19:57:37.589] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 19:57:37.589] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 19:57:37.589] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 19:57:37.589] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 19:57:37.590] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 19:57:37.590] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:57:37.590] [basedlogger] [trace] Deleting UI
+[2025-04-06 19:57:37.590] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:57:37.590] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 19:57:37.590] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 19:57:37.590] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 19:57:37.590] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 19:59:17.925] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 19:59:17.926] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 19:59:17.926] [basedlogger] [warning] Platform: Windows
+[2025-04-06 19:59:18.083] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 19:59:18.083] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 19:59:18.084] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 19:59:18.300] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 19:59:18.320] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 19:59:18.345] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 19:59:18.380] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 19:59:18.385] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 19:59:18.476] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 19:59:18.483] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 19:59:18.575] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 19:59:18.613] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 19:59:18.661] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:59:18.666] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 19:59:19.241] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:59:19.670] [basedlogger] [trace] Note hover entered!
+[2025-04-06 19:59:20.037] [basedlogger] [trace] Note hover exited!
+[2025-04-06 19:59:22.501] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 19:59:31.171] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 19:59:31.175] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 19:59:31.175] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 19:59:31.175] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 19:59:31.175] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 19:59:31.176] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 19:59:31.176] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:59:31.176] [basedlogger] [trace] Deleting UI
+[2025-04-06 19:59:31.176] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 19:59:31.176] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 19:59:31.176] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 19:59:31.176] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 19:59:31.176] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:06:10.221] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:06:10.222] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:06:10.222] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:06:10.381] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:06:10.382] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:06:10.382] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:06:10.672] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:06:10.702] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:06:10.735] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:06:10.771] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:06:10.775] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:06:10.871] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:06:10.879] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:06:10.968] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:06:11.008] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:06:11.053] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:06:11.057] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:06:11.588] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:06:12.243] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:06:12.564] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:06:12.596] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:06:12.609] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:06:13.335] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:06:13.346] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:06:13.346] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:06:17.302] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:06:17.306] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:06:17.306] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:06:17.306] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:06:17.307] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:06:17.307] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:06:17.307] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:06:17.307] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:06:17.307] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:06:17.308] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:06:17.308] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:06:17.308] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:06:17.308] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:08:50.751] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:08:50.751] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:08:50.751] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:08:50.913] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:08:50.914] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:08:50.914] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:08:51.158] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:08:51.180] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:08:51.208] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:08:51.248] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:08:51.253] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:08:51.354] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:08:51.361] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:08:51.445] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:08:51.485] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:08:51.530] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:08:51.535] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:08:51.818] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:08:52.701] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:08:53.844] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:08:53.844] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:09:01.984] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:09:01.989] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:09:01.990] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:09:01.990] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:09:01.990] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:15:47.682] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:15:47.683] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:15:47.683] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:15:47.831] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:15:47.832] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:15:47.832] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:15:48.059] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:15:48.081] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:15:48.115] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:15:48.151] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:15:48.156] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:15:48.281] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:15:48.288] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:15:48.369] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:15:48.410] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:15:48.452] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:15:48.456] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:15:49.454] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:15:49.886] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:15:50.627] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:15:50.627] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:15:58.954] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:15:58.958] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:16:02.759] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:16:02.763] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:16:02.764] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:16:02.764] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:16:02.764] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:16:02.764] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:16:02.764] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:16:02.764] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:16:02.765] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:16:02.765] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:16:02.765] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:16:02.765] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:16:02.765] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:16:37.542] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:16:37.542] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:16:37.543] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:16:37.706] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:16:37.706] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:16:37.707] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:16:37.959] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:16:37.983] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:16:38.020] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:16:38.060] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:16:38.065] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:16:38.160] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:16:38.167] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:16:38.249] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:16:38.290] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:16:38.333] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:16:38.339] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:16:42.369] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:16:42.842] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:16:51.012] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:16:51.017] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:16:51.017] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:16:51.017] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:16:51.017] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:16:51.017] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:16:51.017] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:16:51.017] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:16:51.018] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:16:51.018] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:16:51.018] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:16:51.018] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:16:51.018] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:17:33.453] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:17:33.454] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:17:33.454] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:17:33.689] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:17:33.690] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:17:33.690] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:17:33.927] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:17:33.966] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:17:33.998] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:17:34.035] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:17:34.040] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:17:34.130] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:17:34.136] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:17:34.228] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:17:34.270] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:17:34.312] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:17:34.316] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:17:34.964] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:17:35.738] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:17:36.358] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:17:36.358] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:17:41.720] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:17:41.725] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:17:41.725] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:17:41.725] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:17:41.725] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:17:41.725] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:17:41.725] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:17:41.725] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:17:41.725] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:17:41.726] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:17:41.726] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:17:41.726] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:17:41.726] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:18:14.274] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:18:14.275] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:18:14.275] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:18:14.452] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:18:14.453] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:18:14.453] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:18:14.697] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:18:14.718] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:18:14.746] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:18:14.782] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:18:14.787] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:18:14.878] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:18:14.884] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:18:14.968] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:18:15.007] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:18:15.052] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:18:15.056] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:18:15.503] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:18:16.156] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:18:16.482] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:18:16.482] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:18:16.502] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:18:17.214] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:18:23.531] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:18:23.536] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:18:23.536] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:18:23.537] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:18:23.537] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:18:23.537] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:18:23.537] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:18:23.537] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:18:23.537] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:18:23.537] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:18:23.537] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:18:23.538] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:18:23.538] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:18:52.422] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:18:52.423] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:18:52.423] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:18:52.581] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:18:52.582] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:18:52.582] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:18:52.812] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:18:52.833] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:18:52.861] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:18:52.897] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:18:52.902] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:18:52.992] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:18:52.999] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:18:53.097] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:18:53.137] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:18:53.208] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:18:53.215] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:18:53.217] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:18:54.119] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:18:54.344] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:18:54.345] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:18:54.563] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:18:54.563] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:19:01.295] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:19:01.300] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:19:10.821] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:19:10.825] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:19:10.825] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:19:10.826] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:19:10.827] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:20:14.990] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:20:14.991] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:20:14.991] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:20:15.164] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:20:15.165] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:20:15.165] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:20:15.442] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:20:15.469] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:20:15.498] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:20:15.539] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:20:15.544] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:20:15.639] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:20:15.646] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:20:15.736] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:20:15.776] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:20:15.831] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:20:15.836] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:20:15.936] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:20:16.794] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:20:16.805] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:20:16.816] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:20:16.931] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:20:16.931] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:20:17.171] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:20:17.171] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:20:25.035] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:20:25.039] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:20:25.040] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:20:25.041] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:20:25.041] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:21:35.161] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:21:35.162] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:21:35.162] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:21:35.332] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:21:35.333] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:21:35.333] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:21:35.582] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:21:35.606] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:21:35.634] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:21:35.671] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:21:35.676] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:21:35.766] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:21:35.773] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:21:35.865] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:21:35.906] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:21:35.950] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:21:35.955] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:21:36.939] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:21:44.135] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:21:59.461] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:21:59.462] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:22:00.558] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:22:00.558] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:22:10.490] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:22:10.494] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:22:10.494] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:22:10.495] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:22:10.496] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:22:29.242] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:22:29.242] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:22:29.242] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:22:29.407] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:22:29.407] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:22:29.407] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:22:29.632] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:22:29.660] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:22:29.691] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:22:29.725] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:22:29.730] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:22:29.820] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:22:29.826] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:22:29.914] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:22:29.954] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:22:29.996] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:22:30.002] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:22:30.512] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:22:31.025] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:22:34.951] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:22:34.952] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:22:36.240] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:22:36.240] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:22:47.505] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:22:47.510] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:22:47.510] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:22:47.510] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:22:47.510] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:22:47.510] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:22:47.510] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:22:47.510] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:22:47.510] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:22:47.511] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:22:47.511] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:22:47.511] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:22:47.511] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:28:06.433] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:28:06.433] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:28:06.434] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:28:06.601] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:28:06.601] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:28:06.601] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:28:06.847] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:28:06.866] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:28:06.893] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:28:06.927] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:28:06.931] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:28:07.020] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:28:07.027] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:28:07.110] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:28:07.151] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:28:07.192] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:28:07.197] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:28:07.580] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:28:08.199] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:28:08.515] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:28:09.923] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:28:16.126] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:28:16.130] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:28:23.930] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:28:23.934] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:28:23.935] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:28:23.935] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:28:23.935] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:28:23.935] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:28:23.935] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:28:23.935] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:28:23.935] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:28:23.936] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:28:23.936] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:28:23.936] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:28:23.936] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:28:51.505] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:28:51.506] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:28:51.506] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:28:51.665] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:28:51.666] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:28:51.666] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:28:51.917] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:28:51.939] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:28:51.969] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:28:52.004] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:28:52.009] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:28:52.100] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:28:52.106] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:28:52.189] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:28:52.230] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:28:52.277] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:28:52.283] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:28:52.284] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:28:54.263] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:29:00.865] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:29:00.868] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:29:06.279] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:29:06.284] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:29:06.285] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:29:17.876] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:29:17.877] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:29:17.877] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:29:18.034] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:29:18.035] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:29:18.035] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:29:18.266] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:29:18.287] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:29:18.314] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:29:18.350] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:29:18.354] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:29:18.445] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:29:18.453] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:29:18.548] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:29:18.588] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:29:18.630] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:29:18.635] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:29:19.081] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:29:19.647] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:29:27.033] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:29:27.037] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:29:27.037] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:29:27.038] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:29:27.038] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:29:27.038] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:29:27.038] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:29:27.038] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:29:27.038] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:29:27.038] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:29:27.038] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:29:27.039] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:29:27.039] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:37:04.784] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:37:04.786] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:37:04.786] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:37:04.973] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:37:04.974] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:37:04.974] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:37:05.218] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:37:05.239] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:37:05.266] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:37:05.308] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:37:05.313] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:37:05.403] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:37:05.410] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:37:05.502] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:37:05.541] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:37:05.584] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:37:05.589] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:37:05.867] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:37:06.619] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:37:06.794] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:37:08.047] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:37:12.884] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:37:12.888] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:37:12.888] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:37:12.888] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:37:12.888] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:37:12.888] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:37:12.888] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:37:12.889] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:37:12.889] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:37:12.889] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:37:12.889] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:37:12.889] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:37:12.889] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:37:27.601] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:37:27.602] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:37:27.602] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:37:27.758] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:37:27.758] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:37:27.759] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:37:27.989] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:37:28.014] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:37:28.047] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:37:28.083] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:37:28.088] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:37:28.179] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:37:28.186] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:37:28.271] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:37:28.312] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:37:28.362] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:37:28.367] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:37:28.613] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:37:30.369] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:37:30.938] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:31.020] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:31.102] [basedlogger] [warning] Could not set parameter Dialogue to 1! Did you check it exists?
+[2025-04-06 20:37:31.184] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:31.267] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:31.349] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:31.432] [basedlogger] [warning] Could not set parameter Dialogue to 1! Did you check it exists?
+[2025-04-06 20:37:31.513] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:31.595] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:31.677] [basedlogger] [warning] Could not set parameter Dialogue to 1! Did you check it exists?
+[2025-04-06 20:37:31.759] [basedlogger] [warning] Could not set parameter Dialogue to 1! Did you check it exists?
+[2025-04-06 20:37:34.452] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:34.534] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:34.615] [basedlogger] [warning] Could not set parameter Dialogue to 1! Did you check it exists?
+[2025-04-06 20:37:34.697] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:34.779] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:34.862] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:34.943] [basedlogger] [warning] Could not set parameter Dialogue to 1! Did you check it exists?
+[2025-04-06 20:37:35.026] [basedlogger] [warning] Could not set parameter Dialogue to 1! Did you check it exists?
+[2025-04-06 20:37:35.107] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:35.191] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:35.272] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:35.357] [basedlogger] [warning] Could not set parameter Dialogue to 0! Did you check it exists?
+[2025-04-06 20:37:36.293] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:37:36.297] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:37:36.297] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:37:36.297] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:37:36.297] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:37:36.297] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:37:36.297] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:37:36.298] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:37:36.298] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:37:36.298] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:37:36.298] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:37:36.298] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:37:36.298] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:37:49.878] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:37:49.879] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:37:49.879] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:37:50.032] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:37:50.033] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:37:50.033] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:37:50.286] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:37:50.311] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:37:50.344] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:37:50.379] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:37:50.384] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:37:50.475] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:37:50.482] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:37:50.571] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:37:50.613] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:37:50.667] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:37:50.673] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:37:50.989] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:37:52.922] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:38:00.335] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:38:00.340] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:38:00.340] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:38:00.340] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:38:00.340] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:38:00.340] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:38:00.341] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:38:00.341] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:38:00.341] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:38:00.341] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:38:00.341] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:38:00.342] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:38:00.342] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:39:58.855] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:39:58.856] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:39:58.856] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:39:59.042] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:39:59.043] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:39:59.043] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:39:59.283] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:39:59.307] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:39:59.334] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:39:59.368] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:39:59.373] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:39:59.467] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:39:59.474] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:39:59.569] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:39:59.609] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:39:59.653] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:39:59.657] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:39:59.956] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:40:00.801] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:40:01.792] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:40:01.792] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:40:09.142] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:40:09.146] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:40:15.821] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:40:15.826] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:40:15.826] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:40:15.826] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:40:15.826] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:40:15.827] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:40:15.827] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:40:15.827] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:40:15.827] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:40:15.827] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:40:15.827] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:40:15.827] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:40:15.827] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:41:06.045] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:41:06.045] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:41:06.045] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:41:06.202] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:41:06.203] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:41:06.203] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:41:06.452] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:41:06.480] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:41:06.512] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:41:06.549] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:41:06.554] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:41:06.646] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:41:06.652] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:41:06.738] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:41:06.780] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:41:06.831] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:41:06.836] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:41:06.881] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:41:08.062] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:41:08.639] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:41:08.639] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:41:12.251] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:41:12.255] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:41:12.255] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:41:12.256] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:41:12.256] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:41:12.256] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:41:12.256] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:41:12.256] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:41:12.256] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:41:12.257] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:41:12.257] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:41:12.257] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:41:12.257] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:55:54.554] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:55:54.554] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:55:54.555] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:55:54.717] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:55:54.718] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:55:54.718] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:55:54.961] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:55:54.981] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:55:55.007] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:55:55.042] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:55:55.047] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:55:55.148] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:55:55.154] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:55:55.236] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:55:55.277] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:55:55.318] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:55:55.323] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:55:55.563] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:55:56.457] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:55:56.762] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:55:57.637] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:56:05.014] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:56:05.018] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:56:05.604] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:56:06.132] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:56:07.683] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:56:07.687] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:56:07.688] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:56:07.688] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:56:07.688] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:56:07.688] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:56:07.688] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:56:07.688] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:56:07.688] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:56:07.688] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:56:07.689] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:56:07.689] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:56:07.689] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 20:57:22.244] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 20:57:22.244] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 20:57:22.244] [basedlogger] [warning] Platform: Windows
+[2025-04-06 20:57:22.399] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 20:57:22.400] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 20:57:22.400] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 20:57:22.665] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 20:57:22.698] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 20:57:22.742] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 20:57:22.781] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 20:57:22.786] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 20:57:22.876] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 20:57:22.883] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 20:57:22.975] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 4 events
+[2025-04-06 20:57:23.016] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 20:57:23.056] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:57:23.060] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 20:57:23.810] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:57:24.435] [basedlogger] [trace] Note hover entered!
+[2025-04-06 20:57:25.160] [basedlogger] [trace] Note hover exited!
+[2025-04-06 20:57:26.165] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:57:32.576] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:57:32.580] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:57:38.824] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 20:57:38.828] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 20:57:42.733] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 20:57:42.737] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 20:57:42.737] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 20:57:42.737] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 20:57:42.737] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 20:57:42.737] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 20:57:42.738] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:57:42.738] [basedlogger] [trace] Deleting UI
+[2025-04-06 20:57:42.738] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 20:57:42.738] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 20:57:42.738] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 20:57:42.738] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 20:57:42.738] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 21:20:37.974] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 21:20:37.986] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 21:20:37.986] [basedlogger] [warning] Platform: Windows
+[2025-04-06 21:20:38.159] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 21:20:38.160] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 21:20:38.160] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 21:20:38.456] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 21:20:38.577] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 21:20:38.613] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 21:20:38.663] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 21:20:38.673] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 21:20:38.774] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 21:20:38.799] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 21:20:39.095] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 21:20:39.132] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 21:20:39.202] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:20:39.224] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 21:20:39.586] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:20:40.218] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:20:40.512] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:20:42.487] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:20:42.565] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:20:42.565] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:20:42.667] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:20:42.667] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:20:50.843] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:20:50.847] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:21:27.840] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:21:28.272] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:21:28.281] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:21:28.281] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:21:28.926] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:21:28.926] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:22:18.340] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 21:22:18.870] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 21:22:18.870] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 21:22:18.870] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 21:22:18.870] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 21:22:18.870] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 21:22:18.870] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:22:18.870] [basedlogger] [trace] Deleting UI
+[2025-04-06 21:22:18.870] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:22:18.871] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 21:22:18.871] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 21:22:18.871] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 21:22:18.871] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 21:22:36.281] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 21:22:36.282] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 21:22:36.282] [basedlogger] [warning] Platform: Windows
+[2025-04-06 21:22:36.449] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 21:22:36.449] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 21:22:36.449] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 21:22:36.739] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 21:22:36.761] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 21:22:36.787] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 21:22:36.822] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 21:22:36.827] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 21:22:36.922] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 21:22:36.928] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 21:22:37.010] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 21:22:37.051] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 21:22:37.102] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:22:37.107] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 21:22:37.553] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:22:38.270] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:22:38.370] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:22:38.370] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:22:38.602] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:22:38.602] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:22:45.512] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 21:22:45.517] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 21:22:45.517] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 21:22:45.517] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 21:22:45.517] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 21:22:45.517] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 21:22:45.517] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:22:45.517] [basedlogger] [trace] Deleting UI
+[2025-04-06 21:22:45.517] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:22:45.518] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 21:22:45.518] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 21:22:45.518] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 21:22:45.518] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 21:23:06.860] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 21:23:06.861] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 21:23:06.861] [basedlogger] [warning] Platform: Windows
+[2025-04-06 21:23:07.028] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 21:23:07.028] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 21:23:07.029] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 21:23:07.266] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 21:23:07.288] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 21:23:07.317] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 21:23:07.352] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 21:23:07.357] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 21:23:07.469] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 21:23:07.476] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 21:23:07.561] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 21:23:07.602] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 21:23:07.646] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:23:07.650] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 21:23:07.811] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:23:08.954] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:23:09.065] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:23:10.274] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:23:16.009] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:23:16.013] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:23:17.671] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 21:23:17.676] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 21:23:17.676] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 21:23:17.676] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 21:23:17.676] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 21:23:17.676] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 21:23:17.677] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:23:17.677] [basedlogger] [trace] Deleting UI
+[2025-04-06 21:23:17.677] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:23:17.677] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 21:23:17.677] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 21:23:17.677] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 21:23:17.678] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 21:55:24.554] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 21:55:24.555] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 21:55:24.555] [basedlogger] [warning] Platform: Windows
+[2025-04-06 21:55:24.727] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 21:55:24.727] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 21:55:24.727] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 21:55:24.945] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 21:55:25.022] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 21:55:25.053] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 21:55:25.098] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 21:55:25.106] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 21:55:25.201] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 21:55:25.215] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 21:55:25.346] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 21:55:25.388] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 21:55:25.448] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:55:25.457] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 21:55:25.766] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:55:26.685] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:55:26.695] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:55:26.696] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:55:27.006] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:55:27.006] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:55:32.747] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:55:32.751] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:55:39.892] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 21:55:39.896] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 21:55:39.896] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 21:55:39.896] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 21:55:39.896] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 21:55:39.896] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 21:55:39.897] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:55:39.897] [basedlogger] [trace] Deleting UI
+[2025-04-06 21:55:39.897] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:55:39.897] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 21:55:39.897] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 21:55:39.897] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 21:55:39.897] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 21:55:51.221] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 21:55:51.221] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 21:55:51.222] [basedlogger] [warning] Platform: Windows
+[2025-04-06 21:55:51.391] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 21:55:51.392] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 21:55:51.392] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 21:55:51.632] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 21:55:51.660] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 21:55:51.692] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 21:55:51.733] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 21:55:51.737] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 21:55:51.829] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 21:55:51.835] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 21:55:51.926] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 21:55:51.967] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 21:55:52.009] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:55:52.014] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 21:55:52.272] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:55:53.039] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:55:53.890] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:55:53.890] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:55:59.304] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 21:55:59.309] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 21:55:59.309] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 21:55:59.309] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 21:55:59.310] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 21:55:59.310] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 21:55:59.310] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:55:59.310] [basedlogger] [trace] Deleting UI
+[2025-04-06 21:55:59.310] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:55:59.310] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 21:55:59.310] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 21:55:59.311] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 21:55:59.311] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 21:56:17.837] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 21:56:17.838] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 21:56:17.838] [basedlogger] [warning] Platform: Windows
+[2025-04-06 21:56:18.037] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 21:56:18.038] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 21:56:18.038] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 21:56:18.277] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 21:56:18.297] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 21:56:18.324] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 21:56:18.363] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 21:56:18.368] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 21:56:18.463] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 21:56:18.471] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 21:56:18.557] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 21:56:18.596] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 21:56:18.643] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:56:18.647] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 21:56:18.938] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:56:19.828] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:56:19.839] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:56:19.864] [basedlogger] [trace] Note hover entered!
+[2025-04-06 21:56:20.493] [basedlogger] [trace] Note hover exited!
+[2025-04-06 21:56:20.494] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:56:26.319] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 21:56:26.323] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 21:56:29.832] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 21:56:29.836] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 21:56:29.836] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 21:56:29.836] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 21:56:29.837] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 21:56:29.837] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 21:56:29.837] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:56:29.837] [basedlogger] [trace] Deleting UI
+[2025-04-06 21:56:29.837] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 21:56:29.837] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 21:56:29.837] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 21:56:29.838] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 21:56:29.838] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:00:12.234] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:00:12.234] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:00:12.235] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:00:12.435] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:00:12.436] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:00:12.436] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:00:12.678] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:00:12.700] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:00:12.726] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:00:12.760] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:00:12.765] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:00:12.854] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:00:12.861] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:00:12.958] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:00:12.997] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:00:13.038] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:00:13.042] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:00:13.313] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:00:14.868] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:00:21.558] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:00:21.562] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:00:21.562] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:00:21.562] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:00:21.563] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:00:21.563] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:00:21.563] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:00:21.563] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:00:21.563] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:00:21.563] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:00:21.563] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:00:21.563] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:00:21.564] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:00:31.096] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:00:31.097] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:00:31.097] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:00:31.275] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:00:31.276] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:00:31.276] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:00:31.523] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:00:31.545] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:00:31.573] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:00:31.610] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:00:31.615] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:00:31.704] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:00:31.710] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:00:31.797] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:00:31.836] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:00:31.879] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:00:31.884] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:00:32.935] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:00:34.507] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:00:41.039] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:00:41.044] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:00:41.044] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:00:41.044] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:00:41.044] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:00:41.045] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:00:41.045] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:00:41.045] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:00:41.045] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:00:41.045] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:00:41.045] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:00:41.045] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:00:41.045] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:00:52.793] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:00:52.794] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:00:52.794] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:00:52.988] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:00:52.989] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:00:52.989] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:00:53.216] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:00:53.238] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:00:53.273] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:00:53.310] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:00:53.314] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:00:53.411] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:00:53.418] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:00:53.506] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:00:53.546] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:00:53.590] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:00:53.595] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:00:53.833] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:00:54.908] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:00:55.197] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:00:55.930] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:01:54.813] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:01:54.817] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:02:00.073] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:02:00.077] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:02:27.563] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:02:27.566] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:02:39.101] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:02:39.105] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:02:39.106] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:02:39.106] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:02:39.106] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:02:39.106] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:02:39.106] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:02:39.106] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:02:39.107] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:02:39.107] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:02:39.107] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:02:39.107] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:02:39.107] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:02:50.495] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:02:50.496] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:02:50.496] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:02:50.675] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:02:50.676] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:02:50.676] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:02:50.922] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:02:50.951] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:02:50.981] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:02:51.018] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:02:51.025] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:02:51.117] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:02:51.123] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:02:51.214] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:02:51.255] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:02:51.299] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:02:51.303] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:02:51.790] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:02:55.377] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:03:23.280] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:03:23.283] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:03:29.040] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:03:29.043] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:03:31.711] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:03:31.715] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:03:31.715] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:03:31.716] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:03:47.250] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:03:47.250] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:03:47.251] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:03:47.460] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:03:47.461] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:03:47.461] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:03:47.697] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:03:47.719] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:03:47.747] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:03:47.782] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:03:47.786] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:03:47.888] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:03:47.894] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:03:47.984] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:03:48.026] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:03:48.069] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:03:48.073] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:03:48.589] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:03:49.248] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:03:54.829] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:03:54.833] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:04:00.119] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:04:00.123] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:04:04.744] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:04:04.749] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:04:04.749] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:04:04.749] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:04:04.749] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:04:04.750] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:04:04.750] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:04:04.750] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:04:04.750] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:04:04.750] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:04:04.750] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:04:04.750] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:04:04.750] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:05:25.163] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:05:25.164] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:05:25.164] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:05:25.335] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:05:25.336] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:05:25.336] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:05:25.576] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:05:25.608] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:05:25.642] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:05:25.677] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:05:25.681] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:05:25.772] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:05:25.778] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:05:25.862] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:05:25.904] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:05:25.952] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:05:25.957] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:05:26.610] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:05:27.280] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:05:27.312] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:05:28.054] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:05:33.028] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:05:33.032] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:05:38.788] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:05:38.792] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:05:38.792] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:05:38.792] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:05:38.792] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:05:38.792] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:05:38.793] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:05:38.793] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:05:38.793] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:05:38.793] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:05:38.793] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:05:38.793] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:05:38.793] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:06:21.469] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:06:21.470] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:06:21.470] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:06:21.649] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:06:21.650] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:06:21.650] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:06:21.906] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:06:21.931] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:06:21.961] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:06:21.995] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:06:22.000] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:06:22.089] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:06:22.096] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:06:22.182] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:06:22.222] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:06:23.307] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:23.317] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:06:23.729] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:23.729] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:06:23.945] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:23.945] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:06:23.949] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:06:24.486] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/Esc_Key_Dark.png
+[2025-04-06 22:06:27.929] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:06:27.934] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:06:28.907] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:31.126] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:31.775] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:32.064] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:38.108] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:39.765] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:06:40.495] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:40.515] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:40.516] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:06:43.101] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:06:43.105] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:06:43.741] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:43.741] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:06:43.757] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:44.355] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:44.365] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:44.365] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:06:50.705] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:06:50.709] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:06:51.180] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:51.180] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:06:51.194] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:51.523] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:51.534] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:06:51.534] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:06:52.363] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:06:52.364] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:00.693] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:07:00.694] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:07:00.694] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:07:00.882] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:07:00.882] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:07:00.883] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:07:01.145] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:07:01.172] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:07:01.204] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:07:01.241] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:07:01.246] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:07:01.337] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:07:01.344] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:07:01.433] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:07:01.472] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:07:01.515] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:01.519] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:07:01.909] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:02.493] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:04.059] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/Esc_Key_Dark.png
+[2025-04-06 22:07:05.624] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:05.625] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:05.713] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:05.921] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:10.095] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:10.099] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:11.026] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:11.026] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:12.636] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:12.636] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:13.450] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:13.450] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:13.491] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:14.080] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:14.399] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:14.399] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:14.604] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:14.604] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:14.762] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:14.762] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:14.914] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:14.914] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:15.059] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:15.059] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:15.178] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:15.178] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:15.337] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:15.337] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:15.405] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:15.405] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:15.571] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:15.571] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:15.643] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:15.644] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:17.711] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:17.711] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:17.732] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:17.939] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:17.954] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:17.954] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:18.917] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:18.917] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:20.656] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:20.660] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:23.373] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:23.377] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:27.929] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:07:27.933] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:07:36.898] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:07:36.904] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:07:36.904] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:07:36.904] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:07:36.904] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:07:36.904] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:07:36.904] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:07:36.904] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:07:36.904] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:07:36.905] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:07:36.905] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:07:36.905] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:07:36.905] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:07:54.570] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:07:54.571] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:07:54.571] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:07:54.741] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:07:54.742] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:07:54.742] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:07:54.993] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:07:55.018] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:07:55.051] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:07:55.086] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:07:55.091] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:07:55.186] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:07:55.193] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:07:55.281] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:07:55.321] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:07:55.365] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:55.370] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:07:55.601] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:56.685] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:07:57.208] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:07:57.208] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:08:02.883] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:08:02.887] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:08:09.022] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:08:09.027] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:08:14.040] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:08:14.044] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:08:18.269] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:08:18.273] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:08:18.274] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:08:18.275] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:08:18.275] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:08:26.502] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:08:26.503] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:08:26.503] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:08:26.676] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:08:26.676] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:08:26.677] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:08:26.935] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:08:26.965] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:08:26.996] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:08:27.030] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:08:27.034] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:08:27.132] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:08:27.138] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:08:27.221] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:08:27.260] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:08:27.302] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:08:27.306] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:08:27.903] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:08:28.407] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:08:28.451] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:08:28.692] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:08:29.471] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:08:29.471] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:08:34.584] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:08:34.588] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:08:37.879] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:08:37.883] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:08:37.884] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:08:37.885] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:08:37.885] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:10:06.902] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:10:06.903] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:10:06.903] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:10:07.079] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:10:07.080] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:10:07.080] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:10:07.340] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:10:07.360] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:10:07.387] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:10:07.425] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:10:07.430] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:10:07.521] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:10:07.527] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:10:07.617] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:10:07.658] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:10:08.678] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:10:08.688] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:10:08.713] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:10:08.894] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:10:08.965] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:10:08.965] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:10:08.976] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:10:09.590] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/Esc_Key_Dark.png
+[2025-04-06 22:10:13.980] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:10:13.984] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:10:13.984] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:10:16.108] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:10:16.259] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:10:23.197] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:10:23.201] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:10:30.167] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:10:30.172] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:10:30.172] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:10:30.172] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:10:30.172] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:10:30.172] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:10:30.172] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:10:30.173] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:10:30.173] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:10:30.173] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:10:30.173] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:10:30.173] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:10:30.173] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:10:40.667] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:10:40.668] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:10:40.668] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:10:40.861] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:10:40.862] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:10:40.862] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:10:41.119] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:10:41.142] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:10:41.168] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:10:41.202] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:10:41.207] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:10:41.298] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:10:41.305] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:10:41.387] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 5 events
+[2025-04-06 22:10:41.427] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:10:42.629] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:10:42.639] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:10:42.664] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:10:42.665] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:10:43.325] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:10:43.325] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:10:49.747] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:10:49.751] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:10:50.062] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:10:50.063] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:10:50.076] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:10:50.590] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:11:19.887] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:11:19.887] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:11:20.826] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:11:20.826] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:11:26.899] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:11:26.902] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:11:32.393] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:11:32.398] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:11:32.398] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:11:32.398] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:11:32.398] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:11:32.398] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:11:32.398] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:11:32.398] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:11:32.398] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:11:32.399] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:11:32.399] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:11:32.399] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:11:32.399] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:56:07.389] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:56:07.390] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:56:07.390] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:56:07.550] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:56:07.551] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:56:07.551] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:56:07.774] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:56:07.799] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:56:07.827] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:56:07.865] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:56:07.869] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:56:07.960] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:56:07.967] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:56:08.051] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 6 events
+[2025-04-06 22:56:08.091] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:56:08.138] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:56:08.142] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:56:08.670] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:56:09.535] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:56:09.623] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:56:10.341] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:56:16.814] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:56:16.818] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:56:22.312] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:56:22.315] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:56:28.725] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:56:28.729] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:56:34.483] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:56:34.486] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:56:39.252] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:56:40.715] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:56:59.487] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:56:59.491] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:57:04.393] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:57:04.396] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:57:12.580] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:57:12.584] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:57:16.492] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:57:16.497] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:57:16.498] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:57:16.498] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:57:16.498] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 22:57:49.903] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 22:57:49.903] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 22:57:49.904] [basedlogger] [warning] Platform: Windows
+[2025-04-06 22:57:50.057] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 22:57:50.058] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 22:57:50.058] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 22:57:50.342] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 22:57:50.366] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 22:57:50.408] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 22:57:50.447] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 22:57:50.452] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 22:57:50.543] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 22:57:50.550] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 22:57:50.641] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 6 events
+[2025-04-06 22:57:50.681] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 22:57:50.730] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:57:50.735] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 22:57:51.621] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:57:51.752] [basedlogger] [trace] Note hover entered!
+[2025-04-06 22:57:51.903] [basedlogger] [trace] Note hover exited!
+[2025-04-06 22:57:52.913] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:57:58.631] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 22:57:58.635] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 22:57:59.972] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Deleting UI
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 22:57:59.977] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 22:57:59.978] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 22:57:59.978] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 22:57:59.978] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 23:00:20.917] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 23:00:20.917] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 23:00:20.917] [basedlogger] [warning] Platform: Windows
+[2025-04-06 23:00:21.079] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 23:00:21.079] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 23:00:21.080] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 23:00:21.350] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 23:00:21.381] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 23:00:21.418] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 23:00:21.456] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 23:00:21.461] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 23:00:21.563] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 23:00:21.570] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 23:00:21.658] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 6 events
+[2025-04-06 23:00:21.697] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 23:00:21.740] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:00:21.745] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 23:00:22.101] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:00:23.118] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:00:23.148] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 23:00:23.158] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:00:23.955] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:00:23.955] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:00:30.054] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:00:30.055] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 23:00:30.653] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:00:30.654] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:00:40.030] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 23:00:40.035] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 23:00:40.035] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 23:00:40.035] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 23:00:40.035] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 23:00:40.035] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 23:00:40.035] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 23:00:40.035] [basedlogger] [trace] Deleting UI
+[2025-04-06 23:00:40.035] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 23:00:40.036] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 23:00:40.036] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 23:00:40.036] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 23:00:40.036] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 23:05:05.293] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 23:05:05.293] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 23:05:05.294] [basedlogger] [warning] Platform: Windows
+[2025-04-06 23:05:05.454] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 23:05:05.454] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 23:05:05.455] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 23:05:05.718] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 23:05:05.740] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 23:05:05.773] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 23:05:05.808] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 23:05:05.813] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 23:05:05.913] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 23:05:05.921] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 23:05:06.014] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 6 events
+[2025-04-06 23:05:06.055] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 23:05:06.104] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:05:06.110] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 23:05:06.214] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:05:09.097] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:05:09.443] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:05:10.867] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:05:11.298] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:05:11.298] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:05:11.886] [basedlogger] [trace] T
+[2025-04-06 23:05:11.926] [basedlogger] [trace] Th
+[2025-04-06 23:05:11.968] [basedlogger] [trace] Thi
+[2025-04-06 23:05:12.009] [basedlogger] [trace] This
+[2025-04-06 23:05:12.050] [basedlogger] [trace] This 
+[2025-04-06 23:05:12.090] [basedlogger] [trace] This i
+[2025-04-06 23:05:12.131] [basedlogger] [trace] This is
+[2025-04-06 23:05:12.172] [basedlogger] [trace] This is 
+[2025-04-06 23:05:12.213] [basedlogger] [trace] This is t
+[2025-04-06 23:05:12.254] [basedlogger] [trace] This is th
+[2025-04-06 23:05:12.294] [basedlogger] [trace] This is the
+[2025-04-06 23:05:12.336] [basedlogger] [trace] This is the 
+[2025-04-06 23:05:12.377] [basedlogger] [trace] This is the f
+[2025-04-06 23:05:12.418] [basedlogger] [trace] This is the fi
+[2025-04-06 23:05:12.460] [basedlogger] [trace] This is the fir
+[2025-04-06 23:05:12.501] [basedlogger] [trace] This is the firs
+[2025-04-06 23:05:12.542] [basedlogger] [trace] This is the first
+[2025-04-06 23:05:12.582] [basedlogger] [trace] This is the first 
+[2025-04-06 23:05:12.623] [basedlogger] [trace] This is the first l
+[2025-04-06 23:05:12.664] [basedlogger] [trace] This is the first li
+[2025-04-06 23:05:12.705] [basedlogger] [trace] This is the first lin
+[2025-04-06 23:05:12.746] [basedlogger] [trace] This is the first line
+[2025-04-06 23:05:12.787] [basedlogger] [trace] This is the first line!
+[2025-04-06 23:05:18.899] [basedlogger] [trace] T
+[2025-04-06 23:05:18.940] [basedlogger] [trace] Th
+[2025-04-06 23:05:18.982] [basedlogger] [trace] Thi
+[2025-04-06 23:05:19.022] [basedlogger] [trace] This
+[2025-04-06 23:05:19.063] [basedlogger] [trace] This 
+[2025-04-06 23:05:19.104] [basedlogger] [trace] This i
+[2025-04-06 23:05:19.145] [basedlogger] [trace] This is
+[2025-04-06 23:05:19.186] [basedlogger] [trace] This is 
+[2025-04-06 23:05:19.227] [basedlogger] [trace] This is t
+[2025-04-06 23:05:19.268] [basedlogger] [trace] This is th
+[2025-04-06 23:05:19.308] [basedlogger] [trace] This is the
+[2025-04-06 23:05:19.350] [basedlogger] [trace] This is the 
+[2025-04-06 23:05:19.390] [basedlogger] [trace] This is the s
+[2025-04-06 23:05:19.432] [basedlogger] [trace] This is the se
+[2025-04-06 23:05:19.473] [basedlogger] [trace] This is the sec
+[2025-04-06 23:05:19.514] [basedlogger] [trace] This is the seco
+[2025-04-06 23:05:19.556] [basedlogger] [trace] This is the secon
+[2025-04-06 23:05:19.597] [basedlogger] [trace] This is the second
+[2025-04-06 23:05:19.639] [basedlogger] [trace] This is the second 
+[2025-04-06 23:05:19.679] [basedlogger] [trace] This is the second l
+[2025-04-06 23:05:19.721] [basedlogger] [trace] This is the second li
+[2025-04-06 23:05:19.762] [basedlogger] [trace] This is the second lin
+[2025-04-06 23:05:19.803] [basedlogger] [trace] This is the second line
+[2025-04-06 23:05:19.844] [basedlogger] [trace] This is the second line!
+[2025-04-06 23:05:22.362] [basedlogger] [trace] T
+[2025-04-06 23:05:22.404] [basedlogger] [trace] Th
+[2025-04-06 23:05:22.445] [basedlogger] [trace] Thi
+[2025-04-06 23:05:22.484] [basedlogger] [trace] This
+[2025-04-06 23:05:22.525] [basedlogger] [trace] This 
+[2025-04-06 23:05:22.566] [basedlogger] [trace] This i
+[2025-04-06 23:05:22.606] [basedlogger] [trace] This is
+[2025-04-06 23:05:22.648] [basedlogger] [trace] This is 
+[2025-04-06 23:05:22.688] [basedlogger] [trace] This is t
+[2025-04-06 23:05:22.730] [basedlogger] [trace] This is th
+[2025-04-06 23:05:22.771] [basedlogger] [trace] This is the
+[2025-04-06 23:05:22.812] [basedlogger] [trace] This is the 
+[2025-04-06 23:05:22.852] [basedlogger] [trace] This is the l
+[2025-04-06 23:05:22.893] [basedlogger] [trace] This is the la
+[2025-04-06 23:05:22.934] [basedlogger] [trace] This is the las
+[2025-04-06 23:05:22.975] [basedlogger] [trace] This is the last
+[2025-04-06 23:05:23.017] [basedlogger] [trace] This is the last 
+[2025-04-06 23:05:23.057] [basedlogger] [trace] This is the last l
+[2025-04-06 23:05:23.098] [basedlogger] [trace] This is the last li
+[2025-04-06 23:05:23.139] [basedlogger] [trace] This is the last lin
+[2025-04-06 23:05:23.179] [basedlogger] [trace] This is the last line
+[2025-04-06 23:05:23.219] [basedlogger] [trace] This is the last line!
+[2025-04-06 23:05:23.260] [basedlogger] [trace] This is the last line! 
+[2025-04-06 23:05:28.754] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 23:05:28.757] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:05:29.511] [basedlogger] [trace] T
+[2025-04-06 23:05:29.551] [basedlogger] [trace] Th
+[2025-04-06 23:05:29.592] [basedlogger] [trace] Thi
+[2025-04-06 23:05:29.633] [basedlogger] [trace] This
+[2025-04-06 23:05:29.674] [basedlogger] [trace] This 
+[2025-04-06 23:05:29.715] [basedlogger] [trace] This i
+[2025-04-06 23:05:29.755] [basedlogger] [trace] This is
+[2025-04-06 23:05:29.796] [basedlogger] [trace] This is 
+[2025-04-06 23:05:29.837] [basedlogger] [trace] This is t
+[2025-04-06 23:05:29.878] [basedlogger] [trace] This is th
+[2025-04-06 23:05:29.918] [basedlogger] [trace] This is the
+[2025-04-06 23:05:29.959] [basedlogger] [trace] This is the 
+[2025-04-06 23:05:29.999] [basedlogger] [trace] This is the f
+[2025-04-06 23:05:30.040] [basedlogger] [trace] This is the fi
+[2025-04-06 23:05:30.081] [basedlogger] [trace] This is the fir
+[2025-04-06 23:05:30.120] [basedlogger] [trace] This is the firs
+[2025-04-06 23:05:30.161] [basedlogger] [trace] This is the first
+[2025-04-06 23:05:30.201] [basedlogger] [trace] This is the first 
+[2025-04-06 23:05:30.243] [basedlogger] [trace] This is the first l
+[2025-04-06 23:05:30.283] [basedlogger] [trace] This is the first li
+[2025-04-06 23:05:30.324] [basedlogger] [trace] This is the first lin
+[2025-04-06 23:05:30.364] [basedlogger] [trace] This is the first line
+[2025-04-06 23:05:30.405] [basedlogger] [trace] This is the first line!
+[2025-04-06 23:05:35.031] [basedlogger] [trace] T
+[2025-04-06 23:05:35.073] [basedlogger] [trace] Th
+[2025-04-06 23:05:35.113] [basedlogger] [trace] Thi
+[2025-04-06 23:05:35.152] [basedlogger] [trace] This
+[2025-04-06 23:05:35.193] [basedlogger] [trace] This 
+[2025-04-06 23:05:35.234] [basedlogger] [trace] This i
+[2025-04-06 23:05:35.275] [basedlogger] [trace] This is
+[2025-04-06 23:05:35.316] [basedlogger] [trace] This is 
+[2025-04-06 23:05:35.356] [basedlogger] [trace] This is t
+[2025-04-06 23:05:35.396] [basedlogger] [trace] This is th
+[2025-04-06 23:05:35.436] [basedlogger] [trace] This is the
+[2025-04-06 23:05:35.477] [basedlogger] [trace] This is the 
+[2025-04-06 23:05:35.517] [basedlogger] [trace] This is the s
+[2025-04-06 23:05:35.559] [basedlogger] [trace] This is the se
+[2025-04-06 23:05:35.598] [basedlogger] [trace] This is the sec
+[2025-04-06 23:05:35.640] [basedlogger] [trace] This is the seco
+[2025-04-06 23:05:35.681] [basedlogger] [trace] This is the secon
+[2025-04-06 23:05:35.722] [basedlogger] [trace] This is the second
+[2025-04-06 23:05:35.762] [basedlogger] [trace] This is the second 
+[2025-04-06 23:05:35.803] [basedlogger] [trace] This is the second l
+[2025-04-06 23:05:35.844] [basedlogger] [trace] This is the second li
+[2025-04-06 23:05:35.886] [basedlogger] [trace] This is the second lin
+[2025-04-06 23:05:35.927] [basedlogger] [trace] This is the second line
+[2025-04-06 23:05:35.968] [basedlogger] [trace] This is the second line!
+[2025-04-06 23:05:37.108] [basedlogger] [trace] T
+[2025-04-06 23:05:37.149] [basedlogger] [trace] Th
+[2025-04-06 23:05:37.188] [basedlogger] [trace] Thi
+[2025-04-06 23:05:37.230] [basedlogger] [trace] This
+[2025-04-06 23:05:37.271] [basedlogger] [trace] This 
+[2025-04-06 23:05:37.311] [basedlogger] [trace] This i
+[2025-04-06 23:05:37.352] [basedlogger] [trace] This is
+[2025-04-06 23:05:37.392] [basedlogger] [trace] This is 
+[2025-04-06 23:05:37.433] [basedlogger] [trace] This is t
+[2025-04-06 23:05:37.473] [basedlogger] [trace] This is th
+[2025-04-06 23:05:37.514] [basedlogger] [trace] This is the
+[2025-04-06 23:05:37.554] [basedlogger] [trace] This is the 
+[2025-04-06 23:05:37.595] [basedlogger] [trace] This is the l
+[2025-04-06 23:05:37.636] [basedlogger] [trace] This is the la
+[2025-04-06 23:05:37.676] [basedlogger] [trace] This is the las
+[2025-04-06 23:05:37.717] [basedlogger] [trace] This is the last
+[2025-04-06 23:05:37.759] [basedlogger] [trace] This is the last 
+[2025-04-06 23:05:37.799] [basedlogger] [trace] This is the last l
+[2025-04-06 23:05:37.840] [basedlogger] [trace] This is the last li
+[2025-04-06 23:05:37.880] [basedlogger] [trace] This is the last lin
+[2025-04-06 23:05:37.920] [basedlogger] [trace] This is the last line
+[2025-04-06 23:05:37.960] [basedlogger] [trace] This is the last line!
+[2025-04-06 23:05:38.001] [basedlogger] [trace] This is the last line! 
+[2025-04-06 23:05:41.413] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 23:05:41.418] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 23:05:41.418] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 23:05:41.423] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Deleting UI
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 23:05:41.424] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 23:08:17.011] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 23:08:17.012] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 23:08:17.012] [basedlogger] [warning] Platform: Windows
+[2025-04-06 23:08:17.168] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 23:08:17.168] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 23:08:17.168] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 23:08:17.402] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 23:08:17.423] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 23:08:17.450] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 23:08:17.484] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 23:08:17.488] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 23:08:17.577] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 23:08:17.584] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 23:08:17.671] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 6 events
+[2025-04-06 23:08:17.712] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 23:08:17.754] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:08:17.759] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 23:08:18.740] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:08:20.141] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:08:22.231] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:08:22.231] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 23:08:23.270] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:08:23.270] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:08:24.425] [basedlogger] [trace] CLEARING
+[2025-04-06 23:08:26.295] [basedlogger] [trace] CLEARING
+[2025-04-06 23:08:28.515] [basedlogger] [trace] CLEARING
+[2025-04-06 23:08:30.931] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 23:08:30.935] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:08:33.563] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 23:08:33.585] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 23:08:33.585] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 23:08:33.585] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 23:08:33.585] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 23:08:33.586] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 23:08:33.586] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 23:08:33.586] [basedlogger] [trace] Deleting UI
+[2025-04-06 23:08:33.586] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 23:08:33.586] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 23:08:33.586] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 23:08:33.587] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 23:08:33.587] [basedlogger] [trace] Deleting shader 13
+[2025-04-06 23:08:56.232] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-06 23:08:56.269] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-06 23:08:56.269] [basedlogger] [warning] Platform: Windows
+[2025-04-06 23:08:56.443] [basedlogger] [info] SDL 2.24.1
+[2025-04-06 23:08:56.445] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-06 23:08:56.445] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-06 23:08:56.730] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-06 23:08:56.771] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-06 23:08:57.002] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-06 23:08:57.040] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-06 23:08:57.046] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-06 23:08:57.134] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-06 23:08:57.140] [basedlogger] [trace] Deserializing material Lit
+[2025-04-06 23:08:57.222] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 6 events
+[2025-04-06 23:08:57.262] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-06 23:08:57.350] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:08:57.354] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-06 23:08:57.682] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:09:03.265] [basedlogger] [trace] Note hover entered!
+[2025-04-06 23:09:03.795] [basedlogger] [trace] Note hover exited!
+[2025-04-06 23:09:04.903] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:09:06.351] [basedlogger] [trace] CLEARING
+[2025-04-06 23:09:09.848] [basedlogger] [trace] CLEARING
+[2025-04-06 23:09:11.332] [basedlogger] [trace] Unhovered dialogue
+[2025-04-06 23:09:11.336] [basedlogger] [trace] Hovered dialogue
+[2025-04-06 23:09:13.046] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Deleting shader 22
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Deleting shader 19
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Deleting RectGreen
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Deleting RectRed
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Deleting UI
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-06 23:09:13.051] [basedlogger] [trace] Deleting shader 4
+[2025-04-06 23:09:13.052] [basedlogger] [trace] Deleting shader 7
+[2025-04-06 23:09:13.052] [basedlogger] [trace] Deleting shader 10
+[2025-04-06 23:09:13.052] [basedlogger] [trace] Deleting shader 13

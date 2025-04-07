@@ -69,7 +69,7 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 
 void InteractableNoteSystem::Initialize()
 {
-	mPageTurnEvent = FMODSystem::CreateEventW("event:/PageTurning");
+	mPageTurnEvent = FMODSystem::CreateFMODEvent("event:/PageTurning");
 }
 
 void InteractableNoteSystem::Update(float deltaTime)

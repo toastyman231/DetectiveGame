@@ -109,7 +109,7 @@ public:
 		return event;
 	}
 
-	static FMOD::Studio::EventInstance* CreateEvent(const std::string& path)
+	static FMOD::Studio::EventInstance* CreateFMODEvent(const std::string& path)
 	{
 		FMOD::Studio::EventInstance* event;
 		FMOD::Studio::EventDescription* eventDescription;
