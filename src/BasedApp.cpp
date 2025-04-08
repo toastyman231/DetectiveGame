@@ -107,6 +107,7 @@ public:
 		GameSystems::mDialogueSystem.Initialize();
 		GameSystems::mNoteSystem.Initialize();
 		GameSystems::mSolutionPanelSystem.Initialize();
+		GameSystems::mPlayerController.Initialize();
 
 #ifdef BASED_CONFIG_DEBUG
 		GameSystems::mSoundTest.Initialize();

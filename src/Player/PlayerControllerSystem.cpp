@@ -1,11 +1,22 @@
 #include "based/pch.h"
 #include "PlayerControllerSystem.h"
 
+#include "../Systems/FMODSystem.h"
 #include "based/app.h"
+#include "based/core/basedtime.h"
 #include "based/input/keyboard.h"
 #include "based/input/mouse.h"
+#include "based/math/random.h"
 #include "based/scene/components.h"
 #include "based/scene/entity.h"
+
+void PlayerControllerSystem::Initialize(float stepInterval)
+{
+	mStepInterval = stepInterval;
+	mFootsteps0 = FMODSystem::CreateFMODEvent("event:/Footsteps/Foosteps");
+	mFootsteps1 = FMODSystem::CreateFMODEvent("event:/Footsteps/Foosteps");
+	mCreaks = FMODSystem::CreateFMODEvent("event:/Footsteps/Creaks");
+}
 
 void PlayerControllerSystem::Update(float deltaTime)
 {
@@ -85,6 +96,26 @@ void PlayerControllerSystem::Update(float deltaTime)
 		else
 		{
 			new_velocity = current_vertical_velocity;
+		}
+
+		auto groundVel = character.Character->GetLinearVelocity();
+		if (groundVel.LengthSq() > 0.15f && math::Abs(current_vertical_velocity.GetY()) < 0.1f)
+		{
+			auto curTime = core::Time::GetTime();
+			if (curTime - mLastStepTime >= mStepInterval)
+			{
+				mLastStepTime = curTime;
+				if (mStepIndex > 0) mFootsteps0->start();
+				else mFootsteps1->start();
+
+				auto randValue = math::Random01();
+				if (randValue <= mCreakChance)
+				{
+					mCreaks->start();
+				}
+
+				mStepIndex *= -1;
+			}
 		}
 
 		// Add gravity
