@@ -245,6 +245,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0a9e8420-4882-4b81-a06b-4f2572c0031b}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<property name="name">
 			<value>NeighborsTalking</value>
 		</property>
@@ -269,7 +272,7 @@
 			<value>20000</value>
 		</property>
 		<property name="maximumTimeBetweenSounds">
-			<value>90000</value>
+			<value>30000</value>
 		</property>
 		<property name="maximumScatterDistance">
 			<value>3</value>
@@ -285,6 +288,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{52273621-c562-481e-8200-924f5eea4ca0}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<property name="name">
 			<value>NeighborNoise</value>
 		</property>
@@ -388,8 +394,8 @@
 	<object class="MultiSound" id="{39d9c91e-d9cb-4b84-bd04-30a33ec50df6}">
 		<relationship name="sounds">
 			<destination>{467c746c-c977-4dd3-9473-84f24bdb0884}</destination>
-			<destination>{3447fc3b-8786-4ff0-9100-457e60e1717e}</destination>
-			<destination>{28a90bd6-1bd1-4fde-ae11-faada8ab718e}</destination>
+			<destination>{daa7b7e6-c920-4b7e-b727-6fbc4f9c97cc}</destination>
+			<destination>{7cde6329-3bd8-4364-9319-cecb3ec51f38}</destination>
 		</relationship>
 		<relationship name="playPercentages">
 			<destination>{ba080040-1dda-4006-be36-f9d16648f1ff}</destination>
@@ -406,7 +412,7 @@
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>5.5</value>
+			<value>2.08333349</value>
 		</property>
 	</object>
 	<object class="ParameterCondition" id="{56e65526-bded-4389-a31c-26976cd17bcd}">
@@ -534,8 +540,8 @@
 			<destination>{1d722beb-2e66-4a70-b3d1-190d21e42b09}</destination>
 		</relationship>
 	</object>
-	<object class="SilenceSound" id="{3447fc3b-8786-4ff0-9100-457e60e1717e}" />
-	<object class="SilenceSound" id="{28a90bd6-1bd1-4fde-ae11-faada8ab718e}" />
+	<object class="SilenceSound" id="{daa7b7e6-c920-4b7e-b727-6fbc4f9c97cc}" />
+	<object class="SilenceSound" id="{7cde6329-3bd8-4364-9319-cecb3ec51f38}" />
 	<object class="PlayPercentage" id="{ba080040-1dda-4006-be36-f9d16648f1ff}">
 		<property name="percentage">
 			<value>25</value>
