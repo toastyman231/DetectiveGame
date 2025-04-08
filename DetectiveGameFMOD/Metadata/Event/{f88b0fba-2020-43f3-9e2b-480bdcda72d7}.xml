@@ -89,9 +89,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{d8ca4a22-e5e1-4b08-9a85-ded51c090b6a}" />
 	<object class="MultiSound" id="{e8715445-4ee1-41b1-bd30-4a8ef0ac101e}">
-		<property name="triggerProbabilityEnabled">
-			<value>true</value>
-		</property>
 		<property name="triggerProbability">
 			<value>45</value>
 		</property>
@@ -209,10 +206,10 @@
 	<object class="MixerBusFader" id="{2699e6f7-22eb-4461-8dec-686633e40ad4}" />
 	<object class="SFXReverbEffect" id="{f6233d50-24a0-4170-95a2-8ef2e0452b32}">
 		<property name="decayTime">
-			<value>1000</value>
+			<value>700</value>
 		</property>
-		<property name="lowShelfGain">
-			<value>2</value>
+		<property name="HFDecayRatio">
+			<value>40</value>
 		</property>
 		<property name="highCut">
 			<value>20000</value>
