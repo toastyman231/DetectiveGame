@@ -47,6 +47,9 @@ void DialogueSystem::Initialize()
 	mDocument->document->Hide();
 
 	mDialogueSounds = FMODSystem::CreateFMODEvent("event:/Dialogue/Dialogue");
+
+	mSpeakers.emplace_back();
+	mSpeakers.emplace_back(SpeakerSettings{ .MinPitch = 0.8f, .MaxPitch = 1.f });
 }
 
 void DialogueSystem::Update(float deltaTime)
@@ -70,24 +73,11 @@ void DialogueSystem::Update(float deltaTime)
 				char currentChar = mCurrentLine[mProgress];
 				elem->SetInnerRML(current + currentChar);
 
-				if (mProgress % 1 == 0)
-				{
-					auto dialogueEvent = FMODSystem::CreateFMODEvent("event:/Dialogue/Dialogue");
-					dialogueEvent->setPitch(1.2f);
-					if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o'
-						|| currentChar == 'u')
-					{
-						FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 1);
-					} else if (currentChar == '.' || currentChar == '?' || currentChar == '!')
-					{
-						FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 2);
-					}
-					else
-					{
-						FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 0);
-					}
+				SpeakerSettings speaker = mSpeakers[mCurrentSpeaker];
 
-					dialogueEvent->start();
+				if (mProgress % speaker.Frequency == 0)
+				{
+					PlayCharacterSound(speaker, currentChar);
 				}
 
 				++mProgress;
@@ -146,6 +136,13 @@ void DialogueSystem::ShowNextLine()
 		return;
 	}
 
+	if (std::isdigit(line[0]))
+	{
+		mCurrentSpeaker = based::math::Clamp((int)(line[0] - '0'), 0, (int)mSpeakers.size() - 1);
+		line = line.substr(1);
+	}
+	else mCurrentSpeaker = 0;
+
 	// Clear text to prepare for next line
 	auto elem = mDocument->document->GetElementById("dialogue-body");
 	elem->SetInnerRML("");
@@ -173,4 +170,25 @@ void DialogueSystem::ShowNextLine()
 	mProgress = 0;
 	mLastUpdate = based::core::Time::GetUnscaledTime();
 	mIsTyping = true;
+}
+
+void DialogueSystem::PlayCharacterSound(SpeakerSettings& speaker, char character)
+{
+	/*auto consonantEvent = FMODSystem::CreateFMODEvent(speaker.ConsonantEventPath);
+	auto vowelEvent = FMODSystem::CreateFMODEvent(speaker.VowelEventPath);
+	consonantEvent->setPitch(1.2f);
+	if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o'
+		|| currentChar == 'u')
+	{
+		FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 1);
+	} else if (currentChar == '.' || currentChar == '?' || currentChar == '!')
+	{
+		FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 2);
+	}
+	else
+	{
+		FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 0);
+	}
+
+	dialogueEvent->start();*/
 }

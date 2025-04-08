@@ -1,6 +1,7 @@
 #pragma once
 #include <fmod_studio.hpp>
 
+#include "SpeakerSettings.h"
 #include "based/managers/uimanager.h"
 
 struct DialogueSet
@@ -35,6 +36,7 @@ public:
 	bool mInDialogue = false;
 private:
 	void ShowNextLine();
+	void PlayCharacterSound(SpeakerSettings& speaker, char character);
 
 	based::managers::DocumentInfo* mDocument = nullptr;
 	DialogueSet mCurrentDialogue;
@@ -43,7 +45,8 @@ private:
 	float mLastUpdate;
 	float mTextSpeed = 0.04f;
 	bool mIsTyping = false;
+	int mCurrentSpeaker = 0;
 
 	FMOD::Studio::EventInstance* mDialogueSounds;
-	int mFrequencyLevel = 2;
+	std::vector<SpeakerSettings> mSpeakers;
 };
