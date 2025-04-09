@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{65052349-b88a-4f9d-9a48-db3ab0fc41b9}">
+	<object class="AudioFile" id="{a702f772-b229-447f-a6d8-73da7164c726}">
 		<property name="assetPath">
-			<value>UI/Drag/StartDrag.wav</value>
+			<value>WrongNoiseImpact1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.074916666666666673</value>
+			<value>4.2285624999999998</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{a386d213-8f83-46c8-926a-4aa2b2e84890}</destination>
