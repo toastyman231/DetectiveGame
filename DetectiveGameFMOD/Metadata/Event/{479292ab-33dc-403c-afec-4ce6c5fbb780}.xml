@@ -89,9 +89,13 @@
 	</object>
 	<object class="MixerBusPanner" id="{3e055820-4da7-4ed2-98d6-43e3bf8bfcee}" />
 	<object class="MultiSound" id="{df03ddb4-2928-447b-a3d0-2c75a10f4925}">
+		<property name="startOffset">
+			<value>0.5</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{b5a73090-7282-46ba-b2e1-dfb0a703b994}</destination>
 			<destination>{d43623fb-3008-4778-87e0-8bdfb0a52bc1}</destination>
+			<destination>{61a916eb-caaf-48f3-9a11-9a3985858f6c}</destination>
 		</relationship>
 		<relationship name="sounds">
 			<destination>{f6e9039c-ad93-4b97-ac11-fd5926786c30}</destination>
@@ -137,6 +141,17 @@
 	<object class="RandomizerModulator" id="{d43623fb-3008-4778-87e0-8bdfb0a52bc1}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>startOffset</value>
+		</property>
+		<property name="amount">
+			<value>9.5</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{61a916eb-caaf-48f3-9a11-9a3985858f6c}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>3.19999981</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{f6e9039c-ad93-4b97-ac11-fd5926786c30}">
