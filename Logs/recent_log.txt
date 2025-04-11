@@ -3312,3 +3312,111 @@
 [2025-04-10 20:48:51.306] [basedlogger] [trace] Deleting shader 7
 [2025-04-10 20:48:51.306] [basedlogger] [trace] Deleting shader 10
 [2025-04-10 20:48:51.306] [basedlogger] [trace] Deleting shader 13
+[2025-04-10 20:51:53.447] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-10 20:51:53.448] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-10 20:51:53.448] [basedlogger] [warning] Platform: Windows
+[2025-04-10 20:51:53.609] [basedlogger] [info] SDL 2.24.1
+[2025-04-10 20:51:53.610] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-10 20:51:53.610] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-10 20:51:53.846] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-10 20:51:53.871] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-10 20:51:53.902] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-10 20:51:53.943] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-10 20:51:53.948] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-10 20:51:54.039] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-10 20:51:54.046] [basedlogger] [trace] Deserializing material Lit
+[2025-04-10 20:51:54.061] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-10 20:51:54.302] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-10 20:51:54.531] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-10 20:51:54.766] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-10 20:51:54.834] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-10 20:51:54.949] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-10 20:51:54.987] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-10 20:51:55.027] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-10 20:51:55.090] [basedlogger] [trace] Note hover entered!
+[2025-04-10 20:51:55.094] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-10 20:51:56.748] [basedlogger] [trace] Note hover exited!
+[2025-04-10 20:52:00.220] [basedlogger] [warning] Word Assistant does not match Shadow!
+[2025-04-10 20:52:03.055] [basedlogger] [warning] Word Assistant does not match Shadow!
+[2025-04-10 20:52:04.335] [basedlogger] [warning] Word Assistant does not match Shadow!
+[2025-04-10 20:52:09.325] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-10 20:52:09.329] [basedlogger] [trace] Deleting shader 22
+[2025-04-10 20:52:09.329] [basedlogger] [trace] Deleting shader 19
+[2025-04-10 20:52:09.329] [basedlogger] [trace] Deleting RectGreen
+[2025-04-10 20:52:09.329] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-10 20:52:09.330] [basedlogger] [trace] Deleting RectRed
+[2025-04-10 20:52:09.330] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-10 20:52:09.330] [basedlogger] [trace] Deleting UI
+[2025-04-10 20:52:09.330] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-10 20:52:09.330] [basedlogger] [trace] Deleting shader 4
+[2025-04-10 20:52:09.330] [basedlogger] [trace] Deleting shader 7
+[2025-04-10 20:52:09.330] [basedlogger] [trace] Deleting shader 10
+[2025-04-10 20:52:09.330] [basedlogger] [trace] Deleting shader 13
+[2025-04-10 20:53:24.159] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-10 20:53:24.160] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-10 20:53:24.160] [basedlogger] [warning] Platform: Windows
+[2025-04-10 20:53:24.328] [basedlogger] [info] SDL 2.24.1
+[2025-04-10 20:53:24.328] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-10 20:53:24.329] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-10 20:53:24.567] [basedlogger] [info] OpenGL Info:
+  Vendor:	ATI Technologies Inc.
+  Renderer:	AMD Radeon RX 7900 XT
+  Version:	4.3.0 Core Profile Context 24.12.1.241127
+[2025-04-10 20:53:24.594] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-10 20:53:24.630] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-10 20:53:24.671] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-10 20:53:24.676] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-10 20:53:24.773] [basedlogger] [trace] Loaded 4-channel texture: D:\Jake\Documents\Github_Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-10 20:53:24.781] [basedlogger] [trace] Deserializing material Lit
+[2025-04-10 20:53:24.802] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-10 20:53:25.056] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-10 20:53:25.296] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-10 20:53:25.542] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-10 20:53:25.610] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-10 20:53:25.727] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-10 20:53:25.767] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-10 20:53:25.807] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-10 20:53:25.868] [basedlogger] [trace] Note hover entered!
+[2025-04-10 20:53:25.873] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-10 20:53:26.264] [basedlogger] [trace] Note hover exited!
+[2025-04-10 20:53:31.335] [basedlogger] [warning] Word  does not match Entered!
+[2025-04-10 20:53:32.717] [basedlogger] [warning] Word  does not match Door!
+[2025-04-10 20:53:34.949] [basedlogger] [warning] Word  does not match Picked!
+[2025-04-10 20:53:37.636] [basedlogger] [warning] Word  does not match Lock!
+[2025-04-10 20:53:39.219] [basedlogger] [warning] Word  does not match Teleswapper!
+[2025-04-10 20:53:41.640] [basedlogger] [warning] Word  does not match Moved!
+[2025-04-10 20:53:44.382] [basedlogger] [warning] Word  does not match Window!
+[2025-04-10 20:53:46.316] [basedlogger] [warning] Word  does not match Scientist!
+[2025-04-10 20:54:01.500] [basedlogger] [warning] Word  does not match Shadow!
+[2025-04-10 20:54:03.572] [basedlogger] [warning] Word  does not match Teleswapper!
+[2025-04-10 20:54:05.367] [basedlogger] [warning] Word  does not match Swapped!
+[2025-04-10 20:54:07.563] [basedlogger] [warning] Word  does not match Assistant!
+[2025-04-10 20:54:09.973] [basedlogger] [warning] Word  does not match Fought!
+[2025-04-10 20:54:21.237] [basedlogger] [warning] Word  does not match Assistant!
+[2025-04-10 20:54:23.157] [basedlogger] [warning] Word  does not match Shadow!
+[2025-04-10 20:54:26.832] [basedlogger] [warning] Word  does not match Shadow!
+[2025-04-10 20:54:28.230] [basedlogger] [warning] Word  does not match Knife!
+[2025-04-10 20:54:30.127] [basedlogger] [warning] Word  does not match Assistant!
+[2025-04-10 20:54:31.930] [basedlogger] [warning] Word  does not match Teleswapper!
+[2025-04-10 20:54:34.054] [basedlogger] [warning] Word  does not match Swapped!
+[2025-04-10 20:54:36.504] [basedlogger] [warning] Word  does not match Shadow!
+[2025-04-10 20:54:39.225] [basedlogger] [warning] Word  does not match Assistant!
+[2025-04-10 20:54:45.779] [basedlogger] [warning] Word Scientist does not match Assistant!
+[2025-04-10 20:54:51.246] [basedlogger] [warning] Word Shadow does not match Assistant!
+[2025-04-10 20:54:58.737] [basedlogger] [trace] LEVEL SOLVED
+[2025-04-10 20:55:13.307] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-10 20:55:13.313] [basedlogger] [trace] Deleting shader 22
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Deleting shader 19
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Deleting RectGreen
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Deleting RectRed
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Deleting UI
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Deleting shader 4
+[2025-04-10 20:55:13.314] [basedlogger] [trace] Deleting shader 7
+[2025-04-10 20:55:13.315] [basedlogger] [trace] Deleting shader 10
+[2025-04-10 20:55:13.315] [basedlogger] [trace] Deleting shader 13

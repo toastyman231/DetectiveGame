@@ -17,6 +17,7 @@ void ISolutionPanel::OnPanelSolved()
 	if (!element) return;
 
 	element->SetProperty("border-color", "#00FF00");
+	FMODSystem::PlayEvent("event:/UI/Impact Correct");
 }
 
 void ISolutionPanel::OnPanelIncorrect()
@@ -26,6 +27,7 @@ void ISolutionPanel::OnPanelIncorrect()
 	if (!element) return;
 
 	element->SetProperty("border-color", "#FF0000");
+	FMODSystem::PlayEvent("event:/UI/Wrong");
 }
 
 WordSolutionPanel::WordSolutionPanel(const std::string& id, const std::string& solutionPath)
@@ -275,6 +277,7 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 	if (event == Rml::EventId::Dragstart)
 	{
 		based::Engine::Instance().GetWindow().SetCursor("pointer");
+		FMODSystem::PlayEvent("event:/UI/Start Drag");
 	}
 
 	if (event == Rml::EventId::Dragdrop)
@@ -297,6 +300,8 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 			panel->OnSolutionElementDropped(dest->GetId(), &dragWord);
 
 			dest->ScrollIntoView();
+
+			FMODSystem::PlayEvent("event:/UI/End Drag");
 
 			if (CheckSolution())
 			{
