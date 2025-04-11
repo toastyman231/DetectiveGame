@@ -49,7 +49,7 @@ void DialogueSystem::Initialize()
 	mDialogueSounds = FMODSystem::CreateFMODEvent("event:/Dialogue/Dialogue");
 
 	mSpeakers.emplace_back();
-	mSpeakers.emplace_back(SpeakerSettings{ .MinPitch = 0.8f, .MaxPitch = 1.f });
+	mSpeakers.emplace_back(0.8f, 1.f);
 }
 
 void DialogueSystem::Update(float deltaTime)
@@ -172,23 +172,43 @@ void DialogueSystem::ShowNextLine()
 	mIsTyping = true;
 }
 
+bool IsVowel(char character)
+{
+	return character == 'a' || character == 'A' ||
+		character == 'e' || character == 'E' ||
+		character == 'i' || character == 'I' ||
+		character == 'o' || character == 'O' ||
+		character == 'u' || character == 'U';
+}
+
+bool IsPunctuation(char character)
+{
+	return character == '.' || character == '?' || character == '!';
+}
+
 void DialogueSystem::PlayCharacterSound(SpeakerSettings& speaker, char character)
 {
-	/*auto consonantEvent = FMODSystem::CreateFMODEvent(speaker.ConsonantEventPath);
-	auto vowelEvent = FMODSystem::CreateFMODEvent(speaker.VowelEventPath);
-	consonantEvent->setPitch(1.2f);
-	if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o'
-		|| currentChar == 'u')
+	if (IsVowel(character))
 	{
-		FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 1);
-	} else if (currentChar == '.' || currentChar == '?' || currentChar == '!')
+		auto vowelEvent = FMODSystem::CreateFMODEvent(speaker.VowelEventPath);
+		if (speaker.CharacterMap.find(character) != speaker.CharacterMap.end())
+			FMODSystem::SetEventParameter(vowelEvent, "Vowels", (float)speaker.CharacterMap[character]);
+		vowelEvent->setPitch(based::math::RandomRange(speaker.MinPitch, speaker.MaxPitch));
+		vowelEvent->start();
+	} else if (IsPunctuation(character))
 	{
-		FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 2);
+		auto punctuationEvent = FMODSystem::CreateFMODEvent(speaker.PunctuationEventPath);
+		if (speaker.CharacterMap.find(character) != speaker.CharacterMap.end())
+			FMODSystem::SetEventParameter(punctuationEvent, "Punctuation", (float)speaker.CharacterMap[character]);
+		punctuationEvent->setPitch(based::math::RandomRange(speaker.MinPitch, speaker.MaxPitch));
+		punctuationEvent->start();
 	}
 	else
 	{
-		FMODSystem::SetEventParameter(dialogueEvent, "Dialogue", 0);
+		auto consonantEvent = FMODSystem::CreateFMODEvent(speaker.ConsonantEventPath);
+		if (speaker.CharacterMap.find(character) != speaker.CharacterMap.end())
+			FMODSystem::SetEventParameter(consonantEvent, "Consonants", (float)speaker.CharacterMap[character]);
+		consonantEvent->setPitch(based::math::RandomRange(speaker.MinPitch, speaker.MaxPitch));
+		consonantEvent->start();
 	}
-
-	dialogueEvent->start();*/
 }

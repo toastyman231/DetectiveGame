@@ -13,8 +13,8 @@
 void PlayerControllerSystem::Initialize(float stepInterval)
 {
 	mStepInterval = stepInterval;
-	mFootsteps0 = FMODSystem::CreateFMODEvent("event:/Footsteps/Foosteps");
-	mFootsteps1 = FMODSystem::CreateFMODEvent("event:/Footsteps/Foosteps");
+	mFootsteps0 = FMODSystem::CreateFMODEvent("event:/Footsteps/Footsteps");
+	mFootsteps1 = FMODSystem::CreateFMODEvent("event:/Footsteps/Footsteps");
 	mCreaks = FMODSystem::CreateFMODEvent("event:/Footsteps/Creaks");
 }
 
