@@ -4,10 +4,14 @@
 
 struct SpeakerSettings
 {
+	SpeakerSettings() = default;
+	SpeakerSettings(float min, float max) : MinPitch(min), MaxPitch(max) {}
+
 	std::string ConsonantEventPath = "event:/Dialogue/ConsonantSpecific";
 	std::string VowelEventPath = "event:/Dialogue/VowelSpecific";
+	std::string PunctuationEventPath = "event:/Dialogue/PunctuationSpecific";
 
-	std::unordered_map<char, float> CharacterMap = {
+	std::unordered_map<char, int> CharacterMap = {
 		{'a', 0}, {'A', 0},
 		{'e', 1}, {'E', 1},
 		{'i', 2}, {'I', 2},
@@ -24,6 +28,10 @@ struct SpeakerSettings
 		{'n', 7}, {'N', 7},
 		{'t', 8}, {'T', 8},
 		{'g', 9}, {'G', 9},
+
+		{'!', 0},
+		{'.', 1},
+		{'?', 2},
 	};
 
 	float MinPitch = 1.f;

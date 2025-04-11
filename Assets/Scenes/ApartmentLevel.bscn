@@ -1,11 +1,45 @@
 Scene: ApartmentLevel
 Entities:
-  - Entity: 7404581756684756988
-    Name: OtherDesk
+  - Entity: 7031472538317408553
+    Name: WorkDesk
     Parent: 9155678200828244508
     Transform:
-      Position: [-2.16691446, 1.41846097, 9.53964996]
-      Rotation: [0, -0, 0]
+      Position: [1.63684034, 1.41847038, 26.8061142]
+      Rotation: [0, 89.980217, 0]
+      Scale: [1.90258193, 1.30498946, 4.38205624]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 13586841364997536227
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 13260624735353248313
+    Name: Trash Can
+    Parent: 9155678200828244508
+    Transform:
+      Position: [7.74904108, 1.00246, 23.1937351]
+      Rotation: [0, 72.188736, 0]
+      Scale: [1.01255345, 1.05757332, 0.542407811]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 13378827204309755205
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Black.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 11997641927664613946
+    Name: Desk
+    Parent: 9155678200828244508
+    Transform:
+      Position: [7.74849081, 1.41853046, 17.2657185]
+      Rotation: [0, 0, 0]
       Scale: [1.90258193, 1.30498958, 4.38205624]
     MeshRenderer:
       Mesh:
@@ -14,68 +48,232 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13586841364997536227
-        Path: Assets\Materials\Brown.bmat
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
         IsEngineAsset: false
     Enabled: true
-  - Entity: 11058696704558493374
-    Name: Window
+  - Entity: 12544510477023124754
+    Name: Wall3
     Parent: 9155678200828244508
     Transform:
-      Position: [9.76865292, 4.03184223, 8.23052025]
-      Rotation: [0, -0, 0]
-      Scale: [0.154195696, 1.58221757, 1.76463699]
+      Position: [9.86045456, 3.35295224, 16.065176]
+      Rotation: [0, 0, -90]
+      Scale: [3.26999998, 0.141585067, 12.798974]
     MeshRenderer:
       Mesh:
         ID: 4213753685933482109
         Path: Meshes/cube.obj
         IsEngineAsset: true
       Material:
-        ID: 4234357009687084546
-        Path: Assets\Materials\Blue.bmat
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
-  - Entity: 17318832736367330816
-    Name: Directional Light
+  - Entity: 1793050110298769303
+    Name: Wall2
+    Parent: 9155678200828244508
     Transform:
-      Position: [-15.3705864, 10.7593594, 3.96865869]
-      Rotation: [91.021759, -0, 169.975159]
-      Scale: [0.999999046, 0.99995935, 0.999999642]
-    DirectionalLight:
-      Color: [1, 1, 1]
-      Direction: [91.021759, -0, 169.975159]
-      Intensity: 2
+      Position: [2.73397064, 3.3707273, 28.9528847]
+      Rotation: [-90, 0, 0]
+      Scale: [7.15372086, 0.113117501, 3.34570956]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        IsEngineAsset: false
     Enabled: true
-  - Entity: 7779597734032396087
-    Name: Skybox
+  - Entity: 1966159001011002776
+    Name: Wall
+    Parent: 9155678200828244508
+    Transform:
+      Position: [-4.44834137, 3.36883211, 16.2880001]
+      Rotation: [0, 0, -90]
+      Scale: [3.26999998, 0.141585067, 12.8000002]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 9155678200828244508
+    Name: Apartment
     Transform:
       Position: [0, 0, 0]
       Rotation: [0, 0, 0]
-      Scale: [500, 500, 500]
-    MeshRenderer:
-      Mesh:
-        ID: 8917086276875011835
-        Path: Meshes/atlas_cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 8791179182723528054
-        Path: Materials/Skybox.bmat
-        IsEngineAsset: true
+      Scale: [1, 1, 1]
     Enabled: true
-  - Entity: 10729926632577167004
-    Name: Floor
+  - Entity: 5777716506306144908
+    Name: Floor3
+    Parent: 9155678200828244508
     Transform:
-      Position: [0, 0, 0]
-      Rotation: [0, -0, 0]
-      Scale: [10.1617002, 0.113117397, 3.34569788]
+      Position: [2.67308831, 0, 16.2738266]
+      Rotation: [0, 0, 0]
+      Scale: [7.20310926, 0.113117397, 12.8982306]
     MeshRenderer:
       Mesh:
         ID: 4213753685933482109
         Path: Meshes/cube.obj
         IsEngineAsset: true
       Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
+        ID: 16083762883558632608
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\WoodFloor.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 12821201643663442116
+    Name: PlayerSpawn
+    Transform:
+      Position: [0, 2.42148304, 0]
+      Rotation: [0, -0, 0]
+      Scale: [1, 1, 1]
+    Enabled: true
+  - Entity: 8875397168758321710
+    Name: Door1
+    Parent: 10289539183589335770
+    Transform:
+      Position: [-10.0181837, 2.90579939, 0.078538537]
+      Rotation: [0, 0, 90]
+      Scale: [2.80900002, 0.141585067, 1.82987285]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
         IsEngineAsset: true
+      Material:
+        ID: 13586841364997536227
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 7861099138100076126
+    Name: HallwayWall5
+    Parent: 10289539183589335770
+    Transform:
+      Position: [-10.3125744, 3.3687706, 0.0523471832]
+      Rotation: [0, 0, -90]
+      Scale: [3.26999998, 0.141585067, 3.32561326]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 18116329210940289721
+    Name: HallwayWall4
+    Parent: 10289539183589335770
+    Transform:
+      Position: [10.0234165, 3.35295224, 0.0912821293]
+      Rotation: [0, 0, -90]
+      Scale: [3.26999998, 0.141585067, 3.32586718]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 11297587061570583133
+    Name: HallwayWall3
+    Parent: 10289539183589335770
+    Transform:
+      Position: [8.97139263, 3.35002327, 3.35232258]
+      Rotation: [-90, 0, 0]
+      Scale: [1.38223171, 0.141585052, 3.27003288]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 2387799246352341925
+    Name: Door
+    Transform:
+      Position: [6.21387768, 2.90573096, 3.31784296]
+      Rotation: [-90, -0, 0]
+      Scale: [1.38348246, 0.141585052, 2.80901742]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 13586841364997536227
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 10961410707918583529
+    Name: HallwayWallTop
+    Parent: 10289539183589335770
+    Transform:
+      Position: [6.21387768, 6.21877718, 3.36240053]
+      Rotation: [-90, 0, 0]
+      Scale: [1.38250959, 0.119003899, 0.511174738]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 17705553614663122332
+    Name: HallwayWall2
+    Parent: 10289539183589335770
+    Transform:
+      Position: [-2.64814687, 3.37066627, 3.36356997]
+      Rotation: [-90, 0, 0]
+      Scale: [7.51135111, 0.113117501, 3.34570956]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        IsEngineAsset: false
+    Enabled: true
+  - Entity: 10289539183589335770
+    Name: HallwayWalls
+    Transform:
+      Position: [0, 0, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    Enabled: true
+  - Entity: 12310323297733100156
+    Name: HallwayWall1
+    Parent: 10289539183589335770
+    Transform:
+      Position: [0, 3.37066627, -3.24102259]
+      Rotation: [-90, 0, 0]
+      Scale: [10.1584721, 0.113117501, 3.34570956]
+    MeshRenderer:
+      Mesh:
+        ID: 4213753685933482109
+        Path: Meshes/cube.obj
+        IsEngineAsset: true
+      Material:
+        ID: 16199220655441577181
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        IsEngineAsset: false
     Enabled: true
   - Entity: 10225888076360808852
     Name: Main Camera
@@ -93,236 +291,72 @@ Entities:
         AspectRatio: 1.77777779
       Main: true
     Enabled: true
-  - Entity: 12310323297733100156
-    Name: HallwayWall1
-    Parent: 10289539183589335770
+  - Entity: 10729926632577167004
+    Name: Floor
     Transform:
-      Position: [0, 3.37066627, -3.24102259]
-      Rotation: [-90, 0, 0]
-      Scale: [10.1584721, 0.113117501, 3.34570956]
+      Position: [0, 0, 0]
+      Rotation: [0, -0, 0]
+      Scale: [10.1617002, 0.113117397, 3.34569788]
     MeshRenderer:
       Mesh:
         ID: 4213753685933482109
         Path: Meshes/cube.obj
         IsEngineAsset: true
       Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
+        ID: 13586842364097536227
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Carpet.bmat
+        IsEngineAsset: false
     Enabled: true
-  - Entity: 10289539183589335770
-    Name: HallwayWalls
+  - Entity: 7779597734032396087
+    Name: Skybox
     Transform:
       Position: [0, 0, 0]
       Rotation: [0, 0, 0]
-      Scale: [1, 1, 1]
-    Enabled: true
-  - Entity: 17705553614663122332
-    Name: HallwayWall2
-    Parent: 10289539183589335770
-    Transform:
-      Position: [-2.64814687, 3.37066627, 3.36356997]
-      Rotation: [-90, 0, 0]
-      Scale: [7.51135111, 0.113117501, 3.34570956]
+      Scale: [500, 500, 500]
     MeshRenderer:
       Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
+        ID: 8917086276875011835
+        Path: Meshes/atlas_cube.obj
         IsEngineAsset: true
       Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
+        ID: 8791179182723528054
+        Path: Materials/Skybox.bmat
         IsEngineAsset: true
     Enabled: true
-  - Entity: 10961410707918583529
-    Name: HallwayWallTop
-    Parent: 10289539183589335770
+  - Entity: 17318832736367330816
+    Name: Directional Light
     Transform:
-      Position: [6.21387768, 6.21877718, 3.36240053]
-      Rotation: [-90, 0, 0]
-      Scale: [1.38250959, 0.119003899, 0.511174738]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
+      Position: [-15.3705864, 10.7593594, 3.96865869]
+      Rotation: [91.021759, -0, 169.975159]
+      Scale: [0.999999046, 0.99995935, 0.999999642]
+    DirectionalLight:
+      Color: [1, 1, 1]
+      Direction: [91.021759, -0, 169.975159]
+      Intensity: 2
     Enabled: true
-  - Entity: 2387799246352341925
-    Name: Door
-    Transform:
-      Position: [6.21387768, 2.90573096, 3.31784296]
-      Rotation: [-90, -0, 0]
-      Scale: [1.38348246, 0.141585052, 2.80901742]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 13586841364997536227
-        Path: Assets\Materials\Brown.bmat
-        IsEngineAsset: false
-    Enabled: true
-  - Entity: 11297587061570583133
-    Name: HallwayWall3
-    Parent: 10289539183589335770
-    Transform:
-      Position: [8.97139263, 3.35002327, 3.35232258]
-      Rotation: [-90, 0, 0]
-      Scale: [1.38223171, 0.141585052, 3.27003288]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
-    Enabled: true
-  - Entity: 18116329210940289721
-    Name: HallwayWall4
-    Parent: 10289539183589335770
-    Transform:
-      Position: [10.0234165, 3.35295224, 0.0912821293]
-      Rotation: [0, 0, -90]
-      Scale: [3.26999998, 0.141585067, 3.32586718]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
-    Enabled: true
-  - Entity: 7861099138100076126
-    Name: HallwayWall5
-    Parent: 10289539183589335770
-    Transform:
-      Position: [-10.3125744, 3.3687706, 0.0523471832]
-      Rotation: [0, 0, -90]
-      Scale: [3.26999998, 0.141585067, 3.32561326]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
-    Enabled: true
-  - Entity: 8875397168758321710
-    Name: Door1
-    Parent: 10289539183589335770
-    Transform:
-      Position: [-10.0181837, 2.90579939, 0.078538537]
-      Rotation: [0, -0, 90]
-      Scale: [2.80900002, 0.141585067, 1.82987285]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 13586841364997536227
-        Path: Assets\Materials\Brown.bmat
-        IsEngineAsset: false
-    Enabled: true
-  - Entity: 12821201643663442116
-    Name: PlayerSpawn
-    Transform:
-      Position: [0, 2.42148304, 0]
-      Rotation: [0, -0, 0]
-      Scale: [1, 1, 1]
-    Enabled: true
-  - Entity: 5777716506306144908
-    Name: Floor3
+  - Entity: 11058696704558493374
+    Name: Window
     Parent: 9155678200828244508
     Transform:
-      Position: [2.67308831, 0, 16.2738266]
-      Rotation: [0, -0, 0]
-      Scale: [7.20310926, 0.113117397, 12.8982306]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
-    Enabled: true
-  - Entity: 9155678200828244508
-    Name: Apartment
-    Transform:
-      Position: [0, 0, 0]
+      Position: [9.76865292, 4.03184223, 8.23052025]
       Rotation: [0, 0, 0]
-      Scale: [1, 1, 1]
-    Enabled: true
-  - Entity: 1966159001011002776
-    Name: Wall
-    Parent: 9155678200828244508
-    Transform:
-      Position: [-4.44834137, 3.36883211, 16.2880001]
-      Rotation: [0, 0, -90]
-      Scale: [3.26999998, 0.141585067, 12.8000002]
+      Scale: [0.154195696, 1.58221757, 1.76463699]
     MeshRenderer:
       Mesh:
         ID: 4213753685933482109
         Path: Meshes/cube.obj
         IsEngineAsset: true
       Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
+        ID: 4234357009687084546
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Blue.bmat
+        IsEngineAsset: false
     Enabled: true
-  - Entity: 1793050110298769303
-    Name: Wall2
+  - Entity: 7404581756684756988
+    Name: OtherDesk
     Parent: 9155678200828244508
     Transform:
-      Position: [2.73397064, 3.3707273, 28.9528847]
-      Rotation: [-90, 0, 0]
-      Scale: [7.15372086, 0.113117501, 3.34570956]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
-    Enabled: true
-  - Entity: 12544510477023124754
-    Name: Wall3
-    Parent: 9155678200828244508
-    Transform:
-      Position: [9.86045456, 3.35295224, 16.065176]
-      Rotation: [0, 0, -90]
-      Scale: [3.26999998, 0.141585067, 12.798974]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 3560342728017973358
-        Path: Materials/Lit.bmat
-        IsEngineAsset: true
-    Enabled: true
-  - Entity: 11997641927664613946
-    Name: Desk
-    Parent: 9155678200828244508
-    Transform:
-      Position: [7.74849081, 1.41853046, 17.2657185]
-      Rotation: [0, -0, 0]
+      Position: [-2.16691446, 1.41846097, 9.53964996]
+      Rotation: [0, 0, 0]
       Scale: [1.90258193, 1.30498958, 4.38205624]
     MeshRenderer:
       Mesh:
@@ -331,40 +365,6 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13586841364997536227
-        Path: Assets\Materials\Brown.bmat
-        IsEngineAsset: false
-    Enabled: true
-  - Entity: 13260624735353248313
-    Name: Trash Can
-    Parent: 9155678200828244508
-    Transform:
-      Position: [7.74904108, 1.00246, 23.1937351]
-      Rotation: [0, 72.188736, 0]
-      Scale: [1.01255345, 1.05757332, 0.542407811]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 13378827204309755205
-        Path: Assets\Materials\Black.bmat
-        IsEngineAsset: false
-    Enabled: true
-  - Entity: 7031472538317408553
-    Name: WorkDesk
-    Parent: 9155678200828244508
-    Transform:
-      Position: [1.63684034, 1.41847038, 26.8061142]
-      Rotation: [0, 89.980217, 0]
-      Scale: [1.90258193, 1.30498946, 4.38205624]
-    MeshRenderer:
-      Mesh:
-        ID: 4213753685933482109
-        Path: Meshes/cube.obj
-        IsEngineAsset: true
-      Material:
-        ID: 13586841364997536227
-        Path: Assets\Materials\Brown.bmat
+        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
         IsEngineAsset: false
     Enabled: true

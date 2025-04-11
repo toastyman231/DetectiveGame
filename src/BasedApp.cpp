@@ -47,9 +47,12 @@ public:
 		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
 
 		auto floor = scene::Entity::CreateEntity("F");
+		auto carpet = graphics::Material::LoadMaterialFromFile("Assets/Materials/Carpet.bmat",
+			GetCurrentScene()->GetMaterialStorage());
 		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
 		floor->AddComponent<scene::MeshRenderer>(graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
-			GetCurrentScene()->GetMeshStorage()));
+			GetCurrentScene()->GetMeshStorage()),
+			carpet);
 		floor->AddComponent<scene::BoxShapeComponent>(floor->GetTransform().Scale());
 		auto floorShape = floor->GetComponent<scene::BoxShapeComponent>();
 		floor->AddComponent<scene::RigidbodyComponent>(floorShape, JPH::EMotionType::Static,
@@ -90,10 +93,16 @@ public:
 		cam->SetLocalPosition({ 0, 1.8f - 0.4f, 0 });
 		player->AddComponent<Tool>(6.f);
 
+		auto door = scene::Entity::CreateEntity("Door");
+		door->AddComponent<scene::MeshRenderer>(graphics::Mesh::LoadMeshFromFile("Assets/Models/door.fbx",
+			GetCurrentScene()->GetMeshStorage()));
+		door->SetScale(glm::vec3(10.f));
+
 		/*auto spawn = GetCurrentScene()->GetEntityStorage().Get("PlayerSpawn");
 		player->SetPosition(spawn->GetTransform().Position());*/
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
+		GetCurrentScene()->GetEntityStorage().Load("Door", door);
 
 		Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
 

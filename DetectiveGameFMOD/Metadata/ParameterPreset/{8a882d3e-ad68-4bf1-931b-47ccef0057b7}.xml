@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8a882d3e-ad68-4bf1-931b-47ccef0057b7}">
+		<property name="name">
+			<value>Punctuation</value>
+		</property>
+		<relationship name="folder">
+			<destination>{55dde715-256e-4e34-9257-2378c4f930b8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a60040e0-4370-4233-bed9-4379bbe1d2f8}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a60040e0-4370-4233-bed9-4379bbe1d2f8}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>!</value>
+			<value>Period</value>
+			<value>Question</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
