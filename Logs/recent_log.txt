@@ -3420,3 +3420,1446 @@
 [2025-04-10 20:55:13.314] [basedlogger] [trace] Deleting shader 7
 [2025-04-10 20:55:13.315] [basedlogger] [trace] Deleting shader 10
 [2025-04-10 20:55:13.315] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:02:00.554] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:02:00.555] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:02:00.555] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:02:00.857] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:02:00.858] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:02:00.859] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:02:01.229] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:02:01.628] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:02:02.845] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:02:03.008] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-15 16:02:03.021] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:02:03.239] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:02:03.265] [basedlogger] [trace] Deserializing material Lit
+[2025-04-15 16:02:03.440] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:02:04.147] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:02:04.651] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:02:05.125] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:02:05.271] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:02:05.796] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 10 events
+[2025-04-15 16:02:05.834] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:02:05.875] [basedlogger] [critical] ASSERT - result == FMOD_OK
+	Error loading event description!
+	in file: C:\Users\jmorg\Documents\Repos\DetectiveGame\src\Systems\FMODSystem.h
+	on line: 117
+[2025-04-15 16:02:28.976] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:02:28.977] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:02:28.977] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:02:29.292] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:02:29.293] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:02:29.294] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:02:29.492] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:02:29.771] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:02:30.627] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:02:30.715] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-15 16:02:30.724] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:02:30.913] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:02:30.926] [basedlogger] [trace] Deserializing material Lit
+[2025-04-15 16:02:31.093] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:02:31.760] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:02:32.296] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:02:32.813] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:02:33.025] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:02:33.448] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:02:33.488] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:02:33.526] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:02:33.650] [basedlogger] [error] OpenGL Error: INVALID_OPERATION
+[2025-04-15 16:02:33.651] [basedlogger] [critical] ASSERT - !shouldAssert
+	OpenGL Error!
+	in file: C:\Users\jmorg\Documents\Repos\BasedEngine\based\src\graphics\helpers.cpp
+	on line: 28
+[2025-04-15 16:05:48.153] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:05:48.153] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:05:48.153] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:05:48.452] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:05:48.453] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:05:48.453] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:05:48.690] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:05:48.951] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:05:50.063] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:05:50.150] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-15 16:05:50.160] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:05:50.360] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:05:50.374] [basedlogger] [trace] Deserializing material Lit
+[2025-04-15 16:05:50.539] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:05:51.148] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:05:51.607] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:05:52.019] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:05:52.163] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:05:52.564] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:05:52.604] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:05:52.642] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:05:52.736] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:05:52.755] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:05:53.316] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:05:53.744] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:05:54.296] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:05:54.967] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:06:01.938] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:06:06.743] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:06:09.109] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:06:12.394] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:06:12.421] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:06:12.424] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:06:12.425] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:06:12.425] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:06:12.425] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:06:12.425] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:06:12.426] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:06:12.426] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:06:12.426] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:06:12.427] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:06:12.427] [basedlogger] [trace] Deleting shader 10
+[2025-04-15 16:06:12.427] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:21:25.462] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:21:25.462] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:21:25.463] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:21:25.745] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:21:25.746] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:21:25.747] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:21:25.945] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:21:26.196] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:21:27.232] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:21:27.359] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:21:27.363] [basedlogger] [error] No valid material data found at D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+[2025-04-15 16:21:27.363] [basedlogger] [critical] ASSERT - material != nullptr
+	Material is null!
+	in file: C:\Users\jmorg\Documents\Repos\BasedEngine\based\src\scene\sceneserializer.cpp
+	on line: 913
+[2025-04-15 16:29:42.082] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:29:42.083] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:29:42.083] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:29:42.351] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:29:42.352] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:29:42.352] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:29:42.610] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:29:42.863] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:29:43.921] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:29:44.045] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:29:44.049] [basedlogger] [error] No valid material data found at D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+[2025-04-15 16:29:44.049] [basedlogger] [critical] ASSERT - material != nullptr
+	Material is null!
+	in file: C:\Users\jmorg\Documents\Repos\BasedEngine\based\src\scene\sceneserializer.cpp
+	on line: 913
+[2025-04-15 16:40:17.740] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:40:17.741] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:40:17.741] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:40:18.045] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:40:18.046] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:40:18.046] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:40:18.294] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:40:18.543] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:40:19.616] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:40:19.747] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:40:19.750] [basedlogger] [error] No valid material data found at D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+[2025-04-15 16:40:19.751] [basedlogger] [critical] ASSERT - material != nullptr
+	Material is null!
+	in file: C:\Users\jmorg\Documents\Repos\BasedEngine\based\src\scene\sceneserializer.cpp
+	on line: 913
+[2025-04-15 16:44:11.754] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:44:11.755] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:44:11.755] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:44:12.034] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:44:12.035] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:44:12.035] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:44:12.233] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:44:12.524] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:44:13.494] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:44:13.642] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:44:13.648] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:44:13.816] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:44:13.961] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:44:14.371] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:44:14.958] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:44:15.207] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:44:15.437] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:44:15.451] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:44:16.070] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:44:16.487] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:44:16.898] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:44:17.218] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:44:17.262] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:44:17.804] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:44:18.238] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:44:18.650] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:44:18.872] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:44:18.879] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:44:19.055] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:44:19.071] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:44:19.217] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:44:19.743] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:44:20.150] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:44:20.540] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:44:20.684] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:44:20.795] [basedlogger] [error] AssetLibrary::Get() - Asset not found: Lit
+[2025-04-15 16:44:20.798] [basedlogger] [trace] Deserializing material Lit
+[2025-04-15 16:44:21.284] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:44:21.325] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:44:21.364] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:44:21.497] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:44:21.523] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:44:22.217] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:44:26.661] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:44:27.112] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:44:29.437] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:44:30.185] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:44:35.801] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:44:35.811] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:44:35.812] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:44:35.812] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:44:35.813] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:44:35.813] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:44:35.813] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:44:35.813] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:44:35.814] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:44:35.814] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:44:35.814] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:44:35.815] [basedlogger] [trace] Deleting shader 10
+[2025-04-15 16:44:35.815] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:44:38.963] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:44:38.964] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:44:38.964] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:44:39.222] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:44:39.223] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:44:39.223] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:44:39.405] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:44:39.650] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:44:40.447] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:44:40.594] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:44:40.600] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:44:40.772] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:44:40.936] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:44:41.386] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:44:42.094] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:44:42.353] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:44:42.593] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:44:42.614] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:44:43.247] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:44:43.648] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:44:44.052] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:44:44.352] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:44:44.382] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:44:44.925] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:44:45.324] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:44:45.751] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:44:45.874] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:44:45.880] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:44:46.051] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:44:46.064] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:44:46.210] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:44:46.730] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:44:47.155] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:44:47.571] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:44:47.801] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:44:47.901] [basedlogger] [error] AssetLibrary::Get() - Asset not found: Lit
+[2025-04-15 16:44:47.903] [basedlogger] [trace] Deserializing material Lit
+[2025-04-15 16:44:48.324] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:44:48.362] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:44:48.403] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:44:48.485] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:44:48.513] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:44:49.509] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:44:50.161] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:44:50.741] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:45:09.496] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:45:09.872] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:45:27.116] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:45:27.648] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:45:36.240] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:45:36.643] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:45:42.190] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:45:43.439] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:45:49.134] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:45:49.680] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:45:51.417] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:45:51.463] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:46:07.459] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:46:07.961] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:46:09.582] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:46:10.437] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:46:10.761] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:46:11.228] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:46:12.504] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:46:12.534] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:46:13.043] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:46:13.143] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:46:16.724] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:46:16.732] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:46:16.732] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:46:16.733] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:46:16.733] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:46:16.733] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:46:16.734] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:46:16.734] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:46:16.734] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:46:16.734] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:46:16.735] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:46:16.735] [basedlogger] [trace] Deleting shader 10
+[2025-04-15 16:46:16.735] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:49:43.042] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:49:43.043] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:49:43.044] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:49:43.312] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:49:43.313] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:49:43.313] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:49:43.491] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:49:43.742] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:49:44.833] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:49:44.959] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:49:44.967] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:49:45.114] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:49:45.255] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:49:45.700] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:49:46.327] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:49:46.581] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:49:46.809] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:49:46.823] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:49:47.418] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:49:47.824] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:49:48.305] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:49:48.610] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:49:48.647] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:49:49.186] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:49:49.603] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:49:50.015] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:49:50.174] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:49:50.179] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:49:50.369] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:49:50.384] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:49:50.539] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:49:51.113] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:49:51.520] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:49:51.943] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:49:52.110] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:49:52.134] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:49:52.140] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.219] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.220] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.220] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.220] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.221] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.221] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.265] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:49:52.266] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.315] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.316] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.316] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.316] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.317] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.317] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.332] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.332] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.333] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.333] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.333] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:49:52.334] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.335] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:49:52.336] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:49:52.642] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:49:52.680] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:49:52.720] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:49:52.812] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:49:52.840] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:50:02.856] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:50:06.011] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:50:06.942] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:50:09.043] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:50:09.299] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:50:12.674] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:50:13.743] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:50:51.558] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:50:53.438] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:50:54.238] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:50:54.898] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:51:00.455] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:51:00.464] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:51:00.464] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:51:00.465] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:51:00.465] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:51:00.465] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:51:00.465] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:51:00.466] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:51:00.466] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:51:00.466] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:51:00.466] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:51:00.466] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:51:56.239] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:51:56.239] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:51:56.240] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:51:56.525] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:51:56.526] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:51:56.526] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:51:56.704] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:51:56.956] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:51:57.988] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:51:58.130] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:51:58.136] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:51:58.292] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:51:58.443] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:51:58.817] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:51:59.410] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:51:59.640] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:51:59.854] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:51:59.870] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:52:00.468] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:52:00.872] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:52:01.277] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:52:01.572] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:52:01.602] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:52:02.129] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:52:02.532] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:52:02.943] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:52:03.114] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:52:03.126] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:52:03.304] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:52:03.320] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:52:03.480] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:52:04.150] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:52:04.563] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:52:04.995] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:52:05.139] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:52:05.160] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:52:05.165] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.236] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.236] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.237] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.237] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.238] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.238] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.280] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:52:05.280] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.325] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.326] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.326] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.327] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.327] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.327] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.341] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.342] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.342] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.342] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.343] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:52:05.343] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.345] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:52:05.345] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:52:05.647] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:52:05.686] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:52:05.726] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:52:05.828] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:52:05.857] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:52:17.332] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:52:17.851] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:52:18.747] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:52:20.710] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:52:21.931] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:52:22.144] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:52:22.331] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:52:24.684] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:52:24.693] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:52:24.694] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:52:24.694] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:52:24.694] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:52:24.695] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:52:24.695] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:52:24.695] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:52:24.695] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:52:24.695] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:52:24.696] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:52:24.696] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:52:58.638] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:52:58.639] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:52:58.639] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:52:58.994] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:52:58.994] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:52:58.995] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:52:59.167] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:52:59.422] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:53:00.473] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:53:00.611] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:53:00.616] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:53:00.772] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:53:00.923] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:53:01.304] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:53:01.941] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:53:02.173] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:53:02.393] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:53:02.411] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:53:03.030] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:53:03.468] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:53:03.893] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:53:04.221] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:53:04.258] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:53:04.951] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:53:05.362] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:53:05.745] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:53:05.863] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:53:05.870] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:53:06.041] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:53:06.055] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:53:06.206] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:53:06.732] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:53:07.126] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:53:07.507] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:53:07.642] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:53:07.661] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:53:07.667] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.742] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.743] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.743] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.744] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.744] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.745] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.786] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:53:07.787] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.834] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.835] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.836] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.836] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.837] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.837] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.855] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.856] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.856] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.856] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.857] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:53:07.857] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:53:07.859] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:53:07.860] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:53:08.165] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:53:08.203] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:53:08.245] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:53:08.327] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:53:08.352] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:53:10.553] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:53:13.648] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:53:38.629] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:53:38.638] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:53:38.638] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:53:38.639] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:53:38.639] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:53:38.639] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:53:38.639] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:53:38.640] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:53:38.640] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:53:38.640] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:53:38.640] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:53:38.641] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:54:03.920] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:54:03.921] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:54:03.921] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:54:04.252] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:54:04.253] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:54:04.253] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:54:04.421] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:54:04.683] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:54:05.771] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:54:05.900] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:54:05.907] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:54:06.062] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:54:06.221] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:54:06.591] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:54:07.215] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:54:07.457] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:54:07.673] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:54:07.688] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:54:08.321] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:54:08.756] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:54:09.203] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:54:09.523] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:54:09.555] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:54:10.104] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:54:10.509] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:54:10.922] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:54:11.072] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:54:11.078] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:54:11.251] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:54:11.265] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:54:11.416] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:54:11.932] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:54:12.319] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:54:12.716] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:54:12.848] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:54:12.870] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:54:12.876] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:54:12.950] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:12.951] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:12.952] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:12.952] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:12.953] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:12.953] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:12.995] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:54:12.996] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:54:13.041] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:13.042] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:13.043] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:13.043] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:13.044] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:13.044] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:13.059] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:13.059] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:13.060] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:13.060] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:13.061] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:13.061] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:13.063] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:54:13.063] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:54:13.365] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:54:13.405] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:54:13.444] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:54:13.542] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:54:13.575] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:54:25.572] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:54:25.581] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:54:25.581] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:54:25.582] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:54:25.582] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:54:25.582] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:54:25.582] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:54:25.582] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:54:25.583] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:54:25.583] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:54:25.583] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:54:25.583] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:54:42.667] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:54:42.668] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:54:42.668] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:54:42.952] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:54:42.953] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:54:42.953] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:54:43.139] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:54:43.393] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:54:44.438] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:54:44.571] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:54:44.577] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:54:44.734] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:54:44.891] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:54:45.293] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:54:45.923] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:54:46.145] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:54:46.355] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:54:46.369] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:54:46.988] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:54:47.401] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:54:47.826] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:54:48.148] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:54:48.181] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:54:48.711] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:54:49.130] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:54:49.508] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:54:49.625] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:54:49.632] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:54:49.815] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:54:49.832] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:54:50.011] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:54:50.555] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:54:50.948] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:54:51.329] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:54:51.450] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:54:51.471] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:54:51.475] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.546] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.547] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.547] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.548] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.549] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.549] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.589] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:54:51.590] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.634] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.635] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.636] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.636] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.637] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.637] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.652] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.652] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.653] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.654] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.654] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:54:51.655] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.656] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:54:51.657] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:54:51.967] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:54:52.007] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:54:52.046] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:54:52.142] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:54:52.164] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:54:53.115] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:54:56.392] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:55:03.686] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:55:03.988] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:55:06.526] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:55:07.090] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:55:07.132] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:55:11.438] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:55:11.446] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:55:11.446] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:55:11.447] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:55:11.447] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:55:11.447] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:55:11.448] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:55:11.448] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:55:11.448] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:55:11.448] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:55:11.448] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:55:11.449] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:55:30.964] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:55:30.965] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:55:30.965] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:55:31.279] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:55:31.280] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:55:31.284] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:55:31.495] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:55:31.729] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:55:32.754] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:55:32.877] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:55:32.883] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:55:33.042] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:55:33.201] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:55:33.586] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:55:34.214] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:55:34.450] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:55:34.664] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:55:34.679] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:55:35.282] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:55:35.705] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:55:36.115] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:55:36.416] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:55:36.452] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:55:36.980] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:55:37.408] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:55:37.801] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:55:37.921] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:55:37.928] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:55:38.122] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:55:38.138] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:55:38.316] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:55:38.834] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:55:39.217] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:55:39.603] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:55:39.737] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:55:39.756] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:55:39.761] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.835] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.835] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.836] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.836] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.837] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.837] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.877] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:55:39.879] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.926] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.927] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.927] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.928] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.928] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.928] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.943] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.944] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.944] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.945] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.945] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:55:39.945] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:55:39.947] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:55:39.948] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:55:40.255] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:55:40.296] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:55:40.337] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:55:40.450] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:55:40.473] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:55:41.951] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:55:43.904] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:55:49.405] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:55:49.413] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:55:49.413] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:55:49.414] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:55:49.414] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:55:49.414] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:55:49.414] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:55:49.414] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:55:49.415] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:55:49.415] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:55:49.415] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:55:49.415] [basedlogger] [trace] Deleting shader 13
+[2025-04-15 16:57:46.826] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-15 16:57:46.827] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-15 16:57:46.827] [basedlogger] [warning] Platform: Windows
+[2025-04-15 16:57:47.098] [basedlogger] [info] SDL 2.24.1
+[2025-04-15 16:57:47.098] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-15 16:57:47.099] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-15 16:57:47.304] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-15 16:57:47.544] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-15 16:57:48.091] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-15 16:57:48.263] [basedlogger] [trace] Deserializing scene ApartmentLevel
+[2025-04-15 16:57:48.272] [basedlogger] [trace] Deserializing material Brown
+[2025-04-15 16:57:48.462] [basedlogger] [trace] Deserializing material Black
+[2025-04-15 16:57:48.630] [basedlogger] [trace] Deserializing material Wallpaper
+[2025-04-15 16:57:49.095] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_albedo.png
+[2025-04-15 16:57:49.758] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_normal-ogl.png
+[2025-04-15 16:57:50.016] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_roughness.png
+[2025-04-15 16:57:50.329] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Wallpaper\floral-embossed-wallpaper1_ao.png
+[2025-04-15 16:57:50.344] [basedlogger] [trace] Deserializing material WoodFloor
+[2025-04-15 16:57:50.967] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_albedo.png
+[2025-04-15 16:57:51.377] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_normal-ogl.png
+[2025-04-15 16:57:51.789] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_roughness.png
+[2025-04-15 16:57:52.086] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\WoodFloor\older-wood-flooring_ao.png
+[2025-04-15 16:57:52.117] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:57:52.658] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:57:53.048] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:57:53.455] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:57:53.592] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:57:53.598] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-15 16:57:53.773] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-15 16:57:53.789] [basedlogger] [trace] Deserializing material Blue
+[2025-04-15 16:57:53.937] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-15 16:57:54.457] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-15 16:57:54.941] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-15 16:57:55.352] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-15 16:57:55.492] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-15 16:57:55.511] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:57:55.517] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.594] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.594] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.595] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.595] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.595] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.595] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.635] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:57:55.636] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.679] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.680] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.681] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.681] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.681] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.682] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.696] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.696] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.697] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.698] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.698] [basedlogger] [trace] Texture location: Assets/Models/Door_C.jpg
+[2025-04-15 16:57:55.698] [basedlogger] [warning] Unable to load texture: Assets/Models/Door_C.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.700] [basedlogger] [trace] Texture location: Assets/Models/Reflexion.jpg
+[2025-04-15 16:57:55.701] [basedlogger] [warning] Unable to load texture: Assets/Models/Reflexion.jpg - defaulting to checkerboard
+[2025-04-15 16:57:55.996] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-15 16:57:56.036] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-15 16:57:56.075] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-15 16:57:57.403] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:57:57.432] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-15 16:58:06.959] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:58:07.490] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:58:20.949] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:58:21.873] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:58:24.326] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:58:24.771] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:58:24.791] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:58:24.827] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:58:24.868] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:58:24.912] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:58:24.954] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:58:24.969] [basedlogger] [trace] Note hover entered!
+[2025-04-15 16:58:25.024] [basedlogger] [trace] Note hover exited!
+[2025-04-15 16:58:30.437] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-15 16:58:30.446] [basedlogger] [trace] Deleting shader 22
+[2025-04-15 16:58:30.447] [basedlogger] [trace] Deleting shader 19
+[2025-04-15 16:58:30.447] [basedlogger] [trace] Deleting RectGreen
+[2025-04-15 16:58:30.447] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-15 16:58:30.447] [basedlogger] [trace] Deleting RectRed
+[2025-04-15 16:58:30.448] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:58:30.448] [basedlogger] [trace] Deleting UI
+[2025-04-15 16:58:30.448] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-15 16:58:30.448] [basedlogger] [trace] Deleting shader 4
+[2025-04-15 16:58:30.448] [basedlogger] [trace] Deleting shader 7
+[2025-04-15 16:58:30.449] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 16:47:00.550] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 16:47:00.551] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 16:47:00.551] [basedlogger] [warning] Platform: Windows
+[2025-04-22 16:47:00.821] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 16:47:00.822] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 16:47:00.822] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 16:47:01.040] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 16:47:01.493] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 16:47:02.095] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 16:47:02.212] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 16:47:02.908] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 16:47:03.345] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 16:47:03.768] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 16:47:03.920] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 16:47:03.961] [basedlogger] [error] AssetLibrary::Get() - Asset not found: Main Camera
+[2025-04-22 16:50:29.649] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 16:50:29.649] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 16:50:29.650] [basedlogger] [warning] Platform: Windows
+[2025-04-22 16:50:29.952] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 16:50:29.953] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 16:50:29.953] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 16:50:30.178] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 16:50:30.393] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 16:50:30.965] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 16:50:31.077] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 16:50:31.098] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 16:50:31.315] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 16:50:31.343] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 16:50:31.506] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 16:50:32.131] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 16:50:32.566] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 16:50:32.968] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 16:50:33.105] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 16:50:33.509] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 16:50:33.549] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 16:50:33.588] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 16:50:33.727] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:50:33.744] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 16:50:35.628] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:50:41.538] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:50:42.285] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:50:42.715] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:50:43.441] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:50:46.549] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:50:46.942] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:02.672] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 16:51:02.683] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 16:51:02.684] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 16:51:02.685] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 16:51:02.685] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 16:51:02.685] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 16:51:02.685] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:51:02.685] [basedlogger] [trace] Deleting UI
+[2025-04-22 16:51:02.686] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:51:02.686] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 16:51:02.686] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 16:51:02.686] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 16:51:44.833] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 16:51:44.834] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 16:51:44.834] [basedlogger] [warning] Platform: Windows
+[2025-04-22 16:51:45.290] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 16:51:45.292] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 16:51:45.292] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 16:51:45.778] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 16:51:46.230] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 16:51:46.965] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 16:51:47.119] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 16:51:47.136] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 16:51:47.353] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 16:51:47.385] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 16:51:47.599] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 16:51:48.236] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 16:51:48.795] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 16:51:49.298] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 16:51:49.477] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 16:51:49.899] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 16:51:49.938] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 16:51:49.978] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 16:51:50.091] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:50.106] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 16:51:52.163] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:52.909] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:53.273] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:53.806] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:54.009] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:54.408] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:55.252] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:55.722] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:56.080] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:56.388] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:56.614] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:57.573] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:57.597] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:57.610] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:57.684] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:57.698] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:57.847] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:59.095] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:59.217] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:59.242] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:59.255] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:51:59.283] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:51:59.360] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:52:02.521] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 16:52:02.530] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 16:52:02.531] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 16:52:02.531] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 16:52:02.532] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 16:52:02.532] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 16:52:02.532] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:52:02.533] [basedlogger] [trace] Deleting UI
+[2025-04-22 16:52:02.533] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:52:02.533] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 16:52:02.533] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 16:52:02.533] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 16:53:24.771] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 16:53:24.773] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 16:53:24.773] [basedlogger] [warning] Platform: Windows
+[2025-04-22 16:53:25.061] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 16:53:25.061] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 16:53:25.062] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 16:53:25.260] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 16:53:25.497] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 16:53:26.059] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 16:53:26.158] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 16:53:26.169] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 16:53:26.414] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 16:53:26.439] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 16:53:26.601] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 16:53:27.223] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 16:53:27.668] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 16:53:28.067] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 16:53:28.205] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 16:53:28.578] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 16:53:28.615] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 16:53:28.656] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 16:53:28.774] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:53:28.791] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 16:53:29.926] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:53:39.777] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 16:53:39.787] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 16:53:39.788] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 16:53:39.788] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 16:53:39.789] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 16:53:39.789] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 16:53:39.789] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:53:39.789] [basedlogger] [trace] Deleting UI
+[2025-04-22 16:53:39.789] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:53:39.790] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 16:53:39.790] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 16:53:39.790] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 16:53:43.339] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 16:53:43.340] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 16:53:43.340] [basedlogger] [warning] Platform: Windows
+[2025-04-22 16:53:43.622] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 16:53:43.623] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 16:53:43.624] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 16:53:43.813] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 16:53:44.098] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 16:53:44.511] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 16:53:44.683] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 16:53:44.701] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 16:53:44.966] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 16:53:44.985] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 16:53:45.230] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 16:53:45.831] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 16:53:46.268] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 16:53:46.700] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 16:53:46.851] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 16:53:47.182] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 16:53:47.221] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 16:53:47.263] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 16:53:53.468] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:53:53.480] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 16:53:55.918] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:53:59.674] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 16:53:59.682] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 16:53:59.682] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 16:53:59.683] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 16:53:59.683] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 16:53:59.683] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 16:53:59.684] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:53:59.684] [basedlogger] [trace] Deleting UI
+[2025-04-22 16:53:59.684] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:53:59.684] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 16:53:59.684] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 16:53:59.684] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 16:58:16.619] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 16:58:16.620] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 16:58:16.620] [basedlogger] [warning] Platform: Windows
+[2025-04-22 16:58:16.937] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 16:58:16.938] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 16:58:16.938] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 16:58:17.310] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 16:58:17.606] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 16:58:18.185] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 16:58:18.302] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 16:58:18.313] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 16:58:18.575] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 16:58:18.606] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 16:58:18.788] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 16:58:19.444] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 16:58:19.911] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 16:58:20.326] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 16:58:20.494] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 16:58:20.533] [basedlogger] [trace] Deleting New Material
+[2025-04-22 16:58:20.533] [basedlogger] [trace] Ref count to shader: 6
+[2025-04-22 16:58:20.534] [basedlogger] [trace] Deleting New Material
+[2025-04-22 16:58:20.534] [basedlogger] [trace] Ref count to shader: 5
+[2025-04-22 16:58:20.535] [basedlogger] [trace] Deleting New Material
+[2025-04-22 16:58:20.535] [basedlogger] [trace] Ref count to shader: 4
+[2025-04-22 16:58:20.535] [basedlogger] [trace] Deleting New Material
+[2025-04-22 16:58:20.536] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 16:58:20.536] [basedlogger] [trace] Deleting New Material
+[2025-04-22 16:58:20.536] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:58:20.871] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 16:58:20.910] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 16:58:20.950] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 16:58:21.056] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:21.076] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 16:58:21.642] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:29.468] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:30.098] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:33.351] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:33.615] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:41.595] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:42.071] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:45.179] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:45.719] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:45.786] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:45.801] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:45.818] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:46.209] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:46.619] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:46.736] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:47.129] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:47.200] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:47.213] [basedlogger] [trace] Note hover entered!
+[2025-04-22 16:58:47.228] [basedlogger] [trace] Note hover exited!
+[2025-04-22 16:58:49.977] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 16:58:49.987] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 16:58:49.988] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 16:58:49.988] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 16:58:49.989] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 16:58:49.989] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 16:58:49.990] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:58:49.990] [basedlogger] [trace] Deleting UI
+[2025-04-22 16:58:49.990] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 16:58:49.990] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 16:58:49.990] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 16:58:49.991] [basedlogger] [trace] Deleting shader 10
+[2025-04-22 16:58:49.991] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 17:00:07.767] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 17:00:07.768] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 17:00:07.769] [basedlogger] [warning] Platform: Windows
+[2025-04-22 17:00:08.061] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 17:00:08.062] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 17:00:08.063] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 17:00:08.261] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 17:00:08.505] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 17:00:09.039] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 17:00:09.152] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 17:00:09.166] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 17:00:09.370] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 17:00:09.388] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 17:00:09.560] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 17:00:10.089] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 17:00:10.482] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 17:00:10.891] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 17:00:11.018] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 17:00:11.044] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:00:11.045] [basedlogger] [trace] Ref count to shader: 6
+[2025-04-22 17:00:11.045] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:00:11.046] [basedlogger] [trace] Ref count to shader: 5
+[2025-04-22 17:00:11.046] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:00:11.046] [basedlogger] [trace] Ref count to shader: 4
+[2025-04-22 17:00:11.046] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:00:11.046] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:00:11.047] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:00:11.047] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:00:11.048] [basedlogger] [info] AssetLibrary::Delete() - remaining handles for asset Cube: 2
+[2025-04-22 17:00:11.048] [basedlogger] [trace] Destroying entity Cube
+[2025-04-22 17:00:11.340] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 17:00:11.380] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 17:00:11.421] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 17:00:11.498] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:00:11.511] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 17:00:12.487] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:00:16.441] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:00:18.634] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:00:20.086] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:00:20.952] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:00:32.010] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:00:32.388] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:00:35.990] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 17:00:35.998] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 17:00:35.999] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 17:00:36.000] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 17:00:36.000] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:00:36.001] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 17:00:36.001] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:00:36.001] [basedlogger] [trace] Deleting UI
+[2025-04-22 17:00:36.001] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:00:36.001] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 17:00:36.002] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 17:00:36.002] [basedlogger] [trace] Deleting shader 10
+[2025-04-22 17:00:36.002] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 17:04:14.439] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 17:04:14.439] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 17:04:14.440] [basedlogger] [warning] Platform: Windows
+[2025-04-22 17:04:14.696] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 17:04:14.697] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 17:04:14.697] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 17:04:14.893] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 17:04:15.141] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 17:04:15.693] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 17:04:15.802] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 17:04:15.812] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 17:04:16.020] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 17:04:16.037] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 17:04:16.206] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 17:04:16.764] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 17:04:17.174] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 17:04:17.573] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 17:04:17.701] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 17:04:17.728] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:04:17.728] [basedlogger] [trace] Ref count to shader: 6
+[2025-04-22 17:04:17.729] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:04:17.729] [basedlogger] [trace] Ref count to shader: 5
+[2025-04-22 17:04:17.730] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:04:17.730] [basedlogger] [trace] Ref count to shader: 4
+[2025-04-22 17:04:17.730] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:04:17.730] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:04:17.730] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:04:17.730] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:04:17.731] [basedlogger] [info] AssetLibrary::Delete() - remaining handles for asset Cube: 2
+[2025-04-22 17:04:17.731] [basedlogger] [trace] Destroying entity Cube
+[2025-04-22 17:04:18.019] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 17:04:18.058] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 17:04:18.099] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 17:04:18.177] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:04:18.191] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 17:04:20.450] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:04:23.215] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:04:27.092] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:04:28.283] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:04:28.544] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:04:34.496] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 17:04:34.508] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 17:04:34.509] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 17:04:34.510] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 17:04:34.510] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:04:34.510] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 17:04:34.510] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:04:34.510] [basedlogger] [trace] Deleting UI
+[2025-04-22 17:04:34.511] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:04:34.511] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 17:04:34.511] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 17:04:34.511] [basedlogger] [trace] Deleting shader 10
+[2025-04-22 17:04:34.512] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 17:06:33.002] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 17:06:33.002] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 17:06:33.003] [basedlogger] [warning] Platform: Windows
+[2025-04-22 17:06:33.278] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 17:06:33.279] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 17:06:33.279] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 17:06:33.490] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 17:06:33.739] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 17:06:34.285] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 17:06:34.400] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 17:06:34.415] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 17:06:34.633] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 17:06:34.650] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 17:06:34.817] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 17:06:35.405] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 17:06:35.921] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 17:06:36.335] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 17:06:36.576] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 17:06:36.586] [basedlogger] [error] Assimp Error: Unable to open file "Assets/Models/ApartmentScene.obj".
+[2025-04-22 17:06:36.586] [basedlogger] [info] AssetLibrary::Delete() - remaining handles for asset Cube: 2
+[2025-04-22 17:06:36.586] [basedlogger] [trace] Destroying entity Cube
+[2025-04-22 17:06:36.880] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 17:06:36.920] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 17:06:36.961] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 17:06:43.701] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 17:06:43.711] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 17:06:43.711] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 17:06:43.712] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 17:06:43.712] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:06:43.712] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 17:06:43.713] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:06:43.713] [basedlogger] [trace] Deleting UI
+[2025-04-22 17:06:43.713] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:06:43.714] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 17:06:43.714] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 17:06:43.714] [basedlogger] [trace] Deleting shader 10
+[2025-04-22 17:06:43.714] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 17:07:21.626] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 17:07:21.627] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 17:07:21.627] [basedlogger] [warning] Platform: Windows
+[2025-04-22 17:07:21.915] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 17:07:21.916] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 17:07:21.916] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 17:07:22.083] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 17:07:22.324] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 17:07:22.637] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 17:07:22.775] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 17:07:22.789] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 17:07:23.048] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 17:07:23.070] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 17:07:23.398] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 17:07:24.094] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 17:07:24.510] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 17:07:24.936] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 17:07:25.069] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 17:07:25.104] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:25.104] [basedlogger] [trace] Ref count to shader: 6
+[2025-04-22 17:07:25.104] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:25.105] [basedlogger] [trace] Ref count to shader: 5
+[2025-04-22 17:07:25.105] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:25.105] [basedlogger] [trace] Ref count to shader: 4
+[2025-04-22 17:07:25.106] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:25.106] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:07:25.106] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:25.106] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:07:25.107] [basedlogger] [info] AssetLibrary::Delete() - remaining handles for asset Cube: 2
+[2025-04-22 17:07:25.107] [basedlogger] [trace] Destroying entity Cube
+[2025-04-22 17:07:25.401] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 17:07:25.441] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 17:07:25.480] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 17:07:25.570] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:07:25.592] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 17:07:26.481] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:07:32.103] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 17:07:32.111] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 17:07:32.112] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 17:07:32.113] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 17:07:32.113] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:07:32.113] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 17:07:32.113] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:07:32.113] [basedlogger] [trace] Deleting UI
+[2025-04-22 17:07:32.114] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:07:32.114] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 17:07:32.114] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 17:07:32.114] [basedlogger] [trace] Deleting shader 10
+[2025-04-22 17:07:32.115] [basedlogger] [trace] Deleting shader 13
+[2025-04-22 17:07:50.780] [basedlogger] [trace] BasedEngine v0.1
+[2025-04-22 17:07:50.782] [basedlogger] [debug] Configuration: DEBUG
+[2025-04-22 17:07:50.782] [basedlogger] [warning] Platform: Windows
+[2025-04-22 17:07:51.058] [basedlogger] [info] SDL 2.24.1
+[2025-04-22 17:07:51.059] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 838860
+[2025-04-22 17:07:51.059] [basedlogger] [trace] Arena Engine Memory allocated 838860 bytes, offset is now 1677720
+[2025-04-22 17:07:51.250] [basedlogger] [info] OpenGL Info:
+  Vendor:	Intel
+  Renderer:	Intel(R) UHD Graphics
+  Version:	4.3.0 - Build 30.0.101.1660
+[2025-04-22 17:07:51.498] [basedlogger] [trace] Arena Engine Memory allocated 1240 bytes, offset is now 1678960
+[2025-04-22 17:07:52.034] [basedlogger] [trace] Deserializing material DebugGeometry
+[2025-04-22 17:07:52.154] [basedlogger] [trace] Deserializing scene Default 3D Scene
+[2025-04-22 17:07:52.169] [basedlogger] [trace] Deserializing material Skybox
+[2025-04-22 17:07:52.388] [basedlogger] [trace] Loaded 4-channel texture: C:\Users\jmorg\Documents\Repos\BasedEngine/Assets/Textures/skybox_tex.png
+[2025-04-22 17:07:52.406] [basedlogger] [trace] Deserializing material Lit
+[2025-04-22 17:07:52.608] [basedlogger] [trace] Deserializing material Carpet
+[2025-04-22 17:07:53.163] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_albedo.png
+[2025-04-22 17:07:53.564] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_normal-ogl.png
+[2025-04-22 17:07:53.982] [basedlogger] [trace] Loaded 3-channel texture: Assets\Textures\Carpet\old-motel-carpet_roughness.png
+[2025-04-22 17:07:54.111] [basedlogger] [trace] Loaded 4-channel texture: Assets\Textures\Carpet\old-motel-carpet_ao.png
+[2025-04-22 17:07:54.144] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:54.144] [basedlogger] [trace] Ref count to shader: 6
+[2025-04-22 17:07:54.144] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:54.145] [basedlogger] [trace] Ref count to shader: 5
+[2025-04-22 17:07:54.145] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:54.145] [basedlogger] [trace] Ref count to shader: 4
+[2025-04-22 17:07:54.146] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:54.146] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:07:54.146] [basedlogger] [trace] Deleting New Material
+[2025-04-22 17:07:54.146] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:07:54.146] [basedlogger] [info] AssetLibrary::Delete() - remaining handles for asset Cube: 2
+[2025-04-22 17:07:54.147] [basedlogger] [trace] Destroying entity Cube
+[2025-04-22 17:07:54.433] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.bank with 16 events
+[2025-04-22 17:07:54.472] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\Master.strings.bank with 0 events
+[2025-04-22 17:07:54.513] [basedlogger] [trace] Loaded FMOD bank Assets/FMOD/Banks\Desktop\SFX.bank with 0 events
+[2025-04-22 17:07:54.591] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:07:54.604] [basedlogger] [trace] Loaded 4-channel texture: Assets/Textures/E_Key_Dark.png
+[2025-04-22 17:07:55.335] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:18.169] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:18.386] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:21.478] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:22.157] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:25.809] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:26.524] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:39.079] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:39.463] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:41.031] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:42.157] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:43.420] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:45.140] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:50.192] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:50.595] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:54.509] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:55.135] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:57.559] [basedlogger] [trace] Note hover entered!
+[2025-04-22 17:08:57.591] [basedlogger] [trace] Note hover exited!
+[2025-04-22 17:08:59.975] [basedlogger] [trace] Arena Engine Memory released 1240 bytes
+[2025-04-22 17:08:59.983] [basedlogger] [trace] Deleting shader 22
+[2025-04-22 17:08:59.985] [basedlogger] [trace] Deleting shader 19
+[2025-04-22 17:08:59.985] [basedlogger] [trace] Deleting RectGreen
+[2025-04-22 17:08:59.985] [basedlogger] [trace] Ref count to shader: 3
+[2025-04-22 17:08:59.986] [basedlogger] [trace] Deleting RectRed
+[2025-04-22 17:08:59.986] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:08:59.986] [basedlogger] [trace] Deleting UI
+[2025-04-22 17:08:59.986] [basedlogger] [trace] Ref count to shader: 2
+[2025-04-22 17:08:59.986] [basedlogger] [trace] Deleting shader 4
+[2025-04-22 17:08:59.987] [basedlogger] [trace] Deleting shader 7
+[2025-04-22 17:08:59.987] [basedlogger] [trace] Deleting shader 10
+[2025-04-22 17:08:59.987] [basedlogger] [trace] Deleting shader 13

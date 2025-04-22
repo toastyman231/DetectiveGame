@@ -14,7 +14,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13586841364997536227
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+        Path: Assets\Materials\Brown.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 13260624735353248313
@@ -31,7 +31,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13378827204309755205
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Black.bmat
+        Path: Assets\Materials\Black.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 11997641927664613946
@@ -48,7 +48,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13586841364997536227
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+        Path: Assets\Materials\Brown.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 12544510477023124754
@@ -65,7 +65,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 1793050110298769303
@@ -82,7 +82,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 1966159001011002776
@@ -99,7 +99,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 9155678200828244508
@@ -123,7 +123,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16083762883558632608
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\WoodFloor.bmat
+        Path: Assets\Materials\WoodFloor.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 12821201643663442116
@@ -147,7 +147,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13586841364997536227
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+        Path: Assets\Materials\Brown.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 7861099138100076126
@@ -164,7 +164,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 18116329210940289721
@@ -181,7 +181,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 11297587061570583133
@@ -198,7 +198,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 2387799246352341925
@@ -214,7 +214,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13586841364997536227
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+        Path: Assets\Materials\Brown.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 10961410707918583529
@@ -231,7 +231,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 17705553614663122332
@@ -248,7 +248,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 10289539183589335770
@@ -272,7 +272,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 16199220655441577181
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Wallpaper.bmat
+        Path: Assets\Materials\Wallpaper.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 10225888076360808852
@@ -304,7 +304,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13586842364097536227
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Carpet.bmat
+        Path: Assets\Materials\Carpet.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 7779597734032396087
@@ -348,7 +348,7 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 4234357009687084546
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Blue.bmat
+        Path: Assets\Materials\Blue.bmat
         IsEngineAsset: false
     Enabled: true
   - Entity: 7404581756684756988
@@ -365,6 +365,6 @@ Entities:
         IsEngineAsset: true
       Material:
         ID: 13586841364997536227
-        Path: D:\Jake\Documents\Github_Repos\DetectiveGame\Assets\Materials\Brown.bmat
+        Path: Assets\Materials\Brown.bmat
         IsEngineAsset: false
     Enabled: true

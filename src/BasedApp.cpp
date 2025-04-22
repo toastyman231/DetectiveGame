@@ -7,6 +7,7 @@
 #include "based/scene/entity.h"
 
 #include "GameSystems.h"
+#include "based/graphics/model.h"
 #include "based/input/keyboard.h"
 #include "Systems/FMODSystem.h"
 
@@ -69,7 +70,7 @@ public:
 
 		GetCurrentScene()->GetEntityStorage().Load("F", floor);
 
-		auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
+		/*auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
 		cube->SetPosition({ 5, 0.f, 5 });
 		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 },
 			cube->GetTransform().Position(), glm::vec3{0, 0, 0});
@@ -78,7 +79,7 @@ public:
 		auto cubeBody = cube->GetComponent<scene::RigidbodyComponent>();
 		cubeBody.RegisterBody(cube->GetEntityHandle());
 		//cube->AddComponent<InteractableNote>("This is a note with custom text!");
-		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");
+		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");*/
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
@@ -93,16 +94,33 @@ public:
 		cam->SetLocalPosition({ 0, 1.8f - 0.4f, 0 });
 		player->AddComponent<Tool>(6.f);
 
-		auto door = scene::Entity::CreateEntity("Door");
-		door->AddComponent<scene::MeshRenderer>(graphics::Mesh::LoadMeshFromFile("Assets/Models/door.fbx",
-			GetCurrentScene()->GetMeshStorage()));
-		door->SetScale(glm::vec3(10.f));
+		/*auto door = scene::Entity::CreateEntity("Test");
+		auto doorModel = graphics::Model::CreateModel("Assets/Models/door.fbx",
+			GetCurrentScene()->GetModelStorage(), "DoorModel");
+		door->AddComponent<scene::ModelRenderer>(doorModel);
+		door->SetPosition(glm::vec3(0.f, 1.5f, 0.f));
+		door->SetScale(glm::vec3(3.f));
+		door->SetRotation(glm::vec3(90.f, 0.f, -90.f));*/
 
 		/*auto spawn = GetCurrentScene()->GetEntityStorage().Get("PlayerSpawn");
 		player->SetPosition(spawn->GetTransform().Position());*/
 
+		auto scene = scene::Entity::CreateEntity("Scene");
+		//scene->SetRotation(glm::vec3(-90.f, 0.f, 0.f));
+		scene->SetPosition(glm::vec3(0.f, 0.3f, 0.f));
+		auto sceneModel = graphics::Model::CreateModel("Assets/Models/ApartmentScene.obj",
+			GetCurrentScene()->GetModelStorage(), "ApartmentScene");
+		for (int i = 0; i < sceneModel->GetNumMeshes(); i++)
+		{
+			sceneModel->SetMaterial(GetCurrentScene()->GetMaterialStorage().Get("Lit"), i);
+		}
+		scene->AddComponent<scene::ModelRenderer>(sceneModel);
+
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
-		GetCurrentScene()->GetEntityStorage().Load("Door", door);
+		GetCurrentScene()->GetEntityStorage().Load("Scene", scene);
+
+		scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
+		//GetCurrentScene()->GetEntityStorage().Load("Door", door);
 
 		Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
 
