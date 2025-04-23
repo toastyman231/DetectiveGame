@@ -9,6 +9,7 @@ UniformInts:
   material.normal.useSampler: 1
   material.roughness.useSampler: 1
   material.ambientOcclusion.useSampler: 1
+  castShadows: 0
 UniformFloats:
   {}
 UniformFloat2s:

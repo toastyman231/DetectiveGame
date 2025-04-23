@@ -1,0 +1,63 @@
+# Blender 4.4.1 MTL File: 'ApartmentScene.blend'
+# www.blender.org
+
+newmtl Bed_Wood
+Ns 199.809021
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../Textures/whnfbg3_8K_Albedo.jpeg
+
+newmtl Carpet
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../Textures/Carpet/old-motel-carpet_albedo.png
+map_Ns ../Textures/Carpet/old-motel-carpet_roughness.png
+map_refl ../Textures/Carpet/old-motel-carpet_metallic.png
+
+newmtl Mattress
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../Textures/vdbgeis_8K_Albedo.jpeg
+
+newmtl Pillow
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../Textures/rbeskmp_4K_Albedo.jpeg
+
+newmtl Sheet
+Ns 30.445463
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../Textures/sjfvcbtc_4K_Albedo.jpeg
+
+newmtl White
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2

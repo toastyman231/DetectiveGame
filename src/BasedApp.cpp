@@ -50,7 +50,7 @@ public:
 		auto floor = scene::Entity::CreateEntity("F");
 		auto carpet = graphics::Material::LoadMaterialFromFile("Assets/Materials/Carpet.bmat",
 			GetCurrentScene()->GetMaterialStorage());
-		floor->SetScale(glm::vec3{ 10, 0.3f, 10 });
+		floor->SetScale(glm::vec3{ 100, 0.3f, 100 });
 		floor->AddComponent<scene::MeshRenderer>(graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
 			GetCurrentScene()->GetMeshStorage()),
 			carpet);
@@ -106,18 +106,34 @@ public:
 		player->SetPosition(spawn->GetTransform().Position());*/
 
 		auto scene = scene::Entity::CreateEntity("Scene");
-		//scene->SetRotation(glm::vec3(-90.f, 0.f, 0.f));
-		scene->SetPosition(glm::vec3(0.f, 0.3f, 0.f));
-		auto sceneModel = graphics::Model::CreateModel("Assets/Models/ApartmentScene.obj",
+		scene->SetRotation(glm::vec3(-90.f, 0.f, 0.f));
+		scene->SetPosition(glm::vec3(0.f, 0.5f, 0.f));
+		auto sceneModel = graphics::Model::CreateModel("Assets/Models/ApartmentScene.fbx",
 			GetCurrentScene()->GetModelStorage(), "ApartmentScene");
-		for (int i = 0; i < sceneModel->GetNumMeshes(); i++)
+		/*for (int i = 0; i < sceneModel->GetNumMeshes(); i++)
 		{
 			sceneModel->SetMaterial(GetCurrentScene()->GetMaterialStorage().Get("Lit"), i);
-		}
+		}*/
 		scene->AddComponent<scene::ModelRenderer>(sceneModel);
+
+		auto light = scene::Entity::CreateEntity("Light");
+		light->AddComponent<scene::PointLight>(1.f, 0.09f, 0.032f, 10.0f, glm::vec3(1.f));
+		light->AddComponent<scene::MeshRenderer>(
+			graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
+				GetCurrentScene()->GetMeshStorage()),
+			graphics::Material::LoadMaterialFromFile(ASSET_PATH("Materials/Unlit.bmat"),
+				GetCurrentScene()->GetMaterialStorage()));
+		light->SetScale(glm::vec3(0.3f));
+		/*light->SetParent(player, false);
+		light->SetLocalPosition(glm::vec3(0.f, 1.8f - 0.4f, 0.f));*/
+		light->SetPosition(glm::vec3(0.f, 2.5f, 0.f));
+
+		/*auto dl = GetCurrentScene()->GetEntityStorage().Get("Directional Light")
+			->GetComponent<scene::DirectionalLight>().intensity = 10.f;*/
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 		GetCurrentScene()->GetEntityStorage().Load("Scene", scene);
+		GetCurrentScene()->GetEntityStorage().Load("Light", light);
 
 		scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
 		//GetCurrentScene()->GetEntityStorage().Load("Door", door);
@@ -149,6 +165,9 @@ public:
 	void Update(float deltaTime) override
 	{
 		App::Update(deltaTime);
+
+		auto pos = GetCurrentScene()->GetEntityStorage().Get("Player")->GetTransform().Position();
+		//BASED_TRACE("Pos: {} {} {}", pos.x, pos.y, pos.z);
 
 		FMODSystem::Update(deltaTime);
 
