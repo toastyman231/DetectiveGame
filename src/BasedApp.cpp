@@ -61,12 +61,12 @@ public:
 		auto floorBody = floor->GetComponent<scene::RigidbodyComponent>();
 		floorBody.RegisterBody(floor->GetEntityHandle());
 
-		std::ifstream ifs("Assets/Notes/TestNote.txt");
+		/*std::ifstream ifs("Assets/Notes/TestNote.txt");
 		std::stringstream sstream;
 		sstream << ifs.rdbuf();
 		ifs.close();
 
-		floor->AddComponent<InteractableNote>(sstream.str());
+		floor->AddComponent<InteractableNote>(sstream.str());*/
 
 		GetCurrentScene()->GetEntityStorage().Load("F", floor);
 
@@ -116,8 +116,14 @@ public:
 		}*/
 		scene->AddComponent<scene::ModelRenderer>(sceneModel);
 
+		/*auto shadow = scene::Entity::CreateEntity("Shadow");
+		shadow->SetPosition(glm::vec3(0.f, 0.5f, 0.f));
+		auto shadowModel = graphics::Model::CreateModel("Assets/Models/ShadowBody.fbx",
+			GetCurrentScene()->GetModelStorage(), "ShadowBody");
+		shadow->AddComponent<scene::ModelRenderer>(shadowModel);*/
+
 		auto light = scene::Entity::CreateEntity("Light");
-		light->AddComponent<scene::PointLight>(1.f, 0.09f, 0.032f, 10.0f, glm::vec3(1.f));
+		light->AddComponent<scene::PointLight>(1.f, 0.09f, 0.032f, 1.0f, glm::vec3(1.f));
 		light->AddComponent<scene::MeshRenderer>(
 			graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
 				GetCurrentScene()->GetMeshStorage()),
@@ -126,14 +132,28 @@ public:
 		light->SetScale(glm::vec3(0.3f));
 		/*light->SetParent(player, false);
 		light->SetLocalPosition(glm::vec3(0.f, 1.8f - 0.4f, 0.f));*/
-		light->SetPosition(glm::vec3(0.f, 2.5f, 0.f));
+		light->SetPosition(glm::vec3(-0.173f, 5.f, -3.f));
+
+		auto light2 = scene::Entity::CreateEntity("Light 2");
+		light2->AddComponent<scene::PointLight>(1.f, 0.09f, 0.032f, 3.0f, glm::vec3(1.f));
+		light2->AddComponent<scene::MeshRenderer>(
+			graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
+				GetCurrentScene()->GetMeshStorage()),
+			graphics::Material::LoadMaterialFromFile(ASSET_PATH("Materials/Unlit.bmat"),
+				GetCurrentScene()->GetMaterialStorage()));
+		light2->SetScale(glm::vec3(0.3f));
+		/*light->SetParent(player, false);
+		light->SetLocalPosition(glm::vec3(0.f, 1.8f - 0.4f, 0.f));*/
+		light2->SetPosition(glm::vec3(16.6f, 5.f, -6.f));
 
 		/*auto dl = GetCurrentScene()->GetEntityStorage().Get("Directional Light")
 			->GetComponent<scene::DirectionalLight>().intensity = 10.f;*/
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 		GetCurrentScene()->GetEntityStorage().Load("Scene", scene);
+		//GetCurrentScene()->GetEntityStorage().Load("Shadow", shadow);
 		GetCurrentScene()->GetEntityStorage().Load("Light", light);
+		GetCurrentScene()->GetEntityStorage().Load("Light 2", light2);
 
 		scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
 		//GetCurrentScene()->GetEntityStorage().Load("Door", door);
