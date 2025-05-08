@@ -7,8 +7,10 @@
 #include "based/scene/entity.h"
 
 #include "GameSystems.h"
+#include "based/core/basedtime.h"
 #include "based/graphics/model.h"
 #include "based/input/keyboard.h"
+#include "Interaction/InteractionTrigger.h"
 #include "Systems/FMODSystem.h"
 
 using namespace based;
@@ -43,6 +45,9 @@ public:
 		input::Mouse::SetCursorMode(Engine::Instance().GetWindow().GetShouldRenderToScreen() ?
 			input::CursorMode::Confined : input::CursorMode::Free);
 		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
+		//Engine::Instance().GetWindow().SetFullscreen(true);
+
+		//core::Time::SetTimeScale(0.f);
 
 		//scene::Scene::LoadScene("Assets/Scenes/ApartmentLevel.bscn");
 		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
@@ -58,28 +63,20 @@ public:
 		auto floorShape = floor->GetComponent<scene::BoxShapeComponent>();
 		floor->AddComponent<scene::RigidbodyComponent>(floorShape, JPH::EMotionType::Static,
 			physics::Layers::STATIC);
-		auto floorBody = floor->GetComponent<scene::RigidbodyComponent>();
-		floorBody.RegisterBody(floor->GetEntityHandle());
-
-		/*std::ifstream ifs("Assets/Notes/TestNote.txt");
-		std::stringstream sstream;
-		sstream << ifs.rdbuf();
-		ifs.close();
-
-		floor->AddComponent<InteractableNote>(sstream.str());*/
+		floor->AddComponent<Interactable>();
+		floor->AddComponent<InteractableNote>(std::filesystem::path("Assets/Notes/TestNote.txt"));
 
 		GetCurrentScene()->GetEntityStorage().Load("F", floor);
 
-		/*auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");
-		cube->SetPosition({ 5, 0.f, 5 });
+		auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");//GetCurrentScene()->GetEntityStorage().Get("Cube");
+		cube->SetPosition({ 5, 1.f, 5 });
 		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 },
 			cube->GetTransform().Position(), glm::vec3{0, 0, 0});
 		auto shape = cube->GetComponent<scene::BoxShapeComponent>();
-		cube->AddComponent<scene::RigidbodyComponent>(shape, JPH::EMotionType::Static, physics::Layers::STATIC);
-		auto cubeBody = cube->GetComponent<scene::RigidbodyComponent>();
-		cubeBody.RegisterBody(cube->GetEntityHandle());
+		cube->AddComponent<scene::RigidbodyComponent>(shape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
 		//cube->AddComponent<InteractableNote>("This is a note with custom text!");
-		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");*/
+		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");
+		cube->AddComponent<Interactable>();
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
@@ -94,56 +91,34 @@ public:
 		cam->SetLocalPosition({ 0, 1.8f - 0.4f, 0 });
 		player->AddComponent<Tool>(6.f);
 
-		/*auto door = scene::Entity::CreateEntity("Test");
-		auto doorModel = graphics::Model::CreateModel("Assets/Models/door.fbx",
-			GetCurrentScene()->GetModelStorage(), "DoorModel");
-		door->AddComponent<scene::ModelRenderer>(doorModel);
-		door->SetPosition(glm::vec3(0.f, 1.5f, 0.f));
-		door->SetScale(glm::vec3(3.f));
-		door->SetRotation(glm::vec3(90.f, 0.f, -90.f));*/
-
 		/*auto spawn = GetCurrentScene()->GetEntityStorage().Get("PlayerSpawn");
 		player->SetPosition(spawn->GetTransform().Position());*/
 
 		auto scene = scene::Entity::CreateEntity("Scene");
 		scene->SetRotation(glm::vec3(-90.f, 0.f, 0.f));
 		scene->SetPosition(glm::vec3(0.f, 0.5f, 0.f));
-		auto sceneModel = graphics::Model::CreateModel("Assets/Models/ApartmentScene.fbx",
+		/*auto sceneModel = graphics::Model::CreateModel("Assets/Models/ApartmentScene.fbx",
 			GetCurrentScene()->GetModelStorage(), "ApartmentScene");
-		/*for (int i = 0; i < sceneModel->GetNumMeshes(); i++)
-		{
-			sceneModel->SetMaterial(GetCurrentScene()->GetMaterialStorage().Get("Lit"), i);
-		}*/
-		scene->AddComponent<scene::ModelRenderer>(sceneModel);
-
-		/*auto shadow = scene::Entity::CreateEntity("Shadow");
-		shadow->SetPosition(glm::vec3(0.f, 0.5f, 0.f));
-		auto shadowModel = graphics::Model::CreateModel("Assets/Models/ShadowBody.fbx",
-			GetCurrentScene()->GetModelStorage(), "ShadowBody");
-		shadow->AddComponent<scene::ModelRenderer>(shadowModel);*/
+		scene->AddComponent<scene::ModelRenderer>(sceneModel);*/
 
 		auto light = scene::Entity::CreateEntity("Light");
 		light->AddComponent<scene::PointLight>(1.f, 0.09f, 0.032f, 1.0f, glm::vec3(1.f));
-		light->AddComponent<scene::MeshRenderer>(
+		/*light->AddComponent<scene::MeshRenderer>(
 			graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
 				GetCurrentScene()->GetMeshStorage()),
 			graphics::Material::LoadMaterialFromFile(ASSET_PATH("Materials/Unlit.bmat"),
-				GetCurrentScene()->GetMaterialStorage()));
+				GetCurrentScene()->GetMaterialStorage()));*/
 		light->SetScale(glm::vec3(0.3f));
-		/*light->SetParent(player, false);
-		light->SetLocalPosition(glm::vec3(0.f, 1.8f - 0.4f, 0.f));*/
 		light->SetPosition(glm::vec3(-0.173f, 5.f, -3.f));
 
 		auto light2 = scene::Entity::CreateEntity("Light 2");
 		light2->AddComponent<scene::PointLight>(1.f, 0.09f, 0.032f, 3.0f, glm::vec3(1.f));
-		light2->AddComponent<scene::MeshRenderer>(
+		/*light2->AddComponent<scene::MeshRenderer>(
 			graphics::Mesh::LoadMeshFromFile(ASSET_PATH("Meshes/cube.obj"),
 				GetCurrentScene()->GetMeshStorage()),
 			graphics::Material::LoadMaterialFromFile(ASSET_PATH("Materials/Unlit.bmat"),
-				GetCurrentScene()->GetMaterialStorage()));
+				GetCurrentScene()->GetMaterialStorage()));*/
 		light2->SetScale(glm::vec3(0.3f));
-		/*light->SetParent(player, false);
-		light->SetLocalPosition(glm::vec3(0.f, 1.8f - 0.4f, 0.f));*/
 		light2->SetPosition(glm::vec3(16.6f, 5.f, -6.f));
 
 		/*auto dl = GetCurrentScene()->GetEntityStorage().Get("Directional Light")
@@ -151,11 +126,10 @@ public:
 
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 		GetCurrentScene()->GetEntityStorage().Load("Scene", scene);
-		//GetCurrentScene()->GetEntityStorage().Load("Shadow", shadow);
 		GetCurrentScene()->GetEntityStorage().Load("Light", light);
 		GetCurrentScene()->GetEntityStorage().Load("Light 2", light2);
 
-		scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
+		//scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
 		//GetCurrentScene()->GetEntityStorage().Load("Door", door);
 
 		Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));

@@ -8,6 +8,14 @@ struct InteractableNote
 {
 	InteractableNote() = default;
 	InteractableNote(const std::string& text) : mNoteText(text) {}
+	InteractableNote(const std::filesystem::path& path)
+	{
+		std::ifstream ifs(path);
+		std::stringstream sstream;
+		sstream << ifs.rdbuf();
+		ifs.close();
+		mNoteText = sstream.str();
+	}
 
 	~InteractableNote()
 	{

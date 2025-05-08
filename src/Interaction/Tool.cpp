@@ -64,6 +64,16 @@ void ToolSystem::OnInteract(bool show)
 	}
 }
 
+class TestObjectLayerFilter : public JPH::ObjectLayerFilter
+{
+public:
+	bool ShouldCollide(JPH::ObjectLayer inLayer) const override
+	{
+		if (inLayer == based::physics::Layers::STATIC || inLayer == based::physics::Layers::UNUSED4) return true;
+		else return false;
+	}
+};
+
 void ToolSystem::Update(float deltaTime)
 {
 	using namespace based;
@@ -85,8 +95,9 @@ void ToolSystem::Update(float deltaTime)
 		};
 
 		JPH::RayCastResult hit;
+		TestObjectLayerFilter filter;
 
-		if (physSystem.GetNarrowPhaseQuery().CastRay(ray, hit))
+		if (physSystem.GetNarrowPhaseQuery().CastRay(ray, hit, {}, filter))
 		{
 			// Associated entity is stored on the body as User Data
 			auto hitId = hit.mBodyID;
@@ -118,14 +129,17 @@ void ToolSystem::Update(float deltaTime)
 			if (auto trigger = tool.GetCurrentTrigger(); trigger != nullptr)
 			{
 				trigger->mShouldExit = true;
+				tool.SetCurrentTrigger(nullptr);
 			}
 
 			// Set up the trigger for the newly hovered object
-			auto& newTrigger = registry.emplace<InteractionTrigger>(hitEnt);
-			newTrigger.mTool = &tool;
-			newTrigger.mId = (uint32_t) hitEnt;
-			tool.SetCurrentTrigger(&newTrigger);
-
+			if (registry.all_of<Interactable>(hitEnt))
+			{
+				auto& newTrigger = registry.emplace<InteractionTrigger>(hitEnt);
+				newTrigger.mTool = &tool;
+				newTrigger.mId = (uint32_t)hitEnt;
+				tool.SetCurrentTrigger(&newTrigger);
+			}
 		} else
 		{
 			// Clear current trigger if we aren't looking at an interactable.

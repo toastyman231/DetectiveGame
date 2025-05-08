@@ -1,5 +1,7 @@
 #pragma once
 
+struct Interactable {};
+
 struct InteractionTrigger
 {
 	InteractionTrigger() = default;
