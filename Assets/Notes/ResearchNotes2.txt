@@ -1,0 +1,18 @@
+<p class="note-text bold">PROJECT TWIN SPARK - TOP SECRET</p>
+
+<p class="note-text italic">August 2024</p>
+<p>Project Twin Spark, or the <label class="note-text bold">Teleswapper</label>, as I've begun to refer to it, is progressing nicely. The unique power supply is incredibly powerful! 
+If I can learn to harness it on my other projects, it will enable my inventions to reach new heights! Though, I'm still a little miffed that I
+dragged the entire enclosure home to work on it, when simply bringing the power supply with me and building a new enclosure around it on-site
+would have sufficed. Oh well, live and learn. Now that I know <label class="note-text bold">the power supply is the only important bit</label>, that only strengthens my resolve to
+put it to use on other projects.</p>
+<br />
+<p class="note-text italic">October 2024</p>
+<p>My new assistant has been invaluable in testing the device lately. Leaving that Swap Anchor at his home has made it possible to use a 'Custom Setting' on the Teleswapper,
+though it is somewhat disappointing that we can only swap to places we've visited before. Oh well. Progress continues steadily, though <label class="note-text bold">the device creates burn 
+marks at the location of each target</label> upon swapping, and I am concerned my assistant is going to ask me to pay to repair his flooring. Need to invent burn-proof floor tile.</p>
+<br />
+<p class="note-text italic">January 2025</p>
+<p>Note to self - <label class="note-text bold">don't leave the device unplugged.</label> Internal CMOS battery does not seem to play nice with the power supply, and requires constant power 
+from the wall main to remain functional. Since the device is mainly powered by it's own custom power supply I was hoping to untether it completely, so this is an annoying setback. Need to find
+an alternative.</p>

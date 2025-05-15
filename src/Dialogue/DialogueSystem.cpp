@@ -42,6 +42,15 @@ void DialogueSystem::Initialize()
 	auto& uiManager = based::Engine::Instance().GetUiManager();
 	auto context = uiManager.GetContext("main");
 
+	Rml::DataModelConstructor constructor = context->CreateDataModel("dialogue-data");
+	if (constructor)
+	{
+		constructor.Bind("current_line", &mShownLine);
+	}
+	else BASED_WARN("COULD NOT CREATE DATA MODEL CONSTRUCTOR");
+
+	mDataModelHandle = constructor.GetModelHandle();
+
 	uiManager.SetPathPrefix("Assets/UI/");
 	mDocument = uiManager.LoadWindow("DialogueBox", context);
 	mDocument->document->Hide();
@@ -66,12 +75,11 @@ void DialogueSystem::Update(float deltaTime)
 		{
 			if (mProgress < mCurrentLine.size())
 			{
-				auto elem = mDocument->document->GetElementById("dialogue-body");
 				mLastUpdate = core::Time::GetUnscaledTime();
 
-				auto current = elem->GetInnerRML();
 				char currentChar = mCurrentLine[mProgress];
-				elem->SetInnerRML(current + currentChar);
+				mShownLine = mShownLine + currentChar;
+				mDataModelHandle.DirtyVariable("current_line");
 
 				SpeakerSettings speaker = mSpeakers[mCurrentSpeaker];
 
@@ -93,8 +101,8 @@ void DialogueSystem::Update(float deltaTime)
 		if (mIsTyping)
 		{
 			mIsTyping = false;
-			auto elem = mDocument->document->GetElementById("dialogue-body");
-			elem->SetInnerRML(mCurrentLine);
+			mShownLine = mCurrentLine;
+			mDataModelHandle.DirtyVariable("current_line");
 		}
 		else ShowNextLine();
 	}
@@ -108,7 +116,7 @@ void DialogueSystem::SetCurrentDialogue(const std::string& path)
 
 	GameSystems::SetPlayerMouseLookEnabled(false);
 	GameSystems::SetPlayerMovementEnabled(false);
-	based::input::Mouse::SetCursorVisible(true);
+	//based::input::Mouse::SetCursorVisible(true);
 }
 
 void DialogueSystem::CloseCurrentDialogue()
@@ -116,6 +124,9 @@ void DialogueSystem::CloseCurrentDialogue()
 	mInDialogue = false;
 	if (mDocument)
 		mDocument->document->Hide();
+
+	mShownLine = "";
+	mDataModelHandle.DirtyVariable("current_line");
 
 	GameSystems::SetPlayerMouseLookEnabled(true);
 	GameSystems::SetPlayerMovementEnabled(true);
@@ -144,8 +155,8 @@ void DialogueSystem::ShowNextLine()
 	else mCurrentSpeaker = 0;
 
 	// Clear text to prepare for next line
-	auto elem = mDocument->document->GetElementById("dialogue-body");
-	elem->SetInnerRML("");
+	mShownLine = "";
+	mDataModelHandle.DirtyVariable("current_line");
 
 	// If the line contains a : then the text preceding that is a speaker tag,
 	// so that gets shown, otherwise the speaker box is hidden

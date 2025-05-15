@@ -10,6 +10,8 @@ struct InteractionDialogueTrigger
 
 	std::string mPath;
 	bool mCanInteract = true;
+
+	entt::delegate<void()> mOnDialogueEnd;
 };
 
 class InteractionDialogueSystem : public IInteractable

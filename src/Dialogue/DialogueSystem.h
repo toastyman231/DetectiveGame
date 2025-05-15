@@ -41,6 +41,8 @@ private:
 	based::managers::DocumentInfo* mDocument = nullptr;
 	DialogueSet mCurrentDialogue;
 	std::string mCurrentLine;
+	std::string mShownLine;
+	Rml::DataModelHandle mDataModelHandle;
 	size_t mProgress;
 	float mLastUpdate;
 	float mTextSpeed = 0.04f;

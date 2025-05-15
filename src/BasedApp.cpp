@@ -44,7 +44,7 @@ public:
 		input::Mouse::SetCursorVisible(!Engine::Instance().GetWindow().GetShouldRenderToScreen());
 		input::Mouse::SetCursorMode(Engine::Instance().GetWindow().GetShouldRenderToScreen() ?
 			input::CursorMode::Confined : input::CursorMode::Free);
-		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
+		Engine::Instance().GetPhysicsManager().SetRenderDebug(true);
 		//Engine::Instance().GetWindow().SetFullscreen(true);
 
 		//core::Time::SetTimeScale(0.f);
@@ -52,7 +52,7 @@ public:
 		//scene::Scene::LoadScene("Assets/Scenes/ApartmentLevel.bscn");
 		scene::Scene::LoadScene(ASSET_PATH("Scenes/Default3D.bscn"));
 
-		auto floor = scene::Entity::CreateEntity("F");
+		/*auto floor = scene::Entity::CreateEntity("F");
 		auto carpet = graphics::Material::LoadMaterialFromFile("Assets/Materials/Carpet.bmat",
 			GetCurrentScene()->GetMaterialStorage());
 		floor->SetScale(glm::vec3{ 100, 0.3f, 100 });
@@ -66,9 +66,9 @@ public:
 		floor->AddComponent<Interactable>();
 		floor->AddComponent<InteractableNote>(std::filesystem::path("Assets/Notes/TestNote.txt"));
 
-		GetCurrentScene()->GetEntityStorage().Load("F", floor);
+		GetCurrentScene()->GetEntityStorage().Load("F", floor);*/
 
-		auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");//GetCurrentScene()->GetEntityStorage().Get("Cube");
+		/*auto cube = GetCurrentScene()->GetEntityStorage().Get("Cube");//GetCurrentScene()->GetEntityStorage().Get("Cube");
 		cube->SetPosition({ 5, 1.f, 5 });
 		cube->AddComponent<scene::BoxShapeComponent>(glm::vec3{ 1, 1, 1 },
 			cube->GetTransform().Position(), glm::vec3{0, 0, 0});
@@ -76,7 +76,7 @@ public:
 		cube->AddComponent<scene::RigidbodyComponent>(shape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
 		//cube->AddComponent<InteractableNote>("This is a note with custom text!");
 		cube->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Test.txt");
-		cube->AddComponent<Interactable>();
+		cube->AddComponent<Interactable>();*/
 
 		auto cam = GetCurrentScene()->GetEntityStorage().Get("Main Camera");
 
@@ -90,6 +90,7 @@ public:
 		cam->SetParent(player, false);
 		cam->SetLocalPosition({ 0, 1.8f - 0.4f, 0 });
 		player->AddComponent<Tool>(6.f);
+		player->SetPosition(glm::vec3(0.f, 10.f, 0.f));
 
 		/*auto spawn = GetCurrentScene()->GetEntityStorage().Get("PlayerSpawn");
 		player->SetPosition(spawn->GetTransform().Position());*/
@@ -97,9 +98,16 @@ public:
 		auto scene = scene::Entity::CreateEntity("Scene");
 		scene->SetRotation(glm::vec3(-90.f, 0.f, 0.f));
 		scene->SetPosition(glm::vec3(0.f, 0.5f, 0.f));
-		/*auto sceneModel = graphics::Model::CreateModel("Assets/Models/ApartmentScene.fbx",
+		auto sceneModel = graphics::Model::CreateModel("Assets/Models/ApartmentScene_StaticGeo.fbx",
 			GetCurrentScene()->GetModelStorage(), "ApartmentScene");
-		scene->AddComponent<scene::ModelRenderer>(sceneModel);*/
+		scene->AddComponent<scene::ModelRenderer>(sceneModel);
+		sceneModel->GenerateModelCollisions(scene->GetTransform());
+
+		auto scene_NoCollision = scene::Entity::CreateEntity("Scene 2");
+		scene_NoCollision->SetPosition(glm::vec3(0.f, 0.5f, 0.f));
+		auto noCollisionModel = graphics::Model::CreateModel("Assets/Models/ApartmentScene_NoCollisionGeo.fbx",
+			GetCurrentScene()->GetModelStorage(), "ApartmentScene_NoCollision");
+		scene_NoCollision->AddComponent<scene::ModelRenderer>(noCollisionModel);
 
 		auto light = scene::Entity::CreateEntity("Light");
 		light->AddComponent<scene::PointLight>(1.f, 0.09f, 0.032f, 1.0f, glm::vec3(1.f));
@@ -124,15 +132,107 @@ public:
 		/*auto dl = GetCurrentScene()->GetEntityStorage().Get("Directional Light")
 			->GetComponent<scene::DirectionalLight>().intensity = 10.f;*/
 
+		auto col = scene::Entity::CreateEntity("PaintingCollider");
+		col->SetPosition(glm::vec3(3.84f, 0.9f, -5.77f));
+		col->SetScale(glm::vec3(0.482f, 1.f, 1.48f));
+		col->AddComponent<scene::BoxShapeComponent>(col->GetTransform().Scale(), 
+			col->GetTransform().Position(), glm::vec3(0.f));
+		auto colShape = col->GetComponent<scene::BoxShapeComponent>();
+		col->AddComponent<scene::RigidbodyComponent>(colShape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
+		col->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Painting.txt");
+		col->AddComponent<Interactable>();
+		GetCurrentScene()->GetEntityStorage().Load(col->GetEntityName(), col);
+
+		col = scene::Entity::CreateEntity("ResearchCollider");
+		col->SetPosition(glm::vec3(4.94f, 2.63f, -2.16f));
+		col->SetScale(glm::vec3(0.642f, 0.295f, 0.554f));
+		col->AddComponent<scene::BoxShapeComponent>(col->GetTransform().Scale(),
+			col->GetTransform().Position(), glm::vec3(0.f));
+		colShape = col->GetComponent<scene::BoxShapeComponent>();
+		col->AddComponent<scene::RigidbodyComponent>(colShape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
+		col->AddComponent<InteractableNote>(std::filesystem::path("Assets/Notes/ResearchNotes1.txt"));
+		col->AddComponent<Interactable>();
+		GetCurrentScene()->GetEntityStorage().Load(col->GetEntityName(), col);
+
+		col = scene::Entity::CreateEntity("ToolsCollider");
+		col->SetPosition(glm::vec3(8.39f, 2.88f, -2.16f));
+		col->SetScale(glm::vec3(1.061f, 0.295f, 0.554f));
+		col->AddComponent<scene::BoxShapeComponent>(col->GetTransform().Scale(),
+			col->GetTransform().Position(), glm::vec3(0.f));
+		colShape = col->GetComponent<scene::BoxShapeComponent>();
+		col->AddComponent<scene::RigidbodyComponent>(colShape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
+		col->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Tools.txt");
+		col->AddComponent<Interactable>();
+		GetCurrentScene()->GetEntityStorage().Load(col->GetEntityName(), col);
+
+		col = scene::Entity::CreateEntity("ChairCollider");
+		col->SetPosition(glm::vec3(9.13f, 0.68f + 0.5f, -4.62f));
+		col->SetRotation(glm::vec3(0.f, 45.f, 0.f));
+		col->SetScale(glm::vec3(1.62f, 0.727f, 0.846f));
+		col->AddComponent<scene::BoxShapeComponent>(col->GetTransform().Scale(),
+			col->GetTransform().Position(), col->GetTransform().EulerAngles());
+		colShape = col->GetComponent<scene::BoxShapeComponent>();
+		col->AddComponent<scene::RigidbodyComponent>(colShape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
+		col->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Chair.txt");
+		col->AddComponent<Interactable>();
+		GetCurrentScene()->GetEntityStorage().Load(col->GetEntityName(), col);
+
+		col = scene::Entity::CreateEntity("HiddenNotesCollider");
+		col->SetPosition(glm::vec3(13.9f, 0.82f, -3.84f));
+		col->SetScale(glm::vec3(0.481f));
+		col->AddComponent<scene::BoxShapeComponent>(col->GetTransform().Scale(),
+			col->GetTransform().Position(), glm::vec3(0.f));
+		colShape = col->GetComponent<scene::BoxShapeComponent>();
+		col->AddComponent<scene::RigidbodyComponent>(colShape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
+		col->AddComponent<InteractableNote>(std::filesystem::path("Assets/Notes/ResearchNotes2.txt"));
+		col->AddComponent<Interactable>();
+		GetCurrentScene()->GetEntityStorage().Load(col->GetEntityName(), col);
+
+		col = scene::Entity::CreateEntity("TeleswapperCollider");
+		col->SetPosition(glm::vec3(18.02f, 2.95f, -9.38f));
+		col->SetScale(glm::vec3(0.676f, 0.380f, 0.676f));
+		col->AddComponent<scene::BoxShapeComponent>(col->GetTransform().Scale(),
+			col->GetTransform().Position(), glm::vec3(0.f));
+		colShape = col->GetComponent<scene::BoxShapeComponent>();
+		col->AddComponent<scene::RigidbodyComponent>(colShape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
+		col->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Teleswapper.txt");
+		col->AddComponent<Interactable>();
+		GetCurrentScene()->GetEntityStorage().Load(col->GetEntityName(), col);
+
+		col = scene::Entity::CreateEntity("BodyCollider");
+		col->SetPosition(glm::vec3(16.f, 0.86f, -7.64f));
+		col->SetRotation(glm::vec3(0.f, 27.04f, 0.f));
+		col->SetScale(glm::vec3(2.02f, 0.491f, 1.18f));
+		col->AddComponent<scene::BoxShapeComponent>(col->GetTransform().Scale(),
+			col->GetTransform().Position(), col->GetTransform().EulerAngles());
+		colShape = col->GetComponent<scene::BoxShapeComponent>();
+		col->AddComponent<scene::RigidbodyComponent>(colShape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
+		col->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Body.txt");
+		col->AddComponent<Interactable>();
+		GetCurrentScene()->GetEntityStorage().Load(col->GetEntityName(), col);
+
+		col = scene::Entity::CreateEntity("TrashCollider");
+		col->SetPosition(glm::vec3(15.98f, 0.86f, -10.26f));
+		col->SetScale(glm::vec3(0.338f));
+		col->AddComponent<scene::BoxShapeComponent>(col->GetTransform().Scale(),
+			col->GetTransform().Position(), glm::vec3(0.f));
+		colShape = col->GetComponent<scene::BoxShapeComponent>();
+		col->AddComponent<scene::RigidbodyComponent>(colShape, JPH::EMotionType::Static, physics::Layers::UNUSED4);
+		col->AddComponent<InteractionDialogueTrigger>("Assets/Dialogue/Body.txt");
+		col->AddComponent<Interactable>();
+		GetCurrentScene()->GetEntityStorage().Load(col->GetEntityName(), col);
+
 		GetCurrentScene()->GetEntityStorage().Load("Player", player);
 		GetCurrentScene()->GetEntityStorage().Load("Scene", scene);
+		GetCurrentScene()->GetEntityStorage().Load("Scene 2", scene_NoCollision);
 		GetCurrentScene()->GetEntityStorage().Load("Light", light);
 		GetCurrentScene()->GetEntityStorage().Load("Light 2", light2);
 
-		//scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
+		scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
 		//GetCurrentScene()->GetEntityStorage().Load("Door", door);
 
 		Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
+		Rml::Debugger::SetVisible(true);
 
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
@@ -160,8 +260,8 @@ public:
 	{
 		App::Update(deltaTime);
 
-		auto pos = GetCurrentScene()->GetEntityStorage().Get("Player")->GetTransform().Position();
-		//BASED_TRACE("Pos: {} {} {}", pos.x, pos.y, pos.z);
+		/*auto pos = GetCurrentScene()->GetEntityStorage().Get("Player")->GetTransform().Position();
+		BASED_TRACE("{} {} {}", pos.x, pos.y, pos.z);*/
 
 		FMODSystem::Update(deltaTime);
 

@@ -64,6 +64,9 @@ void PlayerControllerSystem::Update(float deltaTime)
 		JPH::Quat rot = JPH::Quat::sFromTo(JPH::Vec3::sAxisX(), camForward);
 		moveDir = rot * moveDir;
 
+		/*entity->SetPosition(entity->GetTransform().Position() + glm::vec3(moveDir.GetX(), moveDir.GetY(), moveDir.GetZ()));
+		continue;*/
+
 		// If the player has control (not in the air), adjust their movement to account for inertia
 		if (controlHorizontal)
 			mDesiredDirection = 0.25f * moveDir * character.Speed + 0.75f * mDesiredDirection;

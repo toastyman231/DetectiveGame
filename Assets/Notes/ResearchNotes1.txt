@@ -1,0 +1,14 @@
+<p class="note-text bold">COMMISSION REPORT - MAY 2025</p>
+
+<p>The raygun requested by <label class="note-text italic">Team Groundwater</label> is proving difficult. The device works, but the power source is unruly and absolutely not portable. I would like to test out <label class="note-text italic">Project Twin Spark's</label> power supply as a potential replacement, but I absolutely can't afford to remove it from my home laboratory right now.</p>
+<br />
+<p>The Portable Window device proposed by ███████████ has piqued my interest quite a bit. The ability to non-destructively carve out a section of space, allowing one to reach their hand through and interact with objects on the other side, sounds incredibly useful. However, I'm not convinced this is actually possible, despite ██████'s arguments. Nonetheless, I found it interesting enough to take the prototype back home with me, and I plan on devoting some spare time to the project on the weekends.</p>
+<br />
+<p>Additionally, the following prototypes have been moved to my home laboratory for storage, but are not being actively worked on:<br />
+- Electro-Molecule Stabilizer<br />
+- Dynamic Raidon Modulator<br />
+- Flux Capacitor (Who named it this btw? I did not approve this.)<br />
+<br />
+I will return them to the main laboratory upon receiving payment for the work I've done already from the associated clients.
+</p>
+

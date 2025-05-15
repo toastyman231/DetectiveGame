@@ -73,6 +73,8 @@ void InteractionDialogueSystem::OnDialogueFinished()
 	GameSystems::mToolSystem.CallOnInteract(true);
 	OnInteractionHoverExit(trigger.mTool);
 
+	if (dialogue.mOnDialogueEnd) dialogue.mOnDialogueEnd();
+
 	// Reset interaction when dialogue finishes
 	registry.remove<InteractionTrigger>(mCurrentDialogueEntity);
 	dialogue.mCanInteract = true;
