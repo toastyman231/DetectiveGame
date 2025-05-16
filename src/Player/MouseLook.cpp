@@ -2,6 +2,7 @@
 #include "MouseLook.h"
 
 #include "based/app.h"
+#include "based/input/joystick.h"
 #include "based/input/mouse.h"
 #include "based/scene/components.h"
 #include "based/scene/entity.h"
@@ -23,6 +24,8 @@ void MouseLookSystem::Update(float deltaTime)
 		// Rotate camera view
 		mouseLookComp.mPitch += static_cast<float>(input::Mouse::DX()) * mouseLookComp.mSensitivity * deltaTime;
 		mouseLookComp.mYaw += static_cast<float>(input::Mouse::DY()) * mouseLookComp.mSensitivity * deltaTime;
+		mouseLookComp.mPitch += input::Joystick::GetAxis(0, input::Joystick::Axis::RightStickHorizontal) * mouseLookComp.mSensitivity * deltaTime;
+		mouseLookComp.mYaw += input::Joystick::GetAxis(0, input::Joystick::Axis::RightStickVertical) * mouseLookComp.mSensitivity * deltaTime;
 
 		mouseLookComp.mYaw = math::Clamp(mouseLookComp.mYaw, -89.f, 89.f);
 

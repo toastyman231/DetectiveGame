@@ -1,0 +1,61 @@
+Actions:
+  - ActionName: IA_Move
+    ConsumeInput: true
+    TriggerWhenPaused: false
+    Type: 2
+    Triggers: []
+    Modifiers: []
+  - ActionName: IA_Look
+    ConsumeInput: true
+    TriggerWhenPaused: false
+    Type: 2
+    Triggers: []
+    Modifiers: []
+  - ActionName: IA_Interact
+    ConsumeInput: true
+    TriggerWhenPaused: false
+    Type: 0
+    Triggers: []
+    Modifiers: []
+Configs:
+  - ConfigName: IMC_Default
+    Mappings:
+      - ActionName: IA_Move
+        MappedKeys:
+          - Key: 0
+            Type: 2
+            Triggers: []
+            Modifiers:
+              - SwizzleYX
+          - Key: 26
+            Type: 0
+            Triggers: []
+            Modifiers: []
+          - Key: 22
+            Type: 0
+            Triggers: []
+            Modifiers:
+              - Negate
+          - Key: 4
+            Type: 0
+            Triggers: []
+            Modifiers:
+              - Negate
+              - SwizzleYX
+          - Key: 7
+            Type: 0
+            Triggers: []
+            Modifiers:
+              - SwizzleYX
+      - ActionName: IA_Interact
+        MappedKeys:
+          - Key: 8
+            Type: 0
+            Triggers:
+              - Hold
+            Modifiers: []
+          - Key: 0
+            Type: 2
+            Triggers:
+              - Hold
+            Modifiers: []

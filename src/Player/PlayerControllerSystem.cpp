@@ -4,11 +4,33 @@
 #include "../Systems/FMODSystem.h"
 #include "based/app.h"
 #include "based/core/basedtime.h"
+#include "based/input/joystick.h"
 #include "based/input/keyboard.h"
 #include "based/input/mouse.h"
 #include "based/math/random.h"
 #include "based/scene/components.h"
 #include "based/scene/entity.h"
+
+void OnStarted(const based::input::InputAction& action)
+{
+	BASED_TRACE("{} action started!", action.name);
+}
+void OnTriggered(const based::input::InputAction& action)
+{
+	BASED_TRACE("{} action triggered! {} {}", action.name, action.GetValue().axis2DValue.x, action.GetValue().axis2DValue.y);
+}
+void OnOngoing(const based::input::InputAction& action)
+{
+	BASED_TRACE("{} action ongoing!", action.name);
+}
+void OnCompleted(const based::input::InputAction& action)
+{
+	BASED_TRACE("{} action completed!", action.name);
+}
+void OnCanceled(const based::input::InputAction& action)
+{
+	BASED_TRACE("{} action canceled!", action.name);
+}
 
 void PlayerControllerSystem::Initialize(float stepInterval)
 {
@@ -16,6 +38,22 @@ void PlayerControllerSystem::Initialize(float stepInterval)
 	mFootsteps0 = FMODSystem::CreateFMODEvent("event:/Footsteps/Footsteps");
 	mFootsteps1 = FMODSystem::CreateFMODEvent("event:/Footsteps/Footsteps");
 	mCreaks = FMODSystem::CreateFMODEvent("event:/Footsteps/Creaks");
+
+	using namespace based;
+
+	auto scene = Engine::Instance().GetApp().GetCurrentScene();
+
+	auto view = scene->GetRegistry().view<input::InputComponent>();
+
+	for (auto& e : view)
+	{
+		auto& inputComp = view.get<input::InputComponent>(e);
+		inputComp.mStartedEvent.connect<&OnStarted>();
+		inputComp.mTriggeredEvent.connect<&OnTriggered>();
+		inputComp.mOngoingEvent.connect<&OnOngoing>();
+		inputComp.mCompletedEvent.connect<&OnCompleted>();
+		inputComp.mCanceledEvent.connect<&OnCanceled>();
+	}
 }
 
 void PlayerControllerSystem::Update(float deltaTime)
@@ -55,6 +93,10 @@ void PlayerControllerSystem::Update(float deltaTime)
 		if (input::Keyboard::Key(BASED_INPUT_KEY_D)) moveDir.SetZ(1);
 		if (input::Keyboard::Key(BASED_INPUT_KEY_W)) moveDir.SetX(1);
 		if (input::Keyboard::Key(BASED_INPUT_KEY_S)) moveDir.SetX(-1);
+		if (input::Joystick::GetAxis(0, input::Joystick::Axis::LeftStickVertical) != 0.f)
+			moveDir.SetX(-input::Joystick::GetAxis(0, input::Joystick::Axis::LeftStickVertical));
+		if (input::Joystick::GetAxis(0, input::Joystick::Axis::LeftStickHorizontal) != 0.f)
+			moveDir.SetZ(input::Joystick::GetAxis(0, input::Joystick::Axis::LeftStickHorizontal));
 		if (moveDir != JPH::Vec3::sZero()) moveDir = moveDir.Normalized();
 
 		// Align desired move direction with the camera's facing direction
@@ -93,7 +135,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 		{
 			new_velocity = ground_velocity;
 
-			if (input::Keyboard::KeyDown(BASED_INPUT_KEY_SPACE))
+			if (input::Keyboard::KeyDown(BASED_INPUT_KEY_SPACE) || input::Joystick::GetButtonDown(0, input::Joystick::Button::Face_Bottom))
 				new_velocity += character.JumpForce * character.Character->GetUp();
 		}
 		else

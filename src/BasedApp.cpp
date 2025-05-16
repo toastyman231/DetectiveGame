@@ -44,8 +44,8 @@ public:
 		input::Mouse::SetCursorVisible(!Engine::Instance().GetWindow().GetShouldRenderToScreen());
 		input::Mouse::SetCursorMode(Engine::Instance().GetWindow().GetShouldRenderToScreen() ?
 			input::CursorMode::Confined : input::CursorMode::Free);
-		Engine::Instance().GetPhysicsManager().SetRenderDebug(true);
-		//Engine::Instance().GetWindow().SetFullscreen(true);
+		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
+		Engine::Instance().GetWindow().SetFullscreen(false);
 
 		//core::Time::SetTimeScale(0.f);
 
@@ -83,10 +83,13 @@ public:
 		auto player = scene::Entity::CreateEntity("Player");
 		player->AddComponent<scene::CapsuleShapeComponent>(1.8f, 0.4f);
 		auto capsule = player->GetComponent<scene::CapsuleShapeComponent>();
+		player->AddComponent<input::InputComponent>();
+		auto& input = player->GetComponent<input::InputComponent>();
+		Engine::Instance().GetInputManager().AddInputMapping(input, "IMC_Default");
 		player->AddComponent<scene::CharacterController>(
 			scene::Transform(glm::vec3(0)),
 			capsule.shape);
-		player->AddComponent<MouseLook>(200.f);
+		player->AddComponent<MouseLook>(250.f);
 		cam->SetParent(player, false);
 		cam->SetLocalPosition({ 0, 1.8f - 0.4f, 0 });
 		player->AddComponent<Tool>(6.f);
@@ -232,7 +235,7 @@ public:
 		//GetCurrentScene()->GetEntityStorage().Load("Door", door);
 
 		Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
-		Rml::Debugger::SetVisible(true);
+		//Rml::Debugger::SetVisible(true);
 
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
