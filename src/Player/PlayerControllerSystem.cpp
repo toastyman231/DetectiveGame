@@ -4,33 +4,9 @@
 #include "../Systems/FMODSystem.h"
 #include "based/app.h"
 #include "based/core/basedtime.h"
-#include "based/input/joystick.h"
-#include "based/input/keyboard.h"
-#include "based/input/mouse.h"
 #include "based/math/random.h"
 #include "based/scene/components.h"
 #include "based/scene/entity.h"
-
-void OnStarted(const based::input::InputAction& action)
-{
-	BASED_TRACE("{} action started!", action.name);
-}
-void OnTriggered(const based::input::InputAction& action)
-{
-	BASED_TRACE("{} action triggered! {} {}", action.name, action.GetValue().axis2DValue.x, action.GetValue().axis2DValue.y);
-}
-void OnOngoing(const based::input::InputAction& action)
-{
-	BASED_TRACE("{} action ongoing!", action.name);
-}
-void OnCompleted(const based::input::InputAction& action)
-{
-	BASED_TRACE("{} action completed!", action.name);
-}
-void OnCanceled(const based::input::InputAction& action)
-{
-	BASED_TRACE("{} action canceled!", action.name);
-}
 
 void PlayerControllerSystem::Initialize(float stepInterval)
 {
@@ -43,16 +19,13 @@ void PlayerControllerSystem::Initialize(float stepInterval)
 
 	auto scene = Engine::Instance().GetApp().GetCurrentScene();
 
-	auto view = scene->GetRegistry().view<input::InputComponent>();
+	auto view = scene->GetRegistry().view<input::InputComponent, scene::EntityReference, scene::CharacterController>();
 
 	for (auto& e : view)
 	{
 		auto& inputComp = view.get<input::InputComponent>(e);
-		inputComp.mStartedEvent.connect<&OnStarted>();
-		inputComp.mTriggeredEvent.connect<&OnTriggered>();
-		inputComp.mOngoingEvent.connect<&OnOngoing>();
-		inputComp.mCompletedEvent.connect<&OnCompleted>();
-		inputComp.mCanceledEvent.connect<&OnCanceled>();
+		inputComp.mStartedEvent.connect<&PlayerControllerSystem::HandleJump>(this);
+		inputComp.mTriggeredEvent.connect<&PlayerControllerSystem::MoveCharacter>(this);
 	}
 }
 
@@ -60,22 +33,20 @@ void PlayerControllerSystem::Update(float deltaTime)
 {
 	using namespace based;
 
+	// Set up references
 	auto scene = Engine::Instance().GetApp().GetCurrentScene();
+	auto& physSystem = Engine::Instance().GetPhysicsManager().GetPhysicsSystem();
 
 	auto view = scene->GetRegistry().view<scene::Enabled, scene::EntityReference, scene::CharacterController>();
 
 	for (auto& e : view)
 	{
-		// Mostly taken from the Jolt Character examples: https://github.com/jrouwe/JoltPhysics/blob/master/Samples/Tests/Character/CharacterVirtualTest.cpp
-
-		// Set up references
-		scene::CharacterController& character = view.get<scene::CharacterController>(e);
-		auto& physSystem = Engine::Instance().GetPhysicsManager().GetPhysicsSystem();
-		auto entity = view.get<scene::EntityReference>(e).entity.lock();
+		scene::CharacterController& character = scene->GetRegistry().get<scene::CharacterController>(e);
+		auto entity = scene->GetRegistry().get<scene::EntityReference>(e).entity.lock();
 
 		if (!entity || !character.ControlEnabled)
 		{
-			continue; // Don't update if the backing entity is invalid (should never happen)
+			return; // Don't update if the backing entity is invalid (should never happen)
 		}
 
 		// Align physics simulation with entity position (in case it was moved manually somewhere else)
@@ -86,32 +57,16 @@ void PlayerControllerSystem::Update(float deltaTime)
 		// or if explicitly allowed by the user
 		bool controlHorizontal = character.AllowAirControl || character.Character->IsSupported();
 
-		JPH::Vec3 moveDir = JPH::Vec3::sZero();
-
-		// Read input
-		if (input::Keyboard::Key(BASED_INPUT_KEY_A)) moveDir.SetZ(-1);
-		if (input::Keyboard::Key(BASED_INPUT_KEY_D)) moveDir.SetZ(1);
-		if (input::Keyboard::Key(BASED_INPUT_KEY_W)) moveDir.SetX(1);
-		if (input::Keyboard::Key(BASED_INPUT_KEY_S)) moveDir.SetX(-1);
-		if (input::Joystick::GetAxis(0, input::Joystick::Axis::LeftStickVertical) != 0.f)
-			moveDir.SetX(-input::Joystick::GetAxis(0, input::Joystick::Axis::LeftStickVertical));
-		if (input::Joystick::GetAxis(0, input::Joystick::Axis::LeftStickHorizontal) != 0.f)
-			moveDir.SetZ(input::Joystick::GetAxis(0, input::Joystick::Axis::LeftStickHorizontal));
-		if (moveDir != JPH::Vec3::sZero()) moveDir = moveDir.Normalized();
-
 		// Align desired move direction with the camera's facing direction
 		JPH::Vec3 camForward = convert(scene->GetActiveCamera()->GetForward());
 		camForward.SetY(0);
 		camForward = camForward.NormalizedOr(JPH::Vec3::sZero());
 		JPH::Quat rot = JPH::Quat::sFromTo(JPH::Vec3::sAxisX(), camForward);
-		moveDir = rot * moveDir;
-
-		/*entity->SetPosition(entity->GetTransform().Position() + glm::vec3(moveDir.GetX(), moveDir.GetY(), moveDir.GetZ()));
-		continue;*/
+		mMoveDir = rot * mMoveDir;
 
 		// If the player has control (not in the air), adjust their movement to account for inertia
 		if (controlHorizontal)
-			mDesiredDirection = 0.25f * moveDir * character.Speed + 0.75f * mDesiredDirection;
+			mDesiredDirection = 0.25f * mMoveDir * character.Speed + 0.75f * mDesiredDirection;
 
 		// Only really necessary if the up direction is going to change.
 		// Otherwise I think this can be set once on initialization
@@ -135,7 +90,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 		{
 			new_velocity = ground_velocity;
 
-			if (input::Keyboard::KeyDown(BASED_INPUT_KEY_SPACE) || input::Joystick::GetButtonDown(0, input::Joystick::Button::Face_Bottom))
+			if (mMoveDir.GetY() != 0.f)
 				new_velocity += character.JumpForce * character.Character->GetUp();
 		}
 		else
@@ -164,7 +119,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 		}
 
 		// Add gravity
-		new_velocity += charUp * physSystem.GetGravity() * deltaTime;
+		new_velocity += charUp * physSystem.GetGravity() * core::Time::DeltaTime();
 
 		// If they have horizontal control, adjust their current movement in the desired direction
 		// Otherwise keep moving in the current direction, adjusted by their vertical movement
@@ -192,5 +147,24 @@ void PlayerControllerSystem::Update(float deltaTime)
 		// Make sure backing entity has the same position as the controller
 		auto position = character.Character->GetPosition();
 		entity->SetPosition(convert(position));
+	}
+
+	mMoveDir = JPH::Vec3::sZero();
+}
+
+void PlayerControllerSystem::MoveCharacter(const based::input::InputAction& action)
+{
+	if (action.name == "IA_Move")
+	{
+		mMoveDir = JPH::Vec3(action.GetValue().axis2DValue.x, 0.f, action.GetValue().axis2DValue.y);
+		if (mMoveDir != JPH::Vec3::sZero()) mMoveDir = mMoveDir.Normalized();
+	}
+}
+
+void PlayerControllerSystem::HandleJump(const based::input::InputAction& action)
+{
+	if (action.name == "IA_Jump")
+	{
+		mMoveDir.SetY(1.f);
 	}
 }

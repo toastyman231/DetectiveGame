@@ -263,9 +263,6 @@ public:
 	{
 		App::Update(deltaTime);
 
-		/*auto pos = GetCurrentScene()->GetEntityStorage().Get("Player")->GetTransform().Position();
-		BASED_TRACE("{} {} {}", pos.x, pos.y, pos.z);*/
-
 		FMODSystem::Update(deltaTime);
 
 		GameSystems::mMouseLookSystem.Update(deltaTime);

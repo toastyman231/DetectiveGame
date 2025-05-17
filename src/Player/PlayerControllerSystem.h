@@ -1,6 +1,8 @@
 #pragma once
 #include <fmod_studio.hpp>
 
+#include "based/input/basedinput.h"
+
 class PlayerControllerSystem
 {
 public:
@@ -10,7 +12,11 @@ public:
 	void Update(float deltaTime);
 
 private:
+	void MoveCharacter(const based::input::InputAction& action);
+	void HandleJump(const based::input::InputAction& action);
+
 	JPH::Vec3 mDesiredDirection;
+	JPH::Vec3 mMoveDir = JPH::Vec3::sZero();
 
 	FMOD::Studio::EventInstance* mFootsteps0;
 	FMOD::Studio::EventInstance* mFootsteps1;

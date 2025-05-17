@@ -17,6 +17,12 @@ Actions:
     Type: 0
     Triggers: []
     Modifiers: []
+  - ActionName: IA_Jump
+    ConsumeInput: true
+    TriggerWhenPaused: false
+    Type: 0
+    Triggers: []
+    Modifiers: []
 Configs:
   - ConfigName: IMC_Default
     Mappings:
@@ -26,6 +32,7 @@ Configs:
             Type: 2
             Triggers: []
             Modifiers:
+              - Deadzone
               - SwizzleYX
           - Key: 26
             Type: 0
@@ -51,11 +58,19 @@ Configs:
         MappedKeys:
           - Key: 8
             Type: 0
-            Triggers:
-              - Hold
+            Triggers: []
             Modifiers: []
           - Key: 0
             Type: 2
-            Triggers:
-              - Hold
+            Triggers: []
+            Modifiers: []
+      - ActionName: IA_Jump
+        MappedKeys:
+          - Key: 44
+            Type: 0
+            Triggers: []
+            Modifiers: []
+          - Key: 2
+            Type: 2
+            Triggers: []
             Modifiers: []
