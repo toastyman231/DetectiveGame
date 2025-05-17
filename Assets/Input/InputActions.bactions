@@ -74,3 +74,14 @@ Configs:
             Type: 2
             Triggers: []
             Modifiers: []
+      - ActionName: IA_Look
+        MappedKeys:
+          - Key: 0
+            Type: 1
+            Triggers: []
+            Modifiers: []
+          - Key: 2
+            Type: 2
+            Triggers: []
+            Modifiers:
+              - Deadzone

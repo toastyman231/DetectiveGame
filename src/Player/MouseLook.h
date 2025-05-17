@@ -1,4 +1,5 @@
 #pragma once
+#include "based/input/basedinput.h"
 
 struct MouseLook
 {
@@ -14,5 +15,9 @@ struct MouseLook
 class MouseLookSystem
 {
 public:
+	void Initialize();
 	void Update(float deltaTime);
+
+private:
+	void HandleInput(const based::input::InputAction& action);
 };

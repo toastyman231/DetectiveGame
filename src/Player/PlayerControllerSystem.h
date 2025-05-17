@@ -13,7 +13,6 @@ public:
 
 private:
 	void MoveCharacter(const based::input::InputAction& action);
-	void HandleJump(const based::input::InputAction& action);
 
 	JPH::Vec3 mDesiredDirection;
 	JPH::Vec3 mMoveDir = JPH::Vec3::sZero();

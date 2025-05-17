@@ -24,8 +24,7 @@ void PlayerControllerSystem::Initialize(float stepInterval)
 	for (auto& e : view)
 	{
 		auto& inputComp = view.get<input::InputComponent>(e);
-		inputComp.mStartedEvent.connect<&PlayerControllerSystem::HandleJump>(this);
-		inputComp.mTriggeredEvent.connect<&PlayerControllerSystem::MoveCharacter>(this);
+		inputComp.mTriggeredEvent.sink<input::InputAction>().connect<&PlayerControllerSystem::MoveCharacter>(this);
 	}
 }
 
@@ -89,9 +88,6 @@ void PlayerControllerSystem::Update(float deltaTime)
 			&& moving_towards_ground)
 		{
 			new_velocity = ground_velocity;
-
-			if (mMoveDir.GetY() != 0.f)
-				new_velocity += character.JumpForce * character.Character->GetUp();
 		}
 		else
 		{
@@ -149,7 +145,7 @@ void PlayerControllerSystem::Update(float deltaTime)
 		entity->SetPosition(convert(position));
 	}
 
-	mMoveDir = JPH::Vec3::sZero();
+	mMoveDir = JPH::Vec3::sZero(); // Need to clear movement at the end of the frame since it's now been handled
 }
 
 void PlayerControllerSystem::MoveCharacter(const based::input::InputAction& action)
@@ -158,13 +154,5 @@ void PlayerControllerSystem::MoveCharacter(const based::input::InputAction& acti
 	{
 		mMoveDir = JPH::Vec3(action.GetValue().axis2DValue.x, 0.f, action.GetValue().axis2DValue.y);
 		if (mMoveDir != JPH::Vec3::sZero()) mMoveDir = mMoveDir.Normalized();
-	}
-}
-
-void PlayerControllerSystem::HandleJump(const based::input::InputAction& action)
-{
-	if (action.name == "IA_Jump")
-	{
-		mMoveDir.SetY(1.f);
 	}
 }
