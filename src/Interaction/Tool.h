@@ -1,7 +1,8 @@
 #pragma once
 #include "ToolType.h"
+#include "based/input/basedinput.h"
 
-struct InteractionTrigger;
+struct Interactable;
 class IInteractable;
 
 struct Tool
@@ -15,14 +16,14 @@ struct Tool
 	float GetInteractionRange() const { return mInteractRange; }
 	void SetInteractionRange(float range) { mInteractRange = range; }
 
-	InteractionTrigger* GetCurrentTrigger() const { return mTrigger; }
-	void SetCurrentTrigger(InteractionTrigger* trigger);
+	Interactable* GetCurrentInteractable() const { return mCurrentInteractable; }
+	void SetCurrentInteractable(Interactable* interactable);
 
 private:
 	float mInteractRange = 500.f;
 
 	ToolType mToolType = ToolType::Default;
-	InteractionTrigger* mTrigger = nullptr;
+	Interactable* mCurrentInteractable = nullptr;
 };
 
 class ToolSystem
@@ -34,11 +35,9 @@ public:
 	void SetLocked(bool locked) { mIsLocked = locked; }
 	bool IsLocked() const { return mIsLocked; }
 
-	static void CallOnInteract(bool show = false);
+	static void OnInteract(const based::input::InputAction& action);
+
+	static void ShowInteractionUI(bool show);
 private:
-	entt::delegate<void(bool)> mOnInteract;
-
-	static void OnInteract(bool show);
-
 	bool mIsLocked = false;
 };

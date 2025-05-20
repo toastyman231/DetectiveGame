@@ -17,7 +17,19 @@ Actions:
     Type: 0
     Triggers: []
     Modifiers: []
-  - ActionName: IA_Jump
+  - ActionName: IA_Confirm
+    ConsumeInput: true
+    TriggerWhenPaused: false
+    Type: 0
+    Triggers: []
+    Modifiers: []
+  - ActionName: IA_Back
+    ConsumeInput: true
+    TriggerWhenPaused: false
+    Type: 0
+    Triggers: []
+    Modifiers: []
+  - ActionName: IA_ToggleSolution
     ConsumeInput: true
     TriggerWhenPaused: false
     Type: 0
@@ -29,7 +41,7 @@ Configs:
       - ActionName: IA_Move
         MappedKeys:
           - Key: 0
-            Type: 2
+            Type: 4
             Triggers: []
             Modifiers:
               - Deadzone
@@ -61,27 +73,53 @@ Configs:
             Triggers: []
             Modifiers: []
           - Key: 0
-            Type: 2
-            Triggers: []
-            Modifiers: []
-      - ActionName: IA_Jump
-        MappedKeys:
-          - Key: 44
-            Type: 0
-            Triggers: []
-            Modifiers: []
-          - Key: 2
-            Type: 2
+            Type: 3
             Triggers: []
             Modifiers: []
       - ActionName: IA_Look
         MappedKeys:
           - Key: 0
-            Type: 1
+            Type: 2
             Triggers: []
             Modifiers: []
           - Key: 2
-            Type: 2
+            Type: 4
             Triggers: []
             Modifiers:
               - Deadzone
+      - ActionName: IA_ToggleSolution
+        MappedKeys:
+          - Key: 43
+            Type: 0
+            Triggers: []
+            Modifiers: []
+          - Key: 6
+            Type: 3
+            Triggers: []
+            Modifiers: []
+  - ConfigName: IMC_Menu
+    Mappings:
+      - ActionName: IA_Confirm
+        MappedKeys:
+          - Key: 1
+            Type: 1
+            Triggers: []
+            Modifiers: []
+          - Key: 44
+            Type: 0
+            Triggers: []
+            Modifiers: []
+          - Key: 0
+            Type: 3
+            Triggers: []
+            Modifiers: []
+      - ActionName: IA_Back
+        MappedKeys:
+          - Key: 41
+            Type: 0
+            Triggers: []
+            Modifiers: []
+          - Key: 1
+            Type: 3
+            Triggers: []
+            Modifiers: []

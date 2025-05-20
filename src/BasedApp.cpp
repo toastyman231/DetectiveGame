@@ -85,7 +85,7 @@ public:
 		auto capsule = player->GetComponent<scene::CapsuleShapeComponent>();
 		player->AddComponent<input::InputComponent>();
 		auto& input = player->GetComponent<input::InputComponent>();
-		Engine::Instance().GetInputManager().AddInputMapping(input, "IMC_Default");
+		Engine::Instance().GetInputManager().AddInputMapping(input, "IMC_Default", 1);
 		player->AddComponent<scene::CharacterController>(
 			scene::Transform(glm::vec3(0)),
 			capsule.shape);
@@ -253,6 +253,8 @@ public:
 #ifdef BASED_CONFIG_DEBUG
 		GameSystems::mSoundTest.Initialize();
 #endif
+
+		BASED_TRACE("Equality test: {}", core::Tag("Interaction.Hover") == core::Tag("Interaction.Hover"));
 	}
 
 	void Shutdown() override

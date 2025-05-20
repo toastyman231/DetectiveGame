@@ -12,7 +12,7 @@ public:
 	virtual void OnInteractionHoverExit(Tool* tool) = 0;
 	virtual void OnInteract(Tool* tool)
 	{
-		ToolSystem::CallOnInteract();
+		ToolSystem::ShowInteractionUI(false);
 	}
 
 	bool IsInteractable() const { return mInteractable; }

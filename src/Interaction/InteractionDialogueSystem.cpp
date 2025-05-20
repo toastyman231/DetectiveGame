@@ -5,7 +5,6 @@
 #include "../GameSystems.h"
 #include "based/app.h"
 #include "based/engine.h"
-#include "based/input/keyboard.h"
 #include "based/scene/components.h"
 
 void InteractionDialogueSystem::OnInteractionHoverEnter(Tool* tool)
@@ -21,6 +20,19 @@ void InteractionDialogueSystem::OnInteractionHoverExit(Tool* tool)
 void InteractionDialogueSystem::OnInteract(Tool* tool)
 {
 	IInteractable::OnInteract(tool);
+	GameSystems::mDialogueSystem.SetCurrentDialogue(mCurrentDialogue->mPath);
+	GameSystems::mDialogueSystem
+		.mOnDialogueFinished
+		.connect<&InteractionDialogueSystem::OnDialogueFinished>(this);
+
+	auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<based::input::InputComponent>();
+
+	for (const auto& e : view)
+	{
+		auto [inputComp] = view.get(e);
+
+		based::Engine::Instance().GetInputManager().AddInputMapping(inputComp, "IMC_Menu", 0);
+	}
 }
 
 void InteractionDialogueSystem::Update(float deltaTime)
@@ -28,56 +40,57 @@ void InteractionDialogueSystem::Update(float deltaTime)
 	using namespace based;
 
 	auto& registry = Engine::Instance().GetApp().GetCurrentScene()->GetRegistry();
-	auto view = registry.view<scene::Enabled, InteractionDialogueTrigger, InteractionTrigger>();
+	auto view = registry.view<scene::Enabled, InteractionDialogueTrigger, Interactable>();
 	auto scene = Engine::Instance().GetApp().GetCurrentScene();
 
 	for (const auto& e : view)
 	{
-		auto [dialogue, trigger] = view.get(e);
+		auto [dialogue, interactable] = view.get(e);
 
-		if (!trigger.mHoverEntered)
+		mCurrentDialogue = &dialogue;
+
+		if (interactable.tags.HasTag(core::Tag("Interaction.Hover")))
 		{
-			trigger.mHoverEntered = true;
-			OnInteractionHoverEnter(trigger.mTool);
+			OnInteractionHoverEnter(interactable.tool);
+			interactable.tags.RemoveTag(core::Tag("Interaction.Hover"));
 		}
 
-		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_E) && dialogue.mCanInteract)
+		if (interactable.tags.HasTag(core::Tag("Interaction.Interact")))
 		{
-			OnInteract(trigger.mTool);
-			GameSystems::mDialogueSystem.SetCurrentDialogue(dialogue.mPath);
-			dialogue.mCanInteract = false;
+			interactable.tags.RemoveTag(core::Tag("Interaction.Interact"));
 			mCurrentDialogueEntity = e;
-			GameSystems::mDialogueSystem
-				.mOnDialogueFinished
-				.connect<&InteractionDialogueSystem::OnDialogueFinished>(this);
+			interactable.mCanInteract = false;
+			OnInteract(interactable.tool);
 		}
 
-		// Again, only called once when the item stops being hovered
-		if (trigger.mShouldExit)
+		if (interactable.tags.HasTag(core::Tag("Interaction.Unhover")))
 		{
-			OnInteractionHoverExit(trigger.mTool);
-
-			// Removing the trigger means this interactable will no longer be
-			// considered when evaluating interactables
-			registry.remove<InteractionTrigger>(e);
+			OnInteractionHoverExit(interactable.tool);
+			interactable.tags.RemoveTag(core::Tag("Interaction.Unhover"));
 		}
 	}
+
+	mCurrentDialogue = nullptr;
 }
 
 void InteractionDialogueSystem::OnDialogueFinished()
 {
 	auto& registry = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry();
-	auto& trigger = registry.get<InteractionTrigger>(mCurrentDialogueEntity);
-	auto& dialogue = registry.get<InteractionDialogueTrigger>(mCurrentDialogueEntity);
+	auto& interactable = registry.get<Interactable>(mCurrentDialogueEntity);
 
-	GameSystems::mToolSystem.CallOnInteract(true);
-	OnInteractionHoverExit(trigger.mTool);
-
-	if (dialogue.mOnDialogueEnd) dialogue.mOnDialogueEnd();
+	ToolSystem::ShowInteractionUI(true);
 
 	// Reset interaction when dialogue finishes
-	registry.remove<InteractionTrigger>(mCurrentDialogueEntity);
-	dialogue.mCanInteract = true;
+	interactable.mCanInteract = true;
 
 	mCurrentDialogueEntity = entt::null;
+
+	auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<based::input::InputComponent>();
+
+	for (const auto& e : view)
+	{
+		auto [inputComp] = view.get(e);
+
+		based::Engine::Instance().GetInputManager().RemoveInputMapping(inputComp, "IMC_Menu");
+	}
 }

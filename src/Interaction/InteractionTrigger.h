@@ -1,19 +1,23 @@
 #pragma once
+#include "based/core/gameplaytags.h"
 
-struct Interactable {};
-
-struct InteractionTrigger
+struct Interactable
 {
-	InteractionTrigger() = default;
-	InteractionTrigger(Tool* tool, uint32_t id) : mTool(tool), mId(id) {}
-
-	bool operator== (const InteractionTrigger& other) const
+	void OnHoverEnter()
 	{
-		return mId == other.mId;
+		tags.AddTag(based::core::Tag("Interaction.Hover"));
+	}
+	void OnHoverExit()
+	{
+		tags.AddTag(based::core::Tag("Interaction.Unhover"));
+		tags.RemoveTags({based::core::Tag("Interaction.Interact"), based::core::Tag("Interaction.Hover") });
+	}
+	void OnInteract()
+	{
+		tags.AddTag(based::core::Tag("Interaction.Interact"));
 	}
 
-	Tool* mTool;
-	bool mHoverEntered = false;
-	bool mShouldExit = false;
-	uint32_t mId;
+	based::core::TagContainer tags;
+	Tool* tool = nullptr;
+	bool mCanInteract = true;
 };

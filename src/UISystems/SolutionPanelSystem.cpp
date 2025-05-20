@@ -179,61 +179,20 @@ void SolutionPanelSystem::Initialize()
 
 	AddSolutionPanel("word-panel", 
 		new WordSolutionPanel("word-panel", "Assets/Solutions/MainPanel.txt"));
+
+	auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<based::input::InputComponent>();
+
+	for (const auto& e : view)
+	{
+		auto [inputComp] = view.get(e);
+
+		inputComp.mCompletedEvent.sink<based::input::InputAction>().connect<&SolutionPanelSystem::OnInput>(this);
+	}
 }
 
 void SolutionPanelSystem::Update(float deltaTime)
 {
-	if (based::input::Keyboard::KeyDown(BASED_INPUT_KEY_TAB))
-	{
-		if (mIsPanelGroupShown)
-		{
-			based::Engine::Instance().GetUiManager().CloseWindow(*mPanelGroup);
-
-			GameSystems::SetPlayerMouseLookEnabled(true);
-			GameSystems::SetPlayerMovementEnabled(true);
-			based::input::Mouse::SetCursorVisible(false);
-			based::input::Mouse::SetCursorMode(based::input::CursorMode::Confined);
-			GameSystems::mToolSystem.SetLocked(false);
-
-			mIsPanelGroupShown = false;
-		} else
-		{
-			auto context = based::Engine::Instance().GetUiManager().GetContext("main");
-			mPanelGroup = based::Engine::Instance().GetUiManager().LoadWindow("SolutionScreen", context, "panels");
-
-			Rml::ElementList placeholders;
-			mPanelGroup->document->GetElementsByClassName(placeholders, "placeholder");
-			uint32_t index = 0;
-			for (auto element : placeholders)
-			{
-				// Set solution slot IDs for ALL panels
-				// this way they're globally unique
-				element->SetId(std::to_string(index++));
-			}
-
-			// Set up panel based on cached progress, and register event callbacks
-			for (auto& [id, panel] : mSolutionPanels)
-			{
-				if (!panel) continue;
-				panel->SetupPanel(mPanelGroup->document);
-				RegisterDraggableContainer(mPanelGroup->document->GetElementById(id));
-			}
-
-			// Populate word list
-			for (auto& word : mWords)
-			{
-				AddWordInternal(word);
-			}
-
-			GameSystems::SetPlayerMouseLookEnabled(false);
-			GameSystems::SetPlayerMovementEnabled(false);
-			based::input::Mouse::SetCursorVisible(true);
-			based::input::Mouse::SetCursorMode(based::input::CursorMode::Free);
-			GameSystems::mToolSystem.SetLocked(true);
-
-			mIsPanelGroupShown = true;
-		}
-	}
+	
 }
 
 void SolutionPanelSystem::AddWord(SolutionWord word)
@@ -346,6 +305,7 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 
 		if (prop == "opacity")
 		{
+			// TODO: Figure out why this crashes
 			//element->GetParentNode()->RemoveChild(element);
 		}
 	}
@@ -438,4 +398,80 @@ bool SolutionPanelSystem::CheckSolution()
 	}
 
 	return !didAnyFail;
+}
+
+void SolutionPanelSystem::OnInput(const based::input::InputAction& action)
+{
+	if (action.name == "IA_ToggleSolution" || action.name == "IA_Back")
+	{
+		if (mIsPanelGroupShown)
+		{
+			based::Engine::Instance().GetUiManager().CloseWindow(*mPanelGroup);
+
+			GameSystems::SetPlayerMouseLookEnabled(true);
+			GameSystems::SetPlayerMovementEnabled(true);
+			based::input::Mouse::SetCursorVisible(false);
+			based::input::Mouse::SetCursorMode(based::input::CursorMode::Confined);
+			GameSystems::mToolSystem.SetLocked(false);
+
+			mIsPanelGroupShown = false;
+
+			auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view< based::input::InputComponent>();
+
+			for (const auto& e : view)
+			{
+				auto [inputComp] = view.get(e);
+
+				based::Engine::Instance().GetInputManager().RemoveInputMapping(inputComp, "IMC_Menu");
+			}
+		}
+		else
+		{
+			if (action.name != "IA_ToggleSolution" || mIsLocked) return;
+
+			auto context = based::Engine::Instance().GetUiManager().GetContext("main");
+			mPanelGroup = based::Engine::Instance().GetUiManager().LoadWindow("SolutionScreen", context, "panels");
+
+			Rml::ElementList placeholders;
+			mPanelGroup->document->GetElementsByClassName(placeholders, "placeholder");
+			uint32_t index = 0;
+			for (auto element : placeholders)
+			{
+				// Set solution slot IDs for ALL panels
+				// this way they're globally unique
+				element->SetId(std::to_string(index++));
+			}
+
+			// Set up panel based on cached progress, and register event callbacks
+			for (auto& [id, panel] : mSolutionPanels)
+			{
+				if (!panel) continue;
+				panel->SetupPanel(mPanelGroup->document);
+				RegisterDraggableContainer(mPanelGroup->document->GetElementById(id));
+			}
+
+			// Populate word list
+			for (auto& word : mWords)
+			{
+				AddWordInternal(word);
+			}
+
+			GameSystems::SetPlayerMouseLookEnabled(false);
+			GameSystems::SetPlayerMovementEnabled(false);
+			based::input::Mouse::SetCursorVisible(true);
+			based::input::Mouse::SetCursorMode(based::input::CursorMode::Free);
+			GameSystems::mToolSystem.SetLocked(true);
+
+			mIsPanelGroupShown = true;
+
+			auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view< based::input::InputComponent>();
+
+			for (const auto& e : view)
+			{
+				auto [inputComp] = view.get(e);
+
+				based::Engine::Instance().GetInputManager().AddInputMapping(inputComp, "IMC_Menu", 0);
+			}
+		}
+	}
 }

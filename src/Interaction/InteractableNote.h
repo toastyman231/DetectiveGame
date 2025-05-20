@@ -42,8 +42,9 @@ public:
 	void ProcessEvent(Rml::Event& event) override;
 
 private:
+	void OnInput(const based::input::InputAction& action);
+
 	InteractableNote* mCurrentNote = nullptr;
-	InteractionTrigger* mCurrentTrigger = nullptr;
 	based::managers::DocumentInfo* mDocument = nullptr;
 	Rml::DataModelHandle mDataModel;
 

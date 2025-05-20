@@ -1,53 +1,75 @@
 #include "based/pch.h"
 #include "Tool.h"
 
-#include "IInteractable.h"
 #include "InteractionTrigger.h"
 #include "../GameSystems.h"
 #include "based/app.h"
 #include "based/engine.h"
-#include "based/graphics/linerenderer.h"
-#include "based/input/joystick.h"
-#include "based/input/mouse.h"
 #include "Jolt/Physics/Collision/CastResult.h"
 
 #include "Jolt/Physics/Collision/RayCast.h"
 
-void Tool::SetCurrentTrigger(InteractionTrigger* trigger)
+void Tool::SetCurrentInteractable(Interactable* interactable)
 {
 	using namespace based;
 
 	auto context = Engine::Instance().GetUiManager().GetContext("main");
 	auto element = context->GetRootElement()->GetElementById("interact-parent");
 
-	if (trigger != mTrigger)
+	if (interactable != mCurrentInteractable)
 	{
-		if (trigger)
+		if (mCurrentInteractable)
+		{
+			mCurrentInteractable->OnHoverExit();
+			mCurrentInteractable->tool = nullptr;
+		}
+
+		if (interactable)
 		{
 			element->SetProperty("display", "flex");
 			element->SetProperty("visibility", "visible");
+
+			interactable->OnHoverEnter();
+			interactable->tool = this;
 		}
 		else
 		{
 			element->SetProperty("display", "none");
 			element->SetProperty("visibility", "hidden");
 		}
-	}
 
-	mTrigger = trigger;
+		mCurrentInteractable = interactable;
+	}
 }
 
 void ToolSystem::Initialize()
 {
-	mOnInteract.connect<&ToolSystem::OnInteract>();
+	auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<based::input::InputComponent>();
+
+	for (const auto& e : view)
+	{
+		auto [inputComp] = view.get(e);
+
+		inputComp.mCompletedEvent.sink<based::input::InputAction>().connect<&ToolSystem::OnInteract>();
+	}
 }
 
-void ToolSystem::CallOnInteract(bool show)
+void ToolSystem::OnInteract(const based::input::InputAction& action)
 {
-	if (GameSystems::mToolSystem.mOnInteract) GameSystems::mToolSystem.mOnInteract(show);
+	if (action.name != "IA_Interact") return;
+
+	auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<Tool>();
+
+	for (const auto& e : view)
+	{
+		auto [tool] = view.get(e);
+
+		if (tool.GetCurrentInteractable() && tool.GetCurrentInteractable()->mCanInteract) 
+			tool.GetCurrentInteractable()->OnInteract();
+	}
 }
 
-void ToolSystem::OnInteract(bool show)
+void ToolSystem::ShowInteractionUI(bool show)
 {
 	auto context = based::Engine::Instance().GetUiManager().GetContext("main");
 	auto element = context->GetRootElement()->GetElementById("interact-parent");
@@ -107,38 +129,24 @@ void ToolSystem::Update(float deltaTime)
 			if (hitEnt == entt::null)
 			{
 				BASED_WARN("Invalid entity hit!");
-				if (auto trigger = tool.GetCurrentTrigger())
-				{
-					trigger->mShouldExit = true;
-					tool.SetCurrentTrigger(nullptr);
-				}
+				tool.SetCurrentInteractable(nullptr);
 				continue;
 			}
 
-			// InteractionTrigger is used to let any Interactable systems know
-			// that their entity is being looked at/interacted with.
-			if (registry.all_of<InteractionTrigger>(hitEnt))
-			{
-				tool.SetCurrentTrigger(&registry.get<InteractionTrigger>(hitEnt));
-				continue;
-			}
-
-			// This only runs if the hit entity does NOT have a trigger,
-			// so if the tool has one set, we must have looked at another
-			// interactable.
-			if (auto trigger = tool.GetCurrentTrigger(); trigger != nullptr)
-			{
-				trigger->mShouldExit = true;
-				tool.SetCurrentTrigger(nullptr);
-			}
-
-			// Set up the trigger for the newly hovered object
+			// If the hit entity has an interactable component, and that interactable is not
+			// the currently hovered one, set it as the currently hovered one.
+			// This will trigger the old one to be unhovered, and the new one to be hovered (using tags).
 			if (registry.all_of<Interactable>(hitEnt))
 			{
-				auto& newTrigger = registry.emplace<InteractionTrigger>(hitEnt);
-				newTrigger.mTool = &tool;
-				newTrigger.mId = (uint32_t)hitEnt;
-				tool.SetCurrentTrigger(&newTrigger);
+				auto hitInteractable = &registry.get<Interactable>(hitEnt);
+
+				if (hitInteractable->mCanInteract && hitInteractable != tool.GetCurrentInteractable())
+				{
+					tool.SetCurrentInteractable(hitInteractable);
+				}
+			} else
+			{
+				tool.SetCurrentInteractable(nullptr);
 			}
 		} else
 		{
@@ -146,11 +154,7 @@ void ToolSystem::Update(float deltaTime)
 			// That means this gets called once per interactable, as expected.
 			// The interactables' system is responsible for removing any
 			// InteractionTriggers from the affected entity.
-			if (auto trigger = tool.GetCurrentTrigger())
-			{
-				trigger->mShouldExit = true;
-				tool.SetCurrentTrigger(nullptr);
-			}
+			tool.SetCurrentInteractable(nullptr);
 		}
 	}
 }

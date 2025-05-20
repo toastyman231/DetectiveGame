@@ -1,4 +1,5 @@
 #pragma once
+#include "based/input/basedinput.h"
 
 namespace based::managers
 {
@@ -91,12 +92,16 @@ public:
 	void RegisterDraggableContainer(Rml::Element* element);
 	void SetClassByType(Rml::ElementPtr& wordElement, SolutionWord word);
 
+	void SetLocked(bool locked) { mIsLocked = locked; }
+
 	static std::string GetWordTypeFromClass(const std::string& classNames);
 private:
 	void AddWordInternal(SolutionWord word);
 	bool CheckSolution();
+	void OnInput(const based::input::InputAction& action);
 
 	bool mIsPanelGroupShown = false;
+	bool mIsLocked = false;
 	based::managers::DocumentInfo* mPanelGroup = nullptr;
 
 	std::vector<SolutionWord> mWords;

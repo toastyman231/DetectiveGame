@@ -22,21 +22,30 @@ void InteractableNoteSystem::OnInteractionHoverExit(Tool* tool)
 	BASED_TRACE("Note hover exited!");
 }
 
-void OnExitNote(InteractableNote& note, InteractionTrigger& trigger,
-	based::managers::DocumentInfo* doc, FMOD::Studio::EventInstance* event)
+void OnExitNote(InteractableNote& note, based::managers::DocumentInfo* doc, FMOD::Studio::EventInstance* event)
 {
-	GameSystems::mToolSystem.CallOnInteract(true);
+	ToolSystem::ShowInteractionUI(true);
 	note.mIsOpen = false;
 	doc->document->Hide();
 
 	GameSystems::SetPlayerMouseLookEnabled(true);
 	GameSystems::SetPlayerMovementEnabled(true);
+	GameSystems::mSolutionPanelSystem.SetLocked(false);
 	based::input::Mouse::SetCursorVisible(false);
 	based::input::Mouse::SetCursorMode(based::input::CursorMode::Confined);
 
 	if (event) event->stop(FMOD_STUDIO_STOP_ALLOWFADEOUT);
 
 	GameSystems::mToolSystem.SetLocked(false);
+
+	auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<based::input::InputComponent>();
+
+	for (const auto& e : view)
+	{
+		auto [inputComp] = view.get(e);
+
+		based::Engine::Instance().GetInputManager().RemoveInputMapping(inputComp, "IMC_Menu");
+	}
 }
 
 // Called when E is pressed in range of a note
@@ -65,11 +74,36 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 	GameSystems::mToolSystem.SetLocked(true);
 
 	if (mPageTurnEvent) mPageTurnEvent->start();
+
+	mCurrentNote->mIsOpen = true;
+	GameSystems::SetPlayerMouseLookEnabled(false);
+	GameSystems::SetPlayerMovementEnabled(false);
+	GameSystems::mSolutionPanelSystem.SetLocked(true);
+	input::Mouse::SetCursorVisible(true);
+	input::Mouse::SetCursorMode(input::CursorMode::Free);
+
+	auto view = Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<input::InputComponent>();
+
+	for (const auto& e : view)
+	{
+		auto [inputComp] = view.get(e);
+
+		Engine::Instance().GetInputManager().AddInputMapping(inputComp, "IMC_Menu", 0);
+	}
 }
 
 void InteractableNoteSystem::Initialize()
 {
 	mPageTurnEvent = FMODSystem::CreateFMODEvent("event:/PageTurning");
+
+	auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<based::input::InputComponent>();
+
+	for (const auto& e : view)
+	{
+		auto [inputComp] = view.get(e);
+
+		inputComp.mCompletedEvent.sink<based::input::InputAction>().connect<&InteractableNoteSystem::OnInput>(this);
+	}
 }
 
 void InteractableNoteSystem::Update(float deltaTime)
@@ -77,13 +111,13 @@ void InteractableNoteSystem::Update(float deltaTime)
 	using namespace based;
 
 	auto& registry = Engine::Instance().GetApp().GetCurrentScene()->GetRegistry();
-	auto view = registry.view<scene::Enabled, InteractableNote, InteractionTrigger>();
+	auto view = registry.view<scene::Enabled, InteractableNote, Interactable>();
 	auto scene = Engine::Instance().GetApp().GetCurrentScene();
 
 	for (auto& e : view)
 	{
 		auto& note = registry.get<InteractableNote>(e);
-		auto& trigger = registry.get<InteractionTrigger>(e);
+		auto& interactable = registry.get<Interactable>(e);
 
 		// System callbacks don't know what Note is currently being looked at
 		// so we store a pointer to it here
@@ -93,49 +127,24 @@ void InteractableNoteSystem::Update(float deltaTime)
 		auto lastNote = mCurrentNote;
 		mCurrentNote = &note;
 
-		mCurrentTrigger = &trigger;
-
 		// Should only trigger this once, the first time the object is hovered
-		if (!trigger.mHoverEntered)
+		if (interactable.tags.HasTag(core::Tag("Interaction.Hover")))
 		{
-			trigger.mHoverEntered = true;
-			OnInteractionHoverEnter(trigger.mTool);
+			OnInteractionHoverEnter(interactable.tool);
+			interactable.tags.RemoveTag(core::Tag("Interaction.Hover"));
 		}
 
-		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_E)
-			&& !GameSystems::mToolSystem.IsLocked())
+		if (interactable.tags.HasTag(core::Tag("Interaction.Interact")))
 		{
-			// Show note if it's closed
 			if (!note.mIsOpen)
-			{
-				OnInteract(trigger.mTool);
-				note.mIsOpen = true;
-
-				GameSystems::SetPlayerMouseLookEnabled(false);
-				GameSystems::SetPlayerMovementEnabled(false);
-				input::Mouse::SetCursorVisible(true);
-				input::Mouse::SetCursorMode(input::CursorMode::Free);
-			}
+				OnInteract(interactable.tool);
+			interactable.tags.RemoveTag(core::Tag("Interaction.Interact"));
 		}
 
-		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_ESCAPE)
-			|| input::Keyboard::KeyDown(BASED_INPUT_KEY_TAB))
+		if (interactable.tags.HasTag(core::Tag("Interaction.Unhover")))
 		{
-			// Hide note if it's open
-			if (note.mIsOpen)
-			{
-				OnExitNote(note, trigger, mDocument, mPageTurnEvent);
-			}
-		}
-
-		// Again, only called once when the item stops being hovered
-		if (trigger.mShouldExit)
-		{
-			OnInteractionHoverExit(trigger.mTool);
-
-			// Removing the trigger means this note will no longer be
-			// considered when evaluating notes
-			registry.remove<InteractionTrigger>(e);
+			OnInteractionHoverExit(interactable.tool);
+			interactable.tags.RemoveTag(core::Tag("Interaction.Unhover"));
 		}
 
 		if (note.mIsOpen) mCurrentNote = &note;
@@ -149,8 +158,19 @@ void InteractableNoteSystem::ProcessEvent(Rml::Event& event)
 	{
 		if (mCurrentNote->mIsOpen)
 		{
-			if (!mCurrentNote || !mCurrentTrigger) return;
-			OnExitNote(*mCurrentNote, *mCurrentTrigger, mDocument, mPageTurnEvent);
+			if (!mCurrentNote) return;
+			OnExitNote(*mCurrentNote, mDocument, mPageTurnEvent);
 		}
 	} 
+}
+
+void InteractableNoteSystem::OnInput(const based::input::InputAction& action)
+{
+	if (action.name == "IA_Back" && mCurrentNote)
+	{
+		if (mCurrentNote->mIsOpen)
+		{
+			OnExitNote(*mCurrentNote, mDocument, mPageTurnEvent);
+		}
+	}
 }

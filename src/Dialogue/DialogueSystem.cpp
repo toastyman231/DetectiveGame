@@ -59,6 +59,15 @@ void DialogueSystem::Initialize()
 
 	mSpeakers.emplace_back();
 	mSpeakers.emplace_back(0.8f, 1.f);
+
+	auto view = based::Engine::Instance().GetApp().GetCurrentScene()->GetRegistry().view<based::input::InputComponent>();
+
+	for (const auto& e : view)
+	{
+		auto& inputComp = view.get<based::input::InputComponent>(e);
+
+		inputComp.mCompletedEvent.sink<based::input::InputAction>().connect<&DialogueSystem::OnNextPressed>(this);
+	}
 }
 
 void DialogueSystem::Update(float deltaTime)
@@ -94,18 +103,6 @@ void DialogueSystem::Update(float deltaTime)
 		}
 	}
 	else mIsTyping = false;
-
-	// Skip text to end, or show next line if already at end
-	if (input::Mouse::ButtonDown(BASED_INPUT_MOUSE_LEFT))
-	{
-		if (mIsTyping)
-		{
-			mIsTyping = false;
-			mShownLine = mCurrentLine;
-			mDataModelHandle.DirtyVariable("current_line");
-		}
-		else ShowNextLine();
-	}
 }
 
 void DialogueSystem::SetCurrentDialogue(const std::string& path)
@@ -116,6 +113,7 @@ void DialogueSystem::SetCurrentDialogue(const std::string& path)
 
 	GameSystems::SetPlayerMouseLookEnabled(false);
 	GameSystems::SetPlayerMovementEnabled(false);
+	GameSystems::mSolutionPanelSystem.SetLocked(true);
 	//based::input::Mouse::SetCursorVisible(true);
 }
 
@@ -131,6 +129,7 @@ void DialogueSystem::CloseCurrentDialogue()
 	GameSystems::SetPlayerMouseLookEnabled(true);
 	GameSystems::SetPlayerMovementEnabled(true);
 	based::input::Mouse::SetCursorVisible(false);
+	GameSystems::mSolutionPanelSystem.SetLocked(false);
 }
 
 void DialogueSystem::ShowNextLine()
@@ -221,5 +220,19 @@ void DialogueSystem::PlayCharacterSound(SpeakerSettings& speaker, char character
 			FMODSystem::SetEventParameter(consonantEvent, "Consonants", (float)speaker.CharacterMap[character]);
 		consonantEvent->setPitch(based::math::RandomRange(speaker.MinPitch, speaker.MaxPitch));
 		consonantEvent->start();
+	}
+}
+
+void DialogueSystem::OnNextPressed(const based::input::InputAction& action)
+{
+	if (action.name == "IA_Confirm")
+	{
+		if (mIsTyping)
+		{
+			mIsTyping = false;
+			mShownLine = mCurrentLine;
+			mDataModelHandle.DirtyVariable("current_line");
+		}
+		else ShowNextLine();
 	}
 }

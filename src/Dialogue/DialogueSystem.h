@@ -2,6 +2,7 @@
 #include <fmod_studio.hpp>
 
 #include "SpeakerSettings.h"
+#include "based/input/basedinput.h"
 #include "based/managers/uimanager.h"
 
 struct DialogueSet
@@ -37,6 +38,7 @@ public:
 private:
 	void ShowNextLine();
 	void PlayCharacterSound(SpeakerSettings& speaker, char character);
+	void OnNextPressed(const based::input::InputAction& action);
 
 	based::managers::DocumentInfo* mDocument = nullptr;
 	DialogueSet mCurrentDialogue;

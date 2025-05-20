@@ -9,9 +9,6 @@ struct InteractionDialogueTrigger
 	InteractionDialogueTrigger(const std::string& path) : mPath(path) {}
 
 	std::string mPath;
-	bool mCanInteract = true;
-
-	entt::delegate<void()> mOnDialogueEnd;
 };
 
 class InteractionDialogueSystem : public IInteractable
@@ -26,5 +23,6 @@ public:
 private:
 	void OnDialogueFinished();
 
+	InteractionDialogueTrigger* mCurrentDialogue = nullptr;
 	entt::entity mCurrentDialogueEntity = entt::null;
 };
