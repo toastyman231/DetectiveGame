@@ -5,33 +5,31 @@
         <link type="text/rcss" href="SolutionScreen.rcss"/>
         <link type="text/rcss" href="rml.rcss"/>
     </head>
-    <body>
-        <div class="body vertical-group">
-            <div class="">
-                <div class="body horizontal-group">
-                    <div class="box flex-grow max-width scroll justify-text" id="word-panel">
-                        The <word class="word person placeholder" /> <word class="word verb placeholder" /> through the <word class="word place placeholder" /> 
-                        after
-                        having <word class="word verb placeholder" /> the <word class="word thing placeholder" />. They found the <word class="word thing placeholder" /> and 
-                        <word class="word verb placeholder" /> 
-                        it towards the <word class="word place placeholder" />. Just then, the <word class="word person placeholder" /> returned, catching the 
-                        <word class="word person placeholder" />, 
-                        causing him to activate the <word class="word thing placeholder" />. After being <word class="word verb placeholder" />, the 
-                        <word class="word person placeholder" /> 
-                        <word class="word verb placeholder" /> the <word class="word person placeholder" />. The <word class="word person placeholder" /> tried to use the 
-                        <word class="word person placeholder" />’s 
-                        <word class="word thing placeholder" /> on the <word class="word person placeholder" />, but the <word class="word thing placeholder" /> 
-                        <word class="word verb placeholder" /> them, causing the 
-                        <word class="word person placeholder" /> to be killed instead. The <word class="word person placeholder" /> took all the inventions and ran.
-                    </div>
-                    <div class="box flex-grow">
+    <body class="body vertical-group">
+        <div class="">
+            <div class="body horizontal-group">
+                <div class="box flex-grow max-width scroll justify-text" id="word-panel">
+                    The <word class="word person placeholder" /> <word class="word verb placeholder">_</word> through the <word class="word place placeholder" /> 
+                    after
+                    having <word class="word verb placeholder" /> the <word class="word thing placeholder" />. They found the <word class="word thing placeholder" /> and 
+                    <word class="word verb placeholder" /> 
+                    it towards the <word class="word place placeholder" />. Just then, the <word class="word person placeholder" /> returned, catching the 
+                    <word class="word person placeholder" />, 
+                    causing him to activate the <word class="word thing placeholder" />. After being <word class="word verb placeholder" />, the 
+                    <word class="word person placeholder" /> 
+                    <word class="word verb placeholder" /> the <word class="word person placeholder" />. The <word class="word person placeholder" /> tried to use the 
+                    <word class="word person placeholder" />’s 
+                    <word class="word thing placeholder" /> on the <word class="word person placeholder" />, but the <word class="word thing placeholder" /> 
+                    <word class="word verb placeholder" /> them, causing the 
+                    <word class="word person placeholder" /> to be killed instead. The <word class="word person placeholder" /> took all the inventions and ran.
+                </div>
+                <div class="box flex-grow">
 
-                    </div>
                 </div>
             </div>
-            <div class="box words-box">
-                <div class="words-scroll" id="words-box">
-                </div>
+        </div>
+        <div class="box words-box">
+            <div class="words-scroll" id="words-box">
             </div>
         </div>
     </body>

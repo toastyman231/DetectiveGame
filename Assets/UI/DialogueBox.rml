@@ -4,14 +4,12 @@
         <link type="text/rcss" href="DialogueBox.rcss"/>
         <link type="text/rcss" href="rml.rcss"/>
     </head>
-    <body>
-        <div class="body">
-            <div class="dialogue-box" data-model="dialogue-data">
+    <body class="body">
+        <div class="dialogue-box" data-model="dialogue-data">
                 <label class="text" id="dialogue-body">{{current_line}}</label>
-            </div>
-            <div class="name-box" id="speaker-box">
-                <label class="name" id="speaker">Speaker</label>
-            </div>
+        </div>
+        <div class="name-box" id="speaker-box">
+            <label class="name" id="speaker">Speaker</label>
         </div>
     </body>
 </rml>

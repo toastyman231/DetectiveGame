@@ -57,7 +57,6 @@ scrollbarvertical
 	background-color: #44444486;
 	width: 27px;
     border-radius: 5px;
-	z-index: 1;
 }
 
 scrollbarvertical sliderbar
@@ -67,12 +66,14 @@ scrollbarvertical sliderbar
     margin-top: -5px;
     margin-bottom: 5px;
 	background-color: rgb(34, 34, 34);
-	opacity: 0.4;
+	z-index: 1;
 }
 
 scrollbarvertical sliderbar:hover 
 {
-	opacity: 1;
+	transform: translateX(-2px);
+	border: 2px #E4FFE1;
+	border-radius: 5px;
 }
 
 scrollbarvertical sliderarrowdec

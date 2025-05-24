@@ -46,8 +46,8 @@ public:
 			input::CursorMode::Confined : input::CursorMode::Free);
 		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
 		Engine::Instance().GetWindow().SetFullscreen(false);
-		Engine::Instance().GetUiManager().SetTranslationTable("Assets/translation.csv");
-		Engine::Instance().GetUiManager().SetCurrentLanguageIndex(2);
+		//Engine::Instance().GetUiManager().SetTranslationTable("Assets/translation.csv");
+		//Engine::Instance().GetUiManager().SetCurrentLanguageIndex(2);
 
 		//core::Time::SetTimeScale(0.f);
 
@@ -236,8 +236,7 @@ public:
 		scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
 		//GetCurrentScene()->GetEntityStorage().Load("Door", door);
 
-		//Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
-		//Rml::Debugger::SetVisible(true);
+		Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
 
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
@@ -284,6 +283,11 @@ public:
 
 #ifdef BASED_CONFIG_DEBUG
 		GameSystems::mSoundTest.Update(deltaTime);
+
+		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_KP_0))
+		{
+			Rml::Debugger::SetVisible(!Rml::Debugger::IsVisible());
+		}
 #endif
 	}
 

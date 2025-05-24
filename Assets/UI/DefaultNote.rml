@@ -5,22 +5,20 @@
         <link type="text/rcss" href="ComponentStyles.rcss"/>
         <link type="text/rcss" href="Note.rcss"/>
     </head>
-    <body>
-        <div class="body">
-            <div class="panel note-parent">
-                <div>
-                    <div class="gradient1"></div>
-                    <div class="note-body">
-                        <p class="note-text BASED_REFRESH" id="note-body">The note text will go here!</p>
-                    </div>
-                    <div class="gradient2"></div>
+    <body class="body">
+        <div class="panel note-parent">
+            <div>
+                <div class="gradient1"></div>
+                <div class="note-body">
+                    <p class="note-text BASED_REFRESH" id="note-body">The note text will go here!</p>
                 </div>
-                <div id="back-button" class="button-default">
-                    <div class="interact-position">
-                        <div class="interact-parent" id="interact-parent">
-                            <img class="interact-image" src="../Textures/Esc_Key_Dark.png"/>
-                            <label class="text">Back</label>
-                        </div>
+                <div class="gradient2"></div>
+            </div>
+            <div id="back-button" class="button-default">
+                <div class="interact-position">
+                    <div class="interact-parent" id="interact-parent">
+                        <img class="interact-image" src="../Textures/Esc_Key_Dark.png"/>
+                        <label class="text">Back</label>
                     </div>
                 </div>
             </div>

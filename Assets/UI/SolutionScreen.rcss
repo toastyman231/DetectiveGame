@@ -8,6 +8,7 @@
 	border: 5px #E4FFE1;
     border-radius: 10px;
     margin: 0.5em;
+    height: 65vh;
 }
 
 .bg-red {
@@ -70,6 +71,7 @@
     min-width: 1em;
     max-width: 6em;
     height: 1em;
+    vertical-align: center;
 }
 
 .word:drag {

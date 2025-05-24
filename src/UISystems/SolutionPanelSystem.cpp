@@ -217,7 +217,7 @@ void SolutionPanelSystem::AddWord(SolutionWord word)
 			Rml::Tween(Rml::Tween::Cubic, Rml::Tween::InOut), 
 			1, false, 0.0f, &p1);
 
-		auto k1 = Rml::Property(0, Rml::Property::Unit::NUMBER);
+		auto k1 = Rml::Property(0, Rml::Unit::NUMBER);
 		element->Animate("opacity", k1, 0.6f,
 			Rml::Tween(Rml::Tween::Cubic, Rml::Tween::InOut),
 			1, false, 1.f);

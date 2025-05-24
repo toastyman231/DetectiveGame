@@ -6,17 +6,15 @@
         <link type="text/rcss" href="ComponentStyles.rcss"/>
         <link type="text/rcss" href="rml.rcss"/>
     </head>
-    <body>
-        <div class="body">
-            <div class="crosshair"></div>
+    <body class="body">
+        <div class="crosshair"></div>
             <div class="interact-position">
                 <div class="interact-parent" id="interact-parent">
-                    <label class="text">ICON_INTERACT</label>
+                    <img class="interact-image" src="../Textures/E_Key_Dark.png"/>
                     <label class="text">Interact</label>
                 </div>
             </div>
             <div class="vertical-group" id="words-group">
             </div>
-        </div>
     </body>
 </rml>
