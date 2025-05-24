@@ -11,7 +11,7 @@
             <div class="crosshair"></div>
             <div class="interact-position">
                 <div class="interact-parent" id="interact-parent">
-                    <img class="interact-image" src="../Textures/E_Key_Dark.png"/>
+                    <label class="text">ICON_INTERACT</label>
                     <label class="text">Interact</label>
                 </div>
             </div>

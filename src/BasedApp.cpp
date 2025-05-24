@@ -46,6 +46,8 @@ public:
 			input::CursorMode::Confined : input::CursorMode::Free);
 		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
 		Engine::Instance().GetWindow().SetFullscreen(false);
+		Engine::Instance().GetUiManager().SetTranslationTable("Assets/translation.csv");
+		Engine::Instance().GetUiManager().SetCurrentLanguageIndex(2);
 
 		//core::Time::SetTimeScale(0.f);
 
@@ -234,7 +236,7 @@ public:
 		scene::Entity::DestroyEntity(GetCurrentScene()->GetEntityStorage().Get("Cube"));
 		//GetCurrentScene()->GetEntityStorage().Load("Door", door);
 
-		Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
+		//Rml::Debugger::Initialise(Engine::Instance().GetUiManager().GetContext("main"));
 		//Rml::Debugger::SetVisible(true);
 
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
@@ -253,8 +255,6 @@ public:
 #ifdef BASED_CONFIG_DEBUG
 		GameSystems::mSoundTest.Initialize();
 #endif
-
-		BASED_TRACE("Equality test: {}", core::Tag("Interaction.Hover") == core::Tag("Interaction.Hover"));
 	}
 
 	void Shutdown() override
