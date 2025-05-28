@@ -3,6 +3,7 @@
         <title>Note</title>
         <link type="text/rcss" href="rml.rcss"/>
         <link type="text/rcss" href="ComponentStyles.rcss"/>
+        <link type="text/rcss" href="Controls.rcss"/>
         <link type="text/rcss" href="Note.rcss"/>
     </head>
     <body class="body">
@@ -17,7 +18,7 @@
             <div id="back-button" class="button-default">
                 <div class="interact-position">
                     <div class="interact-parent" id="interact-parent">
-                        <img class="interact-image" src="../Textures/Esc_Key_Dark.png"/>
+                        <img class="interact-image" id="back-image" sprite="Esc_Key_Dark"/>
                         <label class="text">Back</label>
                     </div>
                 </div>

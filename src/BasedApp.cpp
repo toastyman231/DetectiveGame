@@ -7,9 +7,11 @@
 #include "based/scene/entity.h"
 
 #include "GameSystems.h"
+#include "KeyImageBindings.h"
 #include "based/core/basedtime.h"
 #include "based/graphics/model.h"
 #include "based/input/keyboard.h"
+#include "based/ui/elementbinding.h"
 #include "Interaction/InteractionTrigger.h"
 #include "Systems/FMODSystem.h"
 
@@ -46,8 +48,6 @@ public:
 			input::CursorMode::Confined : input::CursorMode::Free);
 		Engine::Instance().GetPhysicsManager().SetRenderDebug(false);
 		Engine::Instance().GetWindow().SetFullscreen(false);
-		//Engine::Instance().GetUiManager().SetTranslationTable("Assets/translation.csv");
-		//Engine::Instance().GetUiManager().SetCurrentLanguageIndex(2);
 
 		//core::Time::SetTimeScale(0.f);
 
@@ -240,7 +240,19 @@ public:
 
 		auto context = Engine::Instance().GetUiManager().GetContext("main");
 		Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
-		Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context, "PlayerHUD");
+		auto doc = Engine::Instance().GetUiManager().LoadWindow("PlayerHUD", context, "PlayerHUD");
+		auto interactImage = doc->document->GetElementById("interact-image");
+		auto binding = ui::ElementBinding(interactImage,
+			[this](Rml::Element* elem)
+			{
+				auto input = managers::InputManager::GetInputComponentForPlayer(0);
+				if (!input || !elem || !elem->IsVisible()) return;
+
+				auto keyName = input->GetKeyImageForAction("IA_Interact", mKeyMaps);
+
+				elem->SetAttribute("sprite", keyName);
+			});
+		Engine::Instance().GetUiManager().AddBinding(binding);
 
 		FMODSystem::InitializeFMOD();
 		FMODSystem::LoadBanks("Assets/FMOD/Banks");
@@ -283,11 +295,6 @@ public:
 
 #ifdef BASED_CONFIG_DEBUG
 		GameSystems::mSoundTest.Update(deltaTime);
-
-		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_KP_0))
-		{
-			Rml::Debugger::SetVisible(!Rml::Debugger::IsVisible());
-		}
 #endif
 	}
 

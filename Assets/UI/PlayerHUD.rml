@@ -4,17 +4,18 @@
         <link type="text/rcss" href="PlayerHUD.rcss"/>
         <link type="text/rcss" href="SolutionScreen.rcss"/>
         <link type="text/rcss" href="ComponentStyles.rcss"/>
+        <link type="text/rcss" href="Controls.rcss"/>
         <link type="text/rcss" href="rml.rcss"/>
     </head>
     <body class="body">
         <div class="crosshair"></div>
-            <div class="interact-position">
-                <div class="interact-parent" id="interact-parent">
-                    <img class="interact-image" src="../Textures/E_Key_Dark.png"/>
-                    <label class="text">Interact</label>
-                </div>
+        <div class="interact-position">
+            <div class="interact-parent" id="interact-parent">
+                <img class="interact-image" id="interact-image" sprite="E_Key_Dark"/>
+                <label class="text">Interact</label>
             </div>
-            <div class="vertical-group" id="words-group">
-            </div>
+        </div>
+        <div class="vertical-group" id="words-group">
+        </div>
     </body>
 </rml>

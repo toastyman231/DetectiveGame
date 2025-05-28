@@ -1,0 +1,355 @@
+/*
+-------------------------------------------------------------------
+Created with TexturePacker https://www.codeandweb.com/texturepacker
+Exporter by Jake Morgenstern - https://toastyman231.github.io/
+-------------------------------------------------------------------
+Usage: Include this file in your .rml document. 
+Then add the following to display a sprite:
+<img sprite="yourspritesname"></img>
+
+File Hash: $TexturePacker:SmartUpdate:8b7f87ce2b547b0bd34ac9356a1051ae:e913148ca79acdfd7b3a6ac394e56aa4:d83df85dad33b4d34c0d9bdd190237c6$
+*/
+
+
+
+@spritesheet Controls
+{
+    src: ../Textures/controls.png;
+    resolution: 1x;
+
+    
+    0_Key_Dark: 1px 1px 100px 100px;
+    
+    1_Key_Dark: 102px 1px 100px 100px;
+    
+    2_Key_Dark: 203px 1px 100px 100px;
+    
+    3_Key_Dark: 304px 1px 100px 100px;
+    
+    4_Key_Dark: 405px 1px 100px 100px;
+    
+    5_Key_Dark: 506px 1px 100px 100px;
+    
+    6_Key_Dark: 607px 1px 100px 100px;
+    
+    7_Key_Dark: 708px 1px 100px 100px;
+    
+    8_Key_Dark: 809px 1px 100px 100px;
+    
+    9_Key_Dark: 910px 1px 100px 100px;
+    
+    10_Key_Dark: 1px 102px 100px 100px;
+    
+    11_Key_Dark: 102px 102px 100px 100px;
+    
+    12_Key_Dark: 203px 102px 100px 100px;
+    
+    A_Key_Dark: 304px 102px 100px 100px;
+    
+    Alt_Key_Dark: 405px 102px 100px 100px;
+    
+    Arrow_Down_Key_Dark: 506px 102px 100px 100px;
+    
+    Arrow_Left_Key_Dark: 607px 102px 100px 100px;
+    
+    Arrow_Right_Key_Dark: 708px 102px 100px 100px;
+    
+    Arrow_Up_Key_Dark: 809px 102px 100px 100px;
+    
+    Asterisk_Key_Dark: 910px 102px 100px 100px;
+    
+    B_Key_Dark: 1px 203px 100px 100px;
+    
+    Backspace_Alt_Key_Dark: 102px 203px 100px 100px;
+    
+    Backspace_Key_Dark: 203px 203px 100px 100px;
+    
+    Bracket_Left_Key_Dark: 304px 203px 100px 100px;
+    
+    Bracket_Right_Key_Dark: 405px 203px 100px 100px;
+    
+    C_Key_Dark: 506px 203px 100px 100px;
+    
+    Caps_Lock_Key_Dark: 607px 203px 100px 100px;
+    
+    Command_Key_Dark: 708px 203px 100px 100px;
+    
+    Ctrl_Key_Dark: 809px 203px 100px 100px;
+    
+    D_Key_Dark: 910px 203px 100px 100px;
+    
+    Del_Key_Dark: 1px 304px 100px 100px;
+    
+    E_Key_Dark: 102px 304px 100px 100px;
+    
+    End_Key_Dark: 203px 304px 100px 100px;
+    
+    Enter_Alt_Key_Dark: 304px 304px 100px 100px;
+    
+    Enter_Key_Dark: 405px 304px 100px 100px;
+    
+    Enter_Tall_Key_Dark: 506px 304px 100px 100px;
+    
+    Esc_Key_Dark: 607px 304px 100px 100px;
+    
+    F1_Key_Dark: 708px 304px 100px 100px;
+    
+    F2_Key_Dark: 809px 304px 100px 100px;
+    
+    F3_Key_Dark: 910px 304px 100px 100px;
+    
+    F4_Key_Dark: 1px 405px 100px 100px;
+    
+    F5_Key_Dark: 102px 405px 100px 100px;
+    
+    F6_Key_Dark: 203px 405px 100px 100px;
+    
+    F7_Key_Dark: 304px 405px 100px 100px;
+    
+    F8_Key_Dark: 405px 405px 100px 100px;
+    
+    F9_Key_Dark: 506px 405px 100px 100px;
+    
+    F10_Key_Dark: 607px 405px 100px 100px;
+    
+    F11_Key_Dark: 708px 405px 100px 100px;
+    
+    F12_Key_Dark: 809px 405px 100px 100px;
+    
+    F_Key_Dark: 910px 405px 100px 100px;
+    
+    G_Key_Dark: 1px 506px 100px 100px;
+    
+    H_Key_Dark: 102px 506px 100px 100px;
+    
+    Home_Key_Dark: 203px 506px 100px 100px;
+    
+    I_Key_Dark: 304px 506px 100px 100px;
+    
+    Insert_Key_Dark: 405px 506px 100px 100px;
+    
+    J_Key_Dark: 506px 506px 100px 100px;
+    
+    K_Key_Dark: 607px 506px 100px 100px;
+    
+    L_Key_Dark: 708px 506px 100px 100px;
+    
+    M_Key_Dark: 809px 506px 100px 100px;
+    
+    Mark_Left_Key_Dark: 910px 506px 100px 100px;
+    
+    Mark_Right_Key_Dark: 1px 607px 100px 100px;
+    
+    Minus_Key_Dark: 102px 607px 100px 100px;
+    
+    Mouse_Left_Key_Dark: 203px 607px 100px 100px;
+    
+    Mouse_Middle_Key_Dark: 304px 607px 100px 100px;
+    
+    Mouse_Right_Key_Dark: 405px 607px 100px 100px;
+    
+    Mouse_Simple_Key_Dark: 506px 607px 100px 100px;
+    
+    N_Key_Dark: 607px 607px 100px 100px;
+    
+    Num_Lock_Key_Dark: 708px 607px 100px 100px;
+    
+    O_Key_Dark: 809px 607px 100px 100px;
+    
+    P_Key_Dark: 910px 607px 100px 100px;
+    
+    Page_Down_Key_Dark: 1px 708px 100px 100px;
+    
+    Page_Up_Key_Dark: 102px 708px 100px 100px;
+    
+    Plus_Key_Dark: 203px 708px 100px 100px;
+    
+    Plus_Tall_Key_Dark: 304px 708px 100px 100px;
+    
+    Print_Screen_Key_Dark: 405px 708px 100px 100px;
+    
+    PS5_Circle: 506px 708px 100px 100px;
+    
+    PS5_Cross: 607px 708px 100px 100px;
+    
+    PS5_Dpad: 708px 708px 100px 100px;
+    
+    PS5_Dpad_Down: 809px 708px 100px 100px;
+    
+    PS5_Dpad_Left: 910px 708px 100px 100px;
+    
+    PS5_Dpad_Right: 1px 809px 100px 100px;
+    
+    PS5_Dpad_Up: 102px 809px 100px 100px;
+    
+    PS5_L1: 203px 809px 100px 100px;
+    
+    PS5_L2: 304px 809px 100px 100px;
+    
+    PS5_Left_Stick: 405px 809px 100px 100px;
+    
+    PS5_Left_Stick_Click: 506px 809px 100px 100px;
+    
+    PS5_Microphone: 607px 809px 100px 100px;
+    
+    PS5_Options: 708px 809px 100px 100px;
+    
+    PS5_Options_Alt: 809px 809px 100px 100px;
+    
+    PS5_R1: 910px 809px 100px 100px;
+    
+    PS5_R2: 1px 910px 100px 100px;
+    
+    PS5_Right_Stick: 102px 910px 100px 100px;
+    
+    PS5_Right_Stick_Click: 203px 910px 100px 100px;
+    
+    PS5_Share: 304px 910px 100px 100px;
+    
+    PS5_Share_Alt: 405px 910px 100px 100px;
+    
+    PS5_Square: 506px 910px 100px 100px;
+    
+    PS5_Touch_Pad: 607px 910px 100px 100px;
+    
+    PS5_Triangle: 708px 910px 100px 100px;
+    
+    Q_Key_Dark: 809px 910px 100px 100px;
+    
+    Question_Key_Dark: 910px 910px 100px 100px;
+    
+    Quote_Key_Dark: 1px 1011px 100px 100px;
+    
+    R_Key_Dark: 102px 1011px 100px 100px;
+    
+    S_Key_Dark: 203px 1011px 100px 100px;
+    
+    Semicolon_Key_Dark: 304px 1011px 100px 100px;
+    
+    Shift_Alt_Key_Dark: 405px 1011px 100px 100px;
+    
+    Shift_Key_Dark: 506px 1011px 100px 100px;
+    
+    Slash_Key_Dark: 607px 1011px 100px 100px;
+    
+    Space_Key_Dark: 708px 1011px 100px 100px;
+    
+    Switch_A: 809px 1011px 100px 100px;
+    
+    Switch_B: 910px 1011px 100px 100px;
+    
+    Switch_Controller_Left: 1px 1112px 100px 100px;
+    
+    Switch_Controller_Right: 102px 1112px 100px 100px;
+    
+    Switch_Controllers: 203px 1112px 100px 100px;
+    
+    Switch_Controllers_Separate: 304px 1112px 100px 100px;
+    
+    Switch_Down: 405px 1112px 100px 100px;
+    
+    Switch_Dpad: 506px 1112px 100px 100px;
+    
+    Switch_Dpad_Down: 607px 1112px 100px 100px;
+    
+    Switch_Dpad_Left: 708px 1112px 100px 100px;
+    
+    Switch_Dpad_Right: 809px 1112px 100px 100px;
+    
+    Switch_Dpad_Up: 910px 1112px 100px 100px;
+    
+    Switch_Home: 1px 1213px 100px 100px;
+    
+    Switch_LB: 102px 1213px 100px 100px;
+    
+    Switch_Left: 203px 1213px 100px 100px;
+    
+    Switch_Left_Stick: 304px 1213px 100px 100px;
+    
+    Switch_Left_Stick_Click: 405px 1213px 100px 100px;
+    
+    Switch_LT: 506px 1213px 100px 100px;
+    
+    Switch_Minus: 607px 1213px 100px 100px;
+    
+    Switch_Plus: 708px 1213px 100px 100px;
+    
+    Switch_RB: 809px 1213px 100px 100px;
+    
+    Switch_Right: 910px 1213px 100px 100px;
+    
+    Switch_Right_Stick: 1px 1314px 100px 100px;
+    
+    Switch_Right_Stick_Click: 102px 1314px 100px 100px;
+    
+    Switch_RT: 203px 1314px 100px 100px;
+    
+    Switch_Square: 304px 1314px 100px 100px;
+    
+    Switch_Up: 405px 1314px 100px 100px;
+    
+    Switch_X: 506px 1314px 100px 100px;
+    
+    Switch_Y: 607px 1314px 100px 100px;
+    
+    T_Key_Dark: 708px 1314px 100px 100px;
+    
+    Tab_Key_Dark: 809px 1314px 100px 100px;
+    
+    Tilda_Key_Dark: 910px 1314px 100px 100px;
+    
+    U_Key_Dark: 1px 1415px 100px 100px;
+    
+    V_Key_Dark: 102px 1415px 100px 100px;
+    
+    W_Key_Dark: 203px 1415px 100px 100px;
+    
+    Win_Key_Dark: 304px 1415px 100px 100px;
+    
+    X_Key_Dark: 405px 1415px 100px 100px;
+    
+    XboxSeriesX_A: 506px 1415px 100px 100px;
+    
+    XboxSeriesX_B: 607px 1415px 100px 100px;
+    
+    XboxSeriesX_Dpad: 708px 1415px 100px 100px;
+    
+    XboxSeriesX_Dpad_Down: 809px 1415px 100px 100px;
+    
+    XboxSeriesX_Dpad_Left: 910px 1415px 100px 100px;
+    
+    XboxSeriesX_Dpad_Right: 1px 1516px 100px 100px;
+    
+    XboxSeriesX_Dpad_Up: 102px 1516px 100px 100px;
+    
+    XboxSeriesX_LB: 203px 1516px 100px 100px;
+    
+    XboxSeriesX_Left_Stick: 304px 1516px 100px 100px;
+    
+    XboxSeriesX_Left_Stick_Click: 405px 1516px 100px 100px;
+    
+    XboxSeriesX_LT: 506px 1516px 100px 100px;
+    
+    XboxSeriesX_Menu: 607px 1516px 100px 100px;
+    
+    XboxSeriesX_RB: 708px 1516px 100px 100px;
+    
+    XboxSeriesX_Right_Stick: 809px 1516px 100px 100px;
+    
+    XboxSeriesX_Right_Stick_Click: 910px 1516px 100px 100px;
+    
+    XboxSeriesX_RT: 1px 1617px 100px 100px;
+    
+    XboxSeriesX_Share: 102px 1617px 100px 100px;
+    
+    XboxSeriesX_View: 203px 1617px 100px 100px;
+    
+    XboxSeriesX_X: 304px 1617px 100px 100px;
+    
+    XboxSeriesX_Y: 405px 1617px 100px 100px;
+    
+    Y_Key_Dark: 506px 1617px 100px 100px;
+    
+    Z_Key_Dark: 607px 1617px 100px 100px;
+    
+}

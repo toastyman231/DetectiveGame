@@ -4,6 +4,7 @@
 #include "InteractionTrigger.h"
 #include "Tool.h"
 #include "../GameSystems.h"
+#include "../KeyImageBindings.h"
 #include "../Systems/FMODSystem.h"
 #include "based/app.h"
 #include "based/engine.h"
@@ -64,7 +65,20 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 	if (!mDocument)
 	{
 		mDocument = uiManager.LoadWindow("DefaultNote", context);
-		mDocument->document->GetElementById("back-button")->AddEventListener("click", this);
+		auto backBtn = mDocument->document->GetElementById("back-button");
+		backBtn->AddEventListener("click", this);
+		auto backImage = mDocument->document->GetElementById("back-image");
+		auto binding = ui::ElementBinding(backImage,
+			[this](Rml::Element* elem)
+			{
+				auto input = managers::InputManager::GetInputComponentForPlayer(0);
+				if (!input || !elem || !elem->IsVisible()) return;
+
+				auto keyName = input->GetKeyImageForAction("IA_Back", mKeyMaps);
+
+				elem->SetAttribute("sprite", keyName);
+			});
+		Engine::Instance().GetUiManager().AddBinding(binding);
 	}
 	else
 		mDocument->document->Show();
