@@ -19,11 +19,18 @@ std::unordered_map<std::string, std::string> psMap = {
 	{"b", "PS5_Circle"},
 };
 
+std::unordered_map<std::string, std::string> switchMap = {
+	{"", ""},
+	{"a", "Switch_A"},
+	{"b", "Switch_B"},
+};
+
 std::unordered_map<std::string, std::unordered_map<std::string, std::string>> mKeyMaps = {
 		{"KBM", kbmMap},
 		{"Xbox360", xboxMap},
 		{"XboxOne", xboxMap},
 		{"PS3", psMap},
 		{"PS4", psMap},
-		{"PS5", psMap}
+		{"PS5", psMap},
+		{"SwitchPro", switchMap},
 };

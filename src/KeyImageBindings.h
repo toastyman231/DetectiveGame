@@ -9,4 +9,6 @@ extern std::unordered_map<std::string, std::string> xboxMap;
 
 extern std::unordered_map<std::string, std::string> psMap;
 
+extern std::unordered_map<std::string, std::string> switchMap;
+
 extern std::unordered_map<std::string, std::unordered_map<std::string, std::string>> mKeyMaps;
