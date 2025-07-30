@@ -5,6 +5,12 @@ Actions:
     Type: 2
     Triggers: []
     Modifiers: []
+  - ActionName: IA_Jump
+    ConsumeInput: true
+    TriggerWhenPaused: false
+    Type: 0
+    Triggers: []
+    Modifiers: []
   - ActionName: IA_Look
     ConsumeInput: true
     TriggerWhenPaused: false
@@ -66,6 +72,12 @@ Configs:
             Triggers: []
             Modifiers:
               - SwizzleYX
+      - ActionName: IA_Jump
+        MappedKeys:
+          - Key: 44
+            Type: 0
+            Triggers: []
+            Modifiers: []
       - ActionName: IA_Interact
         MappedKeys:
           - Key: 8

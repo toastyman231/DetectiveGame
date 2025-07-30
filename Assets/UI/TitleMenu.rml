@@ -1,0 +1,14 @@
+<rml>
+    <head>
+        <title>HUD</title>
+        <link type="text/rcss" href="rml.rcss"/>
+        <link type="text/rcss" href="ComponentStyles.rcss"/>
+        <link type="text/rcss" href="SolutionScreen.rcss"/>
+    </head>
+    <body class="body">
+        <div class="panel body vertical-group">
+            <div id="play" class="button-default margin-small default-focus-target">Play Game</div>
+            <div id="quit" class="button-default margin-small">Quit</div>
+        </div>
+    </body>
+</rml>

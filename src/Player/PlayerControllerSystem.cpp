@@ -88,6 +88,11 @@ void PlayerControllerSystem::Update(float deltaTime)
 			&& moving_towards_ground)
 		{
 			new_velocity = ground_velocity;
+
+			if (mMoveDir.GetY() > 0.f)
+				new_velocity += character.JumpForce * character.Character->GetUp();
+
+			mMoveDir.SetY(0.f);
 		}
 		else
 		{
@@ -152,7 +157,13 @@ void PlayerControllerSystem::MoveCharacter(const based::input::InputAction& acti
 {
 	if (action.name == "IA_Move")
 	{
-		mMoveDir = JPH::Vec3(action.GetValue().axis2DValue.x, 0.f, action.GetValue().axis2DValue.y);
+		mMoveDir = JPH::Vec3(action.GetValue().axis2DValue.x, mMoveDir.GetY(), action.GetValue().axis2DValue.y);
+		if (mMoveDir != JPH::Vec3::sZero()) mMoveDir = mMoveDir.Normalized();
+	}
+
+	if (action.name == "IA_Jump")
+	{
+		mMoveDir += JPH::Vec3(0.f, 1.f, 0.f);
 		if (mMoveDir != JPH::Vec3::sZero()) mMoveDir = mMoveDir.Normalized();
 	}
 }

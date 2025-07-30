@@ -26,9 +26,13 @@
     border-radius: 5px;
     background-color: #21A179;
 }
-.button-default :hover {
+.button-default:hover {
     background-color: #156149;
     border-radius: 5px;
+}
+
+.button-default:focus-visible {
+	background-color: #a38b1d;
 }
 
 .vertical-group {
@@ -39,6 +43,20 @@
 .horizontal-group {
 	display: flex;
 	flex-direction: row;
+}
+
+.horizontal-group * {
+	nav: horizontal;
+	tab-index: auto;
+}
+
+.vertical-group * {
+	tab-index: auto;
+	nav: vertical;
+}
+
+.margin-small {
+	margin: 0.5rem;
 }
 
 .input-field {
