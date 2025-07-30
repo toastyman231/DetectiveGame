@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="box words-box">
-            <div class="words-scroll" id="words-box">
+            <div class="words-scroll" id="words-box" autofocus>
             </div>
         </div>
     </body>

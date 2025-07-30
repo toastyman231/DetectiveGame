@@ -4,7 +4,6 @@
 #include <iostream>
 
 #include "based/engine.h"
-#include "based/input/keyboard.h"
 
 #include "../GameSystems.h"
 #include "../Systems/FMODSystem.h"
@@ -157,6 +156,7 @@ bool WordSolutionPanel::IsAnySlotUnfilled()
 
 void SolutionPanelSystem::Initialize()
 {
+#ifdef BASED_CONFIG_DEBUG
 	AddWord({ "Shadow", WordType::Person });
 	AddWord({ "Assistant", WordType::Person });
 	AddWord({ "Scientist", WordType::Person });
@@ -176,6 +176,7 @@ void SolutionPanelSystem::Initialize()
 	AddWord({ "Knife", WordType::Thing });
 	AddWord({ "Tools", WordType::Thing });
 	AddWord({ "2", WordType::Number });
+#endif
 
 	AddSolutionPanel("word-panel", 
 		new WordSolutionPanel("word-panel", "Assets/Solutions/MainPanel.txt"));

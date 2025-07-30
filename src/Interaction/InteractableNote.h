@@ -17,13 +17,6 @@ struct InteractableNote
 		mNoteText = sstream.str();
 	}
 
-	~InteractableNote()
-	{
-		auto uiManager = based::Engine::Instance().GetUiManager();
-
-		BASED_TRACE("Num docs on destroy: {}", uiManager.GetDocuments().size());
-	}
-
 	std::string mNoteText = "This is the default note text!";
 	bool mIsOpen = false;
 };

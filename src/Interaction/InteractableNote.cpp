@@ -64,7 +64,7 @@ void InteractableNoteSystem::OnInteract(Tool* tool)
 	// Create UI document if it does not exist, otherwise just show it
 	if (!mDocument)
 	{
-		mDocument = uiManager.LoadWindow("DefaultNote", context);
+		mDocument = uiManager.LoadWindow("DefaultNote", context, "DefaultNote");
 		auto backBtn = mDocument->document->GetElementById("back-button");
 		backBtn->AddEventListener("click", this);
 		auto backImage = mDocument->document->GetElementById("back-image");

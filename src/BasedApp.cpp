@@ -3,12 +3,10 @@
 #include "based/main.h"
 #include "based/graphics/mesh.h"
 #include "based/scene/components.h"
-#include "based/input/mouse.h"
 #include "based/scene/entity.h"
 
 #include "GameSystems.h"
 #include "based/input/keyboard.h"
-//#include "Scenes/MainScene.h"
 #include "Scenes/TitleScene.h"
 
 
@@ -17,8 +15,7 @@ using namespace based;
 class BasedApp : public based::App
 {
 public:
-	//std::shared_ptr<scene::Scene> mMainScene;
-	std::shared_ptr<scene::Scene> mTitleScene;
+	std::shared_ptr<scene::Scene> mStartupScene;
 
 	based::core::WindowProperties GetWindowProperties() override
 	{
@@ -46,8 +43,8 @@ public:
 		Engine::Instance().GetWindow().SetFullscreen(false);
 
 		// TODO: Set this back to TitleScreen when ready to ship
-		mTitleScene = std::make_shared<MainScene>();
-		LoadScene(mTitleScene);
+		mStartupScene = std::make_shared<TitleScene>();
+		LoadScene(mStartupScene);
 
 		// Uncomment to override render-to-screen and cursor settings
 		/*Engine::Instance().GetWindow().SetShouldRenderToScreen(true);
@@ -69,6 +66,9 @@ public:
 	void Update(float deltaTime) override
 	{
 		App::Update(deltaTime);
+
+		/*auto position = input::Mouse::GetMousePosition();
+		BASED_TRACE("MOUSE AT {} {}", position.x, position.y);*/
 
 		if (input::Keyboard::KeyDown(BASED_INPUT_KEY_P))
 		{

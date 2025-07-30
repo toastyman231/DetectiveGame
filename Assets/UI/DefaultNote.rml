@@ -10,7 +10,7 @@
         <div class="panel note-parent">
             <div>
                 <div class="gradient1"></div>
-                <div class="note-body">
+                <div class="note-body" id="body-parent">
                     <p class="note-text BASED_REFRESH" id="note-body">The note text will go here!</p>
                 </div>
                 <div class="gradient2"></div>

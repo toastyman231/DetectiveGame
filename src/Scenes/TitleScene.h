@@ -2,6 +2,7 @@
 
 #include "MainScene.h"
 #include "based/app.h"
+#include "based/input/mouse.h"
 #include "based/scene/scene.h"
 
 class TitleScene : public based::scene::Scene, protected Rml::EventListener
@@ -16,6 +17,7 @@ public:
 
 private:
 	based::managers::DocumentInfo* mDocument = nullptr;
+	std::shared_ptr<based::graphics::Camera> mCamera = nullptr;
 };
 
 inline void TitleScene::InitializeScene()
@@ -25,12 +27,16 @@ inline void TitleScene::InitializeScene()
 	based::input::Mouse::SetCursorVisible(true);
 	based::input::Mouse::SetCursorMode(based::input::CursorMode::Confined);
 
+	mCamera = std::make_shared<based::graphics::Camera>();
+	based::Engine::Instance().GetApp().GetCurrentScene()->SetActiveCamera(mCamera);
+
 	auto context = based::Engine::Instance().GetUiManager().GetContext("main");
 	based::Engine::Instance().GetUiManager().SetPathPrefix("Assets/UI/");
-	mDocument = based::Engine::Instance().GetUiManager().LoadWindow("TitleMenu", context, "TitleMenu");
+	mDocument = based::Engine::Instance().GetUiManager().LoadWindow("TitleMenu", context, "TitleMenu", false);
 
 	mDocument->document->GetElementById("play")->AddEventListener(Rml::EventId::Mousedown, this);
 	mDocument->document->GetElementById("quit")->AddEventListener(Rml::EventId::Mousedown, this);
+	mDocument->document->Show();
 }
 
 inline void TitleScene::ProcessEvent(Rml::Event& event)

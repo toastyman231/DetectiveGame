@@ -4,11 +4,32 @@
         <link type="text/rcss" href="rml.rcss"/>
         <link type="text/rcss" href="ComponentStyles.rcss"/>
         <link type="text/rcss" href="SolutionScreen.rcss"/>
+        <style>
+            .offset
+            {
+                width: 100%;
+                height: auto;
+                top: 50%;
+            }
+            .outer
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
     </head>
     <body class="body">
-        <div class="panel body vertical-group">
-            <div id="play" class="button-default margin-small default-focus-target">Play Game</div>
-            <div id="quit" class="button-default margin-small">Quit</div>
+        <div class="panel body outer" id="outer">
+            <div class="vertical-group offset margin-large" id="inner">
+                <label class="margin-large nav-none" >UNTITLED DETECTIVE GAME</label>
+                <div id="play" class="button-default margin-small" autofocus>Play Game</div>
+                <div id="2" class="button-default margin-small">2</div>
+                <div id="3" class="button-default margin-small">3</div>
+                <div id="4" class="button-default margin-small">4</div>
+                <div id="quit" class="button-default margin-small">Quit</div>
+            </div>
         </div>
     </body>
 </rml>
