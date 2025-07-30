@@ -2,6 +2,7 @@
 /[Bb]in/
 /[Bb]in-[Oo]bj/
 /[Pp]roject[Ff]iles/
+/Logs
 
 # Visual Studio cache directory
 .vs/

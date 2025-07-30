@@ -254,11 +254,19 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 		{
 			std::string dragWord = drag_element->GetInnerRML();
 			dest->SetClass("placeholder", false);
+			dest->SetClass("draggable", true);
 			dest->SetInnerRML(dragWord);
 
 			panel->OnSolutionElementDropped(dest->GetId(), &dragWord);
 
 			dest->ScrollIntoView();
+
+			if (drag_element->GetParentNode()->GetId() == "word-panel")
+			{
+				drag_element->SetInnerRML("");
+				drag_element->SetClass("placeholder", true);
+				drag_element->SetClass("draggable", false);
+			}
 
 			FMODSystem::PlayEvent("event:/UI/End Drag");
 

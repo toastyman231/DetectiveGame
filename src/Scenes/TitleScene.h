@@ -15,7 +15,7 @@ public:
 	void ShutdownScene() override;
 
 private:
-	based::managers::DocumentInfo* mDocument;
+	based::managers::DocumentInfo* mDocument = nullptr;
 };
 
 inline void TitleScene::InitializeScene()
