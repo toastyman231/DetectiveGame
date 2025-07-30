@@ -24,11 +24,10 @@
         <div class="panel body outer" id="outer">
             <div class="vertical-group offset margin-large" id="inner">
                 <label class="margin-large nav-none" >UNTITLED DETECTIVE GAME</label>
-                <div id="play" class="button-default margin-small" autofocus>Play Game</div>
-                <div id="2" class="button-default margin-small">2</div>
-                <div id="3" class="button-default margin-small">3</div>
-                <div id="4" class="button-default margin-small">4</div>
-                <div id="quit" class="button-default margin-small">Quit</div>
+                <button id="play" class="button-default margin-small" autofocus>Play Game</button>
+                <button id="settings" class="button-default margin-small">Settings</button>
+                <button id="credits" class="button-default margin-small">Credits</button>
+                <button id="quit" class="button-default margin-small">Quit</button>
             </div>
         </div>
     </body>

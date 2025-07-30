@@ -19,20 +19,28 @@
     width: 100%;
     height: 100%;
 	font-family: Arimo;
+	pointer-events: none;
 }
 
 .button-default {
     border: 2px #81AE9D;
     border-radius: 5px;
     background-color: #21A179;
-}
-.button-default:hover {
-    background-color: #156149;
-    border-radius: 5px;
+	pointer-events: auto;
 }
 
+.button-default:hover {
+	background-color: #7c6916;
+}
 .button-default:focus-visible {
 	background-color: #a38b1d;
+}
+.button-default:active {
+	background-color: #55480f;
+}
+
+.no-pointer {
+	pointer-events: none;
 }
 
 .vertical-group {
@@ -84,6 +92,7 @@ scrollbarvertical
 	background-color: #44444486;
 	width: 27px;
     border-radius: 5px;
+	pointer-events: auto;
 }
 
 scrollbarvertical sliderbar
@@ -94,6 +103,7 @@ scrollbarvertical sliderbar
     margin-bottom: 5px;
 	background-color: rgb(34, 34, 34);
 	z-index: 1;
+	pointer-events: auto;
 }
 
 scrollbarvertical sliderbar:hover 

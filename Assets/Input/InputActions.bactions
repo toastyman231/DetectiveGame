@@ -105,7 +105,7 @@ Configs:
             Type: 0
             Triggers: []
             Modifiers: []
-          - Key: 6
+          - Key: 4
             Type: 3
             Triggers: []
             Modifiers: []

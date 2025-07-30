@@ -17,6 +17,7 @@
 	width: 100%;
 	text-align: left;
 	transform: translateX(-5px);
+	pointer-events: auto;
 }
 
 .gradient1 {
