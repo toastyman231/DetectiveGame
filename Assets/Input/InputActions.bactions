@@ -72,12 +72,6 @@ Configs:
             Triggers: []
             Modifiers:
               - SwizzleYX
-      - ActionName: IA_Jump
-        MappedKeys:
-          - Key: 44
-            Type: 0
-            Triggers: []
-            Modifiers: []
       - ActionName: IA_Interact
         MappedKeys:
           - Key: 8

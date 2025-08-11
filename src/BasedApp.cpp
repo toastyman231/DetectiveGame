@@ -43,7 +43,7 @@ public:
 		Engine::Instance().GetWindow().SetFullscreen(false);
 
 		// TODO: Set this back to TitleScreen when ready to ship
-		mStartupScene = std::make_shared<TitleScene>();
+		mStartupScene = std::make_shared<MainScene>();
 		LoadScene(mStartupScene);
 
 		// Uncomment to override render-to-screen and cursor settings

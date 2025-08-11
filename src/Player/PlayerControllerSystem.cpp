@@ -99,10 +99,25 @@ void PlayerControllerSystem::Update(float deltaTime)
 			new_velocity = current_vertical_velocity;
 		}
 
-		auto groundVel = character.Character->GetLinearVelocity();
-		if (groundVel.LengthSq() > 0.15f && math::Abs(current_vertical_velocity.GetY()) < 0.1f)
+		// Add gravity
+		new_velocity += charUp * physSystem.GetGravity() * core::Time::DeltaTime();
+
+		// If they have horizontal control, adjust their current movement in the desired direction
+		// Otherwise keep moving in the current direction, adjusted by their vertical movement
+		if (controlHorizontal)
+			new_velocity += charUp * mDesiredDirection;
+		else
 		{
-			auto curTime = core::Time::GetTime();
+			new_velocity += character.Character->GetLinearVelocity() - current_vertical_velocity;
+		}
+
+		// Update velocity
+		character.Character->SetLinearVelocity(new_velocity);
+
+		auto groundVel = character.Character->GetLinearVelocity();
+		if (groundVel.LengthSq() > 0.15f && math::Abs(current_vertical_velocity.GetY()) < 0.15f)
+		{
+			auto curTime = core::Time::GetUnscaledTime();
 			if (curTime - mLastStepTime >= mStepInterval)
 			{
 				mLastStepTime = curTime;
@@ -118,21 +133,6 @@ void PlayerControllerSystem::Update(float deltaTime)
 				mStepIndex *= -1;
 			}
 		}
-
-		// Add gravity
-		new_velocity += charUp * physSystem.GetGravity() * core::Time::DeltaTime();
-
-		// If they have horizontal control, adjust their current movement in the desired direction
-		// Otherwise keep moving in the current direction, adjusted by their vertical movement
-		if (controlHorizontal)
-			new_velocity += charUp * mDesiredDirection;
-		else
-		{
-			new_velocity += character.Character->GetLinearVelocity() - current_vertical_velocity;
-		}
-
-		// Update velocity
-		character.Character->SetLinearVelocity(new_velocity);
 
 		// Step forward physics sim for the character
 		JPH::CharacterVirtual::ExtendedUpdateSettings update_settings;
