@@ -35,23 +35,14 @@ inline void TitleScene::InitializeScene()
 	mDocument = based::Engine::Instance().GetUiManager().LoadWindow("TitleMenu", context, "TitleMenu", false);
 
 	mDocument->document->GetElementById("play")->AddEventListener(Rml::EventId::Mouseup, this);
-	mDocument->document->GetElementById("play")->AddEventListener(Rml::EventId::Mouseover, this);
-	mDocument->document->GetElementById("settings")->AddEventListener(Rml::EventId::Mousedown, this);
 	mDocument->document->GetElementById("settings")->AddEventListener(Rml::EventId::Mouseup, this);
-	mDocument->document->GetElementById("settings")->AddEventListener(Rml::EventId::Mouseover, this);
 	mDocument->document->GetElementById("credits")->AddEventListener(Rml::EventId::Mouseup, this);
-	mDocument->document->GetElementById("credits")->AddEventListener(Rml::EventId::Mouseover, this);
 	mDocument->document->GetElementById("quit")->AddEventListener(Rml::EventId::Mouseup, this);
-	mDocument->document->GetElementById("quit")->AddEventListener(Rml::EventId::Mouseover, this);
 	mDocument->document->Show();
 }
 
 inline void TitleScene::ProcessEvent(Rml::Event& event)
 {
-	/*if (event == Rml::EventId::Mousedown)
-	{
-		event.GetTargetElement()->Focus(true);
-	}*/
 
 	if (event == Rml::EventId::Mouseup)
 	{
@@ -67,11 +58,6 @@ inline void TitleScene::ProcessEvent(Rml::Event& event)
 			based::Engine::Instance().Quit();
 		}
 	}
-
-	/*if (event == Rml::EventId::Mouseover)
-	{
-		event.GetTargetElement()->Focus(true);
-	}*/
 }
 
 inline void TitleScene::ShutdownScene()
