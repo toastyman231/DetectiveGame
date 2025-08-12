@@ -1,4 +1,5 @@
 #pragma once
+#include "Audio/AmbienceSystem.h"
 #include "based/pch.h"
 #include "based/engine.h"
 #include "based/app.h"
@@ -10,7 +11,7 @@
 #include "Interaction/Tool.h"
 #include "Player/MouseLook.h"
 #include "Player/PlayerControllerSystem.h"
-#include "Systems/SoundTestSystem.h"
+#include "Audio/SoundTestSystem.h"
 #include "UISystems/SolutionPanelSystem.h"
 
 class GameSystems
@@ -23,6 +24,7 @@ public:
 	inline static DialogueSystem mDialogueSystem;
 	inline static InteractionDialogueSystem mDialogueTrigger;
 	inline static SolutionPanelSystem mSolutionPanelSystem;
+	inline static AmbienceSystem mAmbienceSystem;
 
 #ifdef BASED_CONFIG_DEBUG
 	inline static SoundTestSystem mSoundTest;

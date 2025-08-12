@@ -7,6 +7,10 @@ struct Interactable
 {
 	Interactable() = default;
 	Interactable(const std::vector<SolutionWord>& solutionWords) : mSolutionWords(solutionWords) {}
+	Interactable(const std::vector<SolutionWord>& solutionWords, FMOD::Studio::EventInstance* interactSound)
+		: mSolutionWords(solutionWords)
+		, mInteractSound(interactSound)
+	{}
 
 	void OnHoverEnter()
 	{
@@ -25,10 +29,17 @@ struct Interactable
 		{
 			GameSystems::mSolutionPanelSystem.AddWord(solutionWord);
 		}
+
+		if (mInteractSound)
+		{
+			mInteractSound->start();
+		}
 	}
 
 	based::core::TagContainer tags;
 	Tool* tool = nullptr;
 	bool mCanInteract = true;
 	std::vector<SolutionWord> mSolutionWords;
+
+	FMOD::Studio::EventInstance* mInteractSound = nullptr;
 };

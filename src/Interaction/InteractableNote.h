@@ -34,6 +34,8 @@ public:
 	void Update(float deltaTime);
 	void ProcessEvent(Rml::Event& event) override;
 
+	FMOD::Studio::EventInstance* GetPageTurnEvent() const { return mPageTurnEvent; }
+
 private:
 	void OnInput(const based::input::InputAction& action);
 

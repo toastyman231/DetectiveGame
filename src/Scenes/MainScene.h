@@ -10,4 +10,5 @@ public:
 
 	void InitializeScene() override;
 	void UpdateScene(float deltaTime) override;
+	void ShutdownScene() override;
 };

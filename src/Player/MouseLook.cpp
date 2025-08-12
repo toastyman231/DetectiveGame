@@ -46,8 +46,18 @@ void MouseLookSystem::HandleInput(const based::input::InputAction& action)
 
 
 		// Rotate camera view
-		mouseLookComp.mPitch += action.GetValue().axis2DValue.x * mouseLookComp.mSensitivity * core::Time::DeltaTime();
-		mouseLookComp.mYaw -= action.GetValue().axis2DValue.y * mouseLookComp.mSensitivity * core::Time::DeltaTime();
+		auto sensitivity = mouseLookComp.mSensitivity;
+		if (scene->GetRegistry().all_of<input::InputComponent>(e))
+		{
+			input::InputComponent& input = scene->GetRegistry().get<input::InputComponent>(e);
+			if (input.mInputMethod == input::InputMethod::Controller)
+			{
+				BASED_TRACE("USING CONTROLLER SENSITIVITY");
+				sensitivity = 250.f;
+			}
+		}
+		mouseLookComp.mPitch += action.GetValue().axis2DValue.x * sensitivity * core::Time::DeltaTime();
+		mouseLookComp.mYaw -= action.GetValue().axis2DValue.y * sensitivity * core::Time::DeltaTime();
 
 		mouseLookComp.mYaw = math::Clamp(mouseLookComp.mYaw, -89.f, 89.f);
 

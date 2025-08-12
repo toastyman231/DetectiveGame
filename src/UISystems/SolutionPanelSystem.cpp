@@ -6,7 +6,7 @@
 #include "based/engine.h"
 
 #include "../GameSystems.h"
-#include "../Systems/FMODSystem.h"
+#include "../Audio/FMODSystem.h"
 #include "based/input/mouse.h"
 
 void ISolutionPanel::OnPanelSolved()
@@ -273,6 +273,7 @@ void SolutionPanelSystem::ProcessEvent(Rml::Event& event)
 
 			if (CheckSolution())
 			{
+				FMODSystem::PlayEvent("event:/UI/Rumble Correct");
 				BASED_TRACE("LEVEL SOLVED");
 			}
 		}
