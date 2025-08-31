@@ -2,43 +2,43 @@ Actions:
   - ActionName: IA_Move
     ConsumeInput: true
     TriggerWhenPaused: false
-    Type: 2
+    Type: Axis2D
     Triggers: []
     Modifiers: []
   - ActionName: IA_Jump
     ConsumeInput: true
     TriggerWhenPaused: false
-    Type: 0
+    Type: Boolean
     Triggers: []
     Modifiers: []
   - ActionName: IA_Look
     ConsumeInput: true
     TriggerWhenPaused: false
-    Type: 2
+    Type: Axis2D
     Triggers: []
     Modifiers: []
   - ActionName: IA_Interact
     ConsumeInput: true
     TriggerWhenPaused: false
-    Type: 0
+    Type: Boolean
     Triggers: []
     Modifiers: []
   - ActionName: IA_Confirm
     ConsumeInput: true
     TriggerWhenPaused: false
-    Type: 0
+    Type: Boolean
     Triggers: []
     Modifiers: []
   - ActionName: IA_Back
     ConsumeInput: true
     TriggerWhenPaused: false
-    Type: 0
+    Type: Boolean
     Triggers: []
     Modifiers: []
   - ActionName: IA_ToggleSolution
     ConsumeInput: true
     TriggerWhenPaused: false
-    Type: 0
+    Type: Boolean
     Triggers: []
     Modifiers: []
 Configs:
@@ -46,86 +46,70 @@ Configs:
     Mappings:
       - ActionName: IA_Move
         MappedKeys:
-          - Key: 0
-            Type: 4
+          - Key: Gamepad_Left2D
             Triggers: []
             Modifiers:
               - Deadzone
               - SwizzleYX
-          - Key: 26
-            Type: 0
+          - Key: W
             Triggers: []
             Modifiers: []
-          - Key: 22
-            Type: 0
+          - Key: S
             Triggers: []
             Modifiers:
               - Negate
-          - Key: 4
-            Type: 0
+          - Key: A
             Triggers: []
             Modifiers:
               - Negate
               - SwizzleYX
-          - Key: 7
-            Type: 0
+          - Key: D
             Triggers: []
             Modifiers:
               - SwizzleYX
       - ActionName: IA_Interact
         MappedKeys:
-          - Key: 8
-            Type: 0
+          - Key: E
             Triggers: []
             Modifiers: []
-          - Key: 0
-            Type: 3
+          - Key: Gamepad_FaceButton_Bottom
             Triggers: []
             Modifiers: []
       - ActionName: IA_Look
         MappedKeys:
-          - Key: 0
-            Type: 2
+          - Key: Mouse2D
             Triggers: []
             Modifiers: []
-          - Key: 2
-            Type: 4
+          - Key: Gamepad_Right2D
             Triggers: []
             Modifiers:
               - Deadzone
       - ActionName: IA_ToggleSolution
         MappedKeys:
-          - Key: 43
-            Type: 0
+          - Key: Tab
             Triggers: []
             Modifiers: []
-          - Key: 4
-            Type: 3
+          - Key: Gamepad_Special_Left
             Triggers: []
             Modifiers: []
   - ConfigName: IMC_Menu
     Mappings:
       - ActionName: IA_Confirm
         MappedKeys:
-          - Key: 1
-            Type: 1
+          - Key: LeftMouseButton
             Triggers: []
             Modifiers: []
-          - Key: 44
-            Type: 0
+          - Key: SpaceBar
             Triggers: []
             Modifiers: []
-          - Key: 0
-            Type: 3
+          - Key: Gamepad_FaceButton_Bottom
             Triggers: []
             Modifiers: []
       - ActionName: IA_Back
         MappedKeys:
-          - Key: 41
-            Type: 0
+          - Key: Escape
             Triggers: []
             Modifiers: []
-          - Key: 1
-            Type: 3
+          - Key: Gamepad_FaceButton_Right
             Triggers: []
             Modifiers: []
